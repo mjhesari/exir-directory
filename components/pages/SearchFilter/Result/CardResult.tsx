@@ -6,6 +6,7 @@ import { useAppDispatch, useAppSelector } from "@/redux/app/hooks";
 import { useEffect, useState } from "react";
 import { setExchangeData } from "@/redux/features/data/data-slice";
 import { getExchangeData } from "@/utils/api";
+import Link from "next/link";
 
 const CardResult = ({ dicts }: { dicts: DictsTypes }) => {
   const exchangeData = useAppSelector((state) => state.data.data);
@@ -13,6 +14,7 @@ const CardResult = ({ dicts }: { dicts: DictsTypes }) => {
   const [pageIndex, setPageIndex] = useState(0);
   const [loading, setLoading] = useState(false);
   const filters = useAppSelector((state) => state.filters);
+  // const [skeleton, setSkeleton] = useState(12);
 
   useEffect(() => {
     const getData = async () => {
@@ -32,7 +34,7 @@ const CardResult = ({ dicts }: { dicts: DictsTypes }) => {
     };
     getData();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [pageIndex]);
+  }, [pageIndex, filters]);
   return (
     <Card
       className="flex flex-col px-4 border w-full min-w-[300px]"
@@ -77,10 +79,10 @@ const CardResult = ({ dicts }: { dicts: DictsTypes }) => {
           <div className="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 py-3 md:gap-3 gap-y-4 lg:gap-3 sm:gap-x-3 px-0">
             {exchangeData?.length > 0 ? (
               exchangeData?.map((exchange, index) => (
-                <Card
-                  as={"a"}
-                  href={`/${exchange?.slug}/${exchange?.publicId}`}
+                <Link
+                  href={`${dicts.lang}/${exchange?.slug}/${exchange?.publicId}`}
                   key={exchange?.id || index}
+                  className="border rounded-lg shadow"
                 >
                   <ExchangeCard
                     key={exchange?.id || index}
@@ -88,19 +90,28 @@ const CardResult = ({ dicts }: { dicts: DictsTypes }) => {
                     image={exchange?.image ?? ""}
                     title={exchange?.name}
                   />
-                </Card>
+                </Link>
               ))
             ) : (
-              <Card className="w-[285px] space-y-5" radius="lg">
-                <Skeleton className="rounded-lg flex-col items-start p-0 rounded-b-none object-cover w-full">
-                  <div className="h-40 rounded-lg bg-default-300" />
-                </Skeleton>
-                <div className="pt-2 pb-5">
-                  <Skeleton className="w-3/5 rounded-lg mx-3">
-                    <div className="h-5 w-3/5 rounded-lg bg-default-200 " />
-                  </Skeleton>
-                </div>
-              </Card>
+              <div className="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 py-3 md:gap-3 gap-y-4 lg:gap-3 sm:gap-x-3 px-0 col-span-full">
+                {Array.from({ length: exchangeData?.length || 16 }).map(
+                  (_, index) => (
+                    <Card
+                      className="h-48"
+                      key={`skeleton-${index}`}
+                    >
+                      <Skeleton className="rounded-lg flex-col items-start p-0 rounded-b-none object-cover w-full">
+                        <div className="h-40 rounded-lg bg-default-300" />
+                      </Skeleton>
+                      <div className="pt-2 pb-5">
+                        <Skeleton className="w-3/5 rounded-lg mx-3">
+                          <div className="h-5 w-3/5 rounded-lg bg-default-200 " />
+                        </Skeleton>
+                      </div>
+                    </Card>
+                  )
+                )}
+              </div>
             )}
           </div>
         </div>

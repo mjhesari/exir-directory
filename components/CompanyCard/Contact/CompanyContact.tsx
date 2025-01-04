@@ -30,6 +30,7 @@ const CompanyContact = ({
                   data-aos-offset="100"
                 >
                   <ContactItems
+                  dicts={dicts}
                     type="phone"
                     content={phone?.value ?? ""}
                     exchangeData={exchangeData}
@@ -50,6 +51,7 @@ const CompanyContact = ({
                 >
                   <ContactItems
                     type="mail"
+                    dicts={dicts}
                     content={mail?.value ?? ""}
                     exchangeData={exchangeData}
                   />

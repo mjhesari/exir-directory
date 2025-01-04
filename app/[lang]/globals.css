@@ -13,3 +13,7 @@ body {
 .text-accent {
     @apply bg-gradient-to-br from-secondary-300 to-[#004FC4] text-transparent bg-clip-text;
 }
+
+.accent-text {
+    @apply bg-gradient-to-br from-secondary-300 to-[#004FC4] text-white ;
+}

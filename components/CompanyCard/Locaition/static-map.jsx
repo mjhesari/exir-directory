@@ -32,7 +32,7 @@ const MarkerDynamic = dynamic(() => import('react-leaflet').then((mod) => mod.Ma
 const StaticMap = ( {position }) => {
   if (!position) return null;
 
-  const location = convertToObjectLocation(position) || { lat: 32, lng: 54 }
+  const location = convertToObjectLocation(position)
   const isValidLocation = location && !isNaN(location.lat) && !isNaN(location.lng);
   const safeLocation = isValidLocation ? location : { lat: 32, lng: 54 };
   const LocationMarker = () => {

@@ -5,6 +5,7 @@ import { Business } from "@/types/dataTypes";
 import { useRef } from "react";
 import { convertToPhoneNumber } from "@/utils/functions/functions";
 import Copier from "@/components/mirrors/Copy-Button";
+import { DictsTypes } from "@/app/[lang]/dictionaries/dictionaries";
 // import { DictsTypes } from "@/app/[lang]/dictionaries/dictionaries";
 export type ContactItemTypes = {
   content: string;
@@ -13,8 +14,9 @@ export type ContactItemTypes = {
 const ContactItems = ({
   content,
   type,
+  dicts,
   exchangeData,
-}: ContactItemTypes & { exchangeData: Business }) => {
+}: ContactItemTypes & { exchangeData: Business } & {dicts :DictsTypes}) => {
   const contentRef = useRef<HTMLHeadingElement>(null);
 
   return (
@@ -24,7 +26,9 @@ const ContactItems = ({
           className="flex items-center justify-between bg-gray-500/15 rounded-xl p-2"
           key={index}
         >
-          <p className="text-base text-gray-700 ml-2">
+          <p className={`${
+          dicts?.dir === 'ltr' ? 'text-start' : 'text-end'
+        } text-base text-gray-700 leading-none`}>
             {type === "phone" ? convertToPhoneNumber(e.value ?? "") : content}
           </p>
           <div className="flex gap-x-1" ref={contentRef} title={content}>

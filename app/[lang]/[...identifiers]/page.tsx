@@ -56,8 +56,10 @@ export default async function Home({
           <CompanyDetails exchangeData={exchangeData} dicts={dicts} />
           <CompanyGallary exchangeData={exchangeData} />
           <CompanySocialMedia  exchangeData={exchangeData} dicts={dicts}/>
+          <div className="grid xl:grid-cols-2 gap-4 grid-cols-1">
           <CompanyLocCard  exchangeData={exchangeData} dicts={dicts}/>
           <CompanyHoldApp dicts={dicts} />
+          </div>
         </section>
         {/* <MainBanner /> */}
         <section className="space-y-4 mx-5 lg:mx-0 lg:block hidden">
