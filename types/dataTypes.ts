@@ -279,3 +279,14 @@ export interface DataGetterProps {
   exchangeData: DataStructure | null;
   lang: Response | null;
 }
+
+
+export type BodyType = {
+  tags?: string[];
+  country?: string | null;
+  attributes?: { key: string; value: boolean | string[] }[];
+  name?: { [key: string]: string };
+  region?:string
+  city?:string
+
+};

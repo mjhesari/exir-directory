@@ -66,3 +66,16 @@ export const categoryZiba=[
   {id:"2de9f69c-a16c-4807-860d-4f72b962489e",value:"آرایشگاه زنانه"},
   {id:"f5d65bfc-1a5c-4658-a8e5-1495c194e8d7",value:"بیوتی تراپیست"},
 ]
+
+
+export const iconMap: Record<string, string> = {
+  website: "mdi:web",
+  x: "fa6-brands:square-x-twitter",
+  telegram: "uil:telegram",
+  "github.com": "fa:github",
+  instagram: "simple-line-icons:social-instagram",
+  facebook: "entypo-social:facebook",
+  linkedin: "ion:social-linkedin",
+  youtube: "uil:youtube",
+  tiktok: "iconoir:tiktok-solid",
+};

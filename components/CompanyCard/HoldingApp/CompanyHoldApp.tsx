@@ -5,12 +5,11 @@ import { DictsTypes } from "@/app/[lang]/dictionaries/dictionaries";
 
 const CompanyHoldApp = ({ dicts }: { dicts: DictsTypes }) => {
   return (
-    <div>
       <Card className="flex border p-2" shadow="none">
         <CardHeader>
           <h3 className="font-semibold text-lg">{dicts.holdingApp}</h3>
         </CardHeader>
-        <CardBody className="flex-row justify-between items-center">
+        <CardBody className="flex-row justify-between">
           <div>
             <Button size="lg">
               <Icon icon="logos:google-play-icon" width="30" />
@@ -36,7 +35,6 @@ const CompanyHoldApp = ({ dicts }: { dicts: DictsTypes }) => {
           </div>
         </CardBody>
       </Card>
-    </div>
   );
 };
 
