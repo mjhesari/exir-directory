@@ -28,7 +28,7 @@ const CardFilter = ({ dicts }: { dicts: DictsTypes }) => {
   }, [dispatch]);
 
   const applyFilters = async () => {
-    await getExchangeData(0, 24, filters).then((data) => dispatch(setExchangeData(data.data))
+    await getExchangeData(0, 25, filters).then((data) => dispatch(setExchangeData(data.data))
     );
   };
 

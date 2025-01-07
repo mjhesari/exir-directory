@@ -5,7 +5,7 @@ import {filterConvertor} from '@/utils/api/index'
 
 export async function POST(request :Request) {
   try {
-    const {pageIndex = 0,pageSize = 24,filters} = await request.json();
+    const {pageIndex,pageSize,filters} = await request.json();
 
     const defaultSet = {
       industry: [

@@ -1,62 +1,41 @@
-# Base Structure
+<<<<<<< HEAD
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Getting Started
+
+First, run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+=======
+# basetructure
 This repository provides a standardized structure for all team projects, including folder organization, file naming conventions, and commenting guidelines, ensuring consistency and maintainability across our work.
-
-# Front-end Project Folder Structure Template
-
-## 1. app/
-
-The **`app/`** directory in Next.js represents the core of the **App Router.**
-
-- **[lang]**
-    - **providers/** - Context providers for managing global state, themes, and other shared functionality across the application
-    - **dictionaries/** - Language files and translations for internationalization support, including locale-specific content and UI strings
-
----
-
-## 2. components/
-
-Contains all components organized by feature or type.
-
-- **layout/** - Layout-related components like headers, footers, and navigation
-- **common/** - Reusable components used across multiple features
-- **pages/** - Page-specific components and templates used as the base for different routes or views. Includes reusable page layouts and page-specific business logic.
-
----
-
-## 3. utils/
-
-Utility functions and helper modules for common operations.
-
-- **api/** - API request handlers and data transformation functions
-- **auth/** - Authentication utilities, middleware, and security-related functions for handling user authentication and authorization
-- **functions/** - Shared utility functions and helper methods for common operations like data formatting, calculations, and transformations across the application
-- **validation/** - Input validation and form handling helpers
-- **data/** - Data utilities, constants, and static data structures used across the application, including mock data for development and testing purposes
-- **config/ -** Configuration utilities and settings management, including environment variables, feature flags, and application-wide configuration parameters that control the behavior and functionality of different parts of the application
-
----
-
-## 4. types/
-
-Type definitions and interfaces for TypeScript development.
-
-- **components-types.ts -** Type definitions for components, including props interfaces, state types, and component-specific type declarations to ensure type safety and better development experience
-- **redux-types.ts -** Type definitions for Redux state, actions, and store configuration, including interfaces for the global state shape, action types, and selector return types to maintain type safety throughout the state management layer
-- **utils-types.ts -** Type definitions for utility functions and helper modules, including interfaces and types for common operations, data transformations, and configuration settings to maintain consistency and type safety across utility functions
-
----
-
-## 5. redux/
-
-- **app/** - Core Redux store configuration and setup, including store creation, and root reducer composition
-- **features/** - Feature-specific Redux slices containing reducers, actions, and selectors organized by functionality
-
----
-
-## 6. public/
-
-Static files that don't require processing.
-
-- **images/ -**  Image assets like logos, icons, and other static images used throughout the application
-- **styles/** - Global CSS files, custom styles, and theme-related stylesheets that define the visual appearance and layout of the application
+>>>>>>> 3efa78efb6ce072a3623843320ec37aa70820d0e

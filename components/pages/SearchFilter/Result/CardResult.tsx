@@ -20,7 +20,7 @@ const CardResult = ({ dicts }: { dicts: DictsTypes }) => {
     const getData = async () => {
       setLoading(true);
       try {
-        const res = await getExchangeData(pageIndex, 24, filters);
+        const res = await getExchangeData(pageIndex, 25, filters);
         if (Array.isArray(res.data)) {
           dispatch(setExchangeData([...(exchangeData || []), ...res.data]));
         } else {
@@ -37,7 +37,7 @@ const CardResult = ({ dicts }: { dicts: DictsTypes }) => {
   }, [pageIndex, filters]);
   return (
     <Card
-      className="flex flex-col px-4 border w-full min-w-[300px]"
+      className="flex flex-col px-4 border w-full min-w-[300px] lg:!me-4"
       shadow="none"
     >
       <div className="flex flex-col">
@@ -76,7 +76,7 @@ const CardResult = ({ dicts }: { dicts: DictsTypes }) => {
           </div> */}
         </div>
         <div>
-          <div className="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 py-3 md:gap-3 gap-y-4 lg:gap-3 sm:gap-x-3 px-0">
+          <div className="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 py-3 md:gap-3 gap-y-4 lg:gap-3 sm:gap-x-3 px-0">
             {exchangeData?.length > 0 ? (
               exchangeData?.map((exchange, index) => (
                 <Link
@@ -93,8 +93,8 @@ const CardResult = ({ dicts }: { dicts: DictsTypes }) => {
                 </Link>
               ))
             ) : (
-              <div className="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 py-3 md:gap-3 gap-y-4 lg:gap-3 sm:gap-x-3 px-0 col-span-full">
-                {Array.from({ length: exchangeData?.length || 16 }).map(
+              <div className="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 py-3 md:gap-3 gap-y-4 lg:gap-3 sm:gap-x-3 px-0 col-span-full">
+                {Array.from({ length: exchangeData?.length || 20 }).map(
                   (_, index) => (
                     <Card
                       className="h-48"
