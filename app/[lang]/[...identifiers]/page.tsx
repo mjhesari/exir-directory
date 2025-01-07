@@ -47,7 +47,7 @@ export default async function Home({
 
   return (
     <>
-      <main className="container mx-auto pt-20 lg:pt-4 grid grid-cols-1 lg:grid-cols-[auto_400px] gap-4">
+      <main className="mx-auto pt-20 lg:pt-4 grid grid-cols-1 lg:grid-cols-[auto_400px] max-w-[1100px] gap-4">
         <section className="space-y-4 mx-5 lg:mx-0">
           <CompanyOverview exchangeData={exchangeData} dicts={dicts} />
           <div className="lg:hidden block">
@@ -56,10 +56,10 @@ export default async function Home({
           <CompanyDetails exchangeData={exchangeData} dicts={dicts} />
           <CompanyGallary exchangeData={exchangeData} />
           <CompanySocialMedia  exchangeData={exchangeData} dicts={dicts}/>
-          <div className="grid xl:grid-cols-2 gap-4 grid-cols-1">
+          {/* <div className="grid xl:grid-cols-2 gap-4 grid-cols-1"> */}
           <CompanyLocCard  exchangeData={exchangeData} dicts={dicts}/>
           <CompanyHoldApp dicts={dicts} />
-          </div>
+          {/* </div> */}
         </section>
         {/* <MainBanner /> */}
         <section className="space-y-4 mx-5 lg:mx-0 lg:block hidden">

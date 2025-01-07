@@ -3,7 +3,7 @@ import { errorHandler } from "./errorHandler";
 
 export const getExchangeData = async (
   pageIndex = 0,
-  pageSize = 24,
+  pageSize = 25,
   filters?: FilterState
 ) => {
   try {

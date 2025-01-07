@@ -1,30 +1,24 @@
-import {
-  Link,
-  Button,
-  Navbar,
-  NavbarBrand,
-  NavbarContent,
-  NavbarItem,
-} from "@nextui-org/react";
+import {Button,Navbar,NavbarBrand,NavbarContent,NavbarItem,} from "@nextui-org/react";
 import Logo from "./Logo";
 import SearchInput from "./SearchInput";
 import { Icon } from "@iconify/react";
 import { DictsTypes } from "@/app/[lang]/dictionaries/dictionaries";
 import Image from "next/image";
 import img1 from "@/public/drziba.jpg";
+import Link from 'next/link'
 export default function MainNavbar({ dicts }: { dicts: DictsTypes }) {
   return (
     <Navbar
       maxWidth="full"
       classNames={{
         wrapper:
-          "!container mx-auto px-0 !grid grid-cols-[300px_auto_max-content] justify-normal px-4",
+          "mx-auto !grid grid-cols-[300px_auto_max-content] justify-normal px-4",
         base: "bg-white",
       }}
       className="border-b hidden lg:block shadow-sm"
     >
       <NavbarBrand>
-        <Link href="/" className="flex items-center gap-3 text-black">
+        <Link href={`/${dicts.lang}`} className="flex items-center gap-3 text-black">
           {process?.env?.NEXT_PUBLIC_DIRECTORY === "drziba" ? (
             <>
               <Image
