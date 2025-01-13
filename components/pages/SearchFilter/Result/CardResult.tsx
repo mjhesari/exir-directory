@@ -16,7 +16,6 @@ const CardResult = ({ dicts }: { dicts: DictsTypes }) => {
   const [loading, setLoading] = useState(false);
   const filters = useAppSelector((state) => state.filters);
   // const [skeleton, setSkeleton] = useState(12);
-  const isDataLoaded = exchangeData.length > 0;
 
   useEffect(() => {
     const getData = async () => {
