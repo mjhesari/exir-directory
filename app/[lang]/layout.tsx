@@ -10,6 +10,7 @@ import MainFooter from "@/components/Footer/MainFooter";
 // import MobileNav from "@/components/Navbar/mobileNav";
 import NavTopLogo from "@/components/Navbar/navTopLogo";
 import { getAllLanguage, getExchangeData } from "@/utils/api";
+import { locales } from "@/middleware";
 
 //* Local fonts
 const yekanBakh = localFont({
@@ -26,6 +27,10 @@ export const metadata: Metadata = {
   title: "Exchange Hub",
   description: "Exchange Hub",
 };
+
+export async function generateStaticParams() {
+  return locales.map((lang) => ({ lang }));
+}
 
 export default async function RootLayout({
   children,

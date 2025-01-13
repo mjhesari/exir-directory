@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import { setExchangeData } from "@/redux/features/data/data-slice";
 import { getExchangeData } from "@/utils/api";
 import Link from "next/link";
+import { Business } from "@/types/dataTypes";
 
 const CardResult = ({ dicts }: { dicts: DictsTypes }) => {
   const exchangeData = useAppSelector((state) => state.data.data);
@@ -22,7 +23,13 @@ const CardResult = ({ dicts }: { dicts: DictsTypes }) => {
       try {
         const res = await getExchangeData(pageIndex, 25, filters);
         if (Array.isArray(res.data)) {
-          dispatch(setExchangeData([...(exchangeData || []), ...res.data]));
+          const newData = res.data.filter(
+            (item: Business) => !exchangeData.some((existingItem) => existingItem.id === item.id)
+          );
+          
+          if (newData.length > 0) {
+            dispatch(setExchangeData([...(exchangeData || []), ...newData]));
+          }
         } else {
           console.error("Unexpected data format:", res.data);
         }
@@ -32,9 +39,14 @@ const CardResult = ({ dicts }: { dicts: DictsTypes }) => {
         setLoading(false);
       }
     };
-    getData();
+
+    if (!loading && pageIndex > 0) {
+      getData();
+    }
+
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pageIndex, filters]);
+
   return (
     <Card
       className="flex flex-col px-4 border w-full min-w-[300px] lg:!me-4"
@@ -78,8 +90,7 @@ const CardResult = ({ dicts }: { dicts: DictsTypes }) => {
         <div>
           <div className="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 py-3 md:gap-3 gap-y-4 lg:gap-3 sm:gap-x-3 px-0">
             {exchangeData?.length > 0 ? (
-              exchangeData?.map((exchange, index) => (
-                <Link
+              exchangeData.map((exchange: Business, index) => (                <Link
                   href={`${dicts.lang}/${exchange?.slug}/${exchange?.publicId}`}
                   key={exchange?.id || index}
                   className="border rounded-lg shadow"
@@ -115,13 +126,13 @@ const CardResult = ({ dicts }: { dicts: DictsTypes }) => {
             )}
           </div>
         </div>
-        {exchangeData?.length >= 24 && (
+        {exchangeData?.length >= 25 && (
           <Button
             className="w-max mx-auto my-4 font-normal"
             radius="lg"
             variant="bordered"
             startContent={loading ? <Spinner size="sm" color="default" /> : ""}
-            onClick={() => setPageIndex(pageIndex + 1)}
+            onPress={() => setPageIndex(pageIndex + 1)}
             disabled={loading}
             aria-label="load-more"
           >
