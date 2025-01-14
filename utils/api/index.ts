@@ -6,10 +6,9 @@ export const getExchangeData = async (
   pageSize = 25,
   filters?: FilterState
 ) => {
-    const domain = process.env.NEXT_PUBLIC_URL
   try {
     const body = JSON.stringify({filters, pageIndex, pageSize});
-    const response = await fetch(`${domain || ""}/api/directory`, {
+    const response = await fetch(`/api/directory`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -53,12 +52,11 @@ export const filterConvertor = (filters: FilterState) => {
   searchName && (body.name = searchName);
   selectedCities  && (body.city =selectedCities)
   selectedProvinces && (body.region = selectedProvinces);
-  switchIsSelectedMargin &&
-    (body.attributes = [{ key: switchIsSelectedMargin, value: true }]);
-  switchIsSelectedMarket &&
-    (body.attributes = [
-      ...(body?.attributes ?? []),
-      { key: switchIsSelectedMarket, value: false },
+
+
+
+  switchIsSelectedMargin && (body.attributes = [{ key: switchIsSelectedMargin, value: true }]);
+  switchIsSelectedMarket && (body.attributes = [...(body?.attributes ?? []),{ key: switchIsSelectedMarket, value: false },
     ]);
   selectedPayments.length &&
     (body.attributes = [
