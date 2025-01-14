@@ -6,9 +6,10 @@ export const getExchangeData = async (
   pageSize = 25,
   filters?: FilterState
 ) => {
+    const domain = process.env.NEXT_PUBLIC_URL
   try {
     const body = JSON.stringify({filters, pageIndex, pageSize});
-    const response = await fetch(`/api/directory`, {
+    const response = await fetch(`${domain || ""}/api/directory`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
