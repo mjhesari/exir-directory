@@ -70,12 +70,14 @@ export const categoryZiba=[
 
 export const iconMap: Record<string, string> = {
   website: "mdi:web",
-  x: "fa6-brands:square-x-twitter",
-  telegram: "uil:telegram",
-  "github.com": "fa:github",
+  x: "fa6-brands:x-twitter",
+  telegram: "la:telegram-plane",
+  "github.com": "proicons:github",
   instagram: "simple-line-icons:social-instagram",
-  facebook: "entypo-social:facebook",
-  linkedin: "ion:social-linkedin",
-  youtube: "uil:youtube",
-  tiktok: "iconoir:tiktok-solid",
+  facebook: "eva:facebook-fill",
+  linkedin: "ri:linkedin-fill",
+  youtube: "ph:youtube-logo-duotone",
+  tiktok: "mingcute:tiktok-line",
+  discord:"ri:discord-fill",
+  Medium:"ant-design:medium-outlined",
 };

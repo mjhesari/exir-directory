@@ -18,7 +18,6 @@ const ContactItems = ({
   exchangeData,
 }: ContactItemTypes & { exchangeData: Business } & {dicts :DictsTypes}) => {
   const contentRef = useRef<HTMLHeadingElement>(null);
-
   return (
     <div className="space-y-3">
       {exchangeData?.phone?.map((e, index) => (
@@ -26,7 +25,9 @@ const ContactItems = ({
           className="flex items-center justify-between bg-gray-500/15 rounded-xl p-2"
           key={index}
         >
-          <p className={`${
+          <p 
+          dir="ltr"
+          className={`${
           dicts?.dir === 'ltr' ? 'text-start' : 'text-end'
         } text-base text-gray-700 leading-none`}>
             {type === "phone" ? convertToPhoneNumber(e.value ?? "") : content}
