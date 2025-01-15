@@ -1,6 +1,7 @@
 "use client";
 import { Icon } from "@iconify/react";
-import { Button, Link } from "@nextui-org/react";
+import { Button } from "@nextui-org/react";
+import Link from "next/link";
 import { useState } from "react";
 import { Divider } from "@nextui-org/divider";
 import { DictsTypes } from "@/app/[lang]/dictionaries/dictionaries";
@@ -106,19 +107,19 @@ const MobileNav = ({ dicts }: { dicts: DictsTypes }) => {
           </Button>
           <div className="pt-4">
             <div className="flex justify-around text-sm [&_*]:text-default-500">
-              <Link href="#terms" size="sm">
+              <Link href="#terms">
                 {dicts?.footerLink?.terms}
               </Link>
               <Divider orientation="vertical" className="h-5" />
-              <Link href="#privacy" size="sm">
+              <Link href="#privacy">
                 {dicts?.footerLink?.privacy}
               </Link>
               <Divider orientation="vertical" className="h-5" />
-              <Link href="#contact" size="sm">
+              <Link href="#contact">
                 {dicts?.footerLink?.security}
               </Link>
               <Divider orientation="vertical" className="h-5" />
-              <Link href="#about" size="sm">
+              <Link href="#about">
                 {dicts?.footerLink?.aboutExir}
               </Link>
             </div>

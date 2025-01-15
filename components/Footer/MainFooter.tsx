@@ -1,4 +1,4 @@
-import { Link } from "@nextui-org/react";
+import Link from "next/link";
 import { DictsTypes } from "@/app/[lang]/dictionaries/dictionaries";
 
 const MainFooter = ({ dicts }: { dicts: DictsTypes }) => {

@@ -13,7 +13,7 @@ const CompanyGallery = ({ exchangeData }: { exchangeData: Business }) => {
     "row-span-1 col-span-1",
     "row-span-1 col-span-1",
   ];
-if(!exchangeData.media) return null
+if(!exchangeData?.media?.length) return null
 
 
   return (
