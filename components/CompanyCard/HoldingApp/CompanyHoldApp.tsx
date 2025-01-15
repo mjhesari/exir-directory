@@ -13,7 +13,7 @@ const CompanyHoldApp = ({
   return (
       <Card className="flex border p-2" shadow="none">
         <CardHeader>
-          <h3 className="font-semibold text-lg ">{exchangeData?.name?.[dicts.lang as keyof typeof exchangeData.name]} HoldingApp</h3>
+          <h3 className="font-semibold text-lg ">{exchangeData?.name?.[dicts.lang as keyof typeof exchangeData.name]}{dicts.holdingApp}</h3>
         </CardHeader>
         <CardBody className="grid md:grid-cols-4 grid-cols-2  gap-3">
             <Button size="lg">
