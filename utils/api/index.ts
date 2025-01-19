@@ -56,7 +56,6 @@ export const filterConvertor = (filters: FilterState) => {
   searchName && (body.name = searchName);
   selectedCities && (body.city = selectedCities);
   selectedProvinces && (body.region = selectedProvinces);
-
   switchIsSelectedMargin &&
     (body.attributes = [{ key: switchIsSelectedMargin, value: true }]);
   switchIsSelectedMarket &&

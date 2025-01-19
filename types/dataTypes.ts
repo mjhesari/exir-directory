@@ -160,7 +160,7 @@ export interface Business {
     en?: string;
     fa?: string;
   };
-  DEFAULT_LANGuage?: string;
+  defaultlanguage?: string;
   description?: {
     en?: string;
     fa: string;

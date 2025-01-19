@@ -1,11 +1,3 @@
-//* Menu items (Arranged)
-export const menuItems = [
-  { href: "#info", id: "info" },
-  { href: "#products", id: "products" },
-  { href: "#address-info", id: "address" },
-  { href: "#contact-us", id: "contactUs" },
-  { href: "#opening-hours", id: "workTime" },
-];
 
 export const fiatDespoit = [
   { key: "GBP", label: "GBP" },
@@ -57,7 +49,6 @@ export const categoryExchange = [
   {id: "7f1b68e0-ab37-4c56-af48-6b162d464227",value:"Membership-Based Exchanges"},
   {id: "9b43bfda-b614-4311-9782-89c3a1026c77",value:"Domestic Exchanges"}
 ];
-
 export const categoryZiba=[
   {id:"9b1c5f1d-1686-49ed-8bb4-3b1e935aa8a3",value:"پزشک"},
   {id:"1a705b19-8fdb-4361-a958-29e03f88750f",value:"سالن های زیبایی"},
@@ -66,8 +57,12 @@ export const categoryZiba=[
   {id:"2de9f69c-a16c-4807-860d-4f72b962489e",value:"آرایشگاه زنانه"},
   {id:"f5d65bfc-1a5c-4658-a8e5-1495c194e8d7",value:"بیوتی تراپیست"},
 ]
-
-
+export const categoryDubai=[
+  {id:"c69b7f69-ac2d-4280-90e3-c77299cb814f",value:"Restaurant"},
+  {id:"4c6b00e2-4fa1-4a32-a4f0-3acc68a9f453",value:"Real Estate"},
+  {id:"94604a41-8741-45d6-83db-b7112e914b80",value:"Store"},
+  {id:"952c1f9e-ecb6-4990-a8ac-6c4dc74b1d45",value:"Hotel"},
+]
 export const iconMap: Record<string, string> = {
   website: "mdi:web",
   x: "fa6-brands:x-twitter",

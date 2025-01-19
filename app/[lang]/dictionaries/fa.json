@@ -3,7 +3,7 @@
   "lang": "fa",
   "contryCode": "98",
   "iso": "ir",
-  "DirectoryName": { "exchange": "صرافی هاب", "drziba": "دکتر زیبا" },
+  "DirectoryName": { "exchange": "صرافی هاب", "drziba": "دکتر زیبا","dubai":"دبی هاب"  },
   "langName": "فارسی",
   "menuSection": {
     "mainNav": {
@@ -34,7 +34,9 @@
     "seeallcontribute": "مشاهده همه مشارکت‌کنندگان",
     "search": "جستجو",
     "manageProfile": "مدیریت پروفایل",
-    "countributeToEarn": "مشارکت برای کسب درآمد"
+    "countributeToEarn": "مشارکت برای کسب درآمد",
+    "Apply":"اعمال فیلتر",
+    "loadmore":"بارگذازی بیشتر..."
   },
   "cardDetails": {
     "exchangeType": "نوع صرافی",
@@ -79,6 +81,13 @@
         "beautyWomen":"آرایشگاه زنانه",
         "beautyMen":"آرایشگاه مردانه",
         "dr":"پزشک"
+      },
+      "dubaiCategory":{
+        "category":"دسته بندی ها",
+        "realEstate":"مشاور املاک",
+        "restaurant":"رستوران",
+        "store":"فروشگاه",
+        "hotel":"هتل"
       }
     },
     "fiatDeposite": "واریز پول ارزی",
@@ -97,12 +106,14 @@
     },
     "titleResult": {
       "exchanges": "صرافی ها",
-      "drziba": "دکتر زیبا"
+      "drziba": "دکتر زیبا",
+      "dubai":"دبی هاب"
     },
     "sortBy": "بر اساس",
     "desc": {
       "exchanges": "لیست کامل صرافی های دنیا در صرافی هاب",
-      "drziba": "دکتر زیبا"
+      "drziba": "دکتر زیبا",
+      "dubai":"دبی هاب"
     }
   }
 }

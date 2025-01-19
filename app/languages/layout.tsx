@@ -1,7 +1,7 @@
 import "../[lang]/globals.css";
-import NavTopLogo from "@/components/Navbar/navTopLogo";
-import MainNavbar from "@/components/Navbar/MainNavbar";
-import MainFooter from "@/components/Footer/MainFooter";
+import NavTopLogo from "@/components/Common/Navbar/navTopLogo";
+import MainNavbar from "@/components/Common/Navbar/MainNavbar";
+import MainFooter from "@/components/Common/Footer/MainFooter";
 import { getDictionary } from "../[lang]/dictionaries/dictionaries";
 import MainProviders from "../providers/main-provider";
 import { getAllLanguage, getExchangeData } from "@/utils/api";

@@ -5,14 +5,14 @@
 // import CompanyCuntributes from "@/components/CompanyCard/Cuntributes/CompanyCuntributes";
 // import CompanyPartners from "@/components/CompanyCard/Partners/CompanyPartners";
 // import CompanyComments from "@/components/CompanyCard/Comments/CompanyComments";
-import { CompanyDetails } from "@/components/CompanyCard/DetailsExchange/CompanyDetails";
-import { CompanyOverview } from "@/components/CompanyCard/Overview/CompanyOverview";
+import { CompanyDetails } from "@/components/Common/CompanyCard/DetailsExchange/CompanyDetails";
+import { CompanyOverview } from "@/components/Common/CompanyCard/Overview/CompanyOverview";
 import { getDictionary, langsType } from "../dictionaries/dictionaries";
-import CompanyContact from "@/components/CompanyCard/Contact/CompanyContact";
-import { CompanyLocCard } from "@/components/CompanyCard/Locaition/CompanyLoccard";
-import CompanyGallary from "@/components/CompanyCard/Gallery/CompanyGallary";
-import CompanySocialMedia from "@/components/CompanyCard/SocialMedia/CompanySocialMedia";
-import CompanyHoldApp from "@/components/CompanyCard/HoldingApp/CompanyHoldApp";
+import CompanyContact from "@/components/Common/CompanyCard/Contact/CompanyContact";
+import { CompanyLocCard } from "@/components/Common/CompanyCard/Locaition/CompanyLoccard";
+import CompanyGallary from "@/components/Common/CompanyCard/Gallery/CompanyGallary";
+import CompanySocialMedia from "@/components/Common/CompanyCard/SocialMedia/CompanySocialMedia";
+import CompanyHoldApp from "@/components/Common/CompanyCard/HoldingApp/CompanyHoldApp";
 import { Business } from "@/types/dataTypes";
 
 const getdataExchange = async (id: string) => {
