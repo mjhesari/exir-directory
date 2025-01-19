@@ -3,7 +3,7 @@
   "lang": "en",
   "contryCode": "1",
   "iso": "us",
-  "DirectoryName": { "exchange": "Exchange Hub", "drziba": "دکترزیبا" },
+  "DirectoryName": { "exchange": "Exchange Hub", "drziba": "دکترزیبا","dubai":"Dubia Hub" },
   "langName": "English",
   "menuSection": {
     "mainNav": {
@@ -34,7 +34,9 @@
     "seeallcontribute": "See All Contributors",
     "search": "Search",
     "manageProfile": "Manage Profile",
-    "countributeToEarn": "Contribute To Earn"
+    "countributeToEarn": "Contribute To Earn",
+    "Apply":"Apply Filter",
+    "loadmore":"Load more..."
   },
   "cardDetails": {
     "exchangeType": "ExchangeType",
@@ -79,6 +81,13 @@
         "beautyWomen": "",
         "beautyMen": "",
         "dr": ""
+      },
+      "dubaiCategory":{
+        "category":"Category",
+        "realEstate":"Real Estate",
+        "restaurant":"Restaurant",
+        "store":"Store",
+        "hotel":"Hotel"
       }
     },
     "fiatDeposite": "Fiat Deposite",
@@ -97,12 +106,14 @@
     },
     "titleResult": {
       "exchanges": "Exchanges",
-      "drziba": "Dr.Ziba"
+      "drziba": "Dr.Ziba",
+      "dubai":"Dubia Hub"
     },
     "sortBy": "Sort By",
     "desc": {
       "exchanges": "The complete list of Exchanges in Exchange Hub, including exchanges from around the world",
-      "drziba": ""
+      "drziba": "",
+      "dubai":"Dubia Hub"
     }
   }
 }

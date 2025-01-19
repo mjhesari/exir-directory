@@ -1,6 +1,6 @@
 import {getDictionary, langsType } from "@/app/[lang]/dictionaries/dictionaries";
-import CardResult from "@/components/pages/SearchFilter/Result/CardResult";
-import FilterBar from "@/components/pages/SearchFilter/Filter";
+import CardResult from "@/components/Common/pages/SearchFilter/Result/CardResult";
+import FilterBar from "@/components/Common/pages/SearchFilter/Filter";
 
 const Home =async ({ params }: { params: { lang: langsType } }) => {
   const dicts=await getDictionary(params?.lang)

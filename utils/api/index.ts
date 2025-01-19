@@ -2,18 +2,22 @@ import { FilterState } from "@/redux/features/filters/filter-slice";
 import { errorHandler } from "./errorHandler";
 
 export const getExchangeData = async (
-  pageIndex = 0,
-  pageSize = 25,
-  filters?: FilterState
+  filters?: Partial<FilterState>,
+  pageSize?: number,
+  pageIndex?: number
 ) => {
   try {
-    const body = JSON.stringify({filters, pageIndex, pageSize});
+    const body = JSON.stringify({
+      filters: filters ?? {},
+      pageIndex: pageIndex ?? 0,
+      pageSize: pageSize ?? 25,
+    });
     const response = await fetch(`/api/directory`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body
+      body,
     });
     const data = await response.json();
     return data;
@@ -41,22 +45,23 @@ export const filterConvertor = (filters: FilterState) => {
     attributes?: { key: string; value: boolean | string[] }[];
     name?: { [key: string]: string };
     region?: string;
-    city?:string
+    city?: string;
   };
-  
+
   const body: BodyType = {};
   selectedCategories.length && (body.tags = selectedCategories);
   process?.env?.NEXT_PUBLIC_DIRECTORY === "drziba"
-  ? (body.country = "Iran")
-  : selectedCountries.length && (body.country = selectedCountries);
+    ? (body.country = "Iran")
+    : selectedCountries.length && (body.country = selectedCountries);
   searchName && (body.name = searchName);
-  selectedCities  && (body.city =selectedCities)
+  selectedCities && (body.city = selectedCities);
   selectedProvinces && (body.region = selectedProvinces);
-
-
-
-  switchIsSelectedMargin && (body.attributes = [{ key: switchIsSelectedMargin, value: true }]);
-  switchIsSelectedMarket && (body.attributes = [...(body?.attributes ?? []),{ key: switchIsSelectedMarket, value: false },
+  switchIsSelectedMargin &&
+    (body.attributes = [{ key: switchIsSelectedMargin, value: true }]);
+  switchIsSelectedMarket &&
+    (body.attributes = [
+      ...(body?.attributes ?? []),
+      { key: switchIsSelectedMarket, value: false },
     ]);
   selectedPayments.length &&
     (body.attributes = [
@@ -71,7 +76,7 @@ export const filterConvertor = (filters: FilterState) => {
         value: selectedCurrencies,
       },
     ]);
-  return Object.keys(body).length ? body : false
+  return Object.keys(body).length ? body : false;
 };
 
 /* -------------------------------------------------------------------------- */

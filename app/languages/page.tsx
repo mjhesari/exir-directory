@@ -1,4 +1,4 @@
-import LanguageCard from "@/components/pages/languages/LanguageCard";
+import LanguageCard from "@/components/Common/pages/languages/LanguageCard";
 import img1 from "@/public/original-b93abe1472897c8a503205900c6a14d2.png";
 import { getAllLanguage } from "@/utils/api";
 import  Image from "next/image";

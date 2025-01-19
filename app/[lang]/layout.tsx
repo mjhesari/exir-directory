@@ -1,4 +1,4 @@
-import MainNavbar from "@/components/Navbar/MainNavbar";
+import MainNavbar from "@/components/Common/Navbar/MainNavbar";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -6,9 +6,9 @@ import { Roboto } from "next/font/google";
 //* Import components
 import MainProviders from "../providers/main-provider";
 import { langsType, getDictionary } from "./dictionaries/dictionaries";
-import MainFooter from "@/components/Footer/MainFooter";
+import MainFooter from "@/components/Common/Footer/MainFooter";
 // import MobileNav from "@/components/Navbar/mobileNav";
-import NavTopLogo from "@/components/Navbar/navTopLogo";
+import NavTopLogo from "@/components/Common/Navbar/navTopLogo";
 import { getAllLanguage, getExchangeData } from "@/utils/api";
 import { locales } from "@/middleware";
 
