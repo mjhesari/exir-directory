@@ -8,20 +8,20 @@ import { setExchangeData } from "@/redux/features/data/data-slice";
 import { getExchangeData } from "@/utils/api";
 import Link from "next/link";
 import { Business } from "@/types/dataTypes";
+import { setPageIndex } from "@/redux/features/filters/filter-slice";
 
 const CardResult = ({ dicts }: { dicts: DictsTypes }) => {
   const exchangeData = useAppSelector((state) => state.data.data);
   const dispatch = useAppDispatch();
-  const [pageIndex, setPageIndex] = useState(0);
   const [loading, setLoading] = useState(false);
   const filters = useAppSelector((state) => state.filters);
-  // const [skeleton, setSkeleton] = useState(12);
+  const {pageIndex,pageSize}=useAppSelector(state=>state.filters)
 
   useEffect(() => {
     const getData = async () => {
       setLoading(true);
       try {
-        const res = await getExchangeData(pageIndex, 25, filters);
+        const res = await getExchangeData(filters,pageSize,pageIndex);
         if (Array.isArray(res.data)) {
           const newData = res.data.filter(
             (item: Business) => !exchangeData.some((existingItem) => existingItem.id === item.id)
@@ -45,7 +45,7 @@ const CardResult = ({ dicts }: { dicts: DictsTypes }) => {
     }
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [pageIndex, filters]);
+  }, [pageIndex, filters,dispatch]);
 
   return (
     <Card
@@ -132,7 +132,7 @@ const CardResult = ({ dicts }: { dicts: DictsTypes }) => {
             radius="lg"
             variant="bordered"
             startContent={loading ? <Spinner size="sm" color="default" /> : ""}
-            onPress={() => setPageIndex(pageIndex + 1)}
+            onPress={() => dispatch(setPageIndex(pageIndex + 1))}
             disabled={loading}
             aria-label="load-more"
           >

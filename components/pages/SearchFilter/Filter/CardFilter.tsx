@@ -8,8 +8,11 @@ import PaymentSelect from "../SelectBox/ExchangeSelect/PaymentSelect";
 import CategorySelect from "../SelectBox/CategorySelect";
 import MarketSwitch from "../SelectBox/ExchangeSelect/MarketSwitch";
 import MarginSwitch from "../SelectBox/ExchangeSelect/MarginSwitch";
-import { resetFilters } from "@/redux/features/filters/filter-slice";
-import { useCallback, useEffect, useTransition } from "react";
+import {
+  FilterState,
+  resetFilters,
+} from "@/redux/features/filters/filter-slice";
+import { useEffect,  useTransition } from "react";
 import { getExchangeData } from "@/utils/api";
 import { setExchangeData } from "@/redux/features/data/data-slice";
 import { useAppDispatch, useAppSelector } from "@/redux/app/hooks";
@@ -20,37 +23,38 @@ const CardFilter = ({ dicts }: { dicts: DictsTypes }) => {
   const dispatch = useAppDispatch();
   const [filterDataLoading, startFiltering] = useTransition();
   const filters = useAppSelector((state) => state.filters);
-  // const exchangeData = useSelector((state: RootState) => state.data.data);
+  const { pageIndex, pageSize } = useAppSelector((state) => state.filters);
+  const exchangeData = useAppSelector((state) => state.data.data);
 
+  const condition = Object.keys(filters).find((key) => {
+    const value = filters[key as keyof typeof filters];
+    if (Array.isArray(value)) {
+      return value.length > 0;
+    }
+    if (typeof value === "string") {
+      return value.length > 0;
+    }
+    return false;
+  });
 
-  const handleClearAll = useCallback(() => {
+  const handleClearAll = () => {
     dispatch(resetFilters());
-  }, [dispatch]);
+    applyFilters({});
+  };
 
-  const applyFilters = async () => {
-    await getExchangeData(0, 25, filters).then((data) => dispatch(setExchangeData(data.data))
+  const applyFilters = async (customFilters?: Partial<FilterState>) => {
+    await getExchangeData(customFilters || filters, pageSize, pageIndex).then(
+      (data) => dispatch(setExchangeData(data.data))
     );
   };
 
   useEffect(() => {
-    const condition = Object.keys(filters).find(
-      (key) => filters[key as keyof typeof filters].length
-    );
-
-    if (!condition) {
+    if (!exchangeData.length) {
       startFiltering(() => applyFilters());
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [
-    filters.selectedCategories,
-    filters.selectedCountries,
-    filters.selectedCurrencies,
-    filters.selectedPayments,
-    filters.switchIsSelectedMargin,
-    filters.switchIsSelectedMarket,
-    filters.selectedCities,
-    filters.selectedProvinces,
-  ]);
+  }, []);
+
   useEffect(() => {
     applyFilters();
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -73,9 +77,7 @@ const CardFilter = ({ dicts }: { dicts: DictsTypes }) => {
             {dicts?.CardFilter.filter}
           </h2>
         </div>
-        {Object.keys(filters).find(
-          (key) => filters[key as keyof typeof filters].length
-        ) || filterDataLoading ? (
+        {condition || filterDataLoading ? (
           <Button
             onClick={handleClearAll}
             color="secondary"
@@ -97,7 +99,7 @@ const CardFilter = ({ dicts }: { dicts: DictsTypes }) => {
           <div className="flex flex-col gap-3">
             <ProvinceSelect dicts={dicts} />
             <Divider className="my-0" />
-            <CitySelect dicts={dicts}/>
+            <CitySelect dicts={dicts} />
           </div>
         ) : (
           <div className="flex flex-col gap-3">
@@ -117,11 +119,7 @@ const CardFilter = ({ dicts }: { dicts: DictsTypes }) => {
       <Button
         onClick={() => startFiltering(() => applyFilters())}
         aria-label="apply-filters"
-        isDisabled={
-          !Object.keys(filters).find(
-            (key) => filters[key as keyof typeof filters].length
-          ) || filterDataLoading
-        }
+        isDisabled={!condition || filterDataLoading}
         isLoading={filterDataLoading}
       >
         Apply Filter

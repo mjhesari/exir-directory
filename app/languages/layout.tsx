@@ -17,7 +17,7 @@ export default async function LanguageLayout({
   children: React.ReactNode;
 }) {
   const dicts = await getDictionary('en');
-  const {data}=await getExchangeData(0,24)
+  const {data}=await getExchangeData()
   const lang=await getAllLanguage()
   return (
     <html>

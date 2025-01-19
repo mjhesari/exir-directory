@@ -9,10 +9,12 @@ export interface FilterState {
   selectedPayments: string[];
   selectedCountries: string;
   selectedProvinces: string;
-  selectedCities:string;
+  selectedCities: string;
   switchIsSelectedMarket: string;
   switchIsSelectedMargin: string;
   searchName: { [key: string]: string };
+  pageSize: number;
+  pageIndex: number;
 }
 
 const initialState: FilterState = {
@@ -21,10 +23,12 @@ const initialState: FilterState = {
   selectedPayments: [],
   selectedCountries: "",
   selectedProvinces: "",
-  selectedCities:"",
+  selectedCities: "",
   switchIsSelectedMarket: "",
   switchIsSelectedMargin: "",
   searchName: {},
+  pageSize: 25,
+  pageIndex: 0,
 };
 
 const filterSlice = createSlice({
@@ -58,6 +62,12 @@ const filterSlice = createSlice({
     setSearchName(state, action: PayloadAction<{ [key: string]: string }>) {
       state.searchName = action.payload;
     },
+    setPageSize(state, action: PayloadAction<number>) {
+      state.pageSize = action.payload;
+    },
+    setPageIndex(state, action: PayloadAction<number>) {
+      state.pageIndex = action.payload;
+    },
     resetFilters(state) {
       state.selectedCategories = [];
       state.selectedCurrencies = [];
@@ -66,8 +76,10 @@ const filterSlice = createSlice({
       state.switchIsSelectedMarket = "";
       state.switchIsSelectedMargin = "";
       state.searchName = {};
-      state.selectedProvinces="";
-      state.selectedCities="";
+      state.selectedProvinces = "";
+      state.selectedCities = "";
+      state.pageSize = 25;
+      state.pageIndex = 0;
     },
   },
 });
@@ -83,6 +95,8 @@ export const {
   setSelectedCities,
   resetFilters,
   setSearchName,
+  setPageIndex,
+  setPageSize,
 } = filterSlice.actions;
 
 export default filterSlice.reducer;
