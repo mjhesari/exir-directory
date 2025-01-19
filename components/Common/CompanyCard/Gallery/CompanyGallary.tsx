@@ -36,8 +36,7 @@ if(!exchangeData?.media?.length) return null
             return (
               <div
                 key={image?.src ?? index}
-                className={`rounded-lg shadow-lg hover:shadow-xl transition-shadow cursor-pointer w-full  ${
-                  images[index] ?? ""
+                className={`rounded-lg shadow-lg hover:shadow-xl transition-shadow cursor-pointer w-full  ${images[index] ?? ""
                 } ${isOverflowStyle}`}
               >
                 <Link
@@ -49,8 +48,8 @@ if(!exchangeData?.media?.length) return null
                   <div className={`group overflow-hidden`}>
                     <Image
                     sizes="100vh"
-                      src={image?.src}
-                      alt={image?.title}
+                      src={image?.src??""}
+                      alt={image?.title??""}
                       fill
                       className="inset-0 object-cover rounded-lg"
                     />
