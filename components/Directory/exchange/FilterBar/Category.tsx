@@ -1,6 +1,6 @@
 "use client";
 import { Checkbox, CheckboxGroup } from "@nextui-org/react";
-import { categoryExchange,categoryZiba } from "@/utils/data/data";
+import { categoryExchange } from "@/utils/data/data";
 import { useAppDispatch, useAppSelector } from "@/redux/app/hooks";
 import { setSelectedCategories } from "@/redux/features/filters/filter-slice";
 import { DictsTypes } from "@/app/[lang]/dictionaries/dictionaries";
