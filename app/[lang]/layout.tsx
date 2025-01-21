@@ -6,12 +6,21 @@ import { Roboto } from "next/font/google";
 //* Import components
 import MainProviders from "../providers/main-provider";
 import { langsType, getDictionary } from "./dictionaries/dictionaries";
-import MainFooter from "@/components/Common/Footer/MainFooter";
 // import MobileNav from "@/components/Navbar/mobileNav";
 import NavTopLogo from "@/components/Common/Navbar/navTopLogo";
-import { getAllLanguage, getExchangeData } from "@/utils/api";
+import { getAllLanguage, getDirectoryData } from "@/utils/api";
 import { locales } from "@/middleware";
-
+import dynamic from "next/dynamic";
+import FooterExchnage from "@/components/Directory/exchange/Footer/MainFooter";
+const MainFooter = dynamic(
+  () =>
+    import(
+      `@/components/Directory/${process.env.NEXT_PUBLIC_DIRECTORY}/Footer/MainFooter`
+    ),
+  {
+    loading: () => <p>Loading...</p>,
+  }
+) as typeof FooterExchnage;
 //* Local fonts
 const yekanBakh = localFont({
   src: "./fonts/YekanBakh-VF.woff2",
@@ -37,7 +46,7 @@ export default async function RootLayout({
   params,
 }: Readonly<{ children: React.ReactNode; params: { lang: langsType } }>) {
   const dicts = await getDictionary(params?.lang);
-  const {data}=await getExchangeData()
+  const {data}=await getDirectoryData()
   const lang=await getAllLanguage()
   const font = dicts.dir === "rtl" ? yekanBakh.className : roboto.className;
   return (
@@ -45,7 +54,7 @@ export default async function RootLayout({
       <body className={`${font}`}>
         <MainProviders exchange={data} lang={lang}>
           <NavTopLogo dicts={dicts}/>
-          <MainNavbar dicts={dicts} />
+          <MainNavbar dicts={dicts}/>
           {children}
           {/* <MobileNav dicts={dicts}/> */}
           <MainFooter dicts={dicts} />

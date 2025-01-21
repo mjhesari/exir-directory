@@ -11,9 +11,7 @@ import dynamic from "next/dynamic";
 import CardFilterExchange from "@/components/Directory/exchange/FilterBar/CardFilter";
 const CardFilter = dynamic(
   () =>
-    import(
-      `@/components/Directory/${process.env.NEXT_PUBLIC_DIRECTORY}/FilterBar/CardFilter`
-    ),
+    import(`@/components/Directory/${process.env.NEXT_PUBLIC_DIRECTORY}/FilterBar/CardFilter`),
   {
     loading: () => <p>Loading...</p>,
   }

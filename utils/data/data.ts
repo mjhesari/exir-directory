@@ -76,3 +76,11 @@ export const iconMap: Record<string, string> = {
   discord:"ri:discord-fill",
   Medium:"ant-design:medium-outlined",
 };
+export const categoryIranArabic=[
+  {id:"9b1c5f1d-1686-49ed-8bb4-3b1e935aa8a3",value:"طبيب"},
+  {id:"1a705b19-8fdb-4361-a958-29e03f88750f",value:"صالونات التجميل"},
+  {id:"7d6d7b83-ea18-4063-983a-fe052681d3ab",value:"عيادات التجميل"},
+  {id:"ca107dc3-b734-4f82-84b0-310652925767",value:"صالونات رجالية"},
+  {id:"2de9f69c-a16c-4807-860d-4f72b962489e",value:"صالونات نسائية"},
+  {id:"f5d65bfc-1a5c-4658-a8e5-1495c194e8d7",value:"أخصائي العلاج التجميلي"},
+]

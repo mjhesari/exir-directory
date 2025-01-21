@@ -7,7 +7,7 @@
 // import CompanyComments from "@/components/CompanyCard/Comments/CompanyComments";
 import { CompanyDetails } from "@/components/Common/CompanyCard/DetailsExchange/CompanyDetails";
 import { CompanyOverview } from "@/components/Common/CompanyCard/Overview/CompanyOverview";
-import { getDictionary, langsType } from "../dictionaries/dictionaries";
+import { getDictionary, langsType } from "../../dictionaries/dictionaries";
 import CompanyContact from "@/components/Common/CompanyCard/Contact/CompanyContact";
 import { CompanyLocCard } from "@/components/Common/CompanyCard/Locaition/CompanyLoccard";
 import CompanyGallary from "@/components/Common/CompanyCard/Gallery/CompanyGallary";

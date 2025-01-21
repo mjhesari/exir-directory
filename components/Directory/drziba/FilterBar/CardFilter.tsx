@@ -7,7 +7,7 @@ import {
   resetFilters,
 } from "@/redux/features/filters/filter-slice";
 import { useEffect, useTransition } from "react";
-import { getExchangeData } from "@/utils/api";
+import { getDirectoryData } from "@/utils/api";
 import { setExchangeData } from "@/redux/features/data/data-slice";
 import { useAppDispatch, useAppSelector } from "@/redux/app/hooks";
 import ProvinceSelect from "@/components/Directory/drziba/FilterBar/ProvinceSelect";
@@ -47,7 +47,7 @@ const CardFilterDrziba = ({ dicts }: { dicts: DictsTypes }) => {
   };
 
   const applyFilters = async (customFilters?: Partial<FilterState>) => {
-    await getExchangeData(customFilters || filters, pageSize, pageIndex).then(
+    await getDirectoryData(customFilters || filters, pageSize, pageIndex).then(
       (data) => dispatch(setExchangeData(data.data))
     );
   };

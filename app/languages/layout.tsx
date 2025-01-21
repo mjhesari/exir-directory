@@ -4,7 +4,7 @@ import MainNavbar from "@/components/Common/Navbar/MainNavbar";
 import MainFooter from "@/components/Common/Footer/MainFooter";
 import { getDictionary } from "../[lang]/dictionaries/dictionaries";
 import MainProviders from "../providers/main-provider";
-import { getAllLanguage, getExchangeData } from "@/utils/api";
+import { getAllLanguage, getDirectoryData } from "@/utils/api";
 
 export const metadata = {
   title: "Languages",
@@ -17,7 +17,7 @@ export default async function LanguageLayout({
   children: React.ReactNode;
 }) {
   const dicts = await getDictionary('en');
-  const {data}=await getExchangeData()
+  const {data}=await getDirectoryData()
   const lang=await getAllLanguage()
   return (
     <html>
