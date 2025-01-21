@@ -1,0 +1,120 @@
+{
+    "dir": "rtl",
+    "lang": "ar",
+    "contryCode": "966",
+    "iso": "sa",
+    "DirectoryName": { "exchange": "مركز الصرافة", "drziba": "دكتور زيبا", "dubai": "دبي هاب","iranarabic":"إيران عربي"  },
+    "langName": "العربية",
+    "menuSection": {
+      "mainNav": {
+        "allExchanges": "جميع الصرافات",
+        "suggestAnExchange": "اقتراح صرافة"
+      },
+      "mobileMenu": {
+        "apps": "التطبيقات",
+        "services": "الخدمات",
+        "social": "الشبكات الاجتماعية",
+        "contact": "اتصال"
+      }
+    },
+    "placeholder": {
+      "search": "بحث...",
+      "paymentChoose": "اختر طريقة الدفع",
+      "currencyChoose": "اختر العملة",
+      "countryChoose": "اختر الدولة",
+      "categoryChoose": "اختر الفئة",
+      "provinceChoose": "اختر المحافظة",
+      "cityChoose": "اختر المدينة"
+    },
+    "button": {
+      "clearAll": "مسح الكل",
+      "navigate": "التنقل",
+      "contribute": "ساهم",
+      "tryItNow": "جرب الآن",
+      "seeallcontribute": "عرض جميع المساهمين",
+      "search": "بحث",
+      "manageProfile": "إدارة الملف الشخصي",
+      "countributeToEarn": "ساهم لكسب المال",
+      "Apply": "تطبيق الفلتر",
+      "loadmore": "تحميل المزيد..."
+    },
+    "cardDetails": {
+      "exchangeType": "نوع الصرافة",
+      "IncorporationCountry": "بلد التأسيس",
+      "areaServed": "المنطقة المخدومة",
+      "NumberofEmployees": "عدد الموظفين",
+      "marketWithFees": "السوق مع الرسوم",
+      "Founding": "سنة التأسيس"
+    },
+    "infoContact": {
+      "contact": "معلومات الاتصال"
+    },
+    "productandService": "المنتجات والخدمات",
+    "socialNetwork": "الشبكات الاجتماعية",
+    "holdingApp": "تطبيق الشركة",
+    "contributors": {
+      "contributors": "المساهمون",
+      "avardingToken": "الرموز الممنوحة"
+    },
+    "businessPartners": "الشركاء التجاريون",
+    "footerLink": {
+      "terms": "الشروط",
+      "privacy": "الخصوصية",
+      "docs": "الوثائق",
+      "security": "الأمان",
+      "aboutExir": "حول إكسير"
+    },
+    "CardFilter": {
+      "filter": "التصفية",
+      "category": {
+        "exchangeCategory": {
+          "category": "فئات الصرافة",
+          "crypto": "صرافات العملات الرقمية",
+          "decentralized": "الصرافات اللامركزية",
+          "derivatives": "صرافات المشتقات"
+        },
+        "drzibaCategory": {
+          "category": "الفئات",
+          "beautySalon": "صالونات التجميل",
+          "beautyClinic": "عيادات التجميل",
+          "beautyTrapy": "علاج التجميل",
+          "beautyWomen": "صالونات نسائية",
+          "beautyMen": "صالونات رجالية",
+          "dr": "طبيب"
+        },
+        "dubaiCategory": {
+          "category": "الفئات",
+          "realEstate": "العقارات",
+          "restaurant": "المطاعم",
+          "store": "المتاجر",
+          "hotel": "الفنادق"
+        }
+      },
+      "fiatDeposite": "الإيداع النقدي",
+      "country": "الدولة",
+      "acceptedPaymentMethods": "طرق الدفع المقبولة",
+      "marginTrading": "التداول بالهامش",
+      "marketWithNoFees": "السوق بدون رسوم",
+      "province": "المحافظة",
+      "city": "المدينة"
+    },
+    "CardResult": {
+      "selector": {
+        "relevant": "الأكثر صلة",
+        "newest": "الأحدث",
+        "oldest": "الأقدم"
+      },
+      "titleResult": {
+        "exchanges": "الصرافات",
+        "drziba": "دكتور زيبا",
+        "dubai": "دبي هاب","iranarabic":"إيران عربي" 
+      },
+      "sortBy": "الفرز حسب",
+      "desc": {
+        "exchanges": "القائمة الكاملة للصرافات حول العالم في مركز الصرافة",
+        "drziba": "دكتور زيبا",
+        "dubai": "دبي هاب",
+        "iranarabic":"إيران عربي" 
+      }
+    }
+  }

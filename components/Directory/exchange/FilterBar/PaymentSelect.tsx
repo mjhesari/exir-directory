@@ -50,8 +50,7 @@ const PaymentSelect = ({ dicts }: { dicts: DictsTypes }) => {
               className=" text-wrap h-full py-1"
               variant="bordered"
               onClose={() => handleRemovePayment(payment)}
-            >
-              {payment}
+            >{payment}
             </Chip>
           ))}
         </div>

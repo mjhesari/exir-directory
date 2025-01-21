@@ -3,7 +3,7 @@
   "lang": "fa",
   "contryCode": "98",
   "iso": "ir",
-  "DirectoryName": { "exchange": "صرافی هاب", "drziba": "دکتر زیبا","dubai":"دبی هاب"  },
+  "DirectoryName": { "exchange": "صرافی هاب", "drziba": "دکتر زیبا","dubai":"دبی هاب" ,"iranarabic":"IranArabic"  },
   "langName": "فارسی",
   "menuSection": {
     "mainNav": {
@@ -107,13 +107,13 @@
     "titleResult": {
       "exchanges": "صرافی ها",
       "drziba": "دکتر زیبا",
-      "dubai":"دبی هاب"
+      "dubai":"دبی هاب","iranarabic":"IranArabic" 
     },
     "sortBy": "بر اساس",
     "desc": {
       "exchanges": "لیست کامل صرافی های دنیا در صرافی هاب",
       "drziba": "دکتر زیبا",
-      "dubai":"دبی هاب"
+      "dubai":"دبی هاب","iranarabic":"IranArabic" 
     }
   }
 }

@@ -3,7 +3,7 @@
   "lang": "en",
   "contryCode": "1",
   "iso": "us",
-  "DirectoryName": { "exchange": "Exchange Hub", "drziba": "دکترزیبا","dubai":"Dubia Hub" },
+  "DirectoryName": { "exchange": "Exchange Hub", "drziba": "دکترزیبا","dubai":"Dubia Hub","iranarabic":"IranArabic" },
   "langName": "English",
   "menuSection": {
     "mainNav": {
@@ -68,7 +68,7 @@
     "filter": "Filter",
     "category": {
       "exchangeCategory": {
-        "category": "Echanges Categories",
+        "category": "Exchanges Categories",
         "crypto": "Crypto Exchanges",
         "decentralized": "Decentralized Exchanges",
         "derivatives": "Derivatives Exchanges"
@@ -107,13 +107,13 @@
     "titleResult": {
       "exchanges": "Exchanges",
       "drziba": "Dr.Ziba",
-      "dubai":"Dubia Hub"
+      "dubai":"Dubia Hub","iranarabic":"IranArabic" 
     },
     "sortBy": "Sort By",
     "desc": {
       "exchanges": "The complete list of Exchanges in Exchange Hub, including exchanges from around the world",
       "drziba": "",
-      "dubai":"Dubia Hub"
+      "dubai":"Dubia Hub","iranarabic":"IranArabic" 
     }
   }
 }

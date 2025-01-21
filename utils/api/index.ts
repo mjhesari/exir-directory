@@ -1,25 +1,25 @@
 import { FilterState } from "@/redux/features/filters/filter-slice";
 import { errorHandler } from "./errorHandler";
 
-export const getExchangeData = async (
+export const getDirectoryData = async (
   filters?: Partial<FilterState>,
   pageSize?: number,
   pageIndex?: number
-) => {
-  try {
-    const body = JSON.stringify({
-      filters: filters ?? {},
-      pageIndex: pageIndex ?? 0,
-      pageSize: pageSize ?? 25,
-    });
-    const response = await fetch(`/api/directory`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body,
-    });
-    const data = await response.json();
+  ) => {
+    try {
+      const body = JSON.stringify({
+        filters: filters ?? {},
+        pageIndex: pageIndex ?? 0,
+        pageSize: pageSize ?? 25,
+      });
+      const response = await fetch(`/api/directory`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body,
+      });
+      const data = await response.json();
     return data;
   } catch (error) {
     console.error("Error fetching ExchangeData in index:", error);
@@ -53,6 +53,9 @@ export const filterConvertor = (filters: FilterState) => {
   process?.env?.NEXT_PUBLIC_DIRECTORY === "drziba"
     ? (body.country = "Iran")
     : selectedCountries.length && (body.country = selectedCountries);
+    process?.env?.NEXT_PUBLIC_DIRECTORY === "dubai"
+    ? (body.country = "United Arab Emirates")
+    : selectedCountries.length && (body.country = selectedCountries);
   searchName && (body.name = searchName);
   selectedCities && (body.city = selectedCities);
   selectedProvinces && (body.region = selectedProvinces);
@@ -64,9 +67,7 @@ export const filterConvertor = (filters: FilterState) => {
       { key: switchIsSelectedMarket, value: false },
     ]);
   selectedPayments.length &&
-    (body.attributes = [
-      ...(body?.attributes ?? []),
-      { key: "bcc4a9db-c980-4b08-ac37-0054a1885dcb", value: selectedPayments },
+    (body.attributes = [...(body?.attributes ?? []),{ key: "bcc4a9db-c980-4b08-ac37-0054a1885dcb", value: selectedPayments },
     ]);
   selectedCurrencies.length &&
     (body.attributes = [
@@ -99,4 +100,14 @@ export const getAllLanguage = async () => {
   } catch {
     return null;
   }
+};
+//* Convert filter object to verify body 
+type UnknownObj = Record<string, string | string[] | { [key: string]: string }>; 
+export const filterObjectConverter = (filters: UnknownObj) => { 
+  return Object.entries(filters??{}).reduce((acc: UnknownObj, key) => { 
+    if (key?.[1]?.length || Object.values(key?.[1] || key?.[1]).length) { 
+      acc[key?.[0]] = key?.[1]; 
+    } 
+    return acc; 
+  }, {}); 
 };

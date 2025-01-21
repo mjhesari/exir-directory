@@ -5,7 +5,7 @@ import { DictsTypes } from "@/app/[lang]/dictionaries/dictionaries";
 import { useAppDispatch, useAppSelector } from "@/redux/app/hooks";
 import { useEffect, useState } from "react";
 import { setExchangeData } from "@/redux/features/data/data-slice";
-import { getExchangeData } from "@/utils/api";
+import { getDirectoryData } from "@/utils/api";
 import Link from "next/link";
 import { Business } from "@/types/dataTypes";
 import { setPageIndex } from "@/redux/features/filters/filter-slice";
@@ -31,7 +31,7 @@ const CardResult = ({ dicts }: { dicts: DictsTypes }) => {
     const getData = async () => {
       setLoading(true);
       try {
-        const res = await getExchangeData(filters,pageSize,pageIndex);
+        const res = await getDirectoryData(filters,pageSize,pageIndex);
         if (Array.isArray(res.data)) {
           const newData = res.data.filter(
             (item: Business) => !exchangeData.some((existingItem) => existingItem.id === item.id)
@@ -67,7 +67,7 @@ const CardResult = ({ dicts }: { dicts: DictsTypes }) => {
           <div className="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 py-3 md:gap-3 gap-y-4 lg:gap-3 sm:gap-x-3 px-0">
             {exchangeData?.length > 0 ? (
               exchangeData.map((exchange: Business, index) => (                <Link
-                  href={`${dicts.lang}/${exchange?.slug}/${exchange?.publicId}`}
+                  href={`${dicts.lang}/b/${exchange?.slug}/${exchange?.publicId}`}
                   key={exchange?.id || index}
                   className="border rounded-lg shadow"
                 >
