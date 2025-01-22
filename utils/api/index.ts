@@ -56,6 +56,9 @@ export const filterConvertor = (filters: FilterState) => {
     process?.env?.NEXT_PUBLIC_DIRECTORY === "dubai"
     ? (body.country = "United Arab Emirates")
     : selectedCountries.length && (body.country = selectedCountries);
+    process?.env?.NEXT_PUBLIC_DIRECTORY === "iranarabic"
+    ? (body.country = "Iran")
+    : selectedCountries.length && (body.country = selectedCountries);
   searchName && (body.name = searchName);
   selectedCities && (body.city = selectedCities);
   selectedProvinces && (body.region = selectedProvinces);
