@@ -50,8 +50,7 @@ export function middleware(request: NextRequest) {
     }
     const staticPaths = [
       "/_next", // Next.js internal paths
-      "/favicon.ico", // Favicon
-      "/images", // Example static folder for images
+      "/favicon", // Example static folder for images
       "/fonts", // Example static folder for fonts
       "/assets", // Any other static folder you have
     ];
@@ -83,6 +82,6 @@ export function middleware(request: NextRequest) {
 export const config = {
   matcher: [
     // Match all paths except internal ones like _next, assets, etc.
-    "/((?!_next|api|favicon.ico|images|fonts|assets).*)", // exclude assets from middleware
+    "/((?!_next|api|favicon|fonts|assets).*)", // exclude assets from middleware
   ],
 };

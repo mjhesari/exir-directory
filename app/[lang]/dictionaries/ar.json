@@ -1,120 +1,140 @@
 {
-    "dir": "rtl",
-    "lang": "ar",
-    "contryCode": "966",
-    "iso": "sa",
-    "DirectoryName": { "exchange": "مركز الصرافة", "drziba": "دكتور زيبا", "dubai": "دبي هاب","iranarabic":"إيران عربي"  },
-    "langName": "العربية",
-    "menuSection": {
-      "mainNav": {
-        "allExchanges": "جميع الصرافات",
-        "suggestAnExchange": "اقتراح صرافة"
+  "dir": "rtl",
+  "lang": "ar",
+  "contryCode": "966",
+  "iso": "sa",
+  "metaData": {
+    "title": {
+      "exchange": "مركز الصرافة",
+      "drziba": "دكتور زيبا",
+      "dubai": "دبي هاب",
+      "iranarabic": "إيران عربي"
+    },
+    "desc": {
+      "exchange": "القائمة الكاملة للصرافات حول العالم في مركز الصرافة",
+      "drziba": "دكتور زيبا",
+      "dubai": "دبي هاب",
+      "iranarabic": "هذا الموقع هو مصدر شامل لتعريف جميع الشركات والأعمال الموجودة في إيران والتي تقدم خدماتها باللغة العربية. يهدف هذا المنصة إلى إنشاء جسر تواصل بين العملاء الناطقين بالعربية والشركات الإيرانية، بحيث يمكنهم الوصول بسهولة إلى الخدمات والمنتجات التي يحتاجونها. من خلال هذا الموقع، يمكن للمستخدمين مشاهدة معلومات كاملة، بما في ذلك العناوين، نوع الخدمات، ووسائل التواصل مع هذه الشركات."
+    }
+  },
+  "DirectoryName": {
+    "exchange": "مركز الصرافة",
+    "drziba": "دكتور زيبا",
+    "dubai": "دبي هاب",
+    "iranarabic": "إيران عربي"
+  },
+  "langName": "العربية",
+  "menuSection": {
+    "mainNav": {
+      "allExchanges": "جميع الصرافات",
+      "suggestAnExchange": "اقتراح صرافة"
+    },
+    "mobileMenu": {
+      "apps": "التطبيقات",
+      "services": "الخدمات",
+      "social": "الشبكات الاجتماعية",
+      "contact": "اتصال"
+    }
+  },
+  "placeholder": {
+    "search": "بحث...",
+    "paymentChoose": "اختر طريقة الدفع",
+    "currencyChoose": "اختر العملة",
+    "countryChoose": "اختر الدولة",
+    "categoryChoose": "اختر الفئة",
+    "provinceChoose": "اختر المحافظة",
+    "cityChoose": "اختر المدينة"
+  },
+  "button": {
+    "clearAll": "مسح الكل",
+    "navigate": "التنقل",
+    "contribute": "ساهم",
+    "tryItNow": "جرب الآن",
+    "seeallcontribute": "عرض جميع المساهمين",
+    "search": "بحث",
+    "manageProfile": "إدارة الملف الشخصي",
+    "countributeToEarn": "ساهم لكسب المال",
+    "Apply": "تطبيق الفلتر",
+    "loadmore": "تحميل المزيد..."
+  },
+  "cardDetails": {
+    "exchangeType": "نوع الصرافة",
+    "IncorporationCountry": "بلد التأسيس",
+    "areaServed": "المنطقة المخدومة",
+    "NumberofEmployees": "عدد الموظفين",
+    "marketWithFees": "السوق مع الرسوم",
+    "Founding": "سنة التأسيس"
+  },
+  "infoContact": {
+    "contact": "معلومات الاتصال"
+  },
+  "productandService": "المنتجات والخدمات",
+  "socialNetwork": "الشبكات الاجتماعية",
+  "holdingApp": "تطبيق الشركة",
+  "contributors": {
+    "contributors": "المساهمون",
+    "avardingToken": "الرموز الممنوحة"
+  },
+  "businessPartners": "الشركاء التجاريون",
+  "footerLink": {
+    "terms": "الشروط",
+    "privacy": "الخصوصية",
+    "docs": "الوثائق",
+    "security": "الأمان",
+    "aboutExir": "حول إكسير"
+  },
+  "CardFilter": {
+    "filter": "التصفية",
+    "category": {
+      "exchangeCategory": {
+        "category": "فئات الصرافة",
+        "crypto": "صرافات العملات الرقمية",
+        "decentralized": "الصرافات اللامركزية",
+        "derivatives": "صرافات المشتقات"
       },
-      "mobileMenu": {
-        "apps": "التطبيقات",
-        "services": "الخدمات",
-        "social": "الشبكات الاجتماعية",
-        "contact": "اتصال"
+      "drzibaCategory": {
+        "category": "الفئات",
+        "beautySalon": "صالونات التجميل",
+        "beautyClinic": "عيادات التجميل",
+        "beautyTrapy": "علاج التجميل",
+        "beautyWomen": "صالونات نسائية",
+        "beautyMen": "صالونات رجالية",
+        "dr": "طبيب"
+      },
+      "dubaiCategory": {
+        "category": "الفئات",
+        "realEstate": "العقارات",
+        "restaurant": "المطاعم",
+        "store": "المتاجر",
+        "hotel": "الفنادق"
       }
     },
-    "placeholder": {
-      "search": "بحث...",
-      "paymentChoose": "اختر طريقة الدفع",
-      "currencyChoose": "اختر العملة",
-      "countryChoose": "اختر الدولة",
-      "categoryChoose": "اختر الفئة",
-      "provinceChoose": "اختر المحافظة",
-      "cityChoose": "اختر المدينة"
+    "fiatDeposite": "الإيداع النقدي",
+    "country": "الدولة",
+    "acceptedPaymentMethods": "طرق الدفع المقبولة",
+    "marginTrading": "التداول بالهامش",
+    "marketWithNoFees": "السوق بدون رسوم",
+    "province": "المحافظة",
+    "city": "المدينة"
+  },
+  "CardResult": {
+    "selector": {
+      "relevant": "الأكثر صلة",
+      "newest": "الأحدث",
+      "oldest": "الأقدم"
     },
-    "button": {
-      "clearAll": "مسح الكل",
-      "navigate": "التنقل",
-      "contribute": "ساهم",
-      "tryItNow": "جرب الآن",
-      "seeallcontribute": "عرض جميع المساهمين",
-      "search": "بحث",
-      "manageProfile": "إدارة الملف الشخصي",
-      "countributeToEarn": "ساهم لكسب المال",
-      "Apply": "تطبيق الفلتر",
-      "loadmore": "تحميل المزيد..."
+    "titleResult": {
+      "exchanges": "الصرافات",
+      "drziba": "دكتور زيبا",
+      "dubai": "دبي هاب",
+      "iranarabic": "إيران عربي"
     },
-    "cardDetails": {
-      "exchangeType": "نوع الصرافة",
-      "IncorporationCountry": "بلد التأسيس",
-      "areaServed": "المنطقة المخدومة",
-      "NumberofEmployees": "عدد الموظفين",
-      "marketWithFees": "السوق مع الرسوم",
-      "Founding": "سنة التأسيس"
-    },
-    "infoContact": {
-      "contact": "معلومات الاتصال"
-    },
-    "productandService": "المنتجات والخدمات",
-    "socialNetwork": "الشبكات الاجتماعية",
-    "holdingApp": "تطبيق الشركة",
-    "contributors": {
-      "contributors": "المساهمون",
-      "avardingToken": "الرموز الممنوحة"
-    },
-    "businessPartners": "الشركاء التجاريون",
-    "footerLink": {
-      "terms": "الشروط",
-      "privacy": "الخصوصية",
-      "docs": "الوثائق",
-      "security": "الأمان",
-      "aboutExir": "حول إكسير"
-    },
-    "CardFilter": {
-      "filter": "التصفية",
-      "category": {
-        "exchangeCategory": {
-          "category": "فئات الصرافة",
-          "crypto": "صرافات العملات الرقمية",
-          "decentralized": "الصرافات اللامركزية",
-          "derivatives": "صرافات المشتقات"
-        },
-        "drzibaCategory": {
-          "category": "الفئات",
-          "beautySalon": "صالونات التجميل",
-          "beautyClinic": "عيادات التجميل",
-          "beautyTrapy": "علاج التجميل",
-          "beautyWomen": "صالونات نسائية",
-          "beautyMen": "صالونات رجالية",
-          "dr": "طبيب"
-        },
-        "dubaiCategory": {
-          "category": "الفئات",
-          "realEstate": "العقارات",
-          "restaurant": "المطاعم",
-          "store": "المتاجر",
-          "hotel": "الفنادق"
-        }
-      },
-      "fiatDeposite": "الإيداع النقدي",
-      "country": "الدولة",
-      "acceptedPaymentMethods": "طرق الدفع المقبولة",
-      "marginTrading": "التداول بالهامش",
-      "marketWithNoFees": "السوق بدون رسوم",
-      "province": "المحافظة",
-      "city": "المدينة"
-    },
-    "CardResult": {
-      "selector": {
-        "relevant": "الأكثر صلة",
-        "newest": "الأحدث",
-        "oldest": "الأقدم"
-      },
-      "titleResult": {
-        "exchanges": "الصرافات",
-        "drziba": "دكتور زيبا",
-        "dubai": "دبي هاب","iranarabic":"إيران عربي" 
-      },
-      "sortBy": "الفرز حسب",
-      "desc": {
-        "exchanges": "القائمة الكاملة للصرافات حول العالم في مركز الصرافة",
-        "drziba": "دكتور زيبا",
-        "dubai": "دبي هاب",
-        "iranarabic":"هذا الموقع هو مصدر شامل لتعريف جميع الشركات والأعمال الموجودة في إيران والتي تقدم خدماتها باللغة العربية. يهدف هذا المنصة إلى إنشاء جسر تواصل بين العملاء الناطقين بالعربية والشركات الإيرانية، بحيث يمكنهم الوصول بسهولة إلى الخدمات والمنتجات التي يحتاجونها. من خلال هذا الموقع، يمكن للمستخدمين مشاهدة معلومات كاملة، بما في ذلك العناوين، نوع الخدمات، ووسائل التواصل مع هذه الشركات." 
-      }
+    "sortBy": "الفرز حسب",
+    "desc": {
+      "exchanges": "القائمة الكاملة للصرافات حول العالم في مركز الصرافة",
+      "drziba": "دكتور زيبا",
+      "dubai": "دبي هاب",
+      "iranarabic": "هذا الموقع هو مصدر شامل لتعريف جميع الشركات والأعمال الموجودة في إيران والتي تقدم خدماتها باللغة العربية. يهدف هذا المنصة إلى إنشاء جسر تواصل بين العملاء الناطقين بالعربية والشركات الإيرانية، بحيث يمكنهم الوصول بسهولة إلى الخدمات والمنتجات التي يحتاجونها. من خلال هذا الموقع، يمكن للمستخدمين مشاهدة معلومات كاملة، بما في ذلك العناوين، نوع الخدمات، ووسائل التواصل مع هذه الشركات."
     }
   }
+}

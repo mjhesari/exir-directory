@@ -3,7 +3,26 @@
   "lang": "en",
   "contryCode": "1",
   "iso": "us",
-  "DirectoryName": { "exchange": "Exchange Hub", "drziba": "دکترزیبا","dubai":"Dubia Hub","iranarabic":"IranArabic" },
+  "metaData": {
+    "title": {
+      "exchange": "Exchanges Hub",
+      "drziba": "DrZiba",
+      "dubai": "Dubia Hub",
+      "iranarabic": "IranArabic"
+    },
+    "desc": {
+      "exchange": "The complete list of Exchanges in Exchange Hub, including exchanges from around the world",
+      "drziba": "",
+      "dubai": "Dubia Hub",
+      "iranarabic": "IranArabic"
+    }
+  },
+  "DirectoryName": {
+    "exchange": "Exchange Hub",
+    "drziba": "دکترزیبا",
+    "dubai": "Dubia Hub",
+    "iranarabic": "IranArabic"
+  },
   "langName": "English",
   "menuSection": {
     "mainNav": {
@@ -23,8 +42,8 @@
     "currencyChoose": "Choose Currencies",
     "countryChoose": "Choose Country",
     "categoryChoose": "Choose Categories",
-    "provinceChoose":"",
-    "cityChoose":""
+    "provinceChoose": "",
+    "cityChoose": ""
   },
   "button": {
     "clearAll": "Clear all",
@@ -35,8 +54,8 @@
     "search": "Search",
     "manageProfile": "Manage Profile",
     "countributeToEarn": "Contribute To Earn",
-    "Apply":"Apply Filter",
-    "loadmore":"Load more..."
+    "Apply": "Apply Filter",
+    "loadmore": "Load more..."
   },
   "cardDetails": {
     "exchangeType": "ExchangeType",
@@ -74,7 +93,7 @@
         "derivatives": "Derivatives Exchanges"
       },
       "drzibaCategory": {
-        "category":"",
+        "category": "",
         "beautySalon": "",
         "beautyClinic": "",
         "beautyTrapy": "",
@@ -82,12 +101,12 @@
         "beautyMen": "",
         "dr": ""
       },
-      "dubaiCategory":{
-        "category":"Category",
-        "realEstate":"Real Estate",
-        "restaurant":"Restaurant",
-        "store":"Store",
-        "hotel":"Hotel"
+      "dubaiCategory": {
+        "category": "Category",
+        "realEstate": "Real Estate",
+        "restaurant": "Restaurant",
+        "store": "Store",
+        "hotel": "Hotel"
       }
     },
     "fiatDeposite": "Fiat Deposite",
@@ -107,13 +126,15 @@
     "titleResult": {
       "exchanges": "Exchanges",
       "drziba": "Dr.Ziba",
-      "dubai":"Dubia Hub","iranarabic":"IranArabic" 
+      "dubai": "Dubia Hub",
+      "iranarabic": "IranArabic"
     },
     "sortBy": "Sort By",
     "desc": {
       "exchanges": "The complete list of Exchanges in Exchange Hub, including exchanges from around the world",
       "drziba": "",
-      "dubai":"Dubia Hub","iranarabic":"IranArabic" 
+      "dubai": "Dubia Hub",
+      "iranarabic": "IranArabic"
     }
   }
 }
