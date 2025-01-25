@@ -46,7 +46,7 @@ const FiatSelect = ({ dicts }: { dicts: DictsTypes }) => {
           ))}
         </Select>
         <div className="flex flex-wrap gap-2 mt-2">
-          {selectedCurrencies.map((currency) => (
+          {selectedCurrencies?.map((currency) => (
             <Chip
               className=" text-wrap h-full py-1"
               key={currency}
