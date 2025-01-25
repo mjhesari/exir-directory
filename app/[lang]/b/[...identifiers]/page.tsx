@@ -14,8 +14,9 @@ import CompanyGallary from "@/components/Common/CompanyCard/Gallery/CompanyGalla
 import CompanySocialMedia from "@/components/Common/CompanyCard/SocialMedia/CompanySocialMedia";
 import CompanyHoldApp from "@/components/Common/CompanyCard/HoldingApp/CompanyHoldApp";
 import { Business } from "@/types/dataTypes";
+import { generateLocalBusinessSchema } from "@/utils/data";
 
-const getdataExchange = async (id: string) => {
+const getSinglePageData = async (id: string) => {
   try {
     const data = await fetch(`${process.env.BASE_URL}api/business/${id}`, {
       method: "GET",
@@ -40,7 +41,11 @@ export default async function Home({
 }) {
   const dicts = await getDictionary(params?.lang);
   const publicId = params.identifiers[1];
-  const exchangeData: Business = await getdataExchange(publicId);
+  const exchangeData: Business = await getSinglePageData(publicId);
+  const localBusinessSchema = await generateLocalBusinessSchema(
+    exchangeData,
+    params.lang
+  );
   if (!exchangeData) {
     return <div>Data not found</div>;
   }
@@ -70,7 +75,15 @@ export default async function Home({
           {/* <CompanyPartners  /> */}
           {/* <CompanyComments/> */}
           {/* <AdsCard /> */}
+          
         </section>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(localBusinessSchema),
+          }}
+          defer
+        />
       </main>
     </>
   );
