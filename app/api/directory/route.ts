@@ -1,7 +1,7 @@
 
 import { NextResponse } from "next/server";
 // Utility function to handle filter conversion
-import {filterConvertor, filterObjectConverter} from '@/utils/api/index'
+import {filterConvertor} from '@/utils/api/index'
 interface RequestBody {
   industry?: string[];
 }
