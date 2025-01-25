@@ -25,9 +25,7 @@ export async function POST(request :Request) {
       
     }
 
-    // const defaultSet = {industry: [process?.env?.NEXT_PUBLIC_DIRECTORY === "drziba" ? "c259aa45-0a0f-49ac-be33-eade1392e136": "0615cf73-9438-4801-9b8d-cc5cdce2da6b"],
-    // };
-    const body = JSON.stringify(filters ? filterConvertor(filters)? { ...defaultSet, ...filterConvertor(filters) }: defaultSet: defaultSet    );
+    const body = JSON.stringify(filters ? filterConvertor(filters)? { ...defaultSet, ...filterConvertor(filters) }: defaultSet: defaultSet );
     const response = await fetch(
       `${process.env.BASE_URL}api/business/filter?pageIndex=${pageIndex}&pageSize=${pageSize}`,
       {

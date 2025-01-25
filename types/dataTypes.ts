@@ -248,6 +248,14 @@ export interface DataStructure {
     count: number;
   };
 }
+export type DayOfWeekType =
+  | 'sunday'
+  | 'monday'
+  | 'tuesday'
+  | 'wednesday'
+  | 'thursday'
+  | 'friday'
+  | 'saturday';
 
 export interface CountryType {
   id: number;
