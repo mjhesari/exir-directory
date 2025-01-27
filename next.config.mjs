@@ -17,6 +17,11 @@ const nextConfig = {
         },
         {
           protocol: 'https',
+          hostname: 'https://images.trvl-media.com',
+          pathname: '/**',
+        },
+        {
+          protocol: 'https',
           hostname: 'example.com',
           pathname: '/**',
         }, {

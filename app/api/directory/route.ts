@@ -2,7 +2,7 @@
 import { NextResponse } from "next/server";
 // Utility function to handle filter conversion
 import {filterConvertor} from '@/utils/api/index'
-interface RequestBody {
+export interface RequestBody {
   industry?: string[];
 }
 export async function POST(request :Request) {

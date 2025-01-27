@@ -52,7 +52,8 @@ export function middleware(request: NextRequest) {
       "/_next", // Next.js internal paths
       "/favicon", // Example static folder for images
       "/fonts", // Example static folder for fonts
-      "/assets", // Any other static folder you have
+      "/assets",
+      "/api" // Any other static folder you have
     ];
     if (staticPaths.some((path) => pathname.startsWith(path))) {
       return NextResponse.next();
