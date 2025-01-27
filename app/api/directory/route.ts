@@ -4,6 +4,8 @@ import { NextResponse } from "next/server";
 import {filterConvertor} from '@/utils/api/index'
 export interface RequestBody {
   industry?: string[];
+  city?:string;
+  country?:string
 }
 export async function POST(request :Request) {
   try {
@@ -11,12 +13,12 @@ export async function POST(request :Request) {
 
     let defaultSet: RequestBody = {};
     if (process?.env?.NEXT_PUBLIC_DIRECTORY === "iranarabic") {
-      defaultSet = {};
+      defaultSet = {country:"Iran"};
     } else if (process?.env?.NEXT_PUBLIC_DIRECTORY === "dubai") {
-      defaultSet = {};
+      defaultSet = {city:"dubai"};
     } else if(process?.env?.NEXT_PUBLIC_DIRECTORY === "drziba"){
       defaultSet = {
-        industry: ["c259aa45-0a0f-49ac-be33-eade1392e136"]
+        industry: ["c259aa45-0a0f-49ac-be33-eade1392e136"],country:"Iran"
       };
     }else if(process?.env?.NEXT_PUBLIC_DIRECTORY === "exchange"){
       defaultSet = {
@@ -36,7 +38,7 @@ export async function POST(request :Request) {
         },
         body
       }
-    );
+      );
     if (!response.ok) {
       throw new Error(`Failed to fetch data: ${response.statusText}`);
     }
