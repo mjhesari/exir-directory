@@ -23,7 +23,7 @@ const getSinglePageData = async (id: string) => {
       headers: {
         "Content-Type": "application/json",
         Authorization: `Bearer ${process.env.TOKEN}`,
-      },cache:'no-store'
+      }
     });
     const res = await data.json();
     return res;
