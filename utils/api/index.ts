@@ -52,9 +52,6 @@ export const filterConvertor = (filters: FilterState) => {
   };
 
   const body: BodyType = {};
-  process?.env?.NEXT_PUBLIC_DIRECTORY === "drziba" && (body.country = "Iran")
-  process?.env?.NEXT_PUBLIC_DIRECTORY === "dubai" && (body.city = "dubai")
-  process?.env?.NEXT_PUBLIC_DIRECTORY === "iranarabic" && (body.country = "Iran")
   selectedCategories?.length && (body.tags = selectedCategories);
   selectedCountries?.length && (body.country = selectedCountries);
     searchName && (body.name = searchName);
