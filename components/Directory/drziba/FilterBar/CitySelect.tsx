@@ -8,27 +8,27 @@ import { useEffect, useState } from "react";
 const CitySelect = ({ dicts }: { dicts: DictsTypes }) => {
   const [loading, setLoading] = useState<boolean>(true);
   const dispatch = useAppDispatch();
-  const { selectedCities, selectedProvinces } = useAppSelector(
-      (state) => state.filters
+  const { city, region } = useAppSelector(
+      (state) => state.filters.dynamicFilters
       );
-  const [city, setCity] = useState<CityType[]>([]);
+  const [cityData, setCityData] = useState<CityType[]>([]);
   useEffect(() => {
     const fetchcities = async () => {
-        if (!selectedProvinces) {
-            setCity([]);
+        if (!region) {
+          setCityData([]);
             dispatch(setSelectedCities(""));
             setLoading(true);
             return;
           }
       try {
         const response = await fetch(
-            `https://country.liara.run/api/city/province/${selectedProvinces}`
+            `https://country.liara.run/api/city/province/${region}`
             );
         if (!response.ok) {
           throw new Error("Failed to fetch cities");
         }
         const data = await response.json();
-        setCity(data);
+        setCityData(data);
       } catch (error) {
         console.error("Error fetching cities:", error);
       } finally {
@@ -36,7 +36,7 @@ const CitySelect = ({ dicts }: { dicts: DictsTypes }) => {
       }
     };
     fetchcities();
-  }, [selectedProvinces,dispatch]);
+  }, [region,dispatch]);
 
   return (
     <div className="flex flex-col gap-3 mb-2">
@@ -50,12 +50,12 @@ const CitySelect = ({ dicts }: { dicts: DictsTypes }) => {
               : `${dicts?.placeholder?.cityChoose}`
           }
           fullWidth
-          defaultItems={city}
-          onSelectionChange={(city) =>
-            dispatch(setSelectedCities(city?.toString() ?? ""))
+          defaultItems={cityData}
+          onSelectionChange={(cityData) =>
+            dispatch(setSelectedCities(cityData?.toString() ?? ""))
           }
           isDisabled={loading}
-          defaultInputValue={selectedCities}
+          defaultInputValue={city}
         >
           {(cityName) => (
             <AutocompleteItem

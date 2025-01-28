@@ -1,14 +1,14 @@
 import { Chip, Select, SelectItem } from "@nextui-org/react";
 // import data static
 import { paymentMethods } from "@/utils/data/data";
-
-import { setSelectedPayments } from "@/redux/features/filters/filter-slice";
+import { paymentKey, setSelectedPayments } from "@/redux/features/filters/filter-slice";
 import { useAppDispatch, useAppSelector } from "@/redux/app/hooks";
 import { DictsTypes } from "@/app/[lang]/dictionaries/dictionaries";
 
 const PaymentSelect = ({ dicts }: { dicts: DictsTypes }) => {
   const dispatch = useAppDispatch();
-  const { selectedPayments } = useAppSelector((state) => state.filters);
+  const  attributes = useAppSelector((state) => state.filters.dynamicFilters.attributes);
+  const selectedPayments =attributes.find(key=>key.key === paymentKey)?.value||[]
   // Dispatch function for updating payments
   const handlePaymentChange = (value: Set<string>) => {
     dispatch(setSelectedPayments(Array.from(value)));
@@ -16,7 +16,7 @@ const PaymentSelect = ({ dicts }: { dicts: DictsTypes }) => {
 
   // Dispatch function for removing a payment
   const handleRemovePayment = (payment: string) => {
-    const updatedPayments = selectedPayments.filter(
+    const updatedPayments = (selectedPayments as []).filter(
       (selectedPayment) => selectedPayment !== payment
     );
     dispatch(setSelectedPayments(updatedPayments));
@@ -44,7 +44,7 @@ const PaymentSelect = ({ dicts }: { dicts: DictsTypes }) => {
         </Select>
 
         <div className="flex flex-wrap gap-2 mt-2">
-          {selectedPayments.map((payment) => (
+          {(selectedPayments as []).map((payment) => (
             <Chip
               key={payment}
               className=" text-wrap h-full py-1"

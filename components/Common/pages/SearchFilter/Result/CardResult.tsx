@@ -8,35 +8,58 @@ import { setExchangeData } from "@/redux/features/data/data-slice";
 import { getDirectoryData } from "@/utils/api";
 import Link from "next/link";
 import { Business } from "@/types/dataTypes";
-import { setPageIndex } from "@/redux/features/filters/filter-slice";
+import {
+  // FilterState,
+  // initializeFilters,
+  setPageIndex,
+} from "@/redux/features/filters/filter-slice";
 import dynamic from "next/dynamic";
 import ResultTitleExchange from "@/components/Directory/exchange/ResultBar/ResultTitle";
+// import { useRouter } from "next/navigation";
+// import { parseFiltersFromPath } from "@/utils/functions/route-filter";
+
 const ResultHeader = dynamic(
   () =>
     import(
       `@/components/Directory/${process?.env?.NEXT_PUBLIC_DIRECTORY}/ResultBar/ResultTitle`
     ),
   {
-    loading: () => <p>Loading...</p>,
+    loading: () => (
+      <div className="flex flex-col gap-4 pt-6 px-2">
+        <Skeleton className="h-5 w-1/12 rounded-lg" />
+        <Skeleton className="h-3 w-3/5 rounded-lg" />
+      </div>
+    ),
   }
 ) as typeof ResultTitleExchange;
-const CardResult = ({ dicts }: { dicts: DictsTypes }) => {
+const CardResult = ({
+  dicts
+}: {
+  dicts: DictsTypes
+}) => {
   const exchangeData = useAppSelector((state) => state.data.data);
   const dispatch = useAppDispatch();
   const [loading, setLoading] = useState(false);
-  const filters = useAppSelector((state) => state.filters);
-  const {pageIndex,pageSize}=useAppSelector(state=>state.filters)
-  //Functions
+  const filters = useAppSelector((state) => state.filters.dynamicFilters);
+  const { pageIndex, pageSize } = useAppSelector((state) => state.filters);
+
+  // useEffect(() => {
+  //   if (initialFilters) {
+  //     dispatch(initializeFilters(initialFilters));
+  //   }
+  // }, [initialFilters, dispatch]);
+
   useEffect(() => {
     const getData = async () => {
       setLoading(true);
       try {
-        const res = await getDirectoryData(filters,pageSize,pageIndex);
+        const res = await getDirectoryData(filters, pageSize, pageIndex);
         if (Array.isArray(res.data)) {
           const newData = res.data.filter(
-            (item: Business) => !exchangeData.some((existingItem) => existingItem.id === item.id)
+            (item: Business) =>
+              !exchangeData.some((existingItem) => existingItem.id === item.id)
           );
-          
+
           if (newData.length > 0) {
             dispatch(setExchangeData([...(exchangeData || []), ...newData]));
           }
@@ -55,18 +78,19 @@ const CardResult = ({ dicts }: { dicts: DictsTypes }) => {
     }
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [pageIndex, filters,dispatch]);
+  }, [pageIndex, filters, dispatch]);
   return (
     <Card
       className="flex flex-col px-4 border w-full min-w-[300px] lg:!me-4"
       shadow="none"
     >
       <div className="flex flex-col">
-        <ResultHeader dicts={dicts}/>
+        <ResultHeader dicts={dicts} />
         <div>
           <div className="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 py-3 md:gap-3 gap-y-4 lg:gap-3 sm:gap-x-3 px-0">
             {exchangeData?.length > 0 ? (
-              exchangeData.map((exchange: Business, index) => (                <Link
+              exchangeData.map((exchange: Business, index) => (
+                <Link
                   href={`${dicts.lang}/b/${exchange?.slug}/${exchange?.publicId}`}
                   key={exchange?.id || index}
                   className="border rounded-lg shadow"
@@ -83,10 +107,7 @@ const CardResult = ({ dicts }: { dicts: DictsTypes }) => {
               <div className="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 py-3 md:gap-3 gap-y-4 lg:gap-3 sm:gap-x-3 px-0 col-span-full">
                 {Array.from({ length: exchangeData?.length || 20 }).map(
                   (_, index) => (
-                    <Card
-                      className="h-48"
-                      key={`skeleton-${index}`}
-                    >
+                    <Card className="h-48" key={`skeleton-${index}`}>
                       <Skeleton className="rounded-lg flex-col items-start p-0 rounded-b-none object-cover w-full">
                         <div className="h-40 rounded-lg bg-default-300" />
                       </Skeleton>
@@ -112,7 +133,7 @@ const CardResult = ({ dicts }: { dicts: DictsTypes }) => {
             disabled={loading}
             aria-label="load-more"
           >
-        {dicts.button.loadmore}
+            {dicts.button.loadmore}
           </Button>
         )}
       </div>

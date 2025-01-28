@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 const ProvinceSelect = ({ dicts }: { dicts: DictsTypes }) => {
   const [loading, setLoading] = useState<boolean>(true);
   const dispatch = useAppDispatch();
-  const { selectedProvinces } = useAppSelector((state) => state.filters);
+  const { region } = useAppSelector((state) => state.filters.dynamicFilters);
   const [province, setProvince] = useState<ProvinceType[]>([]);
   useEffect(() => {
     const fetchProvinces = async () => {
@@ -27,7 +27,7 @@ const ProvinceSelect = ({ dicts }: { dicts: DictsTypes }) => {
     };
 
     fetchProvinces();
-  }, [selectedProvinces]);
+  }, [region]);
 
   return (
     <div className="flex flex-col gap-3 mb-2">
@@ -46,7 +46,7 @@ const ProvinceSelect = ({ dicts }: { dicts: DictsTypes }) => {
             dispatch(setSelectedProvinces(province?.toString() ?? ""))
           }
           isDisabled={loading}
-          defaultInputValue={selectedProvinces}
+          defaultInputValue={region}
         >
           {(provinceName) => (
             <AutocompleteItem

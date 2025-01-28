@@ -1,7 +1,7 @@
 
 import { NextResponse } from "next/server";
 // Utility function to handle filter conversion
-import {filterConvertor} from '@/utils/api/index'
+import {filterObjectConverter} from '@/utils/functions/filter-data'
 export interface RequestBody {
   industry?: string[];
   city?:string;
@@ -27,7 +27,7 @@ export async function POST(request :Request) {
       
     }
 
-    const body = JSON.stringify(filters ? filterConvertor(filters)? { ...defaultSet, ...filterConvertor(filters) }: defaultSet: defaultSet );
+    const body = JSON.stringify(filters ? filterObjectConverter(filters)? { ...defaultSet, ...filterObjectConverter(filters) }: defaultSet: defaultSet );
     const response = await fetch(
       `${process.env.BASE_URL}api/business/filter?pageIndex=${pageIndex}&pageSize=${pageSize}`,
       {

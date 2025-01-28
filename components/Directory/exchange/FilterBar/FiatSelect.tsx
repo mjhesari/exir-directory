@@ -2,15 +2,15 @@ import { Chip, Select, SelectItem } from "@nextui-org/react";
 // import Data
 import { fiatDespoit } from "@/utils/data/data";
 // import Types
-import { setSelectedCurrencies } from "@/redux/features/filters/filter-slice";
+import { fiatKey, setSelectedCurrencies } from "@/redux/features/filters/filter-slice";
 import { useCallback } from "react";
 import { useAppDispatch, useAppSelector } from "@/redux/app/hooks";
 import { DictsTypes } from "@/app/[lang]/dictionaries/dictionaries";
 
 const FiatSelect = ({ dicts }: { dicts: DictsTypes }) => {
   const dispatch = useAppDispatch();
-  const { selectedCurrencies } = useAppSelector((state) => state.filters);
-  // Dispatch function for updating currencies
+  const  attributes = useAppSelector((state) => state.filters.dynamicFilters.attributes);
+  const selectedCurrencies =attributes.find(key=>key.key === fiatKey)?.value||[]  // Dispatch function for updating currencies
   const handleCurrencyChange = useCallback(
     (value: Set<string>) => {
       dispatch(setSelectedCurrencies(Array.from(value)));
@@ -19,7 +19,7 @@ const FiatSelect = ({ dicts }: { dicts: DictsTypes }) => {
   );
   // Dispatch function for removing a currency
   const handleRemoveCurrency = (currency: string) => {
-    const updatedCurrencies = selectedCurrencies.filter(
+    const updatedCurrencies = (selectedCurrencies as []).filter(
       (selectedCurrency) => selectedCurrency !== currency
     );
     dispatch(setSelectedCurrencies(updatedCurrencies));
@@ -46,7 +46,7 @@ const FiatSelect = ({ dicts }: { dicts: DictsTypes }) => {
           ))}
         </Select>
         <div className="flex flex-wrap gap-2 mt-2">
-          {selectedCurrencies?.map((currency) => (
+          {(selectedCurrencies as [])?.map((currency) => (
             <Chip
               className=" text-wrap h-full py-1"
               key={currency}
