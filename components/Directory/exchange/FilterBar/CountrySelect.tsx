@@ -9,8 +9,8 @@ import { CountryType } from "@/types/dataTypes";
 const CountrySelect = ({ dicts }: { dicts: DictsTypes }) => {
   const dispatch = useAppDispatch();
   const [loading, setLoading] = useState<boolean>(true);
-  const { selectedCountries } = useAppSelector((state) => state.filters);
-  const [country, setCountry] = useState<CountryType[]>([]);
+  const { country } = useAppSelector((state) => state.filters.dynamicFilters);
+  const [countryData, setCountryData] = useState<CountryType[]>([]);
   //* Fetch Data Countries
   useEffect(() => {
     const fetchCountries = async () => {
@@ -20,7 +20,7 @@ const CountrySelect = ({ dicts }: { dicts: DictsTypes }) => {
           throw new Error("Failed to fetch countries");
         }
         const data = await response.json();
-        setCountry(data);
+        setCountryData(data);
       } catch (error) {
         console.error("Error fetching countries:", error);
       } finally {
@@ -43,12 +43,12 @@ const CountrySelect = ({ dicts }: { dicts: DictsTypes }) => {
               : `${dicts?.placeholder?.countryChoose}`
           }
           fullWidth
-          defaultItems={country}
+          defaultItems={countryData}
           onSelectionChange={(country) =>
             dispatch(setSelectedCountries(country?.toString() ?? ""))
           }
           isDisabled={loading}
-          defaultInputValue={selectedCountries}
+          inputValue={country}
         >
           {(countryName) => (
             <AutocompleteItem

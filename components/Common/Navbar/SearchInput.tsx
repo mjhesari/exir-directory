@@ -30,9 +30,9 @@ const SearchInput = ({ dicts }: { dicts?: DictsTypes }) => {
   };
 
   useEffect(() => {
-    setInputValue(filters?.searchName?.[dicts?.lang as keyof typeof filters.searchName]??'')
+    setInputValue(filters?.dynamicFilters.name?.[dicts?.lang as keyof typeof filters.dynamicFilters.name]??'')
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [filters.searchName]);
+  }, [filters.dynamicFilters.name]);
 
   return (
     <Input

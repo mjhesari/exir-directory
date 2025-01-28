@@ -26,7 +26,7 @@ const CategorySelect = dynamic(
 const CardFilterDrziba = ({ dicts }: { dicts: DictsTypes }) => {
   const dispatch = useAppDispatch();
   const [filterDataLoading, startFiltering] = useTransition();
-  const filters = useAppSelector((state) => state.filters);
+  const filters = useAppSelector((state) => state.filters.dynamicFilters);
   const { pageIndex, pageSize } = useAppSelector((state) => state.filters);
   const exchangeData = useAppSelector((state) => state.data.data);
 
@@ -46,8 +46,9 @@ const CardFilterDrziba = ({ dicts }: { dicts: DictsTypes }) => {
     applyFilters({});
   };
 
-  const applyFilters = async (customFilters?: Partial<FilterState>) => {
-    await getDirectoryData(customFilters || filters, pageSize, pageIndex).then(
+  const applyFilters = async (customFilters?: Partial<FilterState["dynamicFilters"]>) => {
+    const activeFilters = customFilters || filters;
+    await getDirectoryData(activeFilters, pageSize, pageIndex).then(
       (data) => dispatch(setExchangeData(data.data))
     );
   };
@@ -62,7 +63,7 @@ const CardFilterDrziba = ({ dicts }: { dicts: DictsTypes }) => {
   useEffect(() => {
     applyFilters();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [filters.searchName]);
+  }, [filters.name]);
   return (
     <Card
       shadow="none"

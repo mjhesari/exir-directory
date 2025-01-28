@@ -5,7 +5,7 @@ import { useAppDispatch, useAppSelector } from "@/redux/app/hooks";
 import { setSelectedCategories } from "@/redux/features/filters/filter-slice";
 import { DictsTypes } from "@/app/[lang]/dictionaries/dictionaries";
 const CategoryExchange = ({ dicts }: { dicts: DictsTypes }) => {
-  const { selectedCategories } = useAppSelector((state) => state.filters);
+  const { tags } = useAppSelector((state) => state?.filters?.dynamicFilters);
   const dispatch = useAppDispatch();
   return (
     <div className="flex flex-col gap-3">
@@ -14,12 +14,12 @@ const CategoryExchange = ({ dicts }: { dicts: DictsTypes }) => {
       </h3>
       <div className="flex flex-col gap-5">
           <CheckboxGroup
-            value={selectedCategories}
+            value={tags}
             onChange={(values) => dispatch(setSelectedCategories(values))}
             aria-label="category-exchange"
             color="secondary"
           >
-            {categoryExchange.map((cate) => (
+            {categoryExchange?.map((cate) => (
               <Checkbox value={cate.id} key={cate.id} className="font-light">
                 {cate.value}
               </Checkbox>

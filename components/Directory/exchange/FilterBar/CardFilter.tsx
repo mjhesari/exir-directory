@@ -12,11 +12,13 @@ import {
   resetFilters,
 } from "@/redux/features/filters/filter-slice";
 import { useEffect, useTransition } from "react";
-import { getDirectoryData } from "@/utils/api";
+import {  getDirectoryData } from "@/utils/api";
+import {filterObjectConverter}from "@/utils/functions/filter-data"
 import { setExchangeData } from "@/redux/features/data/data-slice";
 import { useAppDispatch, useAppSelector } from "@/redux/app/hooks";
 import CategoryExchange from "@/components/Directory/exchange/FilterBar/Category";
 import dynamic from "next/dynamic";
+// import { useRouter } from "next/navigation"; // یا 'next/router' برای نسخه‌های قبلی
 const CategorySelect = dynamic(
   () =>
     import(
@@ -26,32 +28,49 @@ const CategorySelect = dynamic(
     loading: () => <p>Loading...</p>,
   }
 ) as typeof CategoryExchange;
-const CardFilterExchange = ({ dicts }: { dicts: DictsTypes }) => {
+const CardFilterExchange = ({
+  dicts,
+}: {
+  dicts: DictsTypes
+}) => {
+  // const router = useRouter();
   const dispatch = useAppDispatch();
   const [filterDataLoading, startFiltering] = useTransition();
-  const filters = useAppSelector((state) => state.filters);
+  const filters = useAppSelector((state) => state.filters.dynamicFilters);
   const { pageIndex, pageSize } = useAppSelector((state) => state.filters);
   const exchangeData = useAppSelector((state) => state.data.data);
 
-  const condition = Object.keys(filters).find((key) => {
-    const value = filters[key as keyof typeof filters];
-    if (Array.isArray(value)) {
-      return value.length > 0;
-    }
-    if (typeof value === "string") {
-      return value.length > 0;
-    }
-    return false;
-  });
-
-  const handleClearAll = () => {
+  const condition = Object.keys(filterObjectConverter(filters)).length
+    ? true
+    : false;
+  const handleClearAll = async () => {
     dispatch(resetFilters());
-    applyFilters({});
+   await applyFilters({});
+    // router.push(`/${dicts.lang}`);
   };
 
-  const applyFilters = async (customFilters?: Partial<FilterState>) => {
-    await getDirectoryData(customFilters || filters, pageSize, pageIndex).then(
-      (data) => dispatch(setExchangeData(data.data))
+  const applyFilters = async (
+    customFilters?: Partial<FilterState["dynamicFilters"]>
+  ) => {
+    const activeFilters = customFilters || filters;
+//      // پردازش فیلترها برای اضافه کردن آنها به URL
+//   const path = Object.entries(activeFilters)
+//   .filter(([_, value]) => (Array.isArray(value) ? value.length > 0 : value))
+//   .map(([key, value]) => {
+//     if (Array.isArray(value)) {
+//       return `${value.join("+")}`;
+//     }
+//     if (typeof value === "object") {
+//       const objectValues = Object.values(value).join("/");
+//       return `/${objectValues}`; // اضافه کردن key برای هر فیلتر
+//     }
+//     return `/${value}`;
+//   })
+//   .join("/");
+
+// router.push(`/${dicts.lang}/search/${path}`);
+    await getDirectoryData(activeFilters, pageSize, pageIndex).then((data) =>
+      dispatch(setExchangeData(data.data))
     );
   };
 
@@ -63,9 +82,12 @@ const CardFilterExchange = ({ dicts }: { dicts: DictsTypes }) => {
   }, []);
 
   useEffect(() => {
-    applyFilters();
+
+
+     applyFilters();
+    
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [filters.searchName]);
+  }, [filters.name]);
   return (
     <Card
       shadow="none"
@@ -99,14 +121,14 @@ const CardFilterExchange = ({ dicts }: { dicts: DictsTypes }) => {
       </div>
       <div className="flex flex-col gap-3 overflow-auto mb-4 p-3">
         <Divider className="my-0" />
+        <CountrySelect dicts={dicts} />
+        <Divider className="my-0" />
         <CategorySelect dicts={dicts} />
         <Divider className="my-0" />
         <div className="flex flex-col gap-3">
           <PaymentSelect dicts={dicts} />
           <Divider className="my-0" />
           <FiatSelect dicts={dicts} />
-          <Divider className="my-0" />
-          <CountrySelect dicts={dicts} />
           <Divider className="my-0" />
           <MarginSwitch dicts={dicts} />
           <Divider className="my-0" />

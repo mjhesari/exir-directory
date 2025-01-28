@@ -44,7 +44,7 @@ export function CompanyDetails({
         </li>
         <li>
           <strong className="font-semibold">
-            {dicts.CardFilter.fiatDeposite} :
+            {dicts?.CardFilter?.fiatDeposite} :
           </strong>{" "}
           {(
             (exchangeData?.attributes?.find((e) => e.key === "Fiat Deposit")
@@ -59,7 +59,7 @@ export function CompanyDetails({
         </li>
         <li>
           <strong className="font-semibold">
-            {dicts.cardDetails.IncorporationCountry} :
+            {dicts?.cardDetails?.IncorporationCountry} :
           </strong>{" "}
           <span className="p-2 text-default-500">
             {exchangeData?.foundingLocation ?? "No Data"}
@@ -67,7 +67,7 @@ export function CompanyDetails({
         </li>
         <li>
           <strong className="font-semibold">
-            {dicts.cardDetails.NumberofEmployees} :
+            {dicts?.cardDetails?.NumberofEmployees} :
           </strong>{" "}
           <span className="p-2 text-default-500">
             {exchangeData?.employeeCount ?? "No Data"}
@@ -75,34 +75,31 @@ export function CompanyDetails({
         </li>
         <li>
           <strong className="font-semibold">
-            {dicts.cardDetails.Founding} :
+            {dicts?.cardDetails?.Founding} :
           </strong>
           <span className="p-2 text-default-500">
-            {exchangeData.foundingDate}
+            {exchangeData?.foundingDate}
           </span>
         </li>
         <li>
           <strong className="font-semibold">
-            {dicts.CardFilter.marginTrading} :
+            {dicts?.CardFilter?.marginTrading} :
           </strong>
           <span className="p-2 text-default-500">
-            {exchangeData.attributes
+            {exchangeData?.attributes
               ?.find((e) => e.key === "Margin Trading")
-              ?.value.toString()
+              ?.value === "true"
               ? "Yes"
               : "No"}
           </span>
         </li>{" "}
         <li>
           <strong className="font-semibold">
-            {dicts.cardDetails.marketWithFees} :
+            {dicts?.cardDetails?.marketWithFees} :
           </strong>
           <span className="p-2 text-default-500">
-            {exchangeData.attributes
-              ?.find((e) => e.key === "Market With Fees")
-              ?.value.toString()
-              ? "Yes"
-              : "No"}
+            {exchangeData?.attributes
+              ?.find((e) => e.key === "Market With Fees")?.value ==="true" ? "Yes" : "No"}
           </span>
         </li>
       </ul>
