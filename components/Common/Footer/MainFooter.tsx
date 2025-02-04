@@ -3,7 +3,7 @@ import { DictsTypes } from "@/app/[lang]/dictionaries/dictionaries";
 
 const MainFooter = ({ dicts }: { dicts: DictsTypes }) => {
   return (
-    <div className="bg-white border-t hidden lg:block mt-4 h-10">
+    <div className="bg-white border-t hidden lg:block h-10">
       <footer className="flex justify-between container mx-auto p-2 items-center">
         <div className="flex flex-row justify-center items-center">
           <h3 className="mx-2 text-default-500">© 2024 {dicts?.DirectoryName.exchange}</h3>
