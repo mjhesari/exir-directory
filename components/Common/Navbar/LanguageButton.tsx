@@ -48,9 +48,8 @@ const LanguageButton = ({
                 aria-label="language page"
                 isIconOnly
                 startContent={<Icon icon="mdi:translate" width={32} />}
-                >
-                 <p className="text-lg">
-                  </p> 
+              >
+                <p className="text-lg"></p>
               </Button>
             </div>
           </div>
@@ -63,13 +62,13 @@ const LanguageButton = ({
           className={`text-default-500 rounded-xl hover:text-secondary-600 hover:border-secondary-600 lg:flex hidden`}
           aria-label="language page"
           startContent={<Icon icon="mdi:translate" width={20} />}
-          >
+        >
           Languages
         </Button>
       )}
       <Drawer
         placement={isMoblie ? "bottom" : placement}
-        size={isMoblie ? "3xl" : "sm"}
+        size={isMoblie ? "2xl" : "sm"}
         isOpen={isOpen}
         onOpenChange={onOpenChange}
         classNames={{ closeButton: "z-50 text-xl" }}

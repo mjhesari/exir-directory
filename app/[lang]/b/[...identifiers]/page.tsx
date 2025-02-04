@@ -52,7 +52,7 @@ export default async function Home({
 
   return (
     <>
-      <main className="mx-auto pt-20 lg:pt-4 grid grid-cols-1 lg:grid-cols-[auto_400px] max-w-[1100px] gap-4">
+      <main className="mx-auto pt-4 grid grid-cols-1 lg:grid-cols-[auto_400px] max-w-[1100px] gap-4 pb-4">
         <section className="space-y-4 mx-5 lg:mx-0">
           <CompanyOverview exchangeData={exchangeData} dicts={dicts} />
           <div className="lg:hidden block">
