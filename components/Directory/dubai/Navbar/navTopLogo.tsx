@@ -6,7 +6,7 @@ import img1 from "@/public/dubai.jpg";
 
 const NavTopLogoDubai = ({ dicts }: { dicts: DictsTypes }) => {
   return (
-    <div className="fixed inset-[10px_0_auto_0] h-max z-50">
+    <div className="fixed inset-[10px_0_auto_0] w-max h-max z-50">
       <div className=" mx-auto px-3">
         <Link
           href={`/${dicts.lang}`}
