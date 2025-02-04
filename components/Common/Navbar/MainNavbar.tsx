@@ -1,5 +1,5 @@
+"use client"
 import {
-  Button,
   Navbar,
   NavbarBrand,
   NavbarContent,
@@ -7,10 +7,22 @@ import {
 } from "@nextui-org/react";
 import dynamic from "next/dynamic";
 import SearchInput from "./SearchInput";
-import { Icon } from "@iconify/react";
 import { DictsTypes } from "@/app/[lang]/dictionaries/dictionaries";
 import Logoex from "@/components/Directory/exchange/Navbar/MainLogo";
+import LanguageButton from "./LanguageButton";
+import { LanguagesTypes } from "@/types/dataTypes";
+import NavTopLogoExchange from "@/components/Directory/exchange/Navbar/navTopLogo";
+import useMediaQuery from "@/hooks/use-media-query";
 
+const NavTopLogo = dynamic(
+  () =>
+    import(
+      `@/components/Directory/${process.env.NEXT_PUBLIC_DIRECTORY}/Navbar/navTopLogo`
+    ),
+  {
+    loading: () => <p>Loading...</p>,
+  }
+) as typeof NavTopLogoExchange;
 const Logo = dynamic(
   () =>
     import(
@@ -20,21 +32,24 @@ const Logo = dynamic(
     loading: () => <p>Loading...</p>,
   }
 ) as typeof Logoex;
-export default function MainNavbar({ dicts }: { dicts: DictsTypes }) {
+export default function MainNavbar({ dicts,lang }: { dicts: DictsTypes;lang:LanguagesTypes }) {
+  const isMoblie = useMediaQuery("(max-width: 1024px)");
+
   return (
     <Navbar
       maxWidth="full"
       classNames={{
         wrapper:
           "mx-auto !grid grid-cols-[300px_auto_max-content] justify-normal px-4",
-        base: "bg-white",
+        base: "lg:bg-white",
       }}
-      className="border-b hidden lg:block shadow-sm"
+      className="lg:border-b sticky inset-[0_0_auto_0] lg:block lg:shadow-sm"
+      isBlurred={false}
     >
       <NavbarBrand>
-        <Logo dicts={dicts}/>
+        {isMoblie?<NavTopLogo dicts={dicts}/>:<Logo dicts={dicts} />}
       </NavbarBrand>
-      <NavbarContent>
+      <NavbarContent className="hidden lg:flex">
         {/* <NavbarItem>
           <Dropdown>
             <DropdownTrigger>
@@ -63,21 +78,11 @@ export default function MainNavbar({ dicts }: { dicts: DictsTypes }) {
         </NavbarItem>
       </NavbarContent> */}
       <NavbarContent className="gap-4">
-        {!process.env.IS_NOT_MULTILANG ? (
+        {(!process.env.IS_NOT_MULTILANG ? (
           <NavbarItem>
-            <Button
-              as="a"
-              variant="bordered"
-              size="sm"
-              className="text-default-500 rounded-xl hover:text-secondary-600 hover:border-secondary-600"
-              href="/languages"
-              aria-label="language page"
-              startContent={<Icon icon="mdi:translate" className="h-4 w-4" />}
-            >
-              Languages
-            </Button>
+            <LanguageButton dicts={dicts} lang={lang} />
           </NavbarItem>
-        ) : null}
+        ) : null)}
 
         {/* <NavbarItem>
           <UserAvatar />

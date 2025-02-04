@@ -24,19 +24,6 @@ function getLocale(request: NextRequest): string {
   return "en";
 }
 export function middleware(request: NextRequest) {
-  const { pathname, searchParams } = request.nextUrl;
-
-  // Handle the /languages route
-  if (pathname === "/languages") {
-    const selectedLanguage = searchParams.get("lang");
-
-    if (selectedLanguage && locales.includes(selectedLanguage)) {
-      const redirectUrl = new URL(`/${selectedLanguage}`, request.url);
-      return NextResponse.redirect(redirectUrl);
-    }
-
-    return NextResponse.next();
-  }
   if (!process.env.IS_NOT_MULTILANG) {
     const { pathname } = request.nextUrl;
 
