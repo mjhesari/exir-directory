@@ -4,23 +4,14 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { Roboto } from "next/font/google";
 //* Import components
-import MainProviders from "../providers/main-provider";
+import MainProviders from "./providers/main-provider";
 import { langsType, getDictionary } from "./dictionaries/dictionaries";
-// import MobileNav from "@/components/Navbar/mobileNav";
+// import MobileNav from "@/components/Common/Navbar/mobileNav";
 import { getAllLanguage, getDirectoryData } from "@/utils/api";
 import { locales } from "@/middleware";
 import dynamic from "next/dynamic";
 import FooterExchnage from "@/components/Directory/exchange/Footer/MainFooter";
-import NavTopLogoExchange from "@/components/Directory/exchange/Navbar/navTopLogo";
-const NavTopLogo = dynamic(
-  () =>
-    import(
-      `@/components/Directory/${process.env.NEXT_PUBLIC_DIRECTORY}/Navbar/navTopLogo`
-    ),
-  {
-    loading: () => <p>Loading...</p>,
-  }
-) as typeof NavTopLogoExchange;
+
 const MainFooter = dynamic(
   () =>
     import(
@@ -118,8 +109,7 @@ export default async function RootLayout({
     <html lang={dicts.lang} dir={dicts.dir}>
       <body className={`${font}`}>
         <MainProviders exchange={data} lang={lang}>
-          <NavTopLogo dicts={dicts}/>
-          <MainNavbar dicts={dicts}/>
+          <MainNavbar dicts={dicts} lang={lang}/>
           {children}
           {/* <MobileNav dicts={dicts}/> */}
           <MainFooter dicts={dicts} />

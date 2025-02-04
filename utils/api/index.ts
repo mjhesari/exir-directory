@@ -1,6 +1,6 @@
 "use server";
 import { FilterState } from "@/redux/features/filters/filter-slice";
-import { errorHandler } from "./errorHandler";
+// import { errorHandler } from "./errorHandler";
 import { RequestBody } from "@/app/api/directory/route";
 import { headers } from "next/headers";
 export const getDirectoryData = async (
@@ -36,12 +36,12 @@ export const getDirectoryData = async (
 /*                                LanguageFetch                                */
 /* -------------------------------------------------------------------------- */
 export const getAllLanguage = async () => {
-  const url = process.env.NEXT_PUBLIC_COUNTRY_BASE_URL + "api/language";
+  const hostname = headers().get("x-forwarded-host");
+  const url =`http://${hostname}/api/language`;
   try {
     const countries = await fetch(url, {
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${process.env.NEXT_PUBLIC_TOKEN}`,
       },
     });
     if (!countries.ok) {

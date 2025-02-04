@@ -9,6 +9,10 @@ const nextConfig = {
           protocol: 'https',
           hostname: 's2.webstatic.net',
           pathname: '/**',
+        },{
+          protocol: 'http',
+          hostname: 's2.webstatic.net',
+          pathname: '/**',
         },
         {
           protocol: 'http',

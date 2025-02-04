@@ -1,5 +1,4 @@
-
-import { NextResponse } from "next/server";
+export const dynamic = 'force-dynamic' // defaults to auto
 // Utility function to handle filter conversion
 import {filterObjectConverter} from '@/utils/functions/filter-data'
 export interface RequestBody {
@@ -43,9 +42,9 @@ export async function POST(request :Request) {
       throw new Error(`Failed to fetch data: ${response.statusText}`);
     }
     const data = await response.json();
-    return NextResponse.json(data);
+    return Response.json(data);
   } catch (error) {
     console.error("Error fetching ExchangeData:", error);
-    return NextResponse.json({ data: { Data: {} }, error }, { status: 500 });
+    return Response.json({ data: { Data: {} }, error }, { status: 500 });
   }
 }

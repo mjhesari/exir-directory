@@ -12,7 +12,7 @@ import CompanyContact from "@/components/Common/CompanyCard/Contact/CompanyConta
 import { CompanyLocCard } from "@/components/Common/CompanyCard/Locaition/CompanyLoccard";
 import CompanyGallary from "@/components/Common/CompanyCard/Gallery/CompanyGallary";
 import CompanySocialMedia from "@/components/Common/CompanyCard/SocialMedia/CompanySocialMedia";
-import CompanyHoldApp from "@/components/Common/CompanyCard/HoldingApp/CompanyHoldApp";
+// import CompanyHoldApp from "@/components/Common/CompanyCard/HoldingApp/CompanyHoldApp";
 import { Business } from "@/types/dataTypes";
 import { generateLocalBusinessSchema } from "@/utils/data";
 
@@ -63,7 +63,7 @@ export default async function Home({
           <CompanySocialMedia  exchangeData={exchangeData} dicts={dicts}/>
           {/* <div className="grid xl:grid-cols-2 gap-4 grid-cols-1"> */}
           <CompanyLocCard  exchangeData={exchangeData} dicts={dicts}/>
-          <CompanyHoldApp dicts={dicts} exchangeData={exchangeData} />
+          {/* <CompanyHoldApp dicts={dicts} exchangeData={exchangeData} /> */}
           {/* </div> */}
         </section>
         {/* <MainBanner /> */}

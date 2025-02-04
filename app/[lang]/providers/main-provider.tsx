@@ -5,7 +5,7 @@ import { NextUIProvider } from "@nextui-org/react";
 import {  DataStructure } from "@/types/dataTypes";
 import { Provider } from "react-redux";
 import { store } from "@/redux/app/store";
-import DataGetter from "../[lang]/dataGetter";
+import DataGetter from "../dataGetter";
 import { Suspense } from "react";
 
 const MainProviders = ({
