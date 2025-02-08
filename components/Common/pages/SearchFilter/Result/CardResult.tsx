@@ -81,7 +81,7 @@ const CardResult = ({
   }, [pageIndex, filters, dispatch]);
   return (
     <Card
-      className="flex flex-col px-4 border w-full min-w-[300px] lg:!me-4"
+      className="flex flex-col px-4 w-full min-w-[300px] lg:!me-4"
       shadow="none"
     >
       <div className="flex flex-col">

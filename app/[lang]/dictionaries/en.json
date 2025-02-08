@@ -26,8 +26,7 @@
   "langName": "English",
   "menuSection": {
     "mainNav": {
-      "allExchanges": "All Exchanges",
-      "suggestAnExchange": "Suggest An Exchange"
+      "blogPost": "Blog"
     },
     "mobileMenu": {
       "apps": "Apps",

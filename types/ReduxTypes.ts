@@ -1,4 +1,4 @@
-import { Business, CountryType, LanguagesTypes } from "./dataTypes";
+import { Business, LanguagesTypes } from "./dataTypes";
 
 
 export type initialStateTypesLang = {
