@@ -7,10 +7,11 @@ import { Roboto } from "next/font/google";
 import MainProviders from "./providers/main-provider";
 import { langsType, getDictionary } from "./dictionaries/dictionaries";
 // import MobileNav from "@/components/Common/Navbar/mobileNav";
-import { getAllLanguage, getDirectoryData } from "@/utils/api";
+import { getAllLanguage, getAllPost, getDirectoryData } from "@/utils/api";
 import { locales } from "@/middleware";
 import dynamic from "next/dynamic";
 import FooterExchnage from "@/components/Directory/exchange/Footer/MainFooter";
+// import MobileMenu from "@/components/Common/Navbar/MobileMenu";
 
 const MainFooter = dynamic(
   () =>
@@ -104,15 +105,17 @@ export default async function RootLayout({
   const dicts = await getDictionary(params?.lang);
   const {data}=await getDirectoryData()
   const lang = await getAllLanguage()
+  const post=await getAllPost()
   const font = dicts.dir === "rtl" ? yekanBakh.className : roboto.className;
   return (
     <html lang={dicts.lang} dir={dicts.dir}>
       <body className={`${font}`}>
-        <MainProviders exchange={data} lang={lang}>
+        <MainProviders exchange={data} lang={lang} post={post}>
           <MainNavbar dicts={dicts} lang={lang}/>
           {children}
           {/* <MobileNav dicts={dicts}/> */}
           <MainFooter dicts={dicts} />
+          {/* <MobileMenu/> */}
         </MainProviders>
       </body>
     </html>

@@ -15,7 +15,7 @@ const CompanyContact = ({
 }) => {
   const { mail, phone } = exchangeData;
   return (
-    <Card className="flex lg:sticky lg:top-20 h-max border" shadow="none">
+    <Card className="flex h-max border" shadow="none">
       <h3 className="font-semibold text-lg px-4 pt-5 pb-2">
         {dicts?.infoContact.contact}
       </h3>

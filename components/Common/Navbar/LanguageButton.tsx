@@ -9,7 +9,7 @@ import {
   Divider,
   Input,
 } from "@nextui-org/react";
-import LanguageCard from "../pages/languages/LanguageCard";
+import LanguageCard from "../languages/LanguageCard";
 import { LanguagesTypes } from "@/types/dataTypes";
 import { useState, useEffect } from "react";
 import useMediaQuery from "@/hooks/use-media-query";
@@ -59,11 +59,12 @@ const LanguageButton = ({
           onPress={onOpen}
           variant="bordered"
           size="sm"
-          className={`text-default-500 rounded-xl hover:text-secondary-600 hover:border-secondary-600 lg:flex hidden`}
+          className={`text-default-500 rounded-xl hover:text-secondary-600 hover:border-secondary-600 lg:flex hidden py-4 text-lg`}
           aria-label="language page"
           startContent={<Icon icon="mdi:translate" width={20} />}
         >
-          Languages
+          
+           Languages
         </Button>
       )}
       <Drawer

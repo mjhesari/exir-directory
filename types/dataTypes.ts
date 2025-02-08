@@ -286,6 +286,7 @@ export type LanguagesTypes = {
 export interface DataGetterProps {
   exchangeData: DataStructure | null;
   lang: Response | null;
+  post:PostDataContainer
 }
 
 
@@ -298,3 +299,127 @@ export type BodyType = {
   city?:string
 
 };
+
+/* ------------------------------- .Post Types ------------------------------ */
+interface TranslatedText {
+  ar: string;
+  en: string;
+  fa: string;
+}
+
+interface FilterId {
+  id: string;
+  order: string;
+  isCampain: boolean;
+}
+
+interface Filter {
+  ids: FilterId[];
+  type: string;
+}
+
+interface Media {
+  "src=": string;
+  type: string;
+}
+
+export interface Post {
+  id: number;
+  title: TranslatedText;
+  description: TranslatedText;
+  type: string;
+  image: string;
+  tags: string[];
+  filter: Filter;
+  media: Media;
+  slug:string
+}
+
+interface DataDetails {
+  count: number;
+}
+
+export interface PostDataContainer {
+  data: Post[];
+  details: DataDetails;
+}
+
+export interface ApiResponse {
+  status: number;
+  message: string;
+  data: PostDataContainer;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Commet Types                                */
+/* -------------------------------------------------------------------------- */export interface Comment {
+  id: string;
+  targetId: string;
+  fullUrl?: string | null;
+  parentId?: string | null;
+  pendingContent?: string | null;
+  content?: string | null;
+  publishedBy?: string | null;
+  createdBy: string;
+  filesUrl?: string[] | null;
+  createdAt: string;
+  updatedAt?: string | null;
+}
+
+export interface CommentResponse {
+  status: number;
+  message: string;
+  data: {
+    total: number;
+    pageSize: number;
+    pageIndex: number;
+    comments: Comment[];
+  };
+}
+
+export interface CreateCommentResponse {
+  status: number;
+  message: string;
+  data: {
+    data: string;
+    error: null | string;
+    status: number;
+  };
+}
+
+export enum ReactionType {
+  LIKE = 'like',
+  DISLIKE = 'dislike'
+}
+
+export interface Reaction {
+  id: string;
+  commentId: string;
+  userId: string;
+  rate?: number;
+  type?: ReactionType;
+  createdAt: string;
+}
+
+export interface ReactionResponse {
+  status: number;
+  message: string;
+  data: {
+    total: number;
+    pageSize: number;
+    pageIndex: number;
+    reactions: Reaction[];
+    averageRate: string;
+  };
+}
+
+export interface CommentState {
+  comments: Comment[];
+  total: number;
+  pageSize: number;
+  pageIndex: number;
+  loading: boolean;
+  error: string | null;
+  refreshKey: number;
+  visibleReplies: string[]; // Changed from Set to string[]
+}

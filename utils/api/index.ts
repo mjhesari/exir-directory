@@ -3,6 +3,7 @@ import { FilterState } from "@/redux/features/filters/filter-slice";
 // import { errorHandler } from "./errorHandler";
 import { RequestBody } from "@/app/api/directory/route";
 import { headers } from "next/headers";
+import { ReactionType } from "@/types/dataTypes";
 export const getDirectoryData = async (
   filters?: Partial<FilterState["dynamicFilters"]>,
   pageSize?: number,
@@ -106,3 +107,121 @@ export const getDataSitemap = async () => {
     return { data: { Data: {} } };
   }
 };
+
+/* -------------------------------------------------------------------------- */
+/*                                   PostApi                                  */
+/* -------------------------------------------------------------------------- */
+export const getAllPost = async () => {
+  const hostname = headers().get("x-forwarded-host");
+  const url =`http://${hostname}/api/post`;
+  try {
+    const posts = await fetch(url, {
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    if (!posts.ok) {
+      throw new Error("Failed to fetch Languages");
+    }
+    const data = await posts.json();
+    return data;
+  } catch {
+    return null;
+  }
+};
+
+/* -------------------------------------------------------------------------- */
+/*                                fetchComments                               */
+/* -------------------------------------------------------------------------- */
+export async function fetchComments(targetId: string, pageIndex = 0, pageSize = 10, parentId?: string) {
+  const params = new URLSearchParams({
+    targetId,
+    pageIndex: pageIndex.toString(),
+    pageSize: pageSize.toString(),
+    ...(parentId && { parentId }),
+  });
+
+  const response = await fetch(`${process.env.BASE_URL_COMMENT}/comment?${params}`, {
+    headers: {
+      Authorization: `Bearer ${process.env.COMMENT_TOKEN}`,
+    },
+  });
+
+  if (!response.ok) {
+    throw new Error('Failed to fetch comments');
+  }
+
+  return response.json();
+}
+
+export async function createComment(data: {
+  targetId: string;
+  fullUrl?: string;
+  parentId?: string;
+  pendingContent?: string;
+  filesUrl?: string[];
+}) {
+  const response = await fetch(`${process.env.BASE_URL_COMMENT}/comment`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${process.env.COMMENT_TOKEN}`,
+    },
+    body: JSON.stringify(data),
+  });
+
+  if (!response.ok) {
+    throw new Error('Failed to create comment');
+  }
+
+  return response.json();
+}
+
+export async function getComment(id: string) {
+  const response = await fetch(`${process.env.BASE_URL_COMMENT}/comment/${id}`, {
+    headers: {
+      Authorization: `Bearer ${process.env.COMMENT_TOKEN}`,
+    },
+  });
+
+  if (!response.ok) {
+    throw new Error('Failed to fetch comment');
+  }
+
+  return response.json();
+}
+
+export async function fetchReactions(commentId: string) {
+  const response = await fetch(`${process.env.BASE_URL_COMMENT}/reaction/${commentId}`, {
+    headers: {
+      Authorization: `Bearer ${process.env.COMMENT_TOKEN}`,
+    },
+  });
+
+  if (!response.ok) {
+    throw new Error('Failed to fetch reactions');
+  }
+
+  return response.json();
+}
+
+export async function createOrUpdateReaction(data: {
+  commentId: string;
+  type?: ReactionType;
+  rate?: number;
+}) {
+  const response = await fetch(`${process.env.BASE_URL_COMMENT}/reaction`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${process.env.COMMENT_TOKEN}`,
+    },
+    body: JSON.stringify(data),
+  });
+
+  if (!response.ok) {
+    throw new Error('Failed to create/update reaction');
+  }
+
+  return response.json();
+}

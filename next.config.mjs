@@ -18,6 +18,14 @@ const nextConfig = {
           protocol: 'http',
           hostname: 'example.com',
           pathname: '/**',
+        },    {
+          protocol: 'http',
+          hostname: 'image-url.com',
+          pathname: '/**',
+        },    {
+          protocol: 'http',
+          hostname: 'image-url.gov',
+          pathname: '/**',
         },
         {
           protocol: 'https',
@@ -26,7 +34,7 @@ const nextConfig = {
         },
         {
           protocol: 'https',
-          hostname: 'example.com',
+          hostname: 'dkstatics-public.digikala.com',
           pathname: '/**',
         }, {
           protocol: 'https',

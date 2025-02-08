@@ -8,7 +8,7 @@ import {
   Divider,
   User,
 } from "@nextui-org/react";
-import RateButtons from "../../Rate/rate-buttons";
+import RateButtons from "../../mirrors/Rate/rate-buttons";
 import { useState } from "react";
 
 const CompanyComments = () => {

@@ -4,7 +4,7 @@
 // import CompanyProduct from "@/components/CompanyCard/Products/CompanyProduct";
 // import CompanyCuntributes from "@/components/CompanyCard/Cuntributes/CompanyCuntributes";
 // import CompanyPartners from "@/components/CompanyCard/Partners/CompanyPartners";
-// import CompanyComments from "@/components/CompanyCard/Comments/CompanyComments";
+// import CompanyComments from "@/components/Common/CompanyCard/Comments/CompanyComments";
 import { CompanyDetails } from "@/components/Common/CompanyCard/DetailsExchange/CompanyDetails";
 import { CompanyOverview } from "@/components/Common/CompanyCard/Overview/CompanyOverview";
 import { getDictionary, langsType } from "../../dictionaries/dictionaries";
@@ -15,6 +15,7 @@ import CompanySocialMedia from "@/components/Common/CompanyCard/SocialMedia/Comp
 // import CompanyHoldApp from "@/components/Common/CompanyCard/HoldingApp/CompanyHoldApp";
 import { Business } from "@/types/dataTypes";
 import { generateLocalBusinessSchema } from "@/utils/data";
+import Comment from "@/components/Common/Comment/Comment";
 
 const getSinglePageData = async (id: string) => {
   try {
@@ -23,7 +24,7 @@ const getSinglePageData = async (id: string) => {
       headers: {
         "Content-Type": "application/json",
         Authorization: `Bearer ${process.env.TOKEN}`,
-      }
+      },
     });
     const res = await data.json();
     return res;
@@ -56,26 +57,28 @@ export default async function Home({
         <section className="space-y-4 mx-5 lg:mx-0">
           <CompanyOverview exchangeData={exchangeData} dicts={dicts} />
           <div className="lg:hidden block">
-            <CompanyContact exchangeData={exchangeData}  dicts={dicts}/>
+            <CompanyContact exchangeData={exchangeData} dicts={dicts} />
           </div>
           <CompanyDetails exchangeData={exchangeData} dicts={dicts} />
           <CompanyGallary exchangeData={exchangeData} />
-          <CompanySocialMedia  exchangeData={exchangeData} dicts={dicts}/>
+          <CompanySocialMedia exchangeData={exchangeData} dicts={dicts} />
+          <CompanyLocCard exchangeData={exchangeData} dicts={dicts} />
           {/* <div className="grid xl:grid-cols-2 gap-4 grid-cols-1"> */}
-          <CompanyLocCard  exchangeData={exchangeData} dicts={dicts}/>
           {/* <CompanyHoldApp dicts={dicts} exchangeData={exchangeData} /> */}
           {/* </div> */}
+          {/* <CompanyComments/> */}
         </section>
         {/* <MainBanner /> */}
         <section className="space-y-4 mx-5 lg:mx-0 lg:block hidden">
-          <CompanyContact  exchangeData={exchangeData} dicts={dicts} />
+          <div className="h-screen !overflow-hidden lg:sticky lg:top-20 grid grid-rows-[max-content_auto] gap-4">
+            <CompanyContact exchangeData={exchangeData} dicts={dicts} />
+            <Comment />
+          </div>
           {/* <CompanyItemsCard exchangeData={exchangeData} dicts={dicts} /> */}
           {/* <CompanyProduct dicts={dicts} /> */}
           {/* <CompanyCuntributes dicts={dicts} /> */}
           {/* <CompanyPartners  /> */}
-          {/* <CompanyComments/> */}
           {/* <AdsCard /> */}
-          
         </section>
         <script
           type="application/ld+json"

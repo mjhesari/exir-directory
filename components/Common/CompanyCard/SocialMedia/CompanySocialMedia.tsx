@@ -18,7 +18,7 @@ const CompanySocialMedia = ({
       <div className="space-y-2" dir="ltr">
         {exchangeData.links?.map((e, index) => (
           <Link
-            className="grid grid-cols-[max-content_auto_max-content] items-center gap-1 bg-gray-500/10 rounded-xl p-3"
+            className="grid grid-cols-[max-content_auto_max-content] items-center gap-1 bg-gray-100/80 rounded-xl p-3"
             href={e.url.includes("//") ? e.url : `https://${e.url}`}
             key={index}
           >

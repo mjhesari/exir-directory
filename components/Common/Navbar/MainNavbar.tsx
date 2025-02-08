@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import {
   Navbar,
   NavbarBrand,
@@ -13,6 +13,8 @@ import LanguageButton from "./LanguageButton";
 import { LanguagesTypes } from "@/types/dataTypes";
 import NavTopLogoExchange from "@/components/Directory/exchange/Navbar/navTopLogo";
 import useMediaQuery from "@/hooks/use-media-query";
+import Link from "next/link";
+import { Icon } from "@iconify-icon/react";
 
 const NavTopLogo = dynamic(
   () =>
@@ -32,7 +34,13 @@ const Logo = dynamic(
     loading: () => <p>Loading...</p>,
   }
 ) as typeof Logoex;
-export default function MainNavbar({ dicts,lang }: { dicts: DictsTypes;lang:LanguagesTypes }) {
+export default function MainNavbar({
+  dicts,
+  lang,
+}: {
+  dicts: DictsTypes;
+  lang: LanguagesTypes;
+}) {
   const isMoblie = useMediaQuery("(max-width: 1024px)");
 
   return (
@@ -40,14 +48,14 @@ export default function MainNavbar({ dicts,lang }: { dicts: DictsTypes;lang:Lang
       maxWidth="full"
       classNames={{
         wrapper:
-          "mx-auto !grid grid-cols-[300px_auto_max-content] justify-normal px-4",
+          "mx-auto !grid grid-cols-[300px_auto_max-content_max-content] justify-normal px-4",
         base: "lg:bg-white",
       }}
       className="lg:border-b sticky inset-[0_0_auto_0] lg:block lg:shadow-sm"
       isBlurred={false}
     >
       <NavbarBrand>
-        {isMoblie?<NavTopLogo dicts={dicts}/>:<Logo dicts={dicts} />}
+        {isMoblie ? <NavTopLogo dicts={dicts} /> : <Logo dicts={dicts} />}
       </NavbarBrand>
       <NavbarContent className="hidden lg:flex">
         {/* <NavbarItem>
@@ -65,24 +73,34 @@ export default function MainNavbar({ dicts,lang }: { dicts: DictsTypes;lang:Lang
           <SearchInput dicts={dicts} />
         </NavbarItem>
       </NavbarContent>
-      {/* <NavbarContent className="flex-1 gap-6 " justify="center">
+      <NavbarContent className="flex-1 gap-6 " justify="center">
         <NavbarItem>
-          <Link href="/" className="text-black">
-            {dicts?.menuSection?.mainNav?.allExchanges}
-          </Link>
+          {isMoblie?<div className="fixed top-[10px] end-16 h-max z-70">
+          <div className=" mx-auto px-3">
+            <div className="flex items-center">
+              <Link
+href={`/p`}                className={`bg-white flex flex-row p-[10px] items-center rounded-full border`}
+                aria-label="language page"
+              ><Icon icon="grommet-icons:blog" width={32} />
+              </Link>
+            </div>
+          </div>
+        </div>:<Link
+            href={`${dicts.lang}/p`}
+            className="text-default-500 rounded-xl hover:text-secondary-600 hover:border-secondary-600 gap-x-1 flex border-2 border-solid p-1"
+          >
+            <Icon icon="fa-solid:blog" width={20} />{" "}
+            {dicts.menuSection.mainNav.blogPost}
+          </Link>}
+          
         </NavbarItem>
-        <NavbarItem>
-          <Link href="/" className="text-black">
-            {dicts?.menuSection?.mainNav?.suggestAnExchange}
-          </Link>
-        </NavbarItem>
-      </NavbarContent> */}
+      </NavbarContent>
       <NavbarContent className="gap-4">
-        {(!process.env.IS_NOT_MULTILANG ? (
+        {!process.env.IS_NOT_MULTILANG ? (
           <NavbarItem>
             <LanguageButton dicts={dicts} lang={lang} />
           </NavbarItem>
-        ) : null)}
+        ) : null}
 
         {/* <NavbarItem>
           <UserAvatar />

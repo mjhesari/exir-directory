@@ -71,18 +71,14 @@ const MobileNav = ({ dicts }: { dicts: DictsTypes }) => {
             href="/"
             className="block py-2 hover:bg-default-100 rounded-lg px-4"
           >
-            <span className="text-accent">
-              {dicts?.menuSection?.mainNav?.allExchanges}
-            </span>
+
           </Link>
           <Divider  className="my-0" />
           <Link
             href="/"
             className="block py-2 hover:bg-default-100 rounded-lg px-4"
           >
-            <span className="text-accent">
-              {dicts?.menuSection?.mainNav?.suggestAnExchange}
-            </span>
+
           </Link>
           <Divider  className="my-0" />
           <Link  href="/" className="flex items-center py-2 hover:bg-default-100 rounded-lg px-4 text-default-900">
