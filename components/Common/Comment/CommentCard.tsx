@@ -7,20 +7,22 @@ import { format } from 'date-fns';
 import { Comment } from '@/types/dataTypes';
 import { CommentForm } from './CommentForm';
 import { CommentReactions } from './CommentReactions';
-import { useDispatch } from 'react-redux';
 import { toggleRepliesVisibility } from '@/redux/features/comment/comment-slice';
+import { useAppDispatch } from '@/redux/app/hooks';
 import Image from 'next/image';
 
 interface CommentCardProps {
-  comment: Comment & { replies?: Comment[] };
+  comment: Comment & { replies?: Comment[]; parentComment?: Comment };
   targetId: string;
   hasReplies: boolean;
   isVisible: boolean;
+  level: number;
 }
 
-export function CommentCard({ comment, targetId, hasReplies, isVisible }: CommentCardProps) {
+export function CommentCard({ comment, targetId, hasReplies, isVisible}: CommentCardProps) {
   const [isReplying, setIsReplying] = useState(false);
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
+
   const handleReplySubmit = () => {
     setIsReplying(false);
     if (!hasReplies) {
@@ -32,7 +34,7 @@ export function CommentCard({ comment, targetId, hasReplies, isVisible }: Commen
   const formattedDate = format(new Date(parseInt(comment.createdAt) * 1000), 'PPp');
 
   return (
-    <Card className="bg-background/60 dark:bg-default-100/50 w-full border" shadow='none' radius='sm'>
+    <Card className="w-full border" radius='sm' shadow='none'>
       <CardBody className="p-3 sm:p-4">
         <div className="grid grid-cols-[auto_1fr_auto] gap-2 sm:gap-3 items-start">
           <div className="relative">
@@ -50,21 +52,40 @@ export function CommentCard({ comment, targetId, hasReplies, isVisible }: Commen
           </div>
 
           <div className="min-w-0">
-            <div className="grid grid-cols-[auto_1fr] gap-2 items-baseline">
-              <h4 className="text-sm font-semibold truncate">User {comment.createdBy}</h4>
+            <div className="flex flex-col">
+              <div className="flex items-center gap-2">
+                <h4 className="text-sm font-semibold truncate">User {comment.createdBy}</h4>
+                {comment.parentId && (
+                  <span className="text-xs text-default-500">
+                    replying to User {comment.parentComment?.createdBy}
+                  </span>
+                )}
+              </div>
               <time className="text-xs text-default-500">{formattedDate}</time>
+              {comment.rate && (
+                <div className="flex items-center gap-0.5 mt-1">
+                  {[1, 2, 3, 4, 5].map((star) => (
+                    <Icon
+                      key={star}
+                      icon={star <= comment.rate! ? "solar:star-bold" : "solar:star-line-duotone"}
+                      className={star <= comment.rate! ? "text-warning" : "text-default-400"}
+                      width={12}
+                    />
+                  ))}
+                </div>
+              )}
             </div>
             <p className="text-sm mt-1.5">{comment.content || comment.pendingContent}</p>
             {comment.filesUrl && comment.filesUrl.length > 0 && (
               <div className="mt-2 grid grid-flow-col auto-cols-[80px] sm:auto-cols-[100px] gap-2 overflow-x-auto">
                 {comment.filesUrl.map((url, index) => (
                   <Image
+                  fill
                     key={index}
-                    src={url}
+                    src={url??""}
                     alt={`Attachment ${index + 1}`}
                     className="w-full aspect-square object-cover rounded"
                     loading="lazy"
-                    fill
                   />
                 ))}
               </div>
@@ -77,12 +98,9 @@ export function CommentCard({ comment, targetId, hasReplies, isVisible }: Commen
                 <Icon icon="solar:menu-dots-bold" width={16} />
               </Button>
             </DropdownTrigger>
-            <DropdownMenu aria-label="Static Actions">
-              <DropdownItem startContent={<Icon icon="solar:flag-bold" width={16} />}key="report" >
+            <DropdownMenu>
+              <DropdownItem startContent={<Icon icon="solar:flag-bold" width={16} />} key='report'>
                 Report
-              </DropdownItem>
-              <DropdownItem startContent={<Icon icon="solar:copy-bold" width={16} /> }key="copy">
-                Copy Link
               </DropdownItem>
             </DropdownMenu>
           </Dropdown>
@@ -92,7 +110,7 @@ export function CommentCard({ comment, targetId, hasReplies, isVisible }: Commen
       <CardFooter className="px-3 sm:px-4 py-2 flex flex-col gap-2">
         <div className="grid grid-cols-[1fr_auto] sm:grid-cols-[auto_1fr] gap-2 w-full items-center">
           <CommentReactions commentId={comment.id} />
-          <div className="grid grid-cols-3 gap-1 sm:gap-2 justify-end">
+          <div className="grid grid-cols-2 gap-1 sm:gap-2 justify-end">
             <Button
               size="sm"
               variant="light"
@@ -102,15 +120,6 @@ export function CommentCard({ comment, targetId, hasReplies, isVisible }: Commen
             >
               <Icon icon="solar:chat-round-dots-bold" width={16} className="sm:mr-2" />
               <span className="hidden sm:inline">Reply</span>
-            </Button>
-            <Button
-              size="sm"
-              variant="light"
-              isIconOnly
-              className="min-w-8 w-8 h-8 sm:w-auto sm:h-9"
-            >
-              <Icon icon="solar:share-bold" width={16} className="sm:mr-2" />
-              <span className="hidden sm:inline">Share</span>
             </Button>
             {hasReplies && (
               <Button

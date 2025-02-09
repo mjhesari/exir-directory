@@ -13,11 +13,12 @@ interface CommentListProps {
 
 interface CommentWithReplies extends Comment {
   replies: CommentWithReplies[];
+  parentComment?: Comment;
 }
 
 export function CommentList({ targetId }: CommentListProps) {
   const dispatch = useAppDispatch();
-  const { comments, loading, error, pageIndex, pageSize, total, refreshKey, visibleReplies } = useAppSelector(
+  const { comments, loading, error, pageSize, pageIndex, total, refreshKey, visibleReplies } = useAppSelector(
     (state) => state.comments
   );
 
@@ -34,12 +35,13 @@ export function CommentList({ targetId }: CommentListProps) {
       commentMap.set(comment.id, { ...comment, replies: [] });
     });
 
-    // Second pass: Organize into tree structure
+    // Second pass: Organize into tree structure and add parent comment reference
     flatComments.forEach(comment => {
       const commentWithReplies = commentMap.get(comment.id)!;
       if (comment.parentId) {
         const parent = commentMap.get(comment.parentId);
         if (parent) {
+          commentWithReplies.parentComment = parent;
           parent.replies.push(commentWithReplies);
         }
       } else {
@@ -47,17 +49,14 @@ export function CommentList({ targetId }: CommentListProps) {
       }
     });
 
-    // Sort by creation date (newest first)
-    const sortByDate = (a: Comment, b: Comment) => 
-      parseInt(a.createdAt) - parseInt(b.createdAt);
-
-    rootComments.sort(sortByDate);
+    // Sort root comments by creation date (newest first)
+    rootComments.sort((a, b) => parseInt(b.createdAt) - parseInt(a.createdAt));
     
-    // Sort replies recursively (oldest first for replies)
+    // Sort replies chronologically (oldest first for better conversation flow)
     const sortReplies = (comments: CommentWithReplies[]) => {
       comments.forEach(comment => {
         if (comment.replies.length > 0) {
-          comment.replies.sort(sortByDate);
+          comment.replies.sort((a, b) => parseInt(a.createdAt) - parseInt(b.createdAt));
           sortReplies(comment.replies);
         }
       });
@@ -68,11 +67,10 @@ export function CommentList({ targetId }: CommentListProps) {
   };
 
   const handleLoadMore = () => {
-    if (!loading && comments.length < total) {
-      const nextPage = pageIndex + 1;
+    if (!loading) {
       dispatch(fetchCommentsAsync({
         targetId,
-        pageIndex: nextPage,
+        pageIndex: pageIndex + 1,
         pageSize
       }));
     }
@@ -85,18 +83,18 @@ export function CommentList({ targetId }: CommentListProps) {
   };
 
   const renderComment = (comment: CommentWithReplies, level: number = 0) => {
-    const marginClass = level > 0 ? `ml-${Math.min(level * 4, 12)}` : '';
     const hasReplies = comment.replies && comment.replies.length > 0;
     const isVisible = visibleReplies.includes(comment.id);
 
     return (
-      <div key={comment.id} className={`relative ${marginClass}`}>
-        <div className={level > 0 ? 'border-l-2 border-default-200 ml-4 pl-4' : ''}>
+      <div key={comment.id} className="space-y-4">
+        <div className={level === 1 ? 'ml-8' : ''}>
           <CommentCard 
             comment={comment} 
             targetId={targetId}
             hasReplies={hasReplies}
             isVisible={isVisible}
+            level={level}
           />
           
           {hasReplies && isVisible && (
@@ -135,13 +133,14 @@ export function CommentList({ targetId }: CommentListProps) {
 
   const organizedComments = organizeCommentsIntoTree(comments);
   const totalCommentsShown = countAllComments(organizedComments);
-  const hasMoreTopLevelComments = comments.filter(c => !c.parentId).length < total;
+  const topLevelComments = comments.filter(c => !c.parentId);
+  const hasMoreComments = topLevelComments.length < total;
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-2">
       {organizedComments.map(comment => renderComment(comment))}
       
-      {hasMoreTopLevelComments && (
+      {hasMoreComments && !loading && (
         <div className="text-center mt-4">
           <Button
             variant="flat"
@@ -154,7 +153,7 @@ export function CommentList({ targetId }: CommentListProps) {
                 <span>Loading...</span>
               </div>
             ) : (
-              `Load More Comments (${total - comments.filter(c => !c.parentId).length} remaining)`
+              'Load More Comments'
             )}
           </Button>
         </div>
@@ -162,7 +161,7 @@ export function CommentList({ targetId }: CommentListProps) {
       
       {total > 0 && (
         <div className="text-sm text-gray-500 text-center">
-          Showing {totalCommentsShown} comments ({comments.filter(c => !c.parentId).length} top-level)
+          Showing {totalCommentsShown} comments
         </div>
       )}
     </div>

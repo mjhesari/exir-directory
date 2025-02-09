@@ -249,13 +249,13 @@ export interface DataStructure {
   };
 }
 export type DayOfWeekType =
-  | 'sunday'
-  | 'monday'
-  | 'tuesday'
-  | 'wednesday'
-  | 'thursday'
-  | 'friday'
-  | 'saturday';
+  | "sunday"
+  | "monday"
+  | "tuesday"
+  | "wednesday"
+  | "thursday"
+  | "friday"
+  | "saturday";
 
 export interface CountryType {
   id: number;
@@ -266,38 +266,39 @@ export interface CountryType {
 }
 export interface ProvinceType {
   id: number;
-  contryId:number
+  contryId: number;
   tr: { [key: string]: string };
 }
 export interface CityType {
   id: number;
-  contryId:number;
-  provinceId:number
+  contryId: number;
+  provinceId: number;
   tr: { [key: string]: string };
 }
-export type LanguagesTypes = {
-  id: number;
-  name: string;
-  dir: string;
-  code: string;
-  nativeName: string;
-}[]|null|undefined;
+export type LanguagesTypes =
+  | {
+      id: number;
+      name: string;
+      dir: string;
+      code: string;
+      nativeName: string;
+    }[]
+  | null
+  | undefined;
 
 export interface DataGetterProps {
   exchangeData: DataStructure | null;
   lang: Response | null;
-  post:PostDataContainer
+  post: PostDataContainer;
 }
-
 
 export type BodyType = {
   tags?: string[];
   country?: string | null;
   attributes?: { key: string; value: boolean | string[] }[];
   name?: { [key: string]: string };
-  region?:string
-  city?:string
-
+  region?: string;
+  city?: string;
 };
 
 /* ------------------------------- .Post Types ------------------------------ */
@@ -332,7 +333,7 @@ export interface Post {
   tags: string[];
   filter: Filter;
   media: Media;
-  slug:string
+  slug: string;
 }
 
 interface DataDetails {
@@ -352,7 +353,8 @@ export interface ApiResponse {
 
 /* -------------------------------------------------------------------------- */
 /*                                Commet Types                                */
-/* -------------------------------------------------------------------------- */export interface Comment {
+/* -------------------------------------------------------------------------- */ 
+export interface Comment {
   id: string;
   targetId: string;
   fullUrl?: string | null;
@@ -364,6 +366,7 @@ export interface ApiResponse {
   filesUrl?: string[] | null;
   createdAt: string;
   updatedAt?: string | null;
+  rate?: number | null;
 }
 
 export interface CommentResponse {
@@ -396,7 +399,6 @@ export interface Reaction {
   id: string;
   commentId: string;
   userId: string;
-  rate?: number;
   type?: ReactionType;
   createdAt: string;
 }
@@ -409,7 +411,6 @@ export interface ReactionResponse {
     pageSize: number;
     pageIndex: number;
     reactions: Reaction[];
-    averageRate: string;
   };
 }
 
@@ -421,5 +422,5 @@ export interface CommentState {
   loading: boolean;
   error: string | null;
   refreshKey: number;
-  visibleReplies: string[]; // Changed from Set to string[]
+  visibleReplies: string[];
 }
