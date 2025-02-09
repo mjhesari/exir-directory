@@ -75,24 +75,29 @@ export default function MainNavbar({
       </NavbarContent>
       <NavbarContent className="flex-1 gap-6 " justify="center">
         <NavbarItem>
-          {isMoblie?<div className="fixed top-[10px] end-16 h-max z-70">
-          <div className=" mx-auto px-3">
-            <div className="flex items-center">
-              <Link
-href={`/p`}                className={`bg-white flex flex-row p-[10px] items-center rounded-full border`}
-                aria-label="language page"
-              ><Icon icon="grommet-icons:blog" width={32} />
-              </Link>
+          {isMoblie ? (
+            <div className="fixed top-[10px] end-16 h-max z-70">
+              <div className=" mx-auto px-3">
+                <div className="flex items-center">
+                  <Link
+                    href={`/p`}
+                    className={`bg-white flex flex-row p-[10px] items-center rounded-full border`}
+                    aria-label="language page"
+                  >
+                    <Icon icon="grommet-icons:blog" width={32} />
+                  </Link>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>:<Link
-            href={`${dicts.lang}/p`}
-            className="text-default-500 rounded-xl hover:text-secondary-600 hover:border-secondary-600 gap-x-1 flex border-2 border-solid p-1"
-          >
-            <Icon icon="fa-solid:blog" width={20} />{" "}
-            {dicts.menuSection.mainNav.blogPost}
-          </Link>}
-          
+          ) : (
+            <Link
+              href={`${dicts.lang}/p`}
+              className="text-default-500 rounded-xl hover:text-secondary-600 hover:border-secondary-600 gap-x-2 items-center flex border-2 border-solid px-1 py-[2px] text-lg"
+            >
+              <Icon icon="fa-solid:blog" width={20} />{" "}
+              {dicts.menuSection.mainNav.blogPost}
+            </Link>
+          )}
         </NavbarItem>
       </NavbarContent>
       <NavbarContent className="gap-4">
@@ -101,7 +106,6 @@ href={`/p`}                className={`bg-white flex flex-row p-[10px] items-cen
             <LanguageButton dicts={dicts} lang={lang} />
           </NavbarItem>
         ) : null}
-
         {/* <NavbarItem>
           <UserAvatar />
         </NavbarItem>

@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
-import {  CommentResponse, CommentState } from '@/types/dataTypes';
+import { CommentResponse, CommentState } from '@/types/dataTypes';
 import { fetchComments, createComment } from '@/utils/api/index';
 
 const initialState: CommentState = {
@@ -16,7 +16,6 @@ const initialState: CommentState = {
 export const fetchCommentsAsync = createAsyncThunk(
   'comments/fetchComments',
   async ({ targetId, pageIndex, pageSize }: { targetId: string; pageIndex: number; pageSize: number }) => {
-    // Only fetch top-level comments (those without parentId)
     const response = await fetchComments(targetId, pageIndex, pageSize);
     return { ...response, requestedPageIndex: pageIndex };
   }
@@ -28,6 +27,7 @@ export const createCommentAsync = createAsyncThunk(
     targetId: string;
     parentId?: string;
     pendingContent: string;
+    rate?: number | null;
     filesUrl?: string[];
   }) => {
     const response = await createComment(data);
@@ -67,29 +67,37 @@ const commentSlice = createSlice({
         const { data, requestedPageIndex } = action.payload;
         state.loading = false;
 
-        // If it's the first page or a refresh, replace all comments
+        // Sort new comments by date (newest first)
+        const sortedNewComments = [...data.comments].sort(
+          (a, b) => parseInt(b.createdAt) - parseInt(a.createdAt)
+        );
+
         if (requestedPageIndex === 0) {
-          state.comments = data.comments;
-          state.pageIndex = 0;
+          state.comments = sortedNewComments;
         } else {
-          // For subsequent pages, append new top-level comments
-          const newComments = data.comments.filter(
+          // Merge new comments with existing ones, avoiding duplicates
+          const newComments = sortedNewComments.filter(
             newComment => !state.comments.some(
               existingComment => existingComment.id === newComment.id
             )
           );
-          state.comments = [...state.comments, ...newComments];
-          state.pageIndex = requestedPageIndex;
+          
+          // Combine and sort all comments
+          state.comments = [...state.comments, ...newComments].sort(
+            (a, b) => parseInt(b.createdAt) - parseInt(a.createdAt)
+          );
         }
-
+        
         state.total = data.total;
         state.pageSize = data.pageSize;
+        state.pageIndex = requestedPageIndex;
       })
       .addCase(fetchCommentsAsync.rejected, (state, action) => {
         state.loading = false;
         state.error = action.error.message || 'Failed to fetch comments';
       })
       .addCase(createCommentAsync.fulfilled, (state) => {
+        state.pageIndex = 0;
         state.refreshKey += 1;
       });
   },
