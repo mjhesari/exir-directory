@@ -1,0 +1,140 @@
+{
+    "dir": "ltr",
+    "lang": "ru",
+    "contryCode": "1",
+    "iso": "us",
+    "metaData": {
+      "title": {
+        "exchange": "Биржевой Центр",
+        "drziba": "DrZiba",
+        "dubai": "Дубай Центр",
+        "iranarabic": "ИранАрабский"
+      },
+      "desc": {
+        "exchange": "Полный список бирж в Биржевом Центре, включая биржи со всего мира",
+        "drziba": "",
+        "dubai": "Дубай Центр",
+        "iranarabic": "ИранАрабский"
+      }
+    },
+    "DirectoryName": {
+      "exchange": "Биржевой Центр",
+      "drziba": "دکترزیبا",
+      "dubai": "Дубай Центр",
+      "iranarabic": "ИранАрабский"
+    },
+    "langName": "Русский",
+    "menuSection": {
+      "mainNav": {
+        "blogPost": "Блог"
+      },
+      "mobileMenu": {
+        "apps": "Приложения",
+        "services": "Услуги",
+        "social": "Социальные сети",
+        "contact": "Контакты"
+      }
+    },
+    "placeholder": {
+      "search": "Поиск...",
+      "paymentChoose": "Выберите Способы Оплаты",
+      "currencyChoose": "Выберите Валюту",
+      "countryChoose": "Выберите Страну",
+      "categoryChoose": "Выберите Категории",
+      "provinceChoose": "",
+      "cityChoose": ""
+    },
+    "button": {
+      "clearAll": "Очистить всё",
+      "navigate": "Навигация",
+      "contribute": "Внести вклад",
+      "tryItNow": "Попробовать сейчас",
+      "seeallcontribute": "Посмотреть всех участников",
+      "search": "Поиск",
+      "manageProfile": "Управление профилем",
+      "countributeToEarn": "Внесите вклад, чтобы заработать",
+      "Apply": "Применить фильтр",
+      "loadmore": "Загрузить больше..."
+    },
+    "cardDetails": {
+      "exchangeType": "Тип биржи",
+      "IncorporationCountry": "Страна регистрации",
+      "areaServed": "Обслуживаемый регион",
+      "NumberofEmployees": "Количество сотрудников",
+      "marketWithFees": "Рынок с комиссиями",
+      "Founding": "Год основания"
+    },
+    "infoContact": {
+      "contact": "Контактная информация"
+    },
+    "productandService": "Продукты и услуги",
+    "socialNetwork": "Социальная сеть",
+    "holdingApp": "Холдинговое приложение",
+    "contributors": {
+      "contributors": "Участники",
+      "avardingToken": "Присуждённые токены"
+    },
+    "businessPartners": "Бизнес-партнёры",
+    "footerLink": {
+      "terms": "Условия",
+      "privacy": "Конфиденциальность",
+      "docs": "Документы",
+      "security": "Безопасность",
+      "aboutExir": "О Exir"
+    },
+    "CardFilter": {
+      "filter": "Фильтр",
+      "category": {
+        "exchangeCategory": {
+          "category": "Категории Бирж",
+          "crypto": "Криптовалютные Биржи",
+          "decentralized": "Децентрализованные Биржи",
+          "derivatives": "Биржи Деривативов"
+        },
+        "drzibaCategory": {
+          "category": "категория",
+          "beautySalon": "салон красоты",
+          "beautyClinic": "клиника красоты",
+          "beautyTrapy": "терапия красоты",
+          "beautyWomen": "женская красота",
+          "beautyMen": "мужская красота",
+          "dr": "доктор"
+        },
+        "dubaiCategory": {
+          "category": "Категория",
+          "realEstate": "Недвижимость",
+          "restaurant": "Ресторан",
+          "store": "Магазин",
+          "hotel": "Отель"
+        }
+      },
+      "fiatDeposite": "Фиатный депозит",
+      "country": "Страна",
+      "acceptedPaymentMethods": "Принимаемые способы оплаты",
+      "marginTrading": "Маржинальная торговля",
+      "marketWithNoFees": "Рынок без комиссий",
+      "province": "",
+      "city": ""
+    },
+    "CardResult": {
+      "selector": {
+        "relevant": "Релевантные",
+        "newest": "Самые новые",
+        "oldest": "Самые старые"
+      },
+      "titleResult": {
+        "exchanges": "Биржи",
+        "drziba": "Dr.Ziba",
+        "dubai": "Дубай Центр",
+        "iranarabic": "ИранАрабский"
+      },
+      "sortBy": "Сортировать по",
+      "desc": {
+        "exchanges": "Полный список бирж в Биржевом Центре, включая биржи со всего мира",
+        "drziba": "",
+        "dubai": "Дубай Центр",
+        "iranarabic": "ИранАрабский"
+      }
+    }
+  }
+  

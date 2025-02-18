@@ -1,0 +1,140 @@
+{
+    "dir": "ltr",
+    "lang": "ro",
+    "contryCode": "1",
+    "iso": "us",
+    "metaData": {
+      "title": {
+        "exchange": "Hub de Schimburi",
+        "drziba": "DrZiba",
+        "dubai": "Hub Dubai",
+        "iranarabic": "IranArabă"
+      },
+      "desc": {
+        "exchange": "Lista completă a schimburilor din Hub de Schimburi, inclusiv schimburi din întreaga lume",
+        "drziba": "",
+        "dubai": "Hub Dubai",
+        "iranarabic": "IranArabă"
+      }
+    },
+    "DirectoryName": {
+      "exchange": "Hub de Schimburi",
+      "drziba": "دکترزیبا",
+      "dubai": "Hub Dubai",
+      "iranarabic": "IranArabă"
+    },
+    "langName": "Română",
+    "menuSection": {
+      "mainNav": {
+        "blogPost": "Blog"
+      },
+      "mobileMenu": {
+        "apps": "Aplicații",
+        "services": "Servicii",
+        "social": "Rețele Sociale",
+        "contact": "Contact"
+      }
+    },
+    "placeholder": {
+      "search": "Căutare...",
+      "paymentChoose": "Alegeți Metodele de Plată",
+      "currencyChoose": "Alegeți Monedele",
+      "countryChoose": "Alegeți Țara",
+      "categoryChoose": "Alegeți Categorii",
+      "provinceChoose": "",
+      "cityChoose": ""
+    },
+    "button": {
+      "clearAll": "Ștergeți tot",
+      "navigate": "Navigare",
+      "contribute": "Contribuie",
+      "tryItNow": "Încearcă acum",
+      "seeallcontribute": "Vezi Toți Contribuitorii",
+      "search": "Căutare",
+      "manageProfile": "Gestionează Profilul",
+      "countributeToEarn": "Contribuie pentru a Câștiga",
+      "Apply": "Aplică Filtru",
+      "loadmore": "Încarcă mai mult..."
+    },
+    "cardDetails": {
+      "exchangeType": "Tip de Schimb",
+      "IncorporationCountry": "Țara de Încorporare",
+      "areaServed": "Zona Deservită",
+      "NumberofEmployees": "Număr de Angajați",
+      "marketWithFees": "Piață cu Taxe",
+      "Founding": "Anul Înființării"
+    },
+    "infoContact": {
+      "contact": "Informații de Contact"
+    },
+    "productandService": "Produse și Servicii",
+    "socialNetwork": "Rețea Socială",
+    "holdingApp": "Aplicație Holding",
+    "contributors": {
+      "contributors": "Contribuitori",
+      "avardingToken": "Token-uri Acordate"
+    },
+    "businessPartners": "Parteneri de Afaceri",
+    "footerLink": {
+      "terms": "Termeni",
+      "privacy": "Confidențialitate",
+      "docs": "Documente",
+      "security": "Securitate",
+      "aboutExir": "Despre Exir"
+    },
+    "CardFilter": {
+      "filter": "Filtru",
+      "category": {
+        "exchangeCategory": {
+          "category": "Categorii de Schimburi",
+          "crypto": "Schimburi de Criptomonede",
+          "decentralized": "Schimburi Descentralizate",
+          "derivatives": "Schimburi de Derivate"
+        },
+        "drzibaCategory": {
+          "category": "categorie",
+          "beautySalon": "salon de înfrumusețare",
+          "beautyClinic": "clinică de înfrumusețare",
+          "beautyTrapy": "terapie de înfrumusețare",
+          "beautyWomen": "frumusețe feminină",
+          "beautyMen": "frumusețe masculină",
+          "dr": "doctor"
+        },
+        "dubaiCategory": {
+          "category": "Categorie",
+          "realEstate": "Imobiliare",
+          "restaurant": "Restaurant",
+          "store": "Magazin",
+          "hotel": "Hotel"
+        }
+      },
+      "fiatDeposite": "Depunere Fiat",
+      "country": "Țară",
+      "acceptedPaymentMethods": "Metode de Plată Acceptate",
+      "marginTrading": "Tranzacționare cu Marjă",
+      "marketWithNoFees": "Piață Fără Taxe",
+      "province": "",
+      "city": ""
+    },
+    "CardResult": {
+      "selector": {
+        "relevant": "Relevant",
+        "newest": "Cele Mai Noi",
+        "oldest": "Cele Mai Vechi"
+      },
+      "titleResult": {
+        "exchanges": "Schimburi",
+        "drziba": "Dr.Ziba",
+        "dubai": "Hub Dubai",
+        "iranarabic": "IranArabă"
+      },
+      "sortBy": "Sortează după",
+      "desc": {
+        "exchanges": "Lista completă a schimburilor din Hub de Schimburi, inclusiv schimburi din întreaga lume",
+        "drziba": "",
+        "dubai": "Hub Dubai",
+        "iranarabic": "IranArabă"
+      }
+    }
+  }
+  

@@ -8,7 +8,7 @@ import MainProviders from "./providers/main-provider";
 import { langsType, getDictionary } from "./dictionaries/dictionaries";
 // import MobileNav from "@/components/Common/Navbar/mobileNav";
 import { getAllLanguage, getAllPost, getDirectoryData } from "@/utils/api";
-import { locales } from "@/middleware";
+import {locales} from '@/app/[lang]/dictionaries/languages'
 import dynamic from "next/dynamic";
 import FooterExchnage from "@/components/Directory/exchange/Footer/MainFooter";
 // import MobileMenu from "@/components/Common/Navbar/MobileMenu";

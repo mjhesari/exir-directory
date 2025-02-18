@@ -1,0 +1,140 @@
+{
+    "dir": "ltr",
+    "lang": "pt",
+    "contryCode": "1",
+    "iso": "us",
+    "metaData": {
+      "title": {
+        "exchange": "Central de Corretoras",
+        "drziba": "DrZiba",
+        "dubai": "Central de Dubai",
+        "iranarabic": "IrãÁrabe"
+      },
+      "desc": {
+        "exchange": "A lista completa de corretoras na Central de Corretoras, incluindo corretoras de todo o mundo",
+        "drziba": "",
+        "dubai": "Central de Dubai",
+        "iranarabic": "IrãÁrabe"
+      }
+    },
+    "DirectoryName": {
+      "exchange": "Central de Corretoras",
+      "drziba": "دکترزیبا",
+      "dubai": "Central de Dubai",
+      "iranarabic": "IrãÁrabe"
+    },
+    "langName": "Português",
+    "menuSection": {
+      "mainNav": {
+        "blogPost": "Blog"
+      },
+      "mobileMenu": {
+        "apps": "Aplicativos",
+        "services": "Serviços",
+        "social": "Social",
+        "contact": "Contato"
+      }
+    },
+    "placeholder": {
+      "search": "Pesquisar...",
+      "paymentChoose": "Escolha os Métodos de Pagamento",
+      "currencyChoose": "Escolha as Moedas",
+      "countryChoose": "Escolha o País",
+      "categoryChoose": "Escolha as Categorias",
+      "provinceChoose": "",
+      "cityChoose": ""
+    },
+    "button": {
+      "clearAll": "Limpar tudo",
+      "navigate": "Navegar",
+      "contribute": "Contribuir",
+      "tryItNow": "Experimente agora",
+      "seeallcontribute": "Ver Todos os Contribuidores",
+      "search": "Pesquisar",
+      "manageProfile": "Gerenciar Perfil",
+      "countributeToEarn": "Contribuir para Ganhar",
+      "Apply": "Aplicar Filtro",
+      "loadmore": "Carregar mais..."
+    },
+    "cardDetails": {
+      "exchangeType": "Tipo de Corretora",
+      "IncorporationCountry": "País de Incorporação",
+      "areaServed": "Área Atendida",
+      "NumberofEmployees": "Número de Funcionários",
+      "marketWithFees": "Mercado com Taxas",
+      "Founding": "Ano de Fundação"
+    },
+    "infoContact": {
+      "contact": "Informações de Contato"
+    },
+    "productandService": "Produtos e Serviços",
+    "socialNetwork": "Rede Social",
+    "holdingApp": "Aplicativo da Holding",
+    "contributors": {
+      "contributors": "Contribuidores",
+      "avardingToken": "Tokens Concedidos"
+    },
+    "businessPartners": "Parceiros Comerciais",
+    "footerLink": {
+      "terms": "Termos",
+      "privacy": "Privacidade",
+      "docs": "Documentos",
+      "security": "Segurança",
+      "aboutExir": "Sobre a Exir"
+    },
+    "CardFilter": {
+      "filter": "Filtrar",
+      "category": {
+        "exchangeCategory": {
+          "category": "Categorias de Corretoras",
+          "crypto": "Corretoras de Criptomoedas",
+          "decentralized": "Corretoras Descentralizadas",
+          "derivatives": "Corretoras de Derivativos"
+        },
+        "drzibaCategory": {
+          "category": "categoria",
+          "beautySalon": "salão de beleza",
+          "beautyClinic": "clínica de beleza",
+          "beautyTrapy": "terapia de beleza",
+          "beautyWomen": "beleza feminina",
+          "beautyMen": "beleza masculina",
+          "dr": "doutor"
+        },
+        "dubaiCategory": {
+          "category": "Categoria",
+          "realEstate": "Imóveis",
+          "restaurant": "Restaurante",
+          "store": "Loja",
+          "hotel": "Hotel"
+        }
+      },
+      "fiatDeposite": "Depósito em Fiat",
+      "country": "País",
+      "acceptedPaymentMethods": "Métodos de Pagamento Aceitos",
+      "marginTrading": "Negociação com Margem",
+      "marketWithNoFees": "Mercado sem Taxas",
+      "province": "",
+      "city": ""
+    },
+    "CardResult": {
+      "selector": {
+        "relevant": "Relevante",
+        "newest": "Mais Recente",
+        "oldest": "Mais Antigo"
+      },
+      "titleResult": {
+        "exchanges": "Corretoras",
+        "drziba": "Dr.Ziba",
+        "dubai": "Central de Dubai",
+        "iranarabic": "IrãÁrabe"
+      },
+      "sortBy": "Ordenar Por",
+      "desc": {
+        "exchanges": "A lista completa de corretoras na Central de Corretoras, incluindo corretoras de todo o mundo",
+        "drziba": "",
+        "dubai": "Central de Dubai",
+        "iranarabic": "IrãÁrabe"
+      }
+    }
+  } 
+   

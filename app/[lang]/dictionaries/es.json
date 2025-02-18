@@ -1,0 +1,140 @@
+{
+    "dir": "ltr",
+    "lang": "es",
+    "contryCode": "1",
+    "iso": "us",
+    "metaData": {
+      "title": {
+        "exchange": "Centro de Intercambios",
+        "drziba": "DrZiba",
+        "dubai": "Centro de Dubái",
+        "iranarabic": "IránÁrabe"
+      },
+      "desc": {
+        "exchange": "La lista completa de intercambios en el Centro de Intercambios, incluidos los intercambios de todo el mundo",
+        "drziba": "",
+        "dubai": "Centro de Dubái",
+        "iranarabic": "IránÁrabe"
+      }
+    },
+    "DirectoryName": {
+      "exchange": "Centro de Intercambios",
+      "drziba": "دکترزیبا",
+      "dubai": "Centro de Dubái",
+      "iranarabic": "IránÁrabe"
+    },
+    "langName": "Español",
+    "menuSection": {
+      "mainNav": {
+        "blogPost": "Blog"
+      },
+      "mobileMenu": {
+        "apps": "Aplicaciones",
+        "services": "Servicios",
+        "social": "Social",
+        "contact": "Contacto"
+      }
+    },
+    "placeholder": {
+      "search": "Buscar...",
+      "paymentChoose": "Elegir Métodos de Pago",
+      "currencyChoose": "Elegir Monedas",
+      "countryChoose": "Elegir País",
+      "categoryChoose": "Elegir Categorías",
+      "provinceChoose": "",
+      "cityChoose": ""
+    },
+    "button": {
+      "clearAll": "Borrar todo",
+      "navigate": "Navegar",
+      "contribute": "Contribuir",
+      "tryItNow": "Pruébalo ahora",
+      "seeallcontribute": "Ver todos los colaboradores",
+      "search": "Buscar",
+      "manageProfile": "Gestionar Perfil",
+      "countributeToEarn": "Contribuir para ganar",
+      "Apply": "Aplicar Filtro",
+      "loadmore": "Cargar más..."
+    },
+    "cardDetails": {
+      "exchangeType": "Tipo de Intercambio",
+      "IncorporationCountry": "País de Incorporación",
+      "areaServed": "Área de Servicio",
+      "NumberofEmployees": "Número de Empleados",
+      "marketWithFees": "Mercado con Comisiones",
+      "Founding": "Año de Fundación"
+    },
+    "infoContact": {
+      "contact": "Información de Contacto"
+    },
+    "productandService": "Productos y Servicios",
+    "socialNetwork": "Red Social",
+    "holdingApp": "Aplicación de Holding",
+    "contributors": {
+      "contributors": "Colaboradores",
+      "avardingToken": "Tokens Otorgados"
+    },
+    "businessPartners": "Socios Comerciales",
+    "footerLink": {
+      "terms": "Términos",
+      "privacy": "Privacidad",
+      "docs": "Documentos",
+      "security": "Seguridad",
+      "aboutExir": "Acerca de Exir"
+    },
+    "CardFilter": {
+      "filter": "Filtrar",
+      "category": {
+        "exchangeCategory": {
+          "category": "Categorías de Intercambios",
+          "crypto": "Intercambios de Criptomonedas",
+          "decentralized": "Intercambios Descentralizados",
+          "derivatives": "Intercambios de Derivados"
+        },
+        "drzibaCategory": {
+          "category": "categoría",
+          "beautySalon": "salón de belleza",
+          "beautyClinic": "clínica de belleza",
+          "beautyTrapy": "terapia de belleza",
+          "beautyWomen": "belleza femenina",
+          "beautyMen": "belleza masculina",
+          "dr": "doctor"
+        },
+        "dubaiCategory": {
+          "category": "Categoría",
+          "realEstate": "Bienes Raíces",
+          "restaurant": "Restaurante",
+          "store": "Tienda",
+          "hotel": "Hotel"
+        }
+      },
+      "fiatDeposite": "Depósito Fiat",
+      "country": "País",
+      "acceptedPaymentMethods": "Métodos de Pago Aceptados",
+      "marginTrading": "Trading con Margen",
+      "marketWithNoFees": "Mercado Sin Comisiones",
+      "province": "",
+      "city": ""
+    },
+    "CardResult": {
+      "selector": {
+        "relevant": "Relevante",
+        "newest": "Más Nuevo",
+        "oldest": "Más Antiguo"
+      },
+      "titleResult": {
+        "exchanges": "Intercambios",
+        "drziba": "Dr.Ziba",
+        "dubai": "Centro de Dubái",
+        "iranarabic": "IránÁrabe"
+      },
+      "sortBy": "Ordenar por",
+      "desc": {
+        "exchanges": "La lista completa de intercambios en el Centro de Intercambios, incluidos los intercambios de todo el mundo",
+        "drziba": "",
+        "dubai": "Centro de Dubái",
+        "iranarabic": "IránÁrabe"
+      }
+    }
+  }
+  

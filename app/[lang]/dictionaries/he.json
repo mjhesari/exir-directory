@@ -1,0 +1,140 @@
+{
+    "dir": "rtl",
+    "lang": "he",
+    "contryCode": "1",
+    "iso": "us",
+    "metaData": {
+      "title": {
+        "exchange": "מרכז הבורסות",
+        "drziba": "DrZiba",
+        "dubai": "מרכז דובאי",
+        "iranarabic": "איראן ערבית"
+      },
+      "desc": {
+        "exchange": "רשימה מלאה של הבורסות במרכז הבורסות, כולל בורסות מכל רחבי העולם",
+        "drziba": "",
+        "dubai": "מרכז דובאי",
+        "iranarabic": "איראן ערבית"
+      }
+    },
+    "DirectoryName": {
+      "exchange": "מרכז הבורסות",
+      "drziba": "دکترزیبا",
+      "dubai": "מרכז דובאי",
+      "iranarabic": "איראן ערבית"
+    },
+    "langName": "עברית",
+    "menuSection": {
+      "mainNav": {
+        "blogPost": "בלוג"
+      },
+      "mobileMenu": {
+        "apps": "אפליקציות",
+        "services": "שירותים",
+        "social": "רשתות חברתיות",
+        "contact": "צור קשר"
+      }
+    },
+    "placeholder": {
+      "search": "חיפוש...",
+      "paymentChoose": "בחר שיטות תשלום",
+      "currencyChoose": "בחר מטבעות",
+      "countryChoose": "בחר מדינה",
+      "categoryChoose": "בחר קטגוריות",
+      "provinceChoose": "",
+      "cityChoose": ""
+    },
+    "button": {
+      "clearAll": "נקה הכל",
+      "navigate": "ניווט",
+      "contribute": "תרום",
+      "tryItNow": "נסה עכשיו",
+      "seeallcontribute": "צפה בכל התורמים",
+      "search": "חיפוש",
+      "manageProfile": "ניהול פרופיל",
+      "countributeToEarn": "תרום כדי להרוויח",
+      "Apply": "החל סינון",
+      "loadmore": "טען עוד..."
+    },
+    "cardDetails": {
+      "exchangeType": "סוג בורסה",
+      "IncorporationCountry": "מדינת רישום",
+      "areaServed": "אזור שירות",
+      "NumberofEmployees": "מספר עובדים",
+      "marketWithFees": "שוק עם עמלות",
+      "Founding": "שנת הקמה"
+    },
+    "infoContact": {
+      "contact": "פרטי קשר"
+    },
+    "productandService": "מוצרים ושירותים",
+    "socialNetwork": "רשת חברתית",
+    "holdingApp": "אפליקציית אחזקות",
+    "contributors": {
+      "contributors": "תורמים",
+      "avardingToken": "אסימונים שהוענקו"
+    },
+    "businessPartners": "שותפים עסקיים",
+    "footerLink": {
+      "terms": "תנאים",
+      "privacy": "פרטיות",
+      "docs": "מסמכים",
+      "security": "אבטחה",
+      "aboutExir": "אודות Exir"
+    },
+    "CardFilter": {
+      "filter": "מסנן",
+      "category": {
+        "exchangeCategory": {
+          "category": "קטגוריות בורסות",
+          "crypto": "בורסות קריפטו",
+          "decentralized": "בורסות מבוזרות",
+          "derivatives": "בורסות נגזרים"
+        },
+        "drzibaCategory": {
+          "category": "קטגוריה",
+          "beautySalon": "מכון יופי",
+          "beautyClinic": "קליניקת יופי",
+          "beautyTrapy": "טיפול יופי",
+          "beautyWomen": "יופי נשי",
+          "beautyMen": "יופי גברי",
+          "dr": "דוקטור"
+        },
+        "dubaiCategory": {
+          "category": "קטגוריה",
+          "realEstate": "נדל״ן",
+          "restaurant": "מסעדה",
+          "store": "חנות",
+          "hotel": "מלון"
+        }
+      },
+      "fiatDeposite": "פיקדון פיאט",
+      "country": "מדינה",
+      "acceptedPaymentMethods": "שיטות תשלום מקובלות",
+      "marginTrading": "מסחר במינוף",
+      "marketWithNoFees": "שוק ללא עמלות",
+      "province": "",
+      "city": ""
+    },
+    "CardResult": {
+      "selector": {
+        "relevant": "רלוונטי",
+        "newest": "הכי חדש",
+        "oldest": "הכי ישן"
+      },
+      "titleResult": {
+        "exchanges": "בורסות",
+        "drziba": "Dr.Ziba",
+        "dubai": "מרכז דובאי",
+        "iranarabic": "איראן ערבית"
+      },
+      "sortBy": "מיין לפי",
+      "desc": {
+        "exchanges": "רשימה מלאה של הבורסות במרכז הבורסות, כולל בורסות מכל רחבי העולם",
+        "drziba": "",
+        "dubai": "מרכז דובאי",
+        "iranarabic": "איראן ערבית"
+      }
+    }
+  }
+  

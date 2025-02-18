@@ -1,0 +1,140 @@
+{
+    "dir": "ltr",
+    "lang": "sk",
+    "contryCode": "1",
+    "iso": "us",
+    "metaData": {
+      "title": {
+        "exchange": "Centrum búrz",
+        "drziba": "DrZiba",
+        "dubai": "Centrum Dubaj",
+        "iranarabic": "IránArabský"
+      },
+      "desc": {
+        "exchange": "Úplný zoznam búrz v Centre búrz vrátane búrz z celého sveta",
+        "drziba": "",
+        "dubai": "Centrum Dubaj",
+        "iranarabic": "IránArabský"
+      }
+    },
+    "DirectoryName": {
+      "exchange": "Centrum búrz",
+      "drziba": "دکترزیبا",
+      "dubai": "Centrum Dubaj",
+      "iranarabic": "IránArabský"
+    },
+    "langName": "Slovenčina",
+    "menuSection": {
+      "mainNav": {
+        "blogPost": "Blog"
+      },
+      "mobileMenu": {
+        "apps": "Aplikácie",
+        "services": "Služby",
+        "social": "Sociálne siete",
+        "contact": "Kontakt"
+      }
+    },
+    "placeholder": {
+      "search": "Hľadať...",
+      "paymentChoose": "Vyberte spôsob platby",
+      "currencyChoose": "Vyberte menu",
+      "countryChoose": "Vyberte krajinu",
+      "categoryChoose": "Vyberte kategórie",
+      "provinceChoose": "",
+      "cityChoose": ""
+    },
+    "button": {
+      "clearAll": "Vymazať všetko",
+      "navigate": "Navigovať",
+      "contribute": "Prispieť",
+      "tryItNow": "Vyskúšajte teraz",
+      "seeallcontribute": "Zobraziť všetkých prispievateľov",
+      "search": "Hľadať",
+      "manageProfile": "Spravovať profil",
+      "countributeToEarn": "Prispejte a zarábajte",
+      "Apply": "Použiť filter",
+      "loadmore": "Načítať viac..."
+    },
+    "cardDetails": {
+      "exchangeType": "Typ burzy",
+      "IncorporationCountry": "Krajina registrácie",
+      "areaServed": "Oblasť pôsobenia",
+      "NumberofEmployees": "Počet zamestnancov",
+      "marketWithFees": "Trh s poplatkami",
+      "Founding": "Rok založenia"
+    },
+    "infoContact": {
+      "contact": "Kontaktné informácie"
+    },
+    "productandService": "Produkty a služby",
+    "socialNetwork": "Sociálna sieť",
+    "holdingApp": "Holdingová aplikácia",
+    "contributors": {
+      "contributors": "Prispievatelia",
+      "avardingToken": "Udelené tokeny"
+    },
+    "businessPartners": "Obchodní partneri",
+    "footerLink": {
+      "terms": "Podmienky",
+      "privacy": "Ochrana súkromia",
+      "docs": "Dokumenty",
+      "security": "Bezpečnosť",
+      "aboutExir": "O Exir"
+    },
+    "CardFilter": {
+      "filter": "Filter",
+      "category": {
+        "exchangeCategory": {
+          "category": "Kategórie búrz",
+          "crypto": "Kryptomenové burzy",
+          "decentralized": "Decentralizované burzy",
+          "derivatives": "Burzy derivátov"
+        },
+        "drzibaCategory": {
+          "category": "kategória",
+          "beautySalon": "salón krásy",
+          "beautyClinic": "klinika krásy",
+          "beautyTrapy": "terapia krásy",
+          "beautyWomen": "ženská krása",
+          "beautyMen": "mužská krása",
+          "dr": "doktor"
+        },
+        "dubaiCategory": {
+          "category": "Kategória",
+          "realEstate": "Nehnuteľnosti",
+          "restaurant": "Reštaurácia",
+          "store": "Obchod",
+          "hotel": "Hotel"
+        }
+      },
+      "fiatDeposite": "Fiat vklad",
+      "country": "Krajina",
+      "acceptedPaymentMethods": "Akceptované spôsoby platby",
+      "marginTrading": "Margin obchodovanie",
+      "marketWithNoFees": "Trh bez poplatkov",
+      "province": "",
+      "city": ""
+    },
+    "CardResult": {
+      "selector": {
+        "relevant": "Relevantné",
+        "newest": "Najnovšie",
+        "oldest": "Najstaršie"
+      },
+      "titleResult": {
+        "exchanges": "Burzy",
+        "drziba": "Dr.Ziba",
+        "dubai": "Centrum Dubaj",
+        "iranarabic": "IránArabský"
+      },
+      "sortBy": "Zoradiť podľa",
+      "desc": {
+        "exchanges": "Úplný zoznam búrz v Centre búrz vrátane búrz z celého sveta",
+        "drziba": "",
+        "dubai": "Centrum Dubaj",
+        "iranarabic": "IránArabský"
+      }
+    }
+  }
+    

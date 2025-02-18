@@ -1,0 +1,140 @@
+{
+    "dir": "ltr",
+    "lang": "ms",
+    "contryCode": "1",
+    "iso": "us",
+    "metaData": {
+      "title": {
+        "exchange": "Pusat Pertukaran",
+        "drziba": "DrZiba",
+        "dubai": "Pusat Dubai",
+        "iranarabic": "Iran Arab"
+      },
+      "desc": {
+        "exchange": "Senarai penuh pertukaran di Pusat Pertukaran, termasuk pertukaran dari seluruh dunia",
+        "drziba": "",
+        "dubai": "Pusat Dubai",
+        "iranarabic": "Iran Arab"
+      }
+    },
+    "DirectoryName": {
+      "exchange": "Pusat Pertukaran",
+      "drziba": "دکترزیبا",
+      "dubai": "Pusat Dubai",
+      "iranarabic": "Iran Arab"
+    },
+    "langName": "Bahasa Melayu",
+    "menuSection": {
+      "mainNav": {
+        "blogPost": "Blog"
+      },
+      "mobileMenu": {
+        "apps": "Aplikasi",
+        "services": "Perkhidmatan",
+        "social": "Sosial",
+        "contact": "Hubungi"
+      }
+    },
+    "placeholder": {
+      "search": "Cari...",
+      "paymentChoose": "Pilih Kaedah Pembayaran",
+      "currencyChoose": "Pilih Mata Wang",
+      "countryChoose": "Pilih Negara",
+      "categoryChoose": "Pilih Kategori",
+      "provinceChoose": "",
+      "cityChoose": ""
+    },
+    "button": {
+      "clearAll": "Padam Semua",
+      "navigate": "Navigasi",
+      "contribute": "Sumbang",
+      "tryItNow": "Cuba Sekarang",
+      "seeallcontribute": "Lihat Semua Penyumbang",
+      "search": "Cari",
+      "manageProfile": "Urus Profil",
+      "countributeToEarn": "Sumbang untuk Mendapat Ganjaran",
+      "Apply": "Tapis",
+      "loadmore": "Muat Lagi..."
+    },
+    "cardDetails": {
+      "exchangeType": "Jenis Pertukaran",
+      "IncorporationCountry": "Negara Pendaftaran",
+      "areaServed": "Kawasan Perkhidmatan",
+      "NumberofEmployees": "Bilangan Pekerja",
+      "marketWithFees": "Pasaran dengan Yuran",
+      "Founding": "Tahun Penubuhan"
+    },
+    "infoContact": {
+      "contact": "Maklumat Hubungan"
+    },
+    "productandService": "Produk & Perkhidmatan",
+    "socialNetwork": "Rangkaian Sosial",
+    "holdingApp": "Aplikasi Pegangan",
+    "contributors": {
+      "contributors": "Penyumbang",
+      "avardingToken": "Token Diberikan"
+    },
+    "businessPartners": "Rakan Niaga",
+    "footerLink": {
+      "terms": "Terma",
+      "privacy": "Privasi",
+      "docs": "Dokumen",
+      "security": "Keselamatan",
+      "aboutExir": "Mengenai Exir"
+    },
+    "CardFilter": {
+      "filter": "Tapis",
+      "category": {
+        "exchangeCategory": {
+          "category": "Kategori Pertukaran",
+          "crypto": "Pertukaran Kripto",
+          "decentralized": "Pertukaran Terdesentralisasi",
+          "derivatives": "Pertukaran Derivatif"
+        },
+        "drzibaCategory": {
+          "category": "kategori",
+          "beautySalon": "salun kecantikan",
+          "beautyClinic": "klinik kecantikan",
+          "beautyTrapy": "terapi kecantikan",
+          "beautyWomen": "kecantikan wanita",
+          "beautyMen": "kecantikan lelaki",
+          "dr": "doktor"
+        },
+        "dubaiCategory": {
+          "category": "Kategori",
+          "realEstate": "Hartanah",
+          "restaurant": "Restoran",
+          "store": "Kedai",
+          "hotel": "Hotel"
+        }
+      },
+      "fiatDeposite": "Deposit Fiat",
+      "country": "Negara",
+      "acceptedPaymentMethods": "Kaedah Pembayaran Diterima",
+      "marginTrading": "Dagangan Margin",
+      "marketWithNoFees": "Pasaran Tanpa Yuran",
+      "province": "",
+      "city": ""
+    },
+    "CardResult": {
+      "selector": {
+        "relevant": "Berkaitan",
+        "newest": "Terbaru",
+        "oldest": "Terlama"
+      },
+      "titleResult": {
+        "exchanges": "Pertukaran",
+        "drziba": "Dr.Ziba",
+        "dubai": "Pusat Dubai",
+        "iranarabic": "Iran Arab"
+      },
+      "sortBy": "Susun Mengikut",
+      "desc": {
+        "exchanges": "Senarai penuh pertukaran di Pusat Pertukaran, termasuk pertukaran dari seluruh dunia",
+        "drziba": "",
+        "dubai": "Pusat Dubai",
+        "iranarabic": "Iran Arab"
+      }
+    }
+  }
+  

@@ -1,0 +1,140 @@
+{
+    "dir": "ltr",
+    "lang": "uk",
+    "contryCode": "1",
+    "iso": "us",
+    "metaData": {
+      "title": {
+        "exchange": "Хаб Бірж",
+        "drziba": "DrZiba",
+        "dubai": "Хаб Дубай",
+        "iranarabic": "ІранАрабська"
+      },
+      "desc": {
+        "exchange": "Повний список бірж у Хаб Бірж, включаючи біржі з усього світу",
+        "drziba": "",
+        "dubai": "Хаб Дубай",
+        "iranarabic": "ІранАрабська"
+      }
+    },
+    "DirectoryName": {
+      "exchange": "Хаб Бірж",
+      "drziba": "دکترزیبا",
+      "dubai": "Хаб Дубай",
+      "iranarabic": "ІранАрабська"
+    },
+    "langName": "Українська",
+    "menuSection": {
+      "mainNav": {
+        "blogPost": "Блог"
+      },
+      "mobileMenu": {
+        "apps": "Додатки",
+        "services": "Послуги",
+        "social": "Соціальні мережі",
+        "contact": "Контакти"
+      }
+    },
+    "placeholder": {
+      "search": "Пошук...",
+      "paymentChoose": "Оберіть Спосіб Оплати",
+      "currencyChoose": "Оберіть Валюту",
+      "countryChoose": "Оберіть Країну",
+      "categoryChoose": "Оберіть Категорії",
+      "provinceChoose": "",
+      "cityChoose": ""
+    },
+    "button": {
+      "clearAll": "Очистити все",
+      "navigate": "Навігація",
+      "contribute": "Внести вклад",
+      "tryItNow": "Спробувати зараз",
+      "seeallcontribute": "Показати всіх учасників",
+      "search": "Пошук",
+      "manageProfile": "Управління профілем",
+      "countributeToEarn": "Внесіть вклад, щоб заробити",
+      "Apply": "Застосувати фільтр",
+      "loadmore": "Завантажити ще..."
+    },
+    "cardDetails": {
+      "exchangeType": "Тип Біржі",
+      "IncorporationCountry": "Країна Реєстрації",
+      "areaServed": "Обслуговуваний Регіон",
+      "NumberofEmployees": "Кількість Співробітників",
+      "marketWithFees": "Ринок з Комісіями",
+      "Founding": "Рік Заснування"
+    },
+    "infoContact": {
+      "contact": "Контактна Інформація"
+    },
+    "productandService": "Продукти та Послуги",
+    "socialNetwork": "Соціальна Мережа",
+    "holdingApp": "Холдинг Додаток",
+    "contributors": {
+      "contributors": "Учасники",
+      "avardingToken": "Нагороджені Токени"
+    },
+    "businessPartners": "Бізнес Партнери",
+    "footerLink": {
+      "terms": "Умови",
+      "privacy": "Конфіденційність",
+      "docs": "Документи",
+      "security": "Безпека",
+      "aboutExir": "Про Exir"
+    },
+    "CardFilter": {
+      "filter": "Фільтр",
+      "category": {
+        "exchangeCategory": {
+          "category": "Категорії Бірж",
+          "crypto": "Криптовалютні Біржі",
+          "decentralized": "Децентралізовані Біржі",
+          "derivatives": "Ф’ючерсні Біржі"
+        },
+        "drzibaCategory": {
+          "category": "категорія",
+          "beautySalon": "салон краси",
+          "beautyClinic": "клініка краси",
+          "beautyTrapy": "терапія краси",
+          "beautyWomen": "краса жінок",
+          "beautyMen": "краса чоловіків",
+          "dr": "лікар"
+        },
+        "dubaiCategory": {
+          "category": "Категорія",
+          "realEstate": "Нерухомість",
+          "restaurant": "Ресторан",
+          "store": "Магазин",
+          "hotel": "Готель"
+        }
+      },
+      "fiatDeposite": "Фіатний Депозит",
+      "country": "Країна",
+      "acceptedPaymentMethods": "Прийняті Способи Оплати",
+      "marginTrading": "Маржинальна Торгівля",
+      "marketWithNoFees": "Ринок Без Комісій",
+      "province": "",
+      "city": ""
+    },
+    "CardResult": {
+      "selector": {
+        "relevant": "Актуальність",
+        "newest": "Новіші",
+        "oldest": "Старіші"
+      },
+      "titleResult": {
+        "exchanges": "Біржі",
+        "drziba": "Dr.Ziba",
+        "dubai": "Хаб Дубай",
+        "iranarabic": "ІранАрабська"
+      },
+      "sortBy": "Сортувати За",
+      "desc": {
+        "exchanges": "Повний список бірж у Хаб Бірж, включаючи біржі з усього світу",
+        "drziba": "",
+        "dubai": "Хаб Дубай",
+        "iranarabic": "ІранАрабська"
+      }
+    }
+  }
+  

@@ -1,0 +1,140 @@
+{
+    "dir": "ltr",
+    "lang": "fr",
+    "contryCode": "1",
+    "iso": "us",
+    "metaData": {
+      "title": {
+        "exchange": "Hub d'Échanges",
+        "drziba": "DrZiba",
+        "dubai": "Hub de Dubaï",
+        "iranarabic": "IranArabe"
+      },
+      "desc": {
+        "exchange": "La liste complète des échanges sur le Hub d'Échanges, y compris les échanges du monde entier",
+        "drziba": "",
+        "dubai": "Hub de Dubaï",
+        "iranarabic": "IranArabe"
+      }
+    },
+    "DirectoryName": {
+      "exchange": "Hub d'Échanges",
+      "drziba": "دکترزیبا",
+      "dubai": "Hub de Dubaï",
+      "iranarabic": "IranArabe"
+    },
+    "langName": "Français",
+    "menuSection": {
+      "mainNav": {
+        "blogPost": "Blog"
+      },
+      "mobileMenu": {
+        "apps": "Applications",
+        "services": "Services",
+        "social": "Réseaux Sociaux",
+        "contact": "Contact"
+      }
+    },
+    "placeholder": {
+      "search": "Rechercher...",
+      "paymentChoose": "Choisir les Méthodes de Paiement",
+      "currencyChoose": "Choisir les Devises",
+      "countryChoose": "Choisir le Pays",
+      "categoryChoose": "Choisir les Catégories",
+      "provinceChoose": "",
+      "cityChoose": ""
+    },
+    "button": {
+      "clearAll": "Tout Effacer",
+      "navigate": "Naviguer",
+      "contribute": "Contribuer",
+      "tryItNow": "Essayer Maintenant",
+      "seeallcontribute": "Voir Tous les Contributeurs",
+      "search": "Rechercher",
+      "manageProfile": "Gérer le Profil",
+      "countributeToEarn": "Contribuer pour Gagner",
+      "Apply": "Appliquer le Filtre",
+      "loadmore": "Charger Plus..."
+    },
+    "cardDetails": {
+      "exchangeType": "Type d'Échange",
+      "IncorporationCountry": "Pays d'Incorporation",
+      "areaServed": "Zone Desservie",
+      "NumberofEmployees": "Nombre d'Employés",
+      "marketWithFees": "Marché avec Frais",
+      "Founding": "Année de Création"
+    },
+    "infoContact": {
+      "contact": "Informations de Contact"
+    },
+    "productandService": "Produits & Services",
+    "socialNetwork": "Réseau Social",
+    "holdingApp": "Application de Holding",
+    "contributors": {
+      "contributors": "Contributeurs",
+      "avardingToken": "Jetons Récompensés"
+    },
+    "businessPartners": "Partenaires Commerciaux",
+    "footerLink": {
+      "terms": "Conditions",
+      "privacy": "Confidentialité",
+      "docs": "Documents",
+      "security": "Sécurité",
+      "aboutExir": "À propos de Exir"
+    },
+    "CardFilter": {
+      "filter": "Filtrer",
+      "category": {
+        "exchangeCategory": {
+          "category": "Catégories d'Échanges",
+          "crypto": "Échanges de Cryptomonnaies",
+          "decentralized": "Échanges Décentralisés",
+          "derivatives": "Échanges de Dérivés"
+        },
+        "drzibaCategory": {
+          "category": "catégorie",
+          "beautySalon": "salon de beauté",
+          "beautyClinic": "clinique de beauté",
+          "beautyTrapy": "thérapie de beauté",
+          "beautyWomen": "beauté féminine",
+          "beautyMen": "beauté masculine",
+          "dr": "docteur"
+        },
+        "dubaiCategory": {
+          "category": "Catégorie",
+          "realEstate": "Immobilier",
+          "restaurant": "Restaurant",
+          "store": "Magasin",
+          "hotel": "Hôtel"
+        }
+      },
+      "fiatDeposite": "Dépôt Fiat",
+      "country": "Pays",
+      "acceptedPaymentMethods": "Méthodes de Paiement Acceptées",
+      "marginTrading": "Trading sur Marge",
+      "marketWithNoFees": "Marché sans Frais",
+      "province": "",
+      "city": ""
+    },
+    "CardResult": {
+      "selector": {
+        "relevant": "Pertinent",
+        "newest": "Le Plus Récent",
+        "oldest": "Le Plus Ancien"
+      },
+      "titleResult": {
+        "exchanges": "Échanges",
+        "drziba": "Dr.Ziba",
+        "dubai": "Hub de Dubaï",
+        "iranarabic": "IranArabe"
+      },
+      "sortBy": "Trier Par",
+      "desc": {
+        "exchanges": "La liste complète des échanges sur le Hub d'Échanges, y compris les échanges du monde entier",
+        "drziba": "",
+        "dubai": "Hub de Dubaï",
+        "iranarabic": "IranArabe"
+      }
+    }
+  }
+  

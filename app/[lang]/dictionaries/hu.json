@@ -1,0 +1,140 @@
+{
+    "dir": "ltr",
+    "lang": "hu",
+    "contryCode": "1",
+    "iso": "us",
+    "metaData": {
+      "title": {
+        "exchange": "Tőzsde Központ",
+        "drziba": "DrZiba",
+        "dubai": "Dubaj Központ",
+        "iranarabic": "IránArab"
+      },
+      "desc": {
+        "exchange": "A Tőzsde Központ teljes listája a világ minden tájáról származó tőzsdékkel együtt",
+        "drziba": "",
+        "dubai": "Dubaj Központ",
+        "iranarabic": "IránArab"
+      }
+    },
+    "DirectoryName": {
+      "exchange": "Tőzsde Központ",
+      "drziba": "دکترزیبا",
+      "dubai": "Dubaj Központ",
+      "iranarabic": "IránArab"
+    },
+    "langName": "Magyar",
+    "menuSection": {
+      "mainNav": {
+        "blogPost": "Blog"
+      },
+      "mobileMenu": {
+        "apps": "Alkalmazások",
+        "services": "Szolgáltatások",
+        "social": "Közösségi",
+        "contact": "Kapcsolat"
+      }
+    },
+    "placeholder": {
+      "search": "Keresés...",
+      "paymentChoose": "Válassza ki a fizetési módokat",
+      "currencyChoose": "Válassza ki a valutákat",
+      "countryChoose": "Válasszon Országot",
+      "categoryChoose": "Válasszon Kategóriákat",
+      "provinceChoose": "",
+      "cityChoose": ""
+    },
+    "button": {
+      "clearAll": "Összes törlése",
+      "navigate": "Navigálás",
+      "contribute": "Hozzájárulás",
+      "tryItNow": "Próbálja ki most",
+      "seeallcontribute": "Összes hozzájáruló megtekintése",
+      "search": "Keresés",
+      "manageProfile": "Profil kezelése",
+      "countributeToEarn": "Hozzájárulás a keresethez",
+      "Apply": "Szűrő alkalmazása",
+      "loadmore": "Továbbiak betöltése..."
+    },
+    "cardDetails": {
+      "exchangeType": "Tőzsde típusa",
+      "IncorporationCountry": "Bejegyzés Országa",
+      "areaServed": "Kiszolgált Terület",
+      "NumberofEmployees": "Alkalmazottak Száma",
+      "marketWithFees": "Piac Díjakkal",
+      "Founding": "Alapítás Éve"
+    },
+    "infoContact": {
+      "contact": "Kapcsolati Információk"
+    },
+    "productandService": "Termékek és Szolgáltatások",
+    "socialNetwork": "Közösségi Hálózat",
+    "holdingApp": "Holding Alkalmazás",
+    "contributors": {
+      "contributors": "Hozzájárulók",
+      "avardingToken": "Jutalom Tokenek"
+    },
+    "businessPartners": "Üzleti Partnerek",
+    "footerLink": {
+      "terms": "Feltételek",
+      "privacy": "Adatvédelem",
+      "docs": "Dokumentumok",
+      "security": "Biztonság",
+      "aboutExir": "Az Exirről"
+    },
+    "CardFilter": {
+      "filter": "Szűrő",
+      "category": {
+        "exchangeCategory": {
+          "category": "Tőzsde Kategóriák",
+          "crypto": "Kriptovaluta Tőzsdék",
+          "decentralized": "Decentralizált Tőzsdék",
+          "derivatives": "Származtatott Tőzsdék"
+        },
+        "drzibaCategory": {
+          "category": "kategória",
+          "beautySalon": "szépségszalon",
+          "beautyClinic": "szépségklinika",
+          "beautyTrapy": "szépségterápia",
+          "beautyWomen": "női szépség",
+          "beautyMen": "férfi szépség",
+          "dr": "orvos"
+        },
+        "dubaiCategory": {
+          "category": "Kategória",
+          "realEstate": "Ingatlan",
+          "restaurant": "Étterem",
+          "store": "Üzlet",
+          "hotel": "Szálloda"
+        }
+      },
+      "fiatDeposite": "Fiat Befizetés",
+      "country": "Ország",
+      "acceptedPaymentMethods": "Elfogadott Fizetési Módok",
+      "marginTrading": "Tőkeáttételes Kereskedés",
+      "marketWithNoFees": "Díjmentes Piac",
+      "province": "",
+      "city": ""
+    },
+    "CardResult": {
+      "selector": {
+        "relevant": "Releváns",
+        "newest": "Legújabb",
+        "oldest": "Legrégebbi"
+      },
+      "titleResult": {
+        "exchanges": "Tőzsdék",
+        "drziba": "Dr.Ziba",
+        "dubai": "Dubaj Központ",
+        "iranarabic": "IránArab"
+      },
+      "sortBy": "Rendezés szerint",
+      "desc": {
+        "exchanges": "A Tőzsde Központ teljes listája a világ minden tájáról származó tőzsdékkel együtt",
+        "drziba": "",
+        "dubai": "Dubaj Központ",
+        "iranarabic": "IránArab"
+      }
+    }
+  }
+  

@@ -1,0 +1,140 @@
+{
+    "dir": "ltr",
+    "lang": "tl",
+    "contryCode": "1",
+    "iso": "us",
+    "metaData": {
+      "title": {
+        "exchange": "Sentro ng Palitan",
+        "drziba": "DrZiba",
+        "dubai": "Sentro ng Dubai",
+        "iranarabic": "Iran Arabe"
+      },
+      "desc": {
+        "exchange": "Kumpletong listahan ng mga palitan sa Sentro ng Palitan, kabilang ang mga palitan mula sa buong mundo",
+        "drziba": "",
+        "dubai": "Sentro ng Dubai",
+        "iranarabic": "Iran Arabe"
+      }
+    },
+    "DirectoryName": {
+      "exchange": "Sentro ng Palitan",
+      "drziba": "دکترزیبا",
+      "dubai": "Sentro ng Dubai",
+      "iranarabic": "Iran Arabe"
+    },
+    "langName": "Tagalog",
+    "menuSection": {
+      "mainNav": {
+        "blogPost": "Blog"
+      },
+      "mobileMenu": {
+        "apps": "Mga Aplikasyon",
+        "services": "Mga Serbisyo",
+        "social": "Social Media",
+        "contact": "Makipag-ugnayan"
+      }
+    },
+    "placeholder": {
+      "search": "Maghanap...",
+      "paymentChoose": "Piliin ang Mga Paraan ng Pagbabayad",
+      "currencyChoose": "Piliin ang Mga Pera",
+      "countryChoose": "Piliin ang Bansa",
+      "categoryChoose": "Piliin ang Mga Kategorya",
+      "provinceChoose": "",
+      "cityChoose": ""
+    },
+    "button": {
+      "clearAll": "Burahin Lahat",
+      "navigate": "Mag-navigate",
+      "contribute": "Mag-ambag",
+      "tryItNow": "Subukan Ngayon",
+      "seeallcontribute": "Tingnan Lahat ng Mga Nag-ambag",
+      "search": "Maghanap",
+      "manageProfile": "Pamahalaan ang Profile",
+      "countributeToEarn": "Mag-ambag para Kumita",
+      "Apply": "Ilapat ang Filter",
+      "loadmore": "Mag-load ng Higit Pa..."
+    },
+    "cardDetails": {
+      "exchangeType": "Uri ng Palitan",
+      "IncorporationCountry": "Bansang Rehistrado",
+      "areaServed": "Saklaw na Lugar",
+      "NumberofEmployees": "Bilang ng mga Empleyado",
+      "marketWithFees": "Merkado na May Bayad",
+      "Founding": "Taon ng Pagtatatag"
+    },
+    "infoContact": {
+      "contact": "Impormasyon sa Pakikipag-ugnayan"
+    },
+    "productandService": "Mga Produkto at Serbisyo",
+    "socialNetwork": "Social Network",
+    "holdingApp": "Holding App",
+    "contributors": {
+      "contributors": "Mga Nag-ambag",
+      "avardingToken": "Mga Ginawad na Token"
+    },
+    "businessPartners": "Mga Kasosyo sa Negosyo",
+    "footerLink": {
+      "terms": "Mga Tuntunin",
+      "privacy": "Pagkapribado",
+      "docs": "Mga Dokumento",
+      "security": "Seguridad",
+      "aboutExir": "Tungkol sa Exir"
+    },
+    "CardFilter": {
+      "filter": "Filter",
+      "category": {
+        "exchangeCategory": {
+          "category": "Mga Kategorya ng Palitan",
+          "crypto": "Mga Palitan ng Cryptocurrency",
+          "decentralized": "Desentralisadong Palitan",
+          "derivatives": "Mga Palitan ng Derivatives"
+        },
+        "drzibaCategory": {
+          "category": "kategorya",
+          "beautySalon": "salon ng kagandahan",
+          "beautyClinic": "klinika ng kagandahan",
+          "beautyTrapy": "terapiya ng kagandahan",
+          "beautyWomen": "kagandahan ng kababaihan",
+          "beautyMen": "kagandahan ng kalalakihan",
+          "dr": "doktor"
+        },
+        "dubaiCategory": {
+          "category": "Kategorya",
+          "realEstate": "Real Estate",
+          "restaurant": "Restawran",
+          "store": "Tindahan",
+          "hotel": "Hotel"
+        }
+      },
+      "fiatDeposite": "Deposito ng Fiat",
+      "country": "Bansa",
+      "acceptedPaymentMethods": "Mga Tinanggap na Paraan ng Pagbabayad",
+      "marginTrading": "Margin Trading",
+      "marketWithNoFees": "Merkado na Walang Bayad",
+      "province": "",
+      "city": ""
+    },
+    "CardResult": {
+      "selector": {
+        "relevant": "Nauugnay",
+        "newest": "Pinakabago",
+        "oldest": "Pinakamatanda"
+      },
+      "titleResult": {
+        "exchanges": "Mga Palitan",
+        "drziba": "Dr.Ziba",
+        "dubai": "Sentro ng Dubai",
+        "iranarabic": "Iran Arabe"
+      },
+      "sortBy": "I-uri ayon sa",
+      "desc": {
+        "exchanges": "Kumpletong listahan ng mga palitan sa Sentro ng Palitan, kabilang ang mga palitan mula sa buong mundo",
+        "drziba": "",
+        "dubai": "Sentro ng Dubai",
+        "iranarabic": "Iran Arabe"
+      }
+    }
+  }
+  

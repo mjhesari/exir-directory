@@ -12,38 +12,11 @@ export const dayOfWeek: DayOfWeekType[] = [
   "friday",
   "saturday",
 ];
-type outputLocationDetailsT = { tr: { [key: string]: string } } | null;
-const fetchLocationDetail = async (
-  url: string
-  ): Promise<outputLocationDetailsT> => {
-  try {
-    const response = await fetch(url);
-    if (response.ok) {
-      return await response.json();
-    } else {
-      console.error(`Error fetching data from ${url}: ${response.status}`);
-      return null;
-    }
-  } catch (error) {
-    console.error(`Error occurred while fetching ${url}: ${error}`);
-    return null;
-  }
-};
-
 //*LocalBusiness schema
 export const generateLocalBusinessSchema = async (
   data: Business,
   lang: langsType
   ) => {
-
-//   // URLs for API requests
-//   const countryUrl = data?.country ? `https://region.contentapi.io/api/country/${data?.country??""}` : "";
-//   const provinceUrl = data?.region ? `https://region.contentapi.io/api/province/${data?.region??""}`:"";
-//   const cityUrl = data?.city ? `https://region.contentapi.io/api/city/${data?.city??""}`:"";
-//   // Fetch location details
-//   const countryData = await fetchLocationDetail(countryUrl);
-//   const provinceData = await fetchLocationDetail(provinceUrl);
-//   const cityData = await fetchLocationDetail(cityUrl);
   const openingHoursSpecification = Object.keys(data?.workTime||{}).map(weekDay => {
     const open = data?.workTime?.[weekDay as keyof typeof data.workTime]?.[0]?.open;
     const close = data?.workTime?.[weekDay as keyof typeof data.workTime]?.[0]?.close;

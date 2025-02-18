@@ -1,0 +1,140 @@
+{
+    "dir": "rtl",
+    "lang": "ur",
+    "contryCode": "1",
+    "iso": "us",
+    "metaData": {
+      "title": {
+        "exchange": "ایکسچینج حب",
+        "drziba": "DrZiba",
+        "dubai": "دبئی حب",
+        "iranarabic": "ایران عربی"
+      },
+      "desc": {
+        "exchange": "ایکسچینج حب میں دنیا بھر کے ایکسچینجز کی مکمل فہرست",
+        "drziba": "",
+        "dubai": "دبئی حب",
+        "iranarabic": "ایران عربی"
+      }
+    },
+    "DirectoryName": {
+      "exchange": "ایکسچینج حب",
+      "drziba": "دکترزیبا",
+      "dubai": "دبئی حب",
+      "iranarabic": "ایران عربی"
+    },
+    "langName": "اردو",
+    "menuSection": {
+      "mainNav": {
+        "blogPost": "بلاگ"
+      },
+      "mobileMenu": {
+        "apps": "ایپس",
+        "services": "سروسز",
+        "social": "سوشل",
+        "contact": "رابطہ"
+      }
+    },
+    "placeholder": {
+      "search": "تلاش کریں...",
+      "paymentChoose": "ادائیگی کے طریقے منتخب کریں",
+      "currencyChoose": "کرنسیاں منتخب کریں",
+      "countryChoose": "ملک منتخب کریں",
+      "categoryChoose": "کیٹیگریز منتخب کریں",
+      "provinceChoose": "",
+      "cityChoose": ""
+    },
+    "button": {
+      "clearAll": "سب صاف کریں",
+      "navigate": "نیویگیٹ کریں",
+      "contribute": "حصہ ڈالیں",
+      "tryItNow": "ابھی آزمائیں",
+      "seeallcontribute": "تمام معاونین دیکھیں",
+      "search": "تلاش کریں",
+      "manageProfile": "پروفائل منیج کریں",
+      "countributeToEarn": "کمانے کے لیے حصہ ڈالیں",
+      "Apply": "فلٹر اپلائی کریں",
+      "loadmore": "مزید لوڈ کریں..."
+    },
+    "cardDetails": {
+      "exchangeType": "ایکسچینج کی قسم",
+      "IncorporationCountry": "شامل کرنے کا ملک",
+      "areaServed": "خدمات کا علاقہ",
+      "NumberofEmployees": "ملازمین کی تعداد",
+      "marketWithFees": "فیس کے ساتھ مارکیٹ",
+      "Founding": "قیام کا سال"
+    },
+    "infoContact": {
+      "contact": "رابطے کی معلومات"
+    },
+    "productandService": "مصنوعات اور خدمات",
+    "socialNetwork": "سوشل نیٹ ورک",
+    "holdingApp": "ہولڈنگ ایپ",
+    "contributors": {
+      "contributors": "معاونین",
+      "avardingToken": "دیے گئے ٹوکن"
+    },
+    "businessPartners": "بزنس پارٹنرز",
+    "footerLink": {
+      "terms": "شرائط",
+      "privacy": "پرائیویسی",
+      "docs": "دستاویزات",
+      "security": "سیکیورٹی",
+      "aboutExir": "ایکسیر کے بارے میں"
+    },
+    "CardFilter": {
+      "filter": "فلٹر",
+      "category": {
+        "exchangeCategory": {
+          "category": "ایکسچینج کی اقسام",
+          "crypto": "کرپٹو ایکسچینجز",
+          "decentralized": "ڈی سینٹرلائزڈ ایکسچینجز",
+          "derivatives": "ڈیریویٹوز ایکسچینجز"
+        },
+        "drzibaCategory": {
+          "category": "زمرہ",
+          "beautySalon": "بیوٹی سیلون",
+          "beautyClinic": "بیوٹی کلینک",
+          "beautyTrapy": "بیوٹی تھراپی",
+          "beautyWomen": "خواتین کی خوبصورتی",
+          "beautyMen": "مردوں کی خوبصورتی",
+          "dr": "ڈاکٹر"
+        },
+        "dubaiCategory": {
+          "category": "کیٹیگری",
+          "realEstate": "ریئل اسٹیٹ",
+          "restaurant": "ریسٹورنٹ",
+          "store": "اسٹور",
+          "hotel": "ہوٹل"
+        }
+      },
+      "fiatDeposite": "فیاٹ ڈپازٹ",
+      "country": "ملک",
+      "acceptedPaymentMethods": "قبول شدہ ادائیگی کے طریقے",
+      "marginTrading": "مارجن ٹریڈنگ",
+      "marketWithNoFees": "فیس کے بغیر مارکیٹ",
+      "province": "",
+      "city": ""
+    },
+    "CardResult": {
+      "selector": {
+        "relevant": "متعلقہ",
+        "newest": "نیا ترین",
+        "oldest": "پرانا ترین"
+      },
+      "titleResult": {
+        "exchanges": "ایکسچینجز",
+        "drziba": "Dr.Ziba",
+        "dubai": "دبئی حب",
+        "iranarabic": "ایران عربی"
+      },
+      "sortBy": "ترتیب دیں",
+      "desc": {
+        "exchanges": "ایکسچینج حب میں دنیا بھر کے ایکسچینجز کی مکمل فہرست",
+        "drziba": "",
+        "dubai": "دبئی حب",
+        "iranarabic": "ایران عربی"
+      }
+    }
+  }
+  

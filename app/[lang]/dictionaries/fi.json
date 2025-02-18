@@ -1,0 +1,140 @@
+{
+    "dir": "ltr",
+    "lang": "fi",
+    "contryCode": "1",
+    "iso": "us",
+    "metaData": {
+      "title": {
+        "exchange": "Pörssikeskus",
+        "drziba": "DrZiba",
+        "dubai": "Dubain Keskus",
+        "iranarabic": "IranArabia"
+      },
+      "desc": {
+        "exchange": "Täydellinen lista Pörssikeskuksen pörsseistä, mukaan lukien pörssit ympäri maailmaa",
+        "drziba": "",
+        "dubai": "Dubain Keskus",
+        "iranarabic": "IranArabia"
+      }
+    },
+    "DirectoryName": {
+      "exchange": "Pörssikeskus",
+      "drziba": "دکترزیبا",
+      "dubai": "Dubain Keskus",
+      "iranarabic": "IranArabia"
+    },
+    "langName": "Suomi",
+    "menuSection": {
+      "mainNav": {
+        "blogPost": "Blogi"
+      },
+      "mobileMenu": {
+        "apps": "Sovellukset",
+        "services": "Palvelut",
+        "social": "Sosiaalinen",
+        "contact": "Yhteystiedot"
+      }
+    },
+    "placeholder": {
+      "search": "Hae...",
+      "paymentChoose": "Valitse Maksutavat",
+      "currencyChoose": "Valitse Valuutat",
+      "countryChoose": "Valitse Maa",
+      "categoryChoose": "Valitse Kategoriat",
+      "provinceChoose": "",
+      "cityChoose": ""
+    },
+    "button": {
+      "clearAll": "Tyhjennä kaikki",
+      "navigate": "Navigoi",
+      "contribute": "Osallistu",
+      "tryItNow": "Kokeile Nyt",
+      "seeallcontribute": "Näytä Kaikki Osallistujat",
+      "search": "Hae",
+      "manageProfile": "Hallinnoi Profiilia",
+      "countributeToEarn": "Osallistu ansaitaksesi",
+      "Apply": "Käytä Suodatinta",
+      "loadmore": "Lataa lisää..."
+    },
+    "cardDetails": {
+      "exchangeType": "Pörssityyppi",
+      "IncorporationCountry": "Rekisteröintimaa",
+      "areaServed": "Palvelualue",
+      "NumberofEmployees": "Työntekijöiden Lukumäärä",
+      "marketWithFees": "Markkina Maksuilla",
+      "Founding": "Perustamisvuosi"
+    },
+    "infoContact": {
+      "contact": "Yhteystiedot"
+    },
+    "productandService": "Tuotteet ja Palvelut",
+    "socialNetwork": "Sosiaalinen Verkosto",
+    "holdingApp": "Holding-sovellus",
+    "contributors": {
+      "contributors": "Osallistujat",
+      "avardingToken": "Myönnetyt Tokenit"
+    },
+    "businessPartners": "Liikekumppanit",
+    "footerLink": {
+      "terms": "Ehdot",
+      "privacy": "Tietosuoja",
+      "docs": "Asiakirjat",
+      "security": "Turvallisuus",
+      "aboutExir": "Tietoa Exiristä"
+    },
+    "CardFilter": {
+      "filter": "Suodatin",
+      "category": {
+        "exchangeCategory": {
+          "category": "Pörssikategoriat",
+          "crypto": "Kryptovaluuttapörssit",
+          "decentralized": "Hajautetut Pörssit",
+          "derivatives": "Johdannaispörssit"
+        },
+        "drzibaCategory": {
+          "category": "kategoria",
+          "beautySalon": "kauneushoitola",
+          "beautyClinic": "kauneusklinikka",
+          "beautyTrapy": "kauneushoito",
+          "beautyWomen": "naisten kauneus",
+          "beautyMen": "miesten kauneus",
+          "dr": "lääkäri"
+        },
+        "dubaiCategory": {
+          "category": "Kategoria",
+          "realEstate": "Kiinteistöt",
+          "restaurant": "Ravintola",
+          "store": "Kauppa",
+          "hotel": "Hotelli"
+        }
+      },
+      "fiatDeposite": "Fiat-talletus",
+      "country": "Maa",
+      "acceptedPaymentMethods": "Hyväksytyt Maksutavat",
+      "marginTrading": "Marginaalikauppa",
+      "marketWithNoFees": "Markkina Ilman Mak suja",
+      "province": "",
+      "city": ""
+    },
+    "CardResult": {
+      "selector": {
+        "relevant": "Osuvin",
+        "newest": "Uusin",
+        "oldest": "Vanhin"
+      },
+      "titleResult": {
+        "exchanges": "Pörssit",
+        "drziba": "Dr.Ziba",
+        "dubai": "Dubain Keskus",
+        "iranarabic": "IranArabia"
+      },
+      "sortBy": "Lajittele",
+      "desc": {
+        "exchanges": "Täydellinen lista Pörssikeskuksen pörsseistä, mukaan lukien pörssit ympäri maailmaa",
+        "drziba": "",
+        "dubai": "Dubain Keskus",
+        "iranarabic": "IranArabia"
+      }
+    }
+  }
+  

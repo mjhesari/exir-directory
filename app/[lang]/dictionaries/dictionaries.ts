@@ -1,12 +1,18 @@
 import dicts from "./en.json";
+import { locales } from "@/app/[lang]/dictionaries/languages";
 
-const dictionaries = {
-  en: () => import("./en.json").then((module) => module.default),
-  fa: () => import("./fa.json").then((module) => module.default),
-  ar: () => import("./ar.json").then((module) => module.default),
-};
+type Language = (typeof locales)[number];
 export type langsType = keyof typeof dictionaries;
 export type DictsTypes = typeof dicts;
+
+const dictionaries: Record<Language, () => Promise<Record<string, string>>> = locales.reduce(
+  (acc, lang) => {
+    acc[lang] = () =>
+      import(`./${lang}.json`).then((module) => module.default);
+    return acc;
+  },
+  {} as Record<Language, () => Promise<Record<string, string>>>
+);
 
 export const getDictionary = async (locale: langsType) => {
   const dicLocale = dictionaries[locale];
@@ -15,3 +21,4 @@ export const getDictionary = async (locale: langsType) => {
   }
   return await dicLocale();
 };
+

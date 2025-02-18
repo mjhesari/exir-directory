@@ -1,0 +1,140 @@
+{
+    "dir": "ltr",
+    "lang": "pl",
+    "contryCode": "1",
+    "iso": "us",
+    "metaData": {
+      "title": {
+        "exchange": "Centrum Giełd",
+        "drziba": "DrZiba",
+        "dubai": "Centrum Dubaju",
+        "iranarabic": "IranArabski"
+      },
+      "desc": {
+        "exchange": "Pełna lista giełd w Centrum Giełd, w tym giełdy z całego świata",
+        "drziba": "",
+        "dubai": "Centrum Dubaju",
+        "iranarabic": "IranArabski"
+      }
+    },
+    "DirectoryName": {
+      "exchange": "Centrum Giełd",
+      "drziba": "دکترزیبا",
+      "dubai": "Centrum Dubaju",
+      "iranarabic": "IranArabski"
+    },
+    "langName": "Polski",
+    "menuSection": {
+      "mainNav": {
+        "blogPost": "Blog"
+      },
+      "mobileMenu": {
+        "apps": "Aplikacje",
+        "services": "Usługi",
+        "social": "Społeczność",
+        "contact": "Kontakt"
+      }
+    },
+    "placeholder": {
+      "search": "Szukaj...",
+      "paymentChoose": "Wybierz Metody Płatności",
+      "currencyChoose": "Wybierz Waluty",
+      "countryChoose": "Wybierz Kraj",
+      "categoryChoose": "Wybierz Kategorie",
+      "provinceChoose": "",
+      "cityChoose": ""
+    },
+    "button": {
+      "clearAll": "Wyczyść wszystko",
+      "navigate": "Nawiguj",
+      "contribute": "Wnieś wkład",
+      "tryItNow": "Wypróbuj Teraz",
+      "seeallcontribute": "Zobacz Wszystkich Współtwórców",
+      "search": "Szukaj",
+      "manageProfile": "Zarządzaj Profilem",
+      "countributeToEarn": "Wnieś wkład, aby zarobić",
+      "Apply": "Zastosuj Filtr",
+      "loadmore": "Załaduj więcej..."
+    },
+    "cardDetails": {
+      "exchangeType": "Rodzaj Giełdy",
+      "IncorporationCountry": "Kraj Rejestracji",
+      "areaServed": "Obszar Obsługi",
+      "NumberofEmployees": "Liczba Pracowników",
+      "marketWithFees": "Rynek z Opłatami",
+      "Founding": "Rok Założenia"
+    },
+    "infoContact": {
+      "contact": "Informacje Kontaktowe"
+    },
+    "productandService": "Produkty i Usługi",
+    "socialNetwork": "Sieć Społecznościowa",
+    "holdingApp": "Aplikacja Holdingowa",
+    "contributors": {
+      "contributors": "Współtwórcy",
+      "avardingToken": "Przyznane Tokeny"
+    },
+    "businessPartners": "Partnerzy Biznesowi",
+    "footerLink": {
+      "terms": "Warunki",
+      "privacy": "Prywatność",
+      "docs": "Dokumenty",
+      "security": "Bezpieczeństwo",
+      "aboutExir": "O Exir"
+    },
+    "CardFilter": {
+      "filter": "Filtruj",
+      "category": {
+        "exchangeCategory": {
+          "category": "Kategorie Giełd",
+          "crypto": "Giełdy Kryptowalut",
+          "decentralized": "Zdecentralizowane Giełdy",
+          "derivatives": "Giełdy Instrumentów Pochodnych"
+        },
+        "drzibaCategory": {
+          "category": "kategoria",
+          "beautySalon": "salon piękności",
+          "beautyClinic": "klinika piękności",
+          "beautyTrapy": "terapia piękności",
+          "beautyWomen": "piękno kobiet",
+          "beautyMen": "piękno mężczyzn",
+          "dr": "doktor"
+        },
+        "dubaiCategory": {
+          "category": "Kategoria",
+          "realEstate": "Nieruchomości",
+          "restaurant": "Restauracja",
+          "store": "Sklep",
+          "hotel": "Hotel"
+        }
+      },
+      "fiatDeposite": "Depozyt Fiat",
+      "country": "Kraj",
+      "acceptedPaymentMethods": "Akceptowane Metody Płatności",
+      "marginTrading": "Handel z Dźwignią",
+      "marketWithNoFees": "Rynek Bez Opłat",
+      "province": "",
+      "city": ""
+    },
+    "CardResult": {
+      "selector": {
+        "relevant": "Trafność",
+        "newest": "Najnowsze",
+        "oldest": "Najstarsze"
+      },
+      "titleResult": {
+        "exchanges": "Giełdy",
+        "drziba": "Dr.Ziba",
+        "dubai": "Centrum Dubaju",
+        "iranarabic": "IranArabski"
+      },
+      "sortBy": "Sortuj według",
+      "desc": {
+        "exchanges": "Pełna lista giełd w Centrum Giełd, w tym giełdy z całego świata",
+        "drziba": "",
+        "dubai": "Centrum Dubaju",
+        "iranarabic": "IranArabski"
+      }
+    }
+  }
+  

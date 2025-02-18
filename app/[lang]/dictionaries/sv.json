@@ -1,0 +1,140 @@
+{
+    "dir": "ltr",
+    "lang": "sv",
+    "contryCode": "1",
+    "iso": "us",
+    "metaData": {
+      "title": {
+        "exchange": "Börscentrum",
+        "drziba": "DrZiba",
+        "dubai": "Dubai Centrum",
+        "iranarabic": "IranArabiska"
+      },
+      "desc": {
+        "exchange": "Den kompletta listan över börser i Börscentrum, inklusive börser från hela världen",
+        "drziba": "",
+        "dubai": "Dubai Centrum",
+        "iranarabic": "IranArabiska"
+      }
+    },
+    "DirectoryName": {
+      "exchange": "Börscentrum",
+      "drziba": "دکترزیبا",
+      "dubai": "Dubai Centrum",
+      "iranarabic": "IranArabiska"
+    },
+    "langName": "Svenska",
+    "menuSection": {
+      "mainNav": {
+        "blogPost": "Blogg"
+      },
+      "mobileMenu": {
+        "apps": "Appar",
+        "services": "Tjänster",
+        "social": "Socialt",
+        "contact": "Kontakt"
+      }
+    },
+    "placeholder": {
+      "search": "Sök...",
+      "paymentChoose": "Välj Betalningsmetoder",
+      "currencyChoose": "Välj Valutor",
+      "countryChoose": "Välj Land",
+      "categoryChoose": "Välj Kategorier",
+      "provinceChoose": "",
+      "cityChoose": ""
+    },
+    "button": {
+      "clearAll": "Rensa allt",
+      "navigate": "Navigera",
+      "contribute": "Bidra",
+      "tryItNow": "Prova Nu",
+      "seeallcontribute": "Se Alla Bidragsgivare",
+      "search": "Sök",
+      "manageProfile": "Hantera Profil",
+      "countributeToEarn": "Bidra för att Tjäna",
+      "Apply": "Tillämpa Filter",
+      "loadmore": "Ladda fler..."
+    },
+    "cardDetails": {
+      "exchangeType": "Börstyp",
+      "IncorporationCountry": "Registreringsland",
+      "areaServed": "Område som Tjänas",
+      "NumberofEmployees": "Antal Anställda",
+      "marketWithFees": "Marknad med Avgifter",
+      "Founding": "Grundningsår"
+    },
+    "infoContact": {
+      "contact": "Kontaktinformation"
+    },
+    "productandService": "Produkter & Tjänster",
+    "socialNetwork": "Socialt Nätverk",
+    "holdingApp": "Holdingapp",
+    "contributors": {
+      "contributors": "Bidragsgivare",
+      "avardingToken": "Tilldelade Tokens"
+    },
+    "businessPartners": "Affärspartners",
+    "footerLink": {
+      "terms": "Villkor",
+      "privacy": "Sekretess",
+      "docs": "Dokument",
+      "security": "Säkerhet",
+      "aboutExir": "Om Exir"
+    },
+    "CardFilter": {
+      "filter": "Filter",
+      "category": {
+        "exchangeCategory": {
+          "category": "Börskategorier",
+          "crypto": "Kryptovalutabörser",
+          "decentralized": "Decentraliserade Börser",
+          "derivatives": "Derivatbörser"
+        },
+        "drzibaCategory": {
+          "category": "kategori",
+          "beautySalon": "skönhetssalong",
+          "beautyClinic": "skönhetsklinik",
+          "beautyTrapy": "skönhetsbehandling",
+          "beautyWomen": "kvinnlig skönhet",
+          "beautyMen": "manlig skönhet",
+          "dr": "doktor"
+        },
+        "dubaiCategory": {
+          "category": "Kategori",
+          "realEstate": "Fastigheter",
+          "restaurant": "Restaurang",
+          "store": "Butik",
+          "hotel": "Hotell"
+        }
+      },
+      "fiatDeposite": "Fiat-insättning",
+      "country": "Land",
+      "acceptedPaymentMethods": "Godkända Betalningsmetoder",
+      "marginTrading": "Marginalhandel",
+      "marketWithNoFees": "Marknad utan Avgifter",
+      "province": "",
+      "city": ""
+    },
+    "CardResult": {
+      "selector": {
+        "relevant": "Relevant",
+        "newest": "Nyast",
+        "oldest": "Äldst"
+      },
+      "titleResult": {
+        "exchanges": "Börser",
+        "drziba": "Dr.Ziba",
+        "dubai": "Dubai Centrum",
+        "iranarabic": "IranArabiska"
+      },
+      "sortBy": "Sortera efter",
+      "desc": {
+        "exchanges": "Den kompletta listan över börser i Börscentrum, inklusive börser från hela världen",
+        "drziba": "",
+        "dubai": "Dubai Centrum",
+        "iranarabic": "IranArabiska"
+      }
+    }
+  }
+  

@@ -1,0 +1,140 @@
+{
+    "dir": "ltr",
+    "lang": "da",
+    "contryCode": "1",
+    "iso": "us",
+    "metaData": {
+      "title": {
+        "exchange": "Børs Hub",
+        "drziba": "DrZiba",
+        "dubai": "Dubai Hub",
+        "iranarabic": "IranArabisk"
+      },
+      "desc": {
+        "exchange": "Den komplette liste over børser i Børs Hub, inklusive børser fra hele verden",
+        "drziba": "",
+        "dubai": "Dubai Hub",
+        "iranarabic": "IranArabisk"
+      }
+    },
+    "DirectoryName": {
+      "exchange": "Børs Hub",
+      "drziba": "دکترزیبا",
+      "dubai": "Dubai Hub",
+      "iranarabic": "IranArabisk"
+    },
+    "langName": "Dansk",
+    "menuSection": {
+      "mainNav": {
+        "blogPost": "Blog"
+      },
+      "mobileMenu": {
+        "apps": "Apps",
+        "services": "Tjenester",
+        "social": "Social",
+        "contact": "Kontakt"
+      }
+    },
+    "placeholder": {
+      "search": "Søg...",
+      "paymentChoose": "Vælg Betalingsmetoder",
+      "currencyChoose": "Vælg Valuta",
+      "countryChoose": "Vælg Land",
+      "categoryChoose": "Vælg Kategorier",
+      "provinceChoose": "",
+      "cityChoose": ""
+    },
+    "button": {
+      "clearAll": "Ryd alt",
+      "navigate": "Naviger",
+      "contribute": "Bidrag",
+      "tryItNow": "Prøv Nu",
+      "seeallcontribute": "Se Alle Bidragsydere",
+      "search": "Søg",
+      "manageProfile": "Administrer Profil",
+      "countributeToEarn": "Bidrag for at Tjene",
+      "Apply": "Anvend Filter",
+      "loadmore": "Indlæs mere..."
+    },
+    "cardDetails": {
+      "exchangeType": "Børstype",
+      "IncorporationCountry": "Registreringsland",
+      "areaServed": "Serviceret Område",
+      "NumberofEmployees": "Antal Medarbejdere",
+      "marketWithFees": "Marked med Gebyrer",
+      "Founding": "Etableringsår"
+    },
+    "infoContact": {
+      "contact": "Kontaktoplysninger"
+    },
+    "productandService": "Produkter og Tjenester",
+    "socialNetwork": "Socialt Netværk",
+    "holdingApp": "Holding App",
+    "contributors": {
+      "contributors": "Bidragsydere",
+      "avardingToken": "Tildelte Tokens"
+    },
+    "businessPartners": "Forretningspartnere",
+    "footerLink": {
+      "terms": "Vilkår",
+      "privacy": "Privatliv",
+      "docs": "Dokumenter",
+      "security": "Sikkerhed",
+      "aboutExir": "Om Exir"
+    },
+    "CardFilter": {
+      "filter": "Filter",
+      "category": {
+        "exchangeCategory": {
+          "category": "Børskategorier",
+          "crypto": "Kryptovalutabørser",
+          "decentralized": "Decentraliserede Børser",
+          "derivatives": "Derivatbørser"
+        },
+        "drzibaCategory": {
+          "category": "kategori",
+          "beautySalon": "skønhedssalon",
+          "beautyClinic": "skønhedsklinik",
+          "beautyTrapy": "skønhedsbehandling",
+          "beautyWomen": "kvinders skønhed",
+          "beautyMen": "mænds skønhed",
+          "dr": "doktor"
+        },
+        "dubaiCategory": {
+          "category": "Kategori",
+          "realEstate": "Fast Ejendom",
+          "restaurant": "Restaurant",
+          "store": "Butik",
+          "hotel": "Hotel"
+        }
+      },
+      "fiatDeposite": "Fiat Indbetaling",
+      "country": "Land",
+      "acceptedPaymentMethods": "Accepterede Betalingsmetoder",
+      "marginTrading": "Marginhandel",
+      "marketWithNoFees": "Marked uden Gebyrer",
+      "province": "",
+      "city": ""
+    },
+    "CardResult": {
+      "selector": {
+        "relevant": "Relevant",
+        "newest": "Nyeste",
+        "oldest": "Ældste"
+      },
+      "titleResult": {
+        "exchanges": "Børser",
+        "drziba": "Dr.Ziba",
+        "dubai": "Dubai Hub",
+        "iranarabic": "IranArabisk"
+      },
+      "sortBy": "Sorter Efter",
+      "desc": {
+        "exchanges": "Den komplette liste over børser i Børs Hub, inklusive børser fra hele verden",
+        "drziba": "",
+        "dubai": "Dubai Hub",
+        "iranarabic": "IranArabisk"
+      }
+    }
+  }
+  

@@ -1,0 +1,140 @@
+{
+    "dir": "ltr",
+    "lang": "th",
+    "contryCode": "1",
+    "iso": "us",
+    "metaData": {
+      "title": {
+        "exchange": "ศูนย์กลางการแลกเปลี่ยน",
+        "drziba": "DrZiba",
+        "dubai": "ศูนย์กลางดูไบ",
+        "iranarabic": "อิหร่านอาหรับ"
+      },
+      "desc": {
+        "exchange": "รายชื่อการแลกเปลี่ยนทั้งหมดในศูนย์กลางการแลกเปลี่ยน รวมถึงการแลกเปลี่ยนจากทั่วโลก",
+        "drziba": "",
+        "dubai": "ศูนย์กลางดูไบ",
+        "iranarabic": "อิหร่านอาหรับ"
+      }
+    },
+    "DirectoryName": {
+      "exchange": "ศูนย์กลางการแลกเปลี่ยน",
+      "drziba": "دکترزیبا",
+      "dubai": "ศูนย์กลางดูไบ",
+      "iranarabic": "อิหร่านอาหรับ"
+    },
+    "langName": "ไทย",
+    "menuSection": {
+      "mainNav": {
+        "blogPost": "บล็อก"
+      },
+      "mobileMenu": {
+        "apps": "แอปพลิเคชัน",
+        "services": "บริการ",
+        "social": "โซเชียล",
+        "contact": "ติดต่อ"
+      }
+    },
+    "placeholder": {
+      "search": "ค้นหา...",
+      "paymentChoose": "เลือกวิธีการชำระเงิน",
+      "currencyChoose": "เลือกสกุลเงิน",
+      "countryChoose": "เลือกประเทศ",
+      "categoryChoose": "เลือกหมวดหมู่",
+      "provinceChoose": "",
+      "cityChoose": ""
+    },
+    "button": {
+      "clearAll": "ล้างทั้งหมด",
+      "navigate": "นำทาง",
+      "contribute": "มีส่วนร่วม",
+      "tryItNow": "ลองใช้เลย",
+      "seeallcontribute": "ดูผู้ร่วมทั้งหมด",
+      "search": "ค้นหา",
+      "manageProfile": "จัดการโปรไฟล์",
+      "countributeToEarn": "มีส่วนร่วมเพื่อรับรางวัล",
+      "Apply": "ใช้ตัวกรอง",
+      "loadmore": "โหลดเพิ่มเติม..."
+    },
+    "cardDetails": {
+      "exchangeType": "ประเภทการแลกเปลี่ยน",
+      "IncorporationCountry": "ประเทศที่จดทะเบียน",
+      "areaServed": "พื้นที่ให้บริการ",
+      "NumberofEmployees": "จำนวนพนักงาน",
+      "marketWithFees": "ตลาดที่มีค่าธรรมเนียม",
+      "Founding": "ปีที่ก่อตั้ง"
+    },
+    "infoContact": {
+      "contact": "ข้อมูลการติดต่อ"
+    },
+    "productandService": "ผลิตภัณฑ์และบริการ",
+    "socialNetwork": "เครือข่ายสังคม",
+    "holdingApp": "แอปพลิเคชันโฮลดิ้ง",
+    "contributors": {
+      "contributors": "ผู้ร่วมสนับสนุน",
+      "avardingToken": "โทเค็นที่มอบให้"
+    },
+    "businessPartners": "พันธมิตรทางธุรกิจ",
+    "footerLink": {
+      "terms": "เงื่อนไข",
+      "privacy": "ความเป็นส่วนตัว",
+      "docs": "เอกสาร",
+      "security": "ความปลอดภัย",
+      "aboutExir": "เกี่ยวกับ Exir"
+    },
+    "CardFilter": {
+      "filter": "ตัวกรอง",
+      "category": {
+        "exchangeCategory": {
+          "category": "หมวดหมู่การแลกเปลี่ยน",
+          "crypto": "การแลกเปลี่ยนคริปโต",
+          "decentralized": "การแลกเปลี่ยนแบบกระจายศูนย์",
+          "derivatives": "การแลกเปลี่ยนตราสารอนุพันธ์"
+        },
+        "drzibaCategory": {
+          "category": "หมวดหมู่",
+          "beautySalon": "ร้านเสริมสวย",
+          "beautyClinic": "คลินิกความงาม",
+          "beautyTrapy": "การบำบัดความงาม",
+          "beautyWomen": "ความงามของผู้หญิง",
+          "beautyMen": "ความงามของผู้ชาย",
+          "dr": "หมอ"
+        },
+        "dubaiCategory": {
+          "category": "หมวดหมู่",
+          "realEstate": "อสังหาริมทรัพย์",
+          "restaurant": "ร้านอาหาร",
+          "store": "ร้านค้า",
+          "hotel": "โรงแรม"
+        }
+      },
+      "fiatDeposite": "เงินฝาก Fiat",
+      "country": "ประเทศ",
+      "acceptedPaymentMethods": "วิธีการชำระเงินที่ยอมรับ",
+      "marginTrading": "การซื้อขายมาร์จิ้น",
+      "marketWithNoFees": "ตลาดที่ไม่มีค่าธรรมเนียม",
+      "province": "",
+      "city": ""
+    },
+    "CardResult": {
+      "selector": {
+        "relevant": "เกี่ยวข้อง",
+        "newest": "ใหม่ล่าสุด",
+        "oldest": "เก่าที่สุด"
+      },
+      "titleResult": {
+        "exchanges": "การแลกเปลี่ยน",
+        "drziba": "Dr.Ziba",
+        "dubai": "ศูนย์กลางดูไบ",
+        "iranarabic": "อิหร่านอาหรับ"
+      },
+      "sortBy": "เรียงตาม",
+      "desc": {
+        "exchanges": "รายชื่อการแลกเปลี่ยนทั้งหมดในศูนย์กลางการแลกเปลี่ยน รวมถึงการแลกเปลี่ยนจากทั่วโลก",
+        "drziba": "",
+        "dubai": "ศูนย์กลางดูไบ",
+        "iranarabic": "อิหร่านอาหรับ"
+      }
+    }
+  }
+  

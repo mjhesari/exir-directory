@@ -1,7 +1,7 @@
+
 import { NextResponse } from "next/server";
 import { NextRequest } from "next/server";
-
-export const locales = ["en", "fa","ar"]; // Supported locales
+import { locales} from '@/app/[lang]/dictionaries/languages'
 
 // Get the preferred locale based on the Accept-Language header
 function getLocale(request: NextRequest): string {

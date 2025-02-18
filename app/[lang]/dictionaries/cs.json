@@ -1,0 +1,140 @@
+{
+    "dir": "ltr",
+    "lang": "cs",
+    "contryCode": "1",
+    "iso": "us",
+    "metaData": {
+      "title": {
+        "exchange": "Centrum Burz",
+        "drziba": "DrZiba",
+        "dubai": "Centrum Dubaj",
+        "iranarabic": "ÍránArabský"
+      },
+      "desc": {
+        "exchange": "Úplný seznam burz v Centru Burz, včetně burz z celého světa",
+        "drziba": "",
+        "dubai": "Centrum Dubaj",
+        "iranarabic": "ÍránArabský"
+      }
+    },
+    "DirectoryName": {
+      "exchange": "Centrum Burz",
+      "drziba": "دکترزیبا",
+      "dubai": "Centrum Dubaj",
+      "iranarabic": "ÍránArabský"
+    },
+    "langName": "Čeština",
+    "menuSection": {
+      "mainNav": {
+        "blogPost": "Blog"
+      },
+      "mobileMenu": {
+        "apps": "Aplikace",
+        "services": "Služby",
+        "social": "Sociální Sítě",
+        "contact": "Kontakt"
+      }
+    },
+    "placeholder": {
+      "search": "Hledat...",
+      "paymentChoose": "Vyberte Platební Metody",
+      "currencyChoose": "Vyberte Měny",
+      "countryChoose": "Vyberte Zemi",
+      "categoryChoose": "Vyberte Kategorie",
+      "provinceChoose": "",
+      "cityChoose": ""
+    },
+    "button": {
+      "clearAll": "Vymazat vše",
+      "navigate": "Navigovat",
+      "contribute": "Přispět",
+      "tryItNow": "Vyzkoušejte nyní",
+      "seeallcontribute": "Zobrazit všechny přispěvatele",
+      "search": "Hledat",
+      "manageProfile": "Spravovat Profil",
+      "countributeToEarn": "Přispějte a Vydělejte",
+      "Apply": "Použít Filtr",
+      "loadmore": "Načíst další..."
+    },
+    "cardDetails": {
+      "exchangeType": "Typ Burzy",
+      "IncorporationCountry": "Země Registrace",
+      "areaServed": "Oblast Působení",
+      "NumberofEmployees": "Počet Zaměstnanců",
+      "marketWithFees": "Trh s Poplatky",
+      "Founding": "Rok Založení"
+    },
+    "infoContact": {
+      "contact": "Kontaktní Informace"
+    },
+    "productandService": "Produkty a Služby",
+    "socialNetwork": "Sociální Síť",
+    "holdingApp": "Holdingová Aplikace",
+    "contributors": {
+      "contributors": "Přispěvatelé",
+      "avardingToken": "Udílené Tokeny"
+    },
+    "businessPartners": "Obchodní Partneři",
+    "footerLink": {
+      "terms": "Podmínky",
+      "privacy": "Soukromí",
+      "docs": "Dokumenty",
+      "security": "Bezpečnost",
+      "aboutExir": "O Exir"
+    },
+    "CardFilter": {
+      "filter": "Filtr",
+      "category": {
+        "exchangeCategory": {
+          "category": "Kategorie Burz",
+          "crypto": "Kryptoměnové Burzy",
+          "decentralized": "Decentralizované Burzy",
+          "derivatives": "Burzy Derivátů"
+        },
+        "drzibaCategory": {
+          "category": "kategorie",
+          "beautySalon": "salon krásy",
+          "beautyClinic": "klinik krásy",
+          "beautyTrapy": "terapie krásy",
+          "beautyWomen": "krása žen",
+          "beautyMen": "krása mužů",
+          "dr": "doktor"
+        },
+        "dubaiCategory": {
+          "category": "Kategorie",
+          "realEstate": "Nemovitosti",
+          "restaurant": "Restaurace",
+          "store": "Obchod",
+          "hotel": "Hotel"
+        }
+      },
+      "fiatDeposite": "Vklad Fiat Měny",
+      "country": "Země",
+      "acceptedPaymentMethods": "Akceptované Platební Metody",
+      "marginTrading": "Margin Obchodování",
+      "marketWithNoFees": "Trh bez Poplatků",
+      "province": "",
+      "city": ""
+    },
+    "CardResult": {
+      "selector": {
+        "relevant": "Relevantní",
+        "newest": "Nejnovější",
+        "oldest": "Nejstarší"
+      },
+      "titleResult": {
+        "exchanges": "Burzy",
+        "drziba": "Dr.Ziba",
+        "dubai": "Centrum Dubaj",
+        "iranarabic": "ÍránArabský"
+      },
+      "sortBy": "Seřadit podle",
+      "desc": {
+        "exchanges": "Úplný seznam burz v Centru Burz, včetně burz z celého světa",
+        "drziba": "",
+        "dubai": "Centrum Dubaj",
+        "iranarabic": "ÍránArabský"
+      }
+    }
+  }
+  

@@ -92,13 +92,13 @@
         "derivatives": "Derivatives Exchanges"
       },
       "drzibaCategory": {
-        "category": "",
-        "beautySalon": "",
-        "beautyClinic": "",
-        "beautyTrapy": "",
-        "beautyWomen": "",
-        "beautyMen": "",
-        "dr": ""
+          "category": "category",
+          "beautySalon": "beautySalon",
+          "beautyClinic": "beautyClinic",
+          "beautyTrapy": "beautyTrapy",
+          "beautyWomen": "beautyWomen",
+          "beautyMen": "beautyMen",
+          "dr": "doctor"
       },
       "dubaiCategory": {
         "category": "Category",

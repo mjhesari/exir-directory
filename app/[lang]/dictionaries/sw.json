@@ -1,0 +1,140 @@
+{
+    "dir": "ltr",
+    "lang": "sw",
+    "contryCode": "1",
+    "iso": "us",
+    "metaData": {
+      "title": {
+        "exchange": "Kitovu cha Mabadilishano",
+        "drziba": "DrZiba",
+        "dubai": "Kitovu cha Dubai",
+        "iranarabic": "IranArabiki"
+      },
+      "desc": {
+        "exchange": "Orodha kamili ya mabadilishano katika Kitovu cha Mabadilishano, ikiwa ni pamoja na mabadilishano kutoka kote duniani",
+        "drziba": "",
+        "dubai": "Kitovu cha Dubai",
+        "iranarabic": "IranArabiki"
+      }
+    },
+    "DirectoryName": {
+      "exchange": "Kitovu cha Mabadilishano",
+      "drziba": "دکترزیبا",
+      "dubai": "Kitovu cha Dubai",
+      "iranarabic": "IranArabiki"
+    },
+    "langName": "Kiswahili",
+    "menuSection": {
+      "mainNav": {
+        "blogPost": "Blogu"
+      },
+      "mobileMenu": {
+        "apps": "Programu",
+        "services": "Huduma",
+        "social": "Mitandao ya Kijamii",
+        "contact": "Mawasiliano"
+      }
+    },
+    "placeholder": {
+      "search": "Tafuta...",
+      "paymentChoose": "Chagua Njia za Malipo",
+      "currencyChoose": "Chagua Sarafu",
+      "countryChoose": "Chagua Nchi",
+      "categoryChoose": "Chagua Kategoria",
+      "provinceChoose": "",
+      "cityChoose": ""
+    },
+    "button": {
+      "clearAll": "Futa Zote",
+      "navigate": "Elekea",
+      "contribute": "Changia",
+      "tryItNow": "Jaribu Sasa",
+      "seeallcontribute": "Tazama Wachangiaji Wote",
+      "search": "Tafuta",
+      "manageProfile": "Dhibiti Profaili",
+      "countributeToEarn": "Changia Upate Kipato",
+      "Apply": "Tumia Kichujio",
+      "loadmore": "Pakia Zaidi..."
+    },
+    "cardDetails": {
+      "exchangeType": "Aina ya Mabadilishano",
+      "IncorporationCountry": "Nchi ya Usajili",
+      "areaServed": "Eneo Linalohudumiwa",
+      "NumberofEmployees": "Idadi ya Wafanyakazi",
+      "marketWithFees": "Soko lenye Ada",
+      "Founding": "Mwaka wa Kuanzishwa"
+    },
+    "infoContact": {
+      "contact": "Maelezo ya Mawasiliano"
+    },
+    "productandService": "Bidhaa na Huduma",
+    "socialNetwork": "Mtandao wa Kijamii",
+    "holdingApp": "Programu ya Holding",
+    "contributors": {
+      "contributors": "Wachangiaji",
+      "avardingToken": "Tokeni Zilizotolewa"
+    },
+    "businessPartners": "Washirika wa Biashara",
+    "footerLink": {
+      "terms": "Masharti",
+      "privacy": "Faragha",
+      "docs": "Nyaraka",
+      "security": "Usalama",
+      "aboutExir": "Kuhusu Exir"
+    },
+    "CardFilter": {
+      "filter": "Chujio",
+      "category": {
+        "exchangeCategory": {
+          "category": "Kategoria za Mabadilishano",
+          "crypto": "Mabadilishano ya Sarafu za Kidijitali",
+          "decentralized": "Mabadilishano Yasiyo na Mamlaka Kuu",
+          "derivatives": "Mabadilishano ya Derivatives"
+        },
+        "drzibaCategory": {
+          "category": "jamii",
+          "beautySalon": "saluni ya uzuri",
+          "beautyClinic": "kliniki ya uzuri",
+          "beautyTrapy": "matibabu ya uzuri",
+          "beautyWomen": "uzuri wa wanawake",
+          "beautyMen": "uzuri wa wanaume",
+          "dr": "daktari"
+        },
+        "dubaiCategory": {
+          "category": "Kategoria",
+          "realEstate": "Majengo",
+          "restaurant": "Mgahawa",
+          "store": "Duka",
+          "hotel": "Hoteli"
+        }
+      },
+      "fiatDeposite": "Amana ya Fiat",
+      "country": "Nchi",
+      "acceptedPaymentMethods": "Njia Zinazokubaliwa za Malipo",
+      "marginTrading": "Uuzaji wa Margin",
+      "marketWithNoFees": "Soko Bila Ada",
+      "province": "",
+      "city": ""
+    },
+    "CardResult": {
+      "selector": {
+        "relevant": "Inayohusiana",
+        "newest": "Ya Hivi Karibuni",
+        "oldest": "Ya Zamani"
+      },
+      "titleResult": {
+        "exchanges": "Mabadilishano",
+        "drziba": "Dr.Ziba",
+        "dubai": "Kitovu cha Dubai",
+        "iranarabic": "IranArabiki"
+      },
+      "sortBy": "Panga Kwa",
+      "desc": {
+        "exchanges": "Orodha kamili ya mabadilishano katika Kitovu cha Mabadilishano, ikiwa ni pamoja na mabadilishano kutoka kote duniani",
+        "drziba": "",
+        "dubai": "Kitovu cha Dubai",
+        "iranarabic": "IranArabiki"
+      }
+    }
+  }
+  

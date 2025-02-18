@@ -1,0 +1,140 @@
+{
+    "dir": "ltr",
+    "lang": "tr",
+    "contryCode": "1",
+    "iso": "us",
+    "metaData": {
+      "title": {
+        "exchange": "Borsa Merkezi",
+        "drziba": "DrZiba",
+        "dubai": "Dubai Merkezi",
+        "iranarabic": "İranArapça"
+      },
+      "desc": {
+        "exchange": "Borsa Merkezi'ndeki tüm borsaların tam listesi, dünya çapındaki borsalar dahil",
+        "drziba": "",
+        "dubai": "Dubai Merkezi",
+        "iranarabic": "İranArapça"
+      }
+    },
+    "DirectoryName": {
+      "exchange": "Borsa Merkezi",
+      "drziba": "دکترزیبا",
+      "dubai": "Dubai Merkezi",
+      "iranarabic": "İranArapça"
+    },
+    "langName": "Türkçe",
+    "menuSection": {
+      "mainNav": {
+        "blogPost": "Blog"
+      },
+      "mobileMenu": {
+        "apps": "Uygulamalar",
+        "services": "Hizmetler",
+        "social": "Sosyal",
+        "contact": "İletişim"
+      }
+    },
+    "placeholder": {
+      "search": "Ara...",
+      "paymentChoose": "Ödeme Yöntemlerini Seçin",
+      "currencyChoose": "Para Birimlerini Seçin",
+      "countryChoose": "Ülke Seçin",
+      "categoryChoose": "Kategorileri Seçin",
+      "provinceChoose": "",
+      "cityChoose": ""
+    },
+    "button": {
+      "clearAll": "Tümünü Temizle",
+      "navigate": "Gezin",
+      "contribute": "Katkıda Bulun",
+      "tryItNow": "Hemen Dene",
+      "seeallcontribute": "Tüm Katkıda Bulunanları Gör",
+      "search": "Ara",
+      "manageProfile": "Profili Yönet",
+      "countributeToEarn": "Kazanç İçin Katkıda Bulun",
+      "Apply": "Filtreyi Uygula",
+      "loadmore": "Daha Fazla Yükle..."
+    },
+    "cardDetails": {
+      "exchangeType": "Borsa Türü",
+      "IncorporationCountry": "Kuruluş Ülkesi",
+      "areaServed": "Hizmet Verilen Alan",
+      "NumberofEmployees": "Çalışan Sayısı",
+      "marketWithFees": "Ücretli Pazar",
+      "Founding": "Kuruluş Yılı"
+    },
+    "infoContact": {
+      "contact": "İletişim Bilgileri"
+    },
+    "productandService": "Ürünler ve Hizmetler",
+    "socialNetwork": "Sosyal Ağ",
+    "holdingApp": "Holding Uygulaması",
+    "contributors": {
+      "contributors": "Katkıda Bulunanlar",
+      "avardingToken": "Verilen Tokenler"
+    },
+    "businessPartners": "İş Ortakları",
+    "footerLink": {
+      "terms": "Şartlar",
+      "privacy": "Gizlilik",
+      "docs": "Belgeler",
+      "security": "Güvenlik",
+      "aboutExir": "Exir Hakkında"
+    },
+    "CardFilter": {
+      "filter": "Filtre",
+      "category": {
+        "exchangeCategory": {
+          "category": "Borsa Kategorileri",
+          "crypto": "Kripto Borsaları",
+          "decentralized": "Merkeziyetsiz Borsalar",
+          "derivatives": "Türev Borsaları"
+        },
+        "drzibaCategory": {
+          "category": "kategori",
+          "beautySalon": "güzellik salonu",
+          "beautyClinic": "güzellik kliniği",
+          "beautyTrapy": "güzellik terapisi",
+          "beautyWomen": "kadın güzelliği",
+          "beautyMen": "erkek güzelliği",
+          "dr": "doktor"
+        },
+        "dubaiCategory": {
+          "category": "Kategori",
+          "realEstate": "Gayrimenkul",
+          "restaurant": "Restoran",
+          "store": "Mağaza",
+          "hotel": "Otel"
+        }
+      },
+      "fiatDeposite": "Fiat Yatırma",
+      "country": "Ülke",
+      "acceptedPaymentMethods": "Kabul Edilen Ödeme Yöntemleri",
+      "marginTrading": "Kaldıraçlı İşlem",
+      "marketWithNoFees": "Ücretsiz Pazar",
+      "province": "",
+      "city": ""
+    },
+    "CardResult": {
+      "selector": {
+        "relevant": "İlgili",
+        "newest": "En Yeni",
+        "oldest": "En Eski"
+      },
+      "titleResult": {
+        "exchanges": "Borsalar",
+        "drziba": "Dr.Ziba",
+        "dubai": "Dubai Merkezi",
+        "iranarabic": "İranArapça"
+      },
+      "sortBy": "Sırala",
+      "desc": {
+        "exchanges": "Borsa Merkezi'ndeki tüm borsaların tam listesi, dünya çapındaki borsalar dahil",
+        "drziba": "",
+        "dubai": "Dubai Merkezi",
+        "iranarabic": "İranArapça"
+      }
+    }
+  }
+  
