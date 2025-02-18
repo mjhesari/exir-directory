@@ -1,0 +1,140 @@
+{
+    "dir": "ltr",
+    "lang": "el",
+    "contryCode": "1",
+    "iso": "us",
+    "metaData": {
+      "title": {
+        "exchange": "Κέντρο Ανταλλακτηρίων",
+        "drziba": "DrZiba",
+        "dubai": "Κέντρο Ντουμπάι",
+        "iranarabic": "ΙράνΑραβικά"
+      },
+      "desc": {
+        "exchange": "Η πλήρης λίστα ανταλλακτηρίων στο Κέντρο Ανταλλακτηρίων, συμπεριλαμβανομένων ανταλλακτηρίων από όλο τον κόσμο",
+        "drziba": "",
+        "dubai": "Κέντρο Ντουμπάι",
+        "iranarabic": "ΙράνΑραβικά"
+      }
+    },
+    "DirectoryName": {
+      "exchange": "Κέντρο Ανταλλακτηρίων",
+      "drziba": "دکترزیبا",
+      "dubai": "Κέντρο Ντουμπάι",
+      "iranarabic": "ΙράνΑραβικά"
+    },
+    "langName": "Ελληνικά",
+    "menuSection": {
+      "mainNav": {
+        "blogPost": "Ιστολόγιο"
+      },
+      "mobileMenu": {
+        "apps": "Εφαρμογές",
+        "services": "Υπηρεσίες",
+        "social": "Κοινωνικά",
+        "contact": "Επικοινωνία"
+      }
+    },
+    "placeholder": {
+      "search": "Αναζήτηση...",
+      "paymentChoose": "Επιλέξτε Μεθόδους Πληρωμής",
+      "currencyChoose": "Επιλέξτε Νομίσματα",
+      "countryChoose": "Επιλέξτε Χώρα",
+      "categoryChoose": "Επιλέξτε Κατηγορίες",
+      "provinceChoose": "",
+      "cityChoose": ""
+    },
+    "button": {
+      "clearAll": "Καθαρισμός όλων",
+      "navigate": "Πλοήγηση",
+      "contribute": "Συνεισφορά",
+      "tryItNow": "Δοκιμάστε το Τώρα",
+      "seeallcontribute": "Δείτε Όλους τους Συνεργάτες",
+      "search": "Αναζήτηση",
+      "manageProfile": "Διαχείριση Προφίλ",
+      "countributeToEarn": "Συνεισφέρετε για να Κερδίσετε",
+      "Apply": "Εφαρμογή Φίλτρου",
+      "loadmore": "Φόρτωση περισσότερων..."
+    },
+    "cardDetails": {
+      "exchangeType": "Τύπος Ανταλλακτηρίου",
+      "IncorporationCountry": "Χώρα Εγγραφής",
+      "areaServed": "Περιοχή Εξυπηρέτησης",
+      "NumberofEmployees": "Αριθμός Υπαλλήλων",
+      "marketWithFees": "Αγορά με Τέλη",
+      "Founding": "Έτος Ίδρυσης"
+    },
+    "infoContact": {
+      "contact": "Στοιχεία Επικοινωνίας"
+    },
+    "productandService": "Προϊόντα & Υπηρεσίες",
+    "socialNetwork": "Κοινωνικό Δίκτυο",
+    "holdingApp": "Εφαρμογή Holding",
+    "contributors": {
+      "contributors": "Συνεργάτες",
+      "avardingToken": "Απονεμηθέντα Tokens"
+    },
+    "businessPartners": "Επιχειρηματικοί Συνεργάτες",
+    "footerLink": {
+      "terms": "Όροι",
+      "privacy": "Απόρρητο",
+      "docs": "Έγγραφα",
+      "security": "Ασφάλεια",
+      "aboutExir": "Σχετικά με το Exir"
+    },
+    "CardFilter": {
+      "filter": "Φίλτρο",
+      "category": {
+        "exchangeCategory": {
+          "category": "Κατηγορίες Ανταλλακτηρίων",
+          "crypto": "Ανταλλακτήρια Κρυπτονομισμάτων",
+          "decentralized": "Αποκεντρωμένα Ανταλλακτήρια",
+          "derivatives": "Ανταλλακτήρια Παραγώγων"
+        },
+        "drzibaCategory": {
+          "category": "κατηγορία",
+          "beautySalon": "ινστιτούτο ομορφιάς",
+          "beautyClinic": "κλινική ομορφιάς",
+          "beautyTrapy": "θεραπεία ομορφιάς",
+          "beautyWomen": "γυναικεία ομορφιά",
+          "beautyMen": "ανδρική ομορφιά",
+          "dr": "γιατρός"
+        },
+        "dubaiCategory": {
+          "category": "Κατηγορία",
+          "realEstate": "Ακίνητα",
+          "restaurant": "Εστιατόριο",
+          "store": "Κατάστημα",
+          "hotel": "Ξενοδοχείο"
+        }
+      },
+      "fiatDeposite": "Κατάθεση Fiat",
+      "country": "Χώρα",
+      "acceptedPaymentMethods": "Αποδεκτές Μέθοδοι Πληρωμής",
+      "marginTrading": "Συναλλαγές με Περιθώριο",
+      "marketWithNoFees": "Αγορά Χωρίς Τέλη",
+      "province": "",
+      "city": ""
+    },
+    "CardResult": {
+      "selector": {
+        "relevant": "Σχετικό",
+        "newest": "Νεότερο",
+        "oldest": "Παλιότερο"
+      },
+      "titleResult": {
+        "exchanges": "Ανταλλακτήρια",
+        "drziba": "Dr.Ziba",
+        "dubai": "Κέντρο Ντουμπάι",
+        "iranarabic": "ΙράνΑραβικά"
+      },
+      "sortBy": "Ταξινόμηση κατά",
+      "desc": {
+        "exchanges": "Η πλήρης λίστα ανταλλακτηρίων στο Κέντρο Ανταλλακτηρίων, συμπεριλαμβανομένων ανταλλακτηρίων από όλο τον κόσμο",
+        "drziba": "",
+        "dubai": "Κέντρο Ντουμπάι",
+        "iranarabic": "ΙράνΑραβικά"
+      }
+    }
+  }
+  

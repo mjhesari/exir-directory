@@ -1,0 +1,140 @@
+{
+    "dir": "ltr",
+    "lang": "nl",
+    "contryCode": "1",
+    "iso": "us",
+    "metaData": {
+      "title": {
+        "exchange": "Beurzen Hub",
+        "drziba": "DrZiba",
+        "dubai": "Dubai Hub",
+        "iranarabic": "IranArabisch"
+      },
+      "desc": {
+        "exchange": "De complete lijst van beurzen op Beurzen Hub, inclusief beurzen van over de hele wereld",
+        "drziba": "",
+        "dubai": "Dubai Hub",
+        "iranarabic": "IranArabisch"
+      }
+    },
+    "DirectoryName": {
+      "exchange": "Beurzen Hub",
+      "drziba": "دکترزیبا",
+      "dubai": "Dubai Hub",
+      "iranarabic": "IranArabisch"
+    },
+    "langName": "Nederlands",
+    "menuSection": {
+      "mainNav": {
+        "blogPost": "Blog"
+      },
+      "mobileMenu": {
+        "apps": "Apps",
+        "services": "Diensten",
+        "social": "Sociaal",
+        "contact": "Contact"
+      }
+    },
+    "placeholder": {
+      "search": "Zoeken...",
+      "paymentChoose": "Kies Betaalmethoden",
+      "currencyChoose": "Kies Valuta",
+      "countryChoose": "Kies Land",
+      "categoryChoose": "Kies Categorieën",
+      "provinceChoose": "",
+      "cityChoose": ""
+    },
+    "button": {
+      "clearAll": "Alles wissen",
+      "navigate": "Navigeren",
+      "contribute": "Bijdragen",
+      "tryItNow": "Probeer het nu",
+      "seeallcontribute": "Bekijk Alle Bijdragers",
+      "search": "Zoeken",
+      "manageProfile": "Profiel Beheren",
+      "countributeToEarn": "Bijdragen om te Verdienen",
+      "Apply": "Filter Toepassen",
+      "loadmore": "Meer laden..."
+    },
+    "cardDetails": {
+      "exchangeType": "Beurstype",
+      "IncorporationCountry": "Land van Oprichting",
+      "areaServed": "Gebied Bediend",
+      "NumberofEmployees": "Aantal Werknemers",
+      "marketWithFees": "Markt met Kosten",
+      "Founding": "Oprichtingsjaar"
+    },
+    "infoContact": {
+      "contact": "Contactinformatie"
+    },
+    "productandService": "Producten & Diensten",
+    "socialNetwork": "Sociaal Netwerk",
+    "holdingApp": "Holding App",
+    "contributors": {
+      "contributors": "Bijdragers",
+      "avardingToken": "Toegekende Tokens"
+    },
+    "businessPartners": "Zakelijke Partners",
+    "footerLink": {
+      "terms": "Voorwaarden",
+      "privacy": "Privacy",
+      "docs": "Documenten",
+      "security": "Beveiliging",
+      "aboutExir": "Over Exir"
+    },
+    "CardFilter": {
+      "filter": "Filter",
+      "category": {
+        "exchangeCategory": {
+          "category": "Beurscategorieën",
+          "crypto": "Cryptobeurzen",
+          "decentralized": "Decentrale Beurzen",
+          "derivatives": "Derivatenbeurzen"
+        },
+        "drzibaCategory": {
+          "category": "categorie",
+          "beautySalon": "schoonheidssalon",
+          "beautyClinic": "schoonheidskliniek",
+          "beautyTrapy": "schoonheidstherapie",
+          "beautyWomen": "vrouwen schoonheid",
+          "beautyMen": "mannen schoonheid",
+          "dr": "dokter"
+        },
+        "dubaiCategory": {
+          "category": "Categorie",
+          "realEstate": "Vastgoed",
+          "restaurant": "Restaurant",
+          "store": "Winkel",
+          "hotel": "Hotel"
+        }
+      },
+      "fiatDeposite": "Fiat Storting",
+      "country": "Land",
+      "acceptedPaymentMethods": "Geaccepteerde Betaalmethoden",
+      "marginTrading": "Margin Handel",
+      "marketWithNoFees": "Markt Zonder Kosten",
+      "province": "",
+      "city": ""
+    },
+    "CardResult": {
+      "selector": {
+        "relevant": "Relevant",
+        "newest": "Nieuwste",
+        "oldest": "Oudste"
+      },
+      "titleResult": {
+        "exchanges": "Beurzen",
+        "drziba": "Dr.Ziba",
+        "dubai": "Dubai Hub",
+        "iranarabic": "IranArabisch"
+      },
+      "sortBy": "Sorteren op",
+      "desc": {
+        "exchanges": "De complete lijst van beurzen op Beurzen Hub, inclusief beurzen van over de hele wereld",
+        "drziba": "",
+        "dubai": "Dubai Hub",
+        "iranarabic": "IranArabisch"
+      }
+    }
+  }
+  

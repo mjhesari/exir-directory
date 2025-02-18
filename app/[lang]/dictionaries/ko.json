@@ -1,0 +1,139 @@
+{
+    "dir": "ltr",
+    "lang": "ko",
+    "contryCode": "1",
+    "iso": "us",
+    "metaData": {
+      "title": {
+        "exchange": "거래소 허브",
+        "drziba": "DrZiba",
+        "dubai": "두바이 허브",
+        "iranarabic": "이란아랍어"
+      },
+      "desc": {
+        "exchange": "전 세계 거래소를 포함한 거래소 허브의 전체 목록",
+        "drziba": "",
+        "dubai": "두바이 허브",
+        "iranarabic": "이란아랍어"
+      }
+    },
+    "DirectoryName": {
+      "exchange": "거래소 허브",
+      "drziba": "دکترزیبا",
+      "dubai": "두바이 허브",
+      "iranarabic": "이란아랍어"
+    },
+    "langName": "한국어",
+    "menuSection": {
+      "mainNav": {
+        "blogPost": "블로그"
+      },
+      "mobileMenu": {
+        "apps": "앱",
+        "services": "서비스",
+        "social": "소셜",
+        "contact": "연락처"
+      }
+    },
+    "placeholder": {
+      "search": "검색...",
+      "paymentChoose": "결제 방법 선택",
+      "currencyChoose": "통화 선택",
+      "countryChoose": "국가 선택",
+      "categoryChoose": "카테고리 선택",
+      "provinceChoose": "",
+      "cityChoose": ""
+    },
+    "button": {
+      "clearAll": "모두 지우기",
+      "navigate": "탐색",
+      "contribute": "기여하기",
+      "tryItNow": "지금 시도하기",
+      "seeallcontribute": "모든 기여자 보기",
+      "search": "검색",
+      "manageProfile": "프로필 관리",
+      "countributeToEarn": "기여하고 보상받기",
+      "Apply": "필터 적용",
+      "loadmore": "더 보기..."
+    },
+    "cardDetails": {
+      "exchangeType": "거래소 유형",
+      "IncorporationCountry": "설립 국가",
+      "areaServed": "서비스 지역",
+      "NumberofEmployees": "직원 수",
+      "marketWithFees": "수수료가 있는 시장",
+      "Founding": "설립 연도"
+    },
+    "infoContact": {
+      "contact": "연락처 정보"
+    },
+    "productandService": "제품 및 서비스",
+    "socialNetwork": "소셜 네트워크",
+    "holdingApp": "홀딩 앱",
+    "contributors": {
+      "contributors": "기여자",
+      "avardingToken": "수여된 토큰"
+    },
+    "businessPartners": "비즈니스 파트너",
+    "footerLink": {
+      "terms": "이용약관",
+      "privacy": "개인정보 보호",
+      "docs": "문서",
+      "security": "보안",
+      "aboutExir": "Exir 소개"
+    },
+    "CardFilter": {
+      "filter": "필터",
+      "category": {
+        "exchangeCategory": {
+          "category": "거래소 카테고리",
+          "crypto": "암호화폐 거래소",
+          "decentralized": "탈중앙화 거래소",
+          "derivatives": "파생상품 거래소"
+        },
+        "drzibaCategory": {
+          "category": "카테고리",
+          "beautySalon": "뷰티 살롱",
+          "beautyClinic": "뷰티 클리닉",
+          "beautyTrapy": "뷰티 테라피",
+          "beautyWomen": "여성 미용",
+          "beautyMen": "남성 미용",
+          "dr": "의사"
+        },
+        "dubaiCategory": {
+          "category": "카테고리",
+          "realEstate": "부동산",
+          "restaurant": "레스토랑",
+          "store": "상점",
+          "hotel": "호텔"
+        }
+      },
+      "fiatDeposite": "법정화폐 입금",
+      "country": "국가",
+      "acceptedPaymentMethods": "허용된 결제 방법",
+      "marginTrading": "마진 거래",
+      "marketWithNoFees": "수수료 없는 시장",
+      "province": "",
+      "city": ""
+    },
+    "CardResult": {
+      "selector": {
+        "relevant": "관련성 높은 순",
+        "newest": "최신순",
+        "oldest": "오래된 순"
+      },
+      "titleResult": {
+        "exchanges": "거래소",
+        "drziba": "Dr.Ziba",
+        "dubai": "두바이 허브",
+        "iranarabic": "이란아랍어"
+      },
+      "sortBy": "정렬 기준",
+      "desc": {
+        "exchanges": "전 세계 거래소를 포함한 거래소 허브의 전체 목록",
+        "drziba": "",
+        "dubai": "두바이 허브",
+        "iranarabic": "이란아랍어"
+      }
+    }
+  }  

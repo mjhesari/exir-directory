@@ -1,0 +1,140 @@
+{
+    "dir": "ltr",
+    "lang": "it",
+    "contryCode": "1",
+    "iso": "us",
+    "metaData": {
+      "title": {
+        "exchange": "Hub delle Borse",
+        "drziba": "DrZiba",
+        "dubai": "Hub di Dubai",
+        "iranarabic": "IranArabo"
+      },
+      "desc": {
+        "exchange": "L'elenco completo delle borse su Hub delle Borse, incluse le borse di tutto il mondo",
+        "drziba": "",
+        "dubai": "Hub di Dubai",
+        "iranarabic": "IranArabo"
+      }
+    },
+    "DirectoryName": {
+      "exchange": "Hub delle Borse",
+      "drziba": "دکترزیبا",
+      "dubai": "Hub di Dubai",
+      "iranarabic": "IranArabo"
+    },
+    "langName": "Italiano",
+    "menuSection": {
+      "mainNav": {
+        "blogPost": "Blog"
+      },
+      "mobileMenu": {
+        "apps": "App",
+        "services": "Servizi",
+        "social": "Social",
+        "contact": "Contatto"
+      }
+    },
+    "placeholder": {
+      "search": "Cerca...",
+      "paymentChoose": "Scegli Metodi di Pagamento",
+      "currencyChoose": "Scegli Valute",
+      "countryChoose": "Scegli Paese",
+      "categoryChoose": "Scegli Categorie",
+      "provinceChoose": "",
+      "cityChoose": ""
+    },
+    "button": {
+      "clearAll": "Cancella tutto",
+      "navigate": "Naviga",
+      "contribute": "Contribuisci",
+      "tryItNow": "Provalo Ora",
+      "seeallcontribute": "Vedi Tutti i Contributori",
+      "search": "Cerca",
+      "manageProfile": "Gestisci Profilo",
+      "countributeToEarn": "Contribuisci per Guadagnare",
+      "Apply": "Applica Filtro",
+      "loadmore": "Carica altro..."
+    },
+    "cardDetails": {
+      "exchangeType": "Tipo di Borsa",
+      "IncorporationCountry": "Paese di Incorporazione",
+      "areaServed": "Area Servita",
+      "NumberofEmployees": "Numero di Dipendenti",
+      "marketWithFees": "Mercato con Commissioni",
+      "Founding": "Anno di Fondazione"
+    },
+    "infoContact": {
+      "contact": "Informazioni di Contatto"
+    },
+    "productandService": "Prodotti e Servizi",
+    "socialNetwork": "Rete Sociale",
+    "holdingApp": "App di Holding",
+    "contributors": {
+      "contributors": "Contributori",
+      "avardingToken": "Token Assegnati"
+    },
+    "businessPartners": "Partner Commerciali",
+    "footerLink": {
+      "terms": "Termini",
+      "privacy": "Privacy",
+      "docs": "Documenti",
+      "security": "Sicurezza",
+      "aboutExir": "Informazioni su Exir"
+    },
+    "CardFilter": {
+      "filter": "Filtro",
+      "category": {
+        "exchangeCategory": {
+          "category": "Categorie di Borse",
+          "crypto": "Borse di Criptovalute",
+          "decentralized": "Borse Decentralizzate",
+          "derivatives": "Borse di Derivati"
+        },
+        "drzibaCategory": {
+          "category": "categoria",
+          "beautySalon": "salone di bellezza",
+          "beautyClinic": "clinica di bellezza",
+          "beautyTrapy": "terapia di bellezza",
+          "beautyWomen": "bellezza femminile",
+          "beautyMen": "bellezza maschile",
+          "dr": "dottore"
+        },
+        "dubaiCategory": {
+          "category": "Categoria",
+          "realEstate": "Immobiliare",
+          "restaurant": "Ristorante",
+          "store": "Negozio",
+          "hotel": "Hotel"
+        }
+      },
+      "fiatDeposite": "Deposito Fiat",
+      "country": "Paese",
+      "acceptedPaymentMethods": "Metodi di Pagamento Accettati",
+      "marginTrading": "Trading con Margine",
+      "marketWithNoFees": "Mercato Senza Commissioni",
+      "province": "",
+      "city": ""
+    },
+    "CardResult": {
+      "selector": {
+        "relevant": "Rilevante",
+        "newest": "Più Recente",
+        "oldest": "Più Vecchio"
+      },
+      "titleResult": {
+        "exchanges": "Borse",
+        "drziba": "Dr.Ziba",
+        "dubai": "Hub di Dubai",
+        "iranarabic": "IranArabo"
+      },
+      "sortBy": "Ordina Per",
+      "desc": {
+        "exchanges": "L'elenco completo delle borse su Hub delle Borse, incluse le borse di tutto il mondo",
+        "drziba": "",
+        "dubai": "Hub di Dubai",
+        "iranarabic": "IranArabo"
+      }
+    }
+  }
+  

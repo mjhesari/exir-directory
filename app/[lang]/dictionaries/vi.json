@@ -1,0 +1,140 @@
+{
+    "dir": "ltr",
+    "lang": "vi",
+    "contryCode": "1",
+    "iso": "us",
+    "metaData": {
+      "title": {
+        "exchange": "Trung Tâm Sàn Giao Dịch",
+        "drziba": "DrZiba",
+        "dubai": "Trung Tâm Dubai",
+        "iranarabic": "IranArabic"
+      },
+      "desc": {
+        "exchange": "Danh sách đầy đủ các sàn giao dịch tại Trung Tâm Sàn Giao Dịch, bao gồm các sàn giao dịch trên toàn thế giới",
+        "drziba": "",
+        "dubai": "Trung Tâm Dubai",
+        "iranarabic": "IranArabic"
+      }
+    },
+    "DirectoryName": {
+      "exchange": "Trung Tâm Sàn Giao Dịch",
+      "drziba": "دکترزیبا",
+      "dubai": "Trung Tâm Dubai",
+      "iranarabic": "IranArabic"
+    },
+    "langName": "Tiếng Việt",
+    "menuSection": {
+      "mainNav": {
+        "blogPost": "Blog"
+      },
+      "mobileMenu": {
+        "apps": "Ứng dụng",
+        "services": "Dịch vụ",
+        "social": "Mạng xã hội",
+        "contact": "Liên hệ"
+      }
+    },
+    "placeholder": {
+      "search": "Tìm kiếm...",
+      "paymentChoose": "Chọn Phương Thức Thanh Toán",
+      "currencyChoose": "Chọn Tiền Tệ",
+      "countryChoose": "Chọn Quốc Gia",
+      "categoryChoose": "Chọn Danh Mục",
+      "provinceChoose": "",
+      "cityChoose": ""
+    },
+    "button": {
+      "clearAll": "Xóa tất cả",
+      "navigate": "Điều hướng",
+      "contribute": "Đóng góp",
+      "tryItNow": "Thử Ngay",
+      "seeallcontribute": "Xem Tất Cả Người Đóng Góp",
+      "search": "Tìm kiếm",
+      "manageProfile": "Quản Lý Hồ Sơ",
+      "countributeToEarn": "Đóng Góp Để Nhận Thưởng",
+      "Apply": "Áp Dụng Bộ Lọc",
+      "loadmore": "Tải thêm..."
+    },
+    "cardDetails": {
+      "exchangeType": "Loại Sàn Giao Dịch",
+      "IncorporationCountry": "Quốc Gia Thành Lập",
+      "areaServed": "Khu Vực Phục Vụ",
+      "NumberofEmployees": "Số Lượng Nhân Viên",
+      "marketWithFees": "Thị Trường Có Phí",
+      "Founding": "Năm Thành Lập"
+    },
+    "infoContact": {
+      "contact": "Thông Tin Liên Hệ"
+    },
+    "productandService": "Sản Phẩm & Dịch Vụ",
+    "socialNetwork": "Mạng Xã Hội",
+    "holdingApp": "Ứng Dụng Tổng Hợp",
+    "contributors": {
+      "contributors": "Người Đóng Góp",
+      "avardingToken": "Token Được Trao"
+    },
+    "businessPartners": "Đối Tác Kinh Doanh",
+    "footerLink": {
+      "terms": "Điều Khoản",
+      "privacy": "Quyền Riêng Tư",
+      "docs": "Tài Liệu",
+      "security": "Bảo Mật",
+      "aboutExir": "Về Exir"
+    },
+    "CardFilter": {
+      "filter": "Bộ Lọc",
+      "category": {
+        "exchangeCategory": {
+          "category": "Danh Mục Sàn Giao Dịch",
+          "crypto": "Sàn Giao Dịch Tiền Điện Tử",
+          "decentralized": "Sàn Giao Dịch Phi Tập Trung",
+          "derivatives": "Sàn Giao Dịch Phái Sinh"
+        },
+        "drzibaCategory": {
+          "category": "thể loại",
+          "beautySalon": "salon làm đẹp",
+          "beautyClinic": "phòng khám làm đẹp",
+          "beautyTrapy": "liệu pháp làm đẹp",
+          "beautyWomen": "vẻ đẹp phụ nữ",
+          "beautyMen": "vẻ đẹp nam giới",
+          "dr": "bác sĩ"
+        },
+        "dubaiCategory": {
+          "category": "Danh Mục",
+          "realEstate": "Bất Động Sản",
+          "restaurant": "Nhà Hàng",
+          "store": "Cửa Hàng",
+          "hotel": "Khách Sạn"
+        }
+      },
+      "fiatDeposite": "Nạp Tiền Fiat",
+      "country": "Quốc Gia",
+      "acceptedPaymentMethods": "Phương Thức Thanh Toán Được Chấp Nhận",
+      "marginTrading": "Giao Dịch Ký Quỹ",
+      "marketWithNoFees": "Thị Trường Không Phí",
+      "province": "",
+      "city": ""
+    },
+    "CardResult": {
+      "selector": {
+        "relevant": "Phù Hợp",
+        "newest": "Mới Nhất",
+        "oldest": "Cũ Nhất"
+      },
+      "titleResult": {
+        "exchanges": "Sàn Giao Dịch",
+        "drziba": "Dr.Ziba",
+        "dubai": "Trung Tâm Dubai",
+        "iranarabic": "IranArabic"
+      },
+      "sortBy": "Sắp Xếp Theo",
+      "desc": {
+        "exchanges": "Danh sách đầy đủ các sàn giao dịch tại Trung Tâm Sàn Giao Dịch, bao gồm các sàn giao dịch trên toàn thế giới",
+        "drziba": "",
+        "dubai": "Trung Tâm Dubai",
+        "iranarabic": "IranArabic"
+      }
+    }
+  }
+  

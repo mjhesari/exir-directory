@@ -1,0 +1,140 @@
+{
+    "dir": "ltr",
+    "lang": "no",
+    "contryCode": "1",
+    "iso": "us",
+    "metaData": {
+      "title": {
+        "exchange": "Børsnav",
+        "drziba": "DrZiba",
+        "dubai": "Dubai Nav",
+        "iranarabic": "IranArabisk"
+      },
+      "desc": {
+        "exchange": "Den komplette listen over børser i Børsnav, inkludert børser fra hele verden",
+        "drziba": "",
+        "dubai": "Dubai Nav",
+        "iranarabic": "IranArabisk"
+      }
+    },
+    "DirectoryName": {
+      "exchange": "Børsnav",
+      "drziba": "دکترزیبا",
+      "dubai": "Dubai Nav",
+      "iranarabic": "IranArabisk"
+    },
+    "langName": "Norsk",
+    "menuSection": {
+      "mainNav": {
+        "blogPost": "Blogg"
+      },
+      "mobileMenu": {
+        "apps": "Apper",
+        "services": "Tjenester",
+        "social": "Sosialt",
+        "contact": "Kontakt"
+      }
+    },
+    "placeholder": {
+      "search": "Søk...",
+      "paymentChoose": "Velg betalingsmetoder",
+      "currencyChoose": "Velg valuta",
+      "countryChoose": "Velg land",
+      "categoryChoose": "Velg kategorier",
+      "provinceChoose": "",
+      "cityChoose": ""
+    },
+    "button": {
+      "clearAll": "Tøm alt",
+      "navigate": "Naviger",
+      "contribute": "Bidra",
+      "tryItNow": "Prøv nå",
+      "seeallcontribute": "Se alle bidragsytere",
+      "search": "Søk",
+      "manageProfile": "Administrer profil",
+      "countributeToEarn": "Bidra for å tjene",
+      "Apply": "Bruk filter",
+      "loadmore": "Last mer..."
+    },
+    "cardDetails": {
+      "exchangeType": "Børstype",
+      "IncorporationCountry": "Inkorporeringsland",
+      "areaServed": "Område som betjenes",
+      "NumberofEmployees": "Antall ansatte",
+      "marketWithFees": "Marked med gebyrer",
+      "Founding": "Etableringsår"
+    },
+    "infoContact": {
+      "contact": "Kontaktinformasjon"
+    },
+    "productandService": "Produkter og tjenester",
+    "socialNetwork": "Sosialt nettverk",
+    "holdingApp": "Holding-app",
+    "contributors": {
+      "contributors": "Bidragsytere",
+      "avardingToken": "Tildelte tokens"
+    },
+    "businessPartners": "Forretningspartnere",
+    "footerLink": {
+      "terms": "Vilkår",
+      "privacy": "Personvern",
+      "docs": "Dokumenter",
+      "security": "Sikkerhet",
+      "aboutExir": "Om Exir"
+    },
+    "CardFilter": {
+      "filter": "Filter",
+      "category": {
+        "exchangeCategory": {
+          "category": "Børskategorier",
+          "crypto": "Kryptovalutabørser",
+          "decentralized": "Desentraliserte børser",
+          "derivatives": "Derivatbørser"
+        },
+        "drzibaCategory": {
+          "category": "kategori",
+          "beautySalon": "skjønnhetssalong",
+          "beautyClinic": "skjønnhetsklinikk",
+          "beautyTrapy": "skjønnhetsterapi",
+          "beautyWomen": "kvinners skjønnhet",
+          "beautyMen": "menns skjønnhet",
+          "dr": "doktor"
+        },
+        "dubaiCategory": {
+          "category": "Kategori",
+          "realEstate": "Eiendom",
+          "restaurant": "Restaurant",
+          "store": "Butikk",
+          "hotel": "Hotell"
+        }
+      },
+      "fiatDeposite": "Fiat-innskudd",
+      "country": "Land",
+      "acceptedPaymentMethods": "Godkjente betalingsmetoder",
+      "marginTrading": "Marginalhandel",
+      "marketWithNoFees": "Marked uten gebyrer",
+      "province": "",
+      "city": ""
+    },
+    "CardResult": {
+      "selector": {
+        "relevant": "Relevant",
+        "newest": "Nyeste",
+        "oldest": "Eldste"
+      },
+      "titleResult": {
+        "exchanges": "Børser",
+        "drziba": "Dr.Ziba",
+        "dubai": "Dubai Nav",
+        "iranarabic": "IranArabisk"
+      },
+      "sortBy": "Sorter etter",
+      "desc": {
+        "exchanges": "Den komplette listen over børser i Børsnav, inkludert børser fra hele verden",
+        "drziba": "",
+        "dubai": "Dubai Nav",
+        "iranarabic": "IranArabisk"
+      }
+    }
+  }
+  

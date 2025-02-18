@@ -1,0 +1,140 @@
+{
+    "dir": "ltr",
+    "lang": "hi",
+    "contryCode": "1",
+    "iso": "us",
+    "metaData": {
+      "title": {
+        "exchange": "एक्सचेंज हब",
+        "drziba": "DrZiba",
+        "dubai": "दुबई हब",
+        "iranarabic": "ईरानअरबी"
+      },
+      "desc": {
+        "exchange": "एक्सचेंज हब में दुनिया भर के एक्सचेंजों की पूरी सूची",
+        "drziba": "",
+        "dubai": "दुबई हब",
+        "iranarabic": "ईरानअरबी"
+      }
+    },
+    "DirectoryName": {
+      "exchange": "एक्सचेंज हब",
+      "drziba": "دکترزیبا",
+      "dubai": "दुबई हब",
+      "iranarabic": "ईरानअरबी"
+    },
+    "langName": "हिंदी",
+    "menuSection": {
+      "mainNav": {
+        "blogPost": "ब्लॉग"
+      },
+      "mobileMenu": {
+        "apps": "ऐप्स",
+        "services": "सेवाएं",
+        "social": "सोशल",
+        "contact": "संपर्क"
+      }
+    },
+    "placeholder": {
+      "search": "खोजें...",
+      "paymentChoose": "भुगतान के तरीके चुनें",
+      "currencyChoose": "मुद्राएं चुनें",
+      "countryChoose": "देश चुनें",
+      "categoryChoose": "श्रेणियां चुनें",
+      "provinceChoose": "",
+      "cityChoose": ""
+    },
+    "button": {
+      "clearAll": "सभी साफ करें",
+      "navigate": "नेविगेट करें",
+      "contribute": "योगदान करें",
+      "tryItNow": "अभी आज़माएं",
+      "seeallcontribute": "सभी योगदानकर्ताओं को देखें",
+      "search": "खोजें",
+      "manageProfile": "प्रोफ़ाइल प्रबंधित करें",
+      "countributeToEarn": "कमाने के लिए योगदान दें",
+      "Apply": "फ़िल्टर लागू करें",
+      "loadmore": "और लोड करें..."
+    },
+    "cardDetails": {
+      "exchangeType": "एक्सचेंज प्रकार",
+      "IncorporationCountry": "पंजीकरण देश",
+      "areaServed": "सेवा क्षेत्र",
+      "NumberofEmployees": "कर्मचारियों की संख्या",
+      "marketWithFees": "शुल्क के साथ बाजार",
+      "Founding": "स्थापना वर्ष"
+    },
+    "infoContact": {
+      "contact": "संपर्क जानकारी"
+    },
+    "productandService": "उत्पाद और सेवाएं",
+    "socialNetwork": "सोशल नेटवर्क",
+    "holdingApp": "होल्डिंग ऐप",
+    "contributors": {
+      "contributors": "योगदानकर्ता",
+      "avardingToken": "प्रदान किए गए टोकन"
+    },
+    "businessPartners": "व्यापार साझेदार",
+    "footerLink": {
+      "terms": "नियम और शर्तें",
+      "privacy": "गोपनीयता",
+      "docs": "दस्तावेज़",
+      "security": "सुरक्षा",
+      "aboutExir": "Exir के बारे में"
+    },
+    "CardFilter": {
+      "filter": "फ़िल्टर",
+      "category": {
+        "exchangeCategory": {
+          "category": "एक्सचेंज श्रेणियां",
+          "crypto": "क्रिप्टो एक्सचेंज",
+          "decentralized": "विकेंद्रीकृत एक्सचेंज",
+          "derivatives": "डेरिवेटिव्स एक्सचेंज"
+        },
+        "drzibaCategory": {
+          "category": "श्रेणी",
+          "beautySalon": "ब्यूटी सैलून",
+          "beautyClinic": "ब्यूटी क्लिनिक",
+          "beautyTrapy": "ब्यूटी थेरेपी",
+          "beautyWomen": "महिलाओं की सुंदरता",
+          "beautyMen": "पुरुषों की सुंदरता",
+          "dr": "डॉक्टर"
+        },
+        "dubaiCategory": {
+          "category": "श्रेणी",
+          "realEstate": "रियल एस्टेट",
+          "restaurant": "रेस्टोरेंट",
+          "store": "स्टोर",
+          "hotel": "होटल"
+        }
+      },
+      "fiatDeposite": "फिएट जमा",
+      "country": "देश",
+      "acceptedPaymentMethods": "स्वीकृत भुगतान विधियाँ",
+      "marginTrading": "मार्जिन ट्रेडिंग",
+      "marketWithNoFees": "बिना शुल्क वाला बाजार",
+      "province": "",
+      "city": ""
+    },
+    "CardResult": {
+      "selector": {
+        "relevant": "प्रासंगिक",
+        "newest": "नवीनतम",
+        "oldest": "सबसे पुराना"
+      },
+      "titleResult": {
+        "exchanges": "एक्सचेंज",
+        "drziba": "Dr.Ziba",
+        "dubai": "दुबई हब",
+        "iranarabic": "ईरानअरबी"
+      },
+      "sortBy": "क्रमबद्ध करें",
+      "desc": {
+        "exchanges": "एक्सचेंज हब में दुनिया भर के एक्सचेंजों की पूरी सूची",
+        "drziba": "",
+        "dubai": "दुबई हब",
+        "iranarabic": "ईरानअरबी"
+      }
+    }
+  }
+  

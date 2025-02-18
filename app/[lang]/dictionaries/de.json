@@ -1,0 +1,140 @@
+{
+    "dir": "ltr",
+    "lang": "de",
+    "contryCode": "1",
+    "iso": "us",
+    "metaData": {
+      "title": {
+        "exchange": "Börsen Hub",
+        "drziba": "DrZiba",
+        "dubai": "Dubai Hub",
+        "iranarabic": "IranArabisch"
+      },
+      "desc": {
+        "exchange": "Die vollständige Liste der Börsen im Börsen Hub, einschließlich Börsen aus der ganzen Welt",
+        "drziba": "",
+        "dubai": "Dubai Hub",
+        "iranarabic": "IranArabisch"
+      }
+    },
+    "DirectoryName": {
+      "exchange": "Börsen Hub",
+      "drziba": "دکترزیبا",
+      "dubai": "Dubai Hub",
+      "iranarabic": "IranArabisch"
+    },
+    "langName": "Deutsch",
+    "menuSection": {
+      "mainNav": {
+        "blogPost": "Blog"
+      },
+      "mobileMenu": {
+        "apps": "Apps",
+        "services": "Dienstleistungen",
+        "social": "Soziales",
+        "contact": "Kontakt"
+      }
+    },
+    "placeholder": {
+      "search": "Suche...",
+      "paymentChoose": "Zahlungsmethoden auswählen",
+      "currencyChoose": "Währungen auswählen",
+      "countryChoose": "Land auswählen",
+      "categoryChoose": "Kategorien auswählen",
+      "provinceChoose": "",
+      "cityChoose": ""
+    },
+    "button": {
+      "clearAll": "Alles löschen",
+      "navigate": "Navigieren",
+      "contribute": "Beitragen",
+      "tryItNow": "Jetzt ausprobieren",
+      "seeallcontribute": "Alle Mitwirkenden anzeigen",
+      "search": "Suchen",
+      "manageProfile": "Profil verwalten",
+      "countributeToEarn": "Beitragen, um zu verdienen",
+      "Apply": "Filter anwenden",
+      "loadmore": "Mehr laden..."
+    },
+    "cardDetails": {
+      "exchangeType": "Börsentyp",
+      "IncorporationCountry": "Gründungsland",
+      "areaServed": "Bedientes Gebiet",
+      "NumberofEmployees": "Anzahl der Mitarbeiter",
+      "marketWithFees": "Markt mit Gebühren",
+      "Founding": "Gründungsjahr"
+    },
+    "infoContact": {
+      "contact": "Kontaktinformation"
+    },
+    "productandService": "Produkte & Dienstleistungen",
+    "socialNetwork": "Soziales Netzwerk",
+    "holdingApp": "Holding App",
+    "contributors": {
+      "contributors": "Mitwirkende",
+      "avardingToken": "Vergebene Tokens"
+    },
+    "businessPartners": "Geschäftspartner",
+    "footerLink": {
+      "terms": "Bedingungen",
+      "privacy": "Datenschutz",
+      "docs": "Dokumente",
+      "security": "Sicherheit",
+      "aboutExir": "Über Exir"
+    },
+    "CardFilter": {
+      "filter": "Filter",
+      "category": {
+        "exchangeCategory": {
+          "category": "Börsenkategorien",
+          "crypto": "Krypto-Börsen",
+          "decentralized": "Dezentrale Börsen",
+          "derivatives": "Derivate-Börsen"
+        },
+        "drzibaCategory": {
+          "category": "Kategorie",
+          "beautySalon": "Schönheitssalon",
+          "beautyClinic": "Schönheitsklinik",
+          "beautyTrapy": "Schönheitstherapie",
+          "beautyWomen": "Schönheit der Frauen",
+          "beautyMen": "Schönheit der Männer",
+          "dr": "Doktor"
+        },
+        "dubaiCategory": {
+          "category": "Kategorie",
+          "realEstate": "Immobilien",
+          "restaurant": "Restaurant",
+          "store": "Geschäft",
+          "hotel": "Hotel"
+        }
+      },
+      "fiatDeposite": "Fiat-Einzahlung",
+      "country": "Land",
+      "acceptedPaymentMethods": "Akzeptierte Zahlungsmethoden",
+      "marginTrading": "Margin-Handel",
+      "marketWithNoFees": "Markt ohne Gebühren",
+      "province": "",
+      "city": ""
+    },
+    "CardResult": {
+      "selector": {
+        "relevant": "Relevant",
+        "newest": "Neueste",
+        "oldest": "Älteste"
+      },
+      "titleResult": {
+        "exchanges": "Börsen",
+        "drziba": "Dr.Ziba",
+        "dubai": "Dubai Hub",
+        "iranarabic": "IranArabisch"
+      },
+      "sortBy": "Sortieren nach",
+      "desc": {
+        "exchanges": "Die vollständige Liste der Börsen im Börsen Hub, einschließlich Börsen aus der ganzen Welt",
+        "drziba": "",
+        "dubai": "Dubai Hub",
+        "iranarabic": "IranArabisch"
+      }
+    }
+  }
+  

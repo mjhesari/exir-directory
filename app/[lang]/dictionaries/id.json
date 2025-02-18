@@ -1,0 +1,140 @@
+{
+    "dir": "ltr",
+    "lang": "id",
+    "contryCode": "1",
+    "iso": "us",
+    "metaData": {
+      "title": {
+        "exchange": "Pusat Bursa",
+        "drziba": "DrZiba",
+        "dubai": "Pusat Dubai",
+        "iranarabic": "Iran Arab"
+      },
+      "desc": {
+        "exchange": "Daftar lengkap bursa di Pusat Bursa, termasuk bursa dari seluruh dunia",
+        "drziba": "",
+        "dubai": "Pusat Dubai",
+        "iranarabic": "Iran Arab"
+      }
+    },
+    "DirectoryName": {
+      "exchange": "Pusat Bursa",
+      "drziba": "دکترزیبا",
+      "dubai": "Pusat Dubai",
+      "iranarabic": "Iran Arab"
+    },
+    "langName": "Bahasa Indonesia",
+    "menuSection": {
+      "mainNav": {
+        "blogPost": "Blog"
+      },
+      "mobileMenu": {
+        "apps": "Aplikasi",
+        "services": "Layanan",
+        "social": "Sosial",
+        "contact": "Kontak"
+      }
+    },
+    "placeholder": {
+      "search": "Cari...",
+      "paymentChoose": "Pilih Metode Pembayaran",
+      "currencyChoose": "Pilih Mata Uang",
+      "countryChoose": "Pilih Negara",
+      "categoryChoose": "Pilih Kategori",
+      "provinceChoose": "",
+      "cityChoose": ""
+    },
+    "button": {
+      "clearAll": "Hapus Semua",
+      "navigate": "Navigasi",
+      "contribute": "Kontribusi",
+      "tryItNow": "Coba Sekarang",
+      "seeallcontribute": "Lihat Semua Kontributor",
+      "search": "Cari",
+      "manageProfile": "Kelola Profil",
+      "countributeToEarn": "Kontribusi untuk Mendapatkan Penghargaan",
+      "Apply": "Terapkan Filter",
+      "loadmore": "Muat Lebih Banyak..."
+    },
+    "cardDetails": {
+      "exchangeType": "Jenis Bursa",
+      "IncorporationCountry": "Negara Pendaftaran",
+      "areaServed": "Wilayah Layanan",
+      "NumberofEmployees": "Jumlah Karyawan",
+      "marketWithFees": "Pasar dengan Biaya",
+      "Founding": "Tahun Didirikan"
+    },
+    "infoContact": {
+      "contact": "Informasi Kontak"
+    },
+    "productandService": "Produk & Layanan",
+    "socialNetwork": "Jaringan Sosial",
+    "holdingApp": "Aplikasi Holding",
+    "contributors": {
+      "contributors": "Kontributor",
+      "avardingToken": "Token yang Diberikan"
+    },
+    "businessPartners": "Mitra Bisnis",
+    "footerLink": {
+      "terms": "Ketentuan",
+      "privacy": "Privasi",
+      "docs": "Dokumen",
+      "security": "Keamanan",
+      "aboutExir": "Tentang Exir"
+    },
+    "CardFilter": {
+      "filter": "Filter",
+      "category": {
+        "exchangeCategory": {
+          "category": "Kategori Bursa",
+          "crypto": "Bursa Kripto",
+          "decentralized": "Bursa Terdesentralisasi",
+          "derivatives": "Bursa Derivatif"
+        },
+        "drzibaCategory": {
+          "category": "kategori",
+          "beautySalon": "salon kecantikan",
+          "beautyClinic": "klinik kecantikan",
+          "beautyTrapy": "terapi kecantikan",
+          "beautyWomen": "kecantikan wanita",
+          "beautyMen": "kecantikan pria",
+          "dr": "dokter"
+        },
+        "dubaiCategory": {
+          "category": "Kategori",
+          "realEstate": "Properti",
+          "restaurant": "Restoran",
+          "store": "Toko",
+          "hotel": "Hotel"
+        }
+      },
+      "fiatDeposite": "Deposit Fiat",
+      "country": "Negara",
+      "acceptedPaymentMethods": "Metode Pembayaran yang Diterima",
+      "marginTrading": "Perdagangan Margin",
+      "marketWithNoFees": "Pasar Tanpa Biaya",
+      "province": "",
+      "city": ""
+    },
+    "CardResult": {
+      "selector": {
+        "relevant": "Terkait",
+        "newest": "Terbaru",
+        "oldest": "Terlama"
+      },
+      "titleResult": {
+        "exchanges": "Bursa",
+        "drziba": "Dr.Ziba",
+        "dubai": "Pusat Dubai",
+        "iranarabic": "Iran Arab"
+      },
+      "sortBy": "Urutkan Berdasarkan",
+      "desc": {
+        "exchanges": "Daftar lengkap bursa di Pusat Bursa, termasuk bursa dari seluruh dunia",
+        "drziba": "",
+        "dubai": "Pusat Dubai",
+        "iranarabic": "Iran Arab"
+      }
+    }
+  }
+  

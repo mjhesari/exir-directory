@@ -1,0 +1,140 @@
+{
+    "dir": "ltr",
+    "lang": "bn",
+    "contryCode": "1",
+    "iso": "us",
+    "metaData": {
+      "title": {
+        "exchange": "এক্সচেঞ্জ হাব",
+        "drziba": "DrZiba",
+        "dubai": "দুবাই হাব",
+        "iranarabic": "ইরানআরবি"
+      },
+      "desc": {
+        "exchange": "এক্সচেঞ্জ হাবে বিশ্বের সব এক্সচেঞ্জের সম্পূর্ণ তালিকা",
+        "drziba": "",
+        "dubai": "দুবাই হাব",
+        "iranarabic": "ইরানআরবি"
+      }
+    },
+    "DirectoryName": {
+      "exchange": "এক্সচেঞ্জ হাব",
+      "drziba": "دکترزیبا",
+      "dubai": "দুবাই হাব",
+      "iranarabic": "ইরানআরবি"
+    },
+    "langName": "বাংলা",
+    "menuSection": {
+      "mainNav": {
+        "blogPost": "ব্লগ"
+      },
+      "mobileMenu": {
+        "apps": "অ্যাপস",
+        "services": "সেবা",
+        "social": "সামাজিক",
+        "contact": "যোগাযোগ"
+      }
+    },
+    "placeholder": {
+      "search": "অনুসন্ধান...",
+      "paymentChoose": "পেমেন্ট পদ্ধতি নির্বাচন করুন",
+      "currencyChoose": "মুদ্রা নির্বাচন করুন",
+      "countryChoose": "দেশ নির্বাচন করুন",
+      "categoryChoose": "বিভাগ নির্বাচন করুন",
+      "provinceChoose": "",
+      "cityChoose": ""
+    },
+    "button": {
+      "clearAll": "সব মুছুন",
+      "navigate": "ন্যাভিগেট করুন",
+      "contribute": "অবদান রাখুন",
+      "tryItNow": "এখনই চেষ্টা করুন",
+      "seeallcontribute": "সব অবদানকারীদের দেখুন",
+      "search": "অনুসন্ধান",
+      "manageProfile": "প্রোফাইল পরিচালনা করুন",
+      "countributeToEarn": "উপার্জনের জন্য অবদান রাখুন",
+      "Apply": "ফিল্টার প্রয়োগ করুন",
+      "loadmore": "আরও দেখুন..."
+    },
+    "cardDetails": {
+      "exchangeType": "এক্সচেঞ্জ টাইপ",
+      "IncorporationCountry": "নিবন্ধিত দেশ",
+      "areaServed": "পরিষেবা অঞ্চল",
+      "NumberofEmployees": "কর্মচারীর সংখ্যা",
+      "marketWithFees": "ফি সহ বাজার",
+      "Founding": "প্রতিষ্ঠার বছর"
+    },
+    "infoContact": {
+      "contact": "যোগাযোগের তথ্য"
+    },
+    "productandService": "পণ্য ও সেবা",
+    "socialNetwork": "সামাজিক নেটওয়ার্ক",
+    "holdingApp": "হোল্ডিং অ্যাপ",
+    "contributors": {
+      "contributors": "অবদানকারীরা",
+      "avardingToken": "প্রদত্ত টোকেন"
+    },
+    "businessPartners": "ব্যবসায়িক অংশীদার",
+    "footerLink": {
+      "terms": "শর্তাবলী",
+      "privacy": "গোপনীয়তা",
+      "docs": "ডকুমেন্টস",
+      "security": "নিরাপত্তা",
+      "aboutExir": "Exir সম্পর্কে"
+    },
+    "CardFilter": {
+      "filter": "ফিল্টার",
+      "category": {
+        "exchangeCategory": {
+          "category": "এক্সচেঞ্জ ক্যাটাগরি",
+          "crypto": "ক্রিপ্টো এক্সচেঞ্জ",
+          "decentralized": "বিকেন্দ্রীভূত এক্সচেঞ্জ",
+          "derivatives": "ডেরিভেটিভস এক্সচেঞ্জ"
+        },
+        "drzibaCategory": {
+          "category": "শ্রেণী",
+          "beautySalon": "সৌন্দর্য স্যালন",
+          "beautyClinic": "সৌন্দর্য ক্লিনিক",
+          "beautyTrapy": "সৌন্দর্য থেরাপি",
+          "beautyWomen": "নারীদের সৌন্দর্য",
+          "beautyMen": "পুরুষদের সৌন্দর্য",
+          "dr": "ডাক্তার"
+        },
+        "dubaiCategory": {
+          "category": "ক্যাটাগরি",
+          "realEstate": "রিয়েল এস্টেট",
+          "restaurant": "রেস্টুরেন্ট",
+          "store": "স্টোর",
+          "hotel": "হোটেল"
+        }
+      },
+      "fiatDeposite": "ফিয়াট আমানত",
+      "country": "দেশ",
+      "acceptedPaymentMethods": "গৃহীত পেমেন্ট পদ্ধতি",
+      "marginTrading": "মার্জিন ট্রেডিং",
+      "marketWithNoFees": "ফি ছাড়া বাজার",
+      "province": "",
+      "city": ""
+    },
+    "CardResult": {
+      "selector": {
+        "relevant": "প্রাসঙ্গিক",
+        "newest": "সর্বশেষ",
+        "oldest": "প্রাচীনতম"
+      },
+      "titleResult": {
+        "exchanges": "এক্সচেঞ্জ",
+        "drziba": "Dr.Ziba",
+        "dubai": "দুবাই হাব",
+        "iranarabic": "ইরানআরবি"
+      },
+      "sortBy": "সাজান",
+      "desc": {
+        "exchanges": "এক্সচেঞ্জ হাবে বিশ্বের সব এক্সচেঞ্জের সম্পূর্ণ তালিকা",
+        "drziba": "",
+        "dubai": "দুবাই হাব",
+        "iranarabic": "ইরানআরবি"
+      }
+    }
+  }
+  

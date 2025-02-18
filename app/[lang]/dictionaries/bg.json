@@ -1,0 +1,140 @@
+{
+    "dir": "ltr",
+    "lang": "bg",
+    "contryCode": "1",
+    "iso": "us",
+    "metaData": {
+      "title": {
+        "exchange": "Борсов Хъб",
+        "drziba": "DrZiba",
+        "dubai": "Дубай Хъб",
+        "iranarabic": "ИранАрабски"
+      },
+      "desc": {
+        "exchange": "Пълен списък на борсите в Борсов Хъб, включително борси от цял свят",
+        "drziba": "",
+        "dubai": "Дубай Хъб",
+        "iranarabic": "ИранАрабски"
+      }
+    },
+    "DirectoryName": {
+      "exchange": "Борсов Хъб",
+      "drziba": "دکترزیبا",
+      "dubai": "Дубай Хъб",
+      "iranarabic": "ИранАрабски"
+    },
+    "langName": "Български",
+    "menuSection": {
+      "mainNav": {
+        "blogPost": "Блог"
+      },
+      "mobileMenu": {
+        "apps": "Приложения",
+        "services": "Услуги",
+        "social": "Социални мрежи",
+        "contact": "Контакт"
+      }
+    },
+    "placeholder": {
+      "search": "Търсене...",
+      "paymentChoose": "Изберете метод на плащане",
+      "currencyChoose": "Изберете валута",
+      "countryChoose": "Изберете държава",
+      "categoryChoose": "Изберете категории",
+      "provinceChoose": "",
+      "cityChoose": ""
+    },
+    "button": {
+      "clearAll": "Изчисти всичко",
+      "navigate": "Навигация",
+      "contribute": "Принос",
+      "tryItNow": "Опитайте сега",
+      "seeallcontribute": "Виж всички сътрудници",
+      "search": "Търсене",
+      "manageProfile": "Управление на профила",
+      "countributeToEarn": "Принос за печалба",
+      "Apply": "Приложи филтър",
+      "loadmore": "Зареди още..."
+    },
+    "cardDetails": {
+      "exchangeType": "Тип борса",
+      "IncorporationCountry": "Държава на регистрация",
+      "areaServed": "Обслужван район",
+      "NumberofEmployees": "Брой служители",
+      "marketWithFees": "Пазар с такси",
+      "Founding": "Година на създаване"
+    },
+    "infoContact": {
+      "contact": "Контактна информация"
+    },
+    "productandService": "Продукти и услуги",
+    "socialNetwork": "Социална мрежа",
+    "holdingApp": "Холдинг приложение",
+    "contributors": {
+      "contributors": "Сътрудници",
+      "avardingToken": "Присъдени токени"
+    },
+    "businessPartners": "Бизнес партньори",
+    "footerLink": {
+      "terms": "Условия",
+      "privacy": "Поверителност",
+      "docs": "Документи",
+      "security": "Сигурност",
+      "aboutExir": "За Exir"
+    },
+    "CardFilter": {
+      "filter": "Филтър",
+      "category": {
+        "exchangeCategory": {
+          "category": "Категории борси",
+          "crypto": "Крипто борси",
+          "decentralized": "Децентрализирани борси",
+          "derivatives": "Борси за деривати"
+        },
+        "drzibaCategory": {
+          "category": "категория",
+          "beautySalon": "салон за красота",
+          "beautyClinic": "клиника за красота",
+          "beautyTrapy": "терапия за красота",
+          "beautyWomen": "женска красота",
+          "beautyMen": "мъжка красота",
+          "dr": "доктор"
+        },
+        "dubaiCategory": {
+          "category": "Категория",
+          "realEstate": "Недвижими имоти",
+          "restaurant": "Ресторант",
+          "store": "Магазин",
+          "hotel": "Хотел"
+        }
+      },
+      "fiatDeposite": "Фиат депозит",
+      "country": "Държава",
+      "acceptedPaymentMethods": "Приети методи на плащане",
+      "marginTrading": "Маржин търговия",
+      "marketWithNoFees": "Пазар без такси",
+      "province": "",
+      "city": ""
+    },
+    "CardResult": {
+      "selector": {
+        "relevant": "Релевантни",
+        "newest": "Най-нови",
+        "oldest": "Най-стари"
+      },
+      "titleResult": {
+        "exchanges": "Борси",
+        "drziba": "Dr.Ziba",
+        "dubai": "Дубай Хъб",
+        "iranarabic": "ИранАрабски"
+      },
+      "sortBy": "Сортиране по",
+      "desc": {
+        "exchanges": "Пълен списък на борсите в Борсов Хъб, включително борси от цял свят",
+        "drziba": "",
+        "dubai": "Дубай Хъб",
+        "iranarabic": "ИранАрабски"
+      }
+    }
+  }
+  

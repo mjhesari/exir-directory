@@ -1,0 +1,140 @@
+{
+    "dir": "ltr",
+    "lang": "sq",
+    "contryCode": "1",
+    "iso": "us",
+    "metaData": {
+      "title": {
+        "exchange": "Qendra e Bursave",
+        "drziba": "DrZiba",
+        "dubai": "Qendra e Dubait",
+        "iranarabic": "IranArabisht"
+      },
+      "desc": {
+        "exchange": "Lista e plotë e bursave në Qendrën e Bursave, duke përfshirë bursa nga e gjithë bota",
+        "drziba": "",
+        "dubai": "Qendra e Dubait",
+        "iranarabic": "IranArabisht"
+      }
+    },
+    "DirectoryName": {
+      "exchange": "Qendra e Bursave",
+      "drziba": "دکترزیبا",
+      "dubai": "Qendra e Dubait",
+      "iranarabic": "IranArabisht"
+    },
+    "langName": "Shqip",
+    "menuSection": {
+      "mainNav": {
+        "blogPost": "Blog"
+      },
+      "mobileMenu": {
+        "apps": "Aplikacione",
+        "services": "Shërbime",
+        "social": "Rrjete Sociale",
+        "contact": "Kontakt"
+      }
+    },
+    "placeholder": {
+      "search": "Kërko...",
+      "paymentChoose": "Zgjidhni Metodat e Pagesës",
+      "currencyChoose": "Zgjidhni Monedhat",
+      "countryChoose": "Zgjidhni Shtetin",
+      "categoryChoose": "Zgjidhni Kategoritë",
+      "provinceChoose": "",
+      "cityChoose": ""
+    },
+    "button": {
+      "clearAll": "Pastro gjithçka",
+      "navigate": "Navigo",
+      "contribute": "Kontribuo",
+      "tryItNow": "Provoje Tani",
+      "seeallcontribute": "Shiko të Gjithë Kontribuesit",
+      "search": "Kërko",
+      "manageProfile": "Menaxho Profilin",
+      "countributeToEarn": "Kontribuo për të Fit uar",
+      "Apply": "Apliko Filtrin",
+      "loadmore": "Ngarko më shumë..."
+    },
+    "cardDetails": {
+      "exchangeType": "Lloji i Bursës",
+      "IncorporationCountry": "Shteti i Regjistrimit",
+      "areaServed": "Zona e Shërbimit",
+      "NumberofEmployees": "Numri i Punonjësve",
+      "marketWithFees": "Tregu me Tarifa",
+      "Founding": "Viti i Themelimit"
+    },
+    "infoContact": {
+      "contact": "Informacioni i Kontaktit"
+    },
+    "productandService": "Produkte dhe Shërbime",
+    "socialNetwork": "Rrjeti Social",
+    "holdingApp": "Aplikacioni i Holdingut",
+    "contributors": {
+      "contributors": "Kontribuesit",
+      "avardingToken": "Tokenët e Dhënë"
+    },
+    "businessPartners": "Partnerët e Biznesit",
+    "footerLink": {
+      "terms": "Kushtet",
+      "privacy": "Privatësia",
+      "docs": "Dokumente",
+      "security": "Siguria",
+      "aboutExir": "Rreth Exir"
+    },
+    "CardFilter": {
+      "filter": "Filtri",
+      "category": {
+        "exchangeCategory": {
+          "category": "Kategoritë e Bursave",
+          "crypto": "Bursat e Kriptomonedhave",
+          "decentralized": "Bursat e Decentralizuara",
+          "derivatives": "Bursat e Derivateve"
+        },
+        "drzibaCategory": {
+          "category": "kategori",
+          "beautySalon": "salon bukurie",
+          "beautyClinic": "klinikë bukurie",
+          "beautyTrapy": "terapi bukurie",
+          "beautyWomen": "bukuri femërore",
+          "beautyMen": "bukuri mashkullore",
+          "dr": "doktor"
+        },
+        "dubaiCategory": {
+          "category": "Kategoria",
+          "realEstate": "Patundshmëri",
+          "restaurant": "Restorant",
+          "store": "Dyqan",
+          "hotel": "Hotel"
+        }
+      },
+      "fiatDeposite": "Depozitë Fiat",
+      "country": "Shteti",
+      "acceptedPaymentMethods": "Metodat e Pagesës së Pranuara",
+      "marginTrading": "Tregtimi me Marzh",
+      "marketWithNoFees": "Treg pa Tarifa",
+      "province": "",
+      "city": ""
+    },
+    "CardResult": {
+      "selector": {
+        "relevant": "I Rëndësishëm",
+        "newest": "Më i Ri",
+        "oldest": "Më i Vjetër"
+      },
+      "titleResult": {
+        "exchanges": "Bursat",
+        "drziba": "Dr.Ziba",
+        "dubai": "Qendra e Dubait",
+        "iranarabic": "IranArabisht"
+      },
+      "sortBy": "Rendit Sipas",
+      "desc": {
+        "exchanges": "Lista e plotë e bursave në Qendrën e Bursave, duke përfshirë bursa nga e gjithë bota",
+        "drziba": "",
+        "dubai": "Qendra e Dubait",
+        "iranarabic": "IranArabisht"
+      }
+    }
+  }
+  

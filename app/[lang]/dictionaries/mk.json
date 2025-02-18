@@ -1,0 +1,140 @@
+{
+    "dir": "ltr",
+    "lang": "mk",
+    "contryCode": "1",
+    "iso": "us",
+    "metaData": {
+      "title": {
+        "exchange": "Берзански Центар",
+        "drziba": "DrZiba",
+        "dubai": "Дубаи Центар",
+        "iranarabic": "ИранАрапски"
+      },
+      "desc": {
+        "exchange": "Комплетна листа на берзи во Берзански Центар, вклучувајќи берзи од целиот свет",
+        "drziba": "",
+        "dubai": "Дубаи Центар",
+        "iranarabic": "ИранАрапски"
+      }
+    },
+    "DirectoryName": {
+      "exchange": "Берзански Центар",
+      "drziba": "دکترزیبا",
+      "dubai": "Дубаи Центар",
+      "iranarabic": "ИранАрапски"
+    },
+    "langName": "Македонски",
+    "menuSection": {
+      "mainNav": {
+        "blogPost": "Блог"
+      },
+      "mobileMenu": {
+        "apps": "Апликации",
+        "services": "Услуги",
+        "social": "Социјални мрежи",
+        "contact": "Контакт"
+      }
+    },
+    "placeholder": {
+      "search": "Пребарување...",
+      "paymentChoose": "Изберете метод на плаќање",
+      "currencyChoose": "Изберете валута",
+      "countryChoose": "Изберете држава",
+      "categoryChoose": "Изберете категории",
+      "provinceChoose": "",
+      "cityChoose": ""
+    },
+    "button": {
+      "clearAll": "Исчисти сè",
+      "navigate": "Навигација",
+      "contribute": "Придонеси",
+      "tryItNow": "Пробајте сега",
+      "seeallcontribute": "Види ги сите придонесувачи",
+      "search": "Пребарување",
+      "manageProfile": "Управување со профил",
+      "countributeToEarn": "Придонесете за да заработите",
+      "Apply": "Примени филтер",
+      "loadmore": "Вчитај повеќе..."
+    },
+    "cardDetails": {
+      "exchangeType": "Тип на берза",
+      "IncorporationCountry": "Држава на регистрација",
+      "areaServed": "Област на услуга",
+      "NumberofEmployees": "Број на вработени",
+      "marketWithFees": "Пазар со такси",
+      "Founding": "Година на основање"
+    },
+    "infoContact": {
+      "contact": "Контакт информации"
+    },
+    "productandService": "Производи и Услуги",
+    "socialNetwork": "Социјална мрежа",
+    "holdingApp": "Холдинг апликација",
+    "contributors": {
+      "contributors": "Придонесувачи",
+      "avardingToken": "Доделени токени"
+    },
+    "businessPartners": "Деловни Партнери",
+    "footerLink": {
+      "terms": "Услови",
+      "privacy": "Приватност",
+      "docs": "Документи",
+      "security": "Безбедност",
+      "aboutExir": "За Exir"
+    },
+    "CardFilter": {
+      "filter": "Филтер",
+      "category": {
+        "exchangeCategory": {
+          "category": "Категории на Берзи",
+          "crypto": "Крипто берзи",
+          "decentralized": "Децентрализирани берзи",
+          "derivatives": "Берзи на деривати"
+        },
+        "drzibaCategory": {
+          "category": "категорија",
+          "beautySalon": "салон за убавина",
+          "beautyClinic": "клиника за убавина",
+          "beautyTrapy": "терапија за убавина",
+          "beautyWomen": "женска убавина",
+          "beautyMen": "машка убавина",
+          "dr": "доктор"
+        },
+        "dubaiCategory": {
+          "category": "Категорија",
+          "realEstate": "Недвижнини",
+          "restaurant": "Ресторан",
+          "store": "Продавница",
+          "hotel": "Хотел"
+        }
+      },
+      "fiatDeposite": "Фиат депозит",
+      "country": "Држава",
+      "acceptedPaymentMethods": "Прифатени начини на плаќање",
+      "marginTrading": "Маржинално тргување",
+      "marketWithNoFees": "Пазар без такси",
+      "province": "",
+      "city": ""
+    },
+    "CardResult": {
+      "selector": {
+        "relevant": "Релевантно",
+        "newest": "Најново",
+        "oldest": "Најстаро"
+      },
+      "titleResult": {
+        "exchanges": "Берзи",
+        "drziba": "Dr.Ziba",
+        "dubai": "Дубаи Центар",
+        "iranarabic": "ИранАрапски"
+      },
+      "sortBy": "Сортирај по",
+      "desc": {
+        "exchanges": "Комплетна листа на берзи во Берзански Центар, вклучувајќи берзи од целиот свет",
+        "drziba": "",
+        "dubai": "Дубаи Центар",
+        "iranarabic": "ИранАрапски"
+      }
+    }
+  }
+  

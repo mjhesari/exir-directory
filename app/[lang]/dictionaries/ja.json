@@ -1,0 +1,140 @@
+{
+    "dir": "ltr",
+    "lang": "ja",
+    "contryCode": "1",
+    "iso": "us",
+    "metaData": {
+      "title": {
+        "exchange": "取引所ハブ",
+        "drziba": "DrZiba",
+        "dubai": "ドバイハブ",
+        "iranarabic": "イランアラビア"
+      },
+      "desc": {
+        "exchange": "世界中の取引所を含む、取引所ハブの完全なリスト",
+        "drziba": "",
+        "dubai": "ドバイハブ",
+        "iranarabic": "イランアラビア"
+      }
+    },
+    "DirectoryName": {
+      "exchange": "取引所ハブ",
+      "drziba": "دکترزیبا",
+      "dubai": "ドバイハブ",
+      "iranarabic": "イランアラビア"
+    },
+    "langName": "日本語",
+    "menuSection": {
+      "mainNav": {
+        "blogPost": "ブログ"
+      },
+      "mobileMenu": {
+        "apps": "アプリ",
+        "services": "サービス",
+        "social": "ソーシャル",
+        "contact": "お問い合わせ"
+      }
+    },
+    "placeholder": {
+      "search": "検索...",
+      "paymentChoose": "支払い方法を選択",
+      "currencyChoose": "通貨を選択",
+      "countryChoose": "国を選択",
+      "categoryChoose": "カテゴリを選択",
+      "provinceChoose": "",
+      "cityChoose": ""
+    },
+    "button": {
+      "clearAll": "すべてクリア",
+      "navigate": "ナビゲート",
+      "contribute": "貢献する",
+      "tryItNow": "今すぐ試す",
+      "seeallcontribute": "すべての貢献者を見る",
+      "search": "検索",
+      "manageProfile": "プロフィール管理",
+      "countributeToEarn": "貢献して報酬を得る",
+      "Apply": "フィルターを適用",
+      "loadmore": "もっと読み込む..."
+    },
+    "cardDetails": {
+      "exchangeType": "取引所タイプ",
+      "IncorporationCountry": "設立国",
+      "areaServed": "提供エリア",
+      "NumberofEmployees": "従業員数",
+      "marketWithFees": "手数料ありの市場",
+      "Founding": "設立年"
+    },
+    "infoContact": {
+      "contact": "連絡先情報"
+    },
+    "productandService": "製品とサービス",
+    "socialNetwork": "ソーシャルネットワーク",
+    "holdingApp": "ホールディングアプリ",
+    "contributors": {
+      "contributors": "貢献者",
+      "avardingToken": "付与されたトークン"
+    },
+    "businessPartners": "ビジネスパートナー",
+    "footerLink": {
+      "terms": "利用規約",
+      "privacy": "プライバシー",
+      "docs": "ドキュメント",
+      "security": "セキュリティ",
+      "aboutExir": "Exirについて"
+    },
+    "CardFilter": {
+      "filter": "フィルター",
+      "category": {
+        "exchangeCategory": {
+          "category": "取引所カテゴリ",
+          "crypto": "仮想通貨取引所",
+          "decentralized": "分散型取引所",
+          "derivatives": "デリバティブ取引所"
+        },
+        "drzibaCategory": {
+          "category": "カテゴリ",
+          "beautySalon": "美容サロン",
+          "beautyClinic": "美容クリニック",
+          "beautyTrapy": "美容療法",
+          "beautyWomen": "女性の美しさ",
+          "beautyMen": "男性の美しさ",
+          "dr": "医者"
+        },
+        "dubaiCategory": {
+          "category": "カテゴリ",
+          "realEstate": "不動産",
+          "restaurant": "レストラン",
+          "store": "店舗",
+          "hotel": "ホテル"
+        }
+      },
+      "fiatDeposite": "法定通貨入金",
+      "country": "国",
+      "acceptedPaymentMethods": "利用可能な支払い方法",
+      "marginTrading": "証拠金取引",
+      "marketWithNoFees": "手数料なしの市場",
+      "province": "",
+      "city": ""
+    },
+    "CardResult": {
+      "selector": {
+        "relevant": "関連順",
+        "newest": "最新順",
+        "oldest": "古い順"
+      },
+      "titleResult": {
+        "exchanges": "取引所",
+        "drziba": "Dr.Ziba",
+        "dubai": "ドバイハブ",
+        "iranarabic": "イランアラビア"
+      },
+      "sortBy": "並び替え",
+      "desc": {
+        "exchanges": "世界中の取引所を含む、取引所ハブの完全なリスト",
+        "drziba": "",
+        "dubai": "ドバイハブ",
+        "iranarabic": "イランアラビア"
+      }
+    }
+  }
+  
