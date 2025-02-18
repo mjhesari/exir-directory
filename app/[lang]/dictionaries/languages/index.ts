@@ -32,9 +32,8 @@ export const locales = [
     "sk",
     "es",
     "sv",
-    "te",
     "th",
     "uk",
     "ur",
-    "vi"
+    "vi",
   ]

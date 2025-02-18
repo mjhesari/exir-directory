@@ -5,13 +5,13 @@ type Language = (typeof locales)[number];
 export type langsType = keyof typeof dictionaries;
 export type DictsTypes = typeof dicts;
 
-const dictionaries: Record<Language, () => Promise<Record<string, string>>> = locales.reduce(
+const dictionaries: Record<Language, () => Promise<DictsTypes>> = locales.reduce(
   (acc, lang) => {
     acc[lang] = () =>
       import(`./${lang}.json`).then((module) => module.default);
     return acc;
   },
-  {} as Record<Language, () => Promise<Record<string, string>>>
+  {} as Record<Language, () => Promise<DictsTypes>>
 );
 
 export const getDictionary = async (locale: langsType) => {
@@ -19,6 +19,6 @@ export const getDictionary = async (locale: langsType) => {
   if (!dicLocale) {
     throw new Error(`Dictionary for locale "${locale}" not found.`);
   }
-  return await dicLocale();
+  return await dicLocale() as DictsTypes;
 };
 
