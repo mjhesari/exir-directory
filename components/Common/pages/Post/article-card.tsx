@@ -51,7 +51,7 @@ export default function ArticleCard({ dicts }: { dicts: DictsTypes }) {
                 </div>
                     <div className="w-48 h-32">
                       <Image
-                    src={`http://${postData.image}`}
+                  src={postData.image.includes("http") ? postData.image : `http://${postData.image}`}
                     alt={postData.title?.[
                       dicts.lang as keyof typeof postData.title
                     ]}

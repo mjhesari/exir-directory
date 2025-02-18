@@ -82,12 +82,11 @@ const CardFilterDubai = ({ dicts }: { dicts: DictsTypes }) => {
         </div>
         {condition || filterDataLoading ? (
           <Button
-            onClick={handleClearAll}
+            onPress={handleClearAll}
             color="secondary"
             variant="light"
             size="sm"
             aria-label={`${dicts?.button.clearAll}`}
-            endContent={<Icon icon="lucide:x" width={15} />}
           >
             {dicts?.button.clearAll}
           </Button>

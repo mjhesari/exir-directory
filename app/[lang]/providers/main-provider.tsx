@@ -7,6 +7,7 @@ import { Provider } from "react-redux";
 import { store } from "@/redux/app/store";
 import DataGetter from "../dataGetter";
 import { Suspense } from "react";
+import { Toaster } from "react-hot-toast";
 
 const MainProviders = ({
   lang,
@@ -24,6 +25,7 @@ const MainProviders = ({
       <Suspense fallback={<div>Loading...</div>}>
       <DataGetter exchangeData={exchange} lang={lang} post={post}/>
       </Suspense>
+      <Toaster position="bottom-center" />
       <NextUIProvider>{children}</NextUIProvider>
     </Provider>
   );
