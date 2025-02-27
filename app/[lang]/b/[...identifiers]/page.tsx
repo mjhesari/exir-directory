@@ -16,6 +16,7 @@ import CompanySocialMedia from "@/components/Common/CompanyCard/SocialMedia/Comp
 import { Business } from "@/types/dataTypes";
 import { generateLocalBusinessSchema } from "@/utils/data";
 import Comment from "@/components/Common/Comment/Comment";
+import CompanyHero from "@/components/Common/CompanyCard/hero/CompanyHero";
 
 const getSinglePageData = async (id: string) => {
   try {
@@ -55,11 +56,14 @@ export default async function Home({
     <>
       <main className="mx-auto pt-4 grid grid-cols-1 lg:grid-cols-[auto_400px] max-w-[1100px] gap-4 pb-4">
         <section className="space-y-4 mx-5 lg:mx-0">
+          <CompanyHero dicts={dicts} exchangeData={exchangeData}/>
           <CompanyOverview exchangeData={exchangeData} dicts={dicts} />
           <div className="lg:hidden block">
             <CompanyContact exchangeData={exchangeData} dicts={dicts} />
           </div>
-          <CompanyDetails exchangeData={exchangeData} dicts={dicts} />
+          {process.env.NEXT_PUBLIC_DIRECTORY === "exchange" && (
+            <CompanyDetails exchangeData={exchangeData} dicts={dicts} />
+          )}
           <CompanyGallary exchangeData={exchangeData} />
           <CompanySocialMedia exchangeData={exchangeData} dicts={dicts} />
           <CompanyLocCard exchangeData={exchangeData} dicts={dicts} />

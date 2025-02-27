@@ -6,7 +6,7 @@ import {
   FilterState,
   resetFilters,
 } from "@/redux/features/filters/filter-slice";
-import { useEffect, useTransition } from "react";
+import { FC, useEffect, useTransition } from "react";
 import { getDirectoryData } from "@/utils/api";
 import { setExchangeData } from "@/redux/features/data/data-slice";
 import { useAppDispatch, useAppSelector } from "@/redux/app/hooks";
@@ -14,6 +14,8 @@ import ProvinceSelect from "@/components/Directory/drziba/FilterBar/ProvinceSele
 import CitySelect from "@/components/Directory/drziba/FilterBar/CitySelect";
 import CategoryExchange from "@/components/Directory/exchange/FilterBar/Category";
 import dynamic from "next/dynamic";
+import SearchInputMobile from "@/components/Common/Navbar/SearchInputMobile";
+
 const CategorySelect = dynamic(
   () =>
     import(
@@ -23,7 +25,7 @@ const CategorySelect = dynamic(
     loading: () => <p>Loading...</p>,
   }
 ) as typeof CategoryExchange;
-const CardFilterDrziba = ({ dicts }: { dicts: DictsTypes }) => {
+const CardFilterIranArabic = ({ dicts,onClose }: { dicts: DictsTypes;  onClose: () => void; }) => {
   const dispatch = useAppDispatch();
   const [filterDataLoading, startFiltering] = useTransition();
   const filters = useAppSelector((state) => state.filters.dynamicFilters);
@@ -46,10 +48,12 @@ const CardFilterDrziba = ({ dicts }: { dicts: DictsTypes }) => {
     applyFilters({});
   };
 
-  const applyFilters = async (customFilters?: Partial<FilterState["dynamicFilters"]>) => {
+  const applyFilters = async (
+    customFilters?: Partial<FilterState["dynamicFilters"]>
+  ) => {
     const activeFilters = customFilters || filters;
-    await getDirectoryData(activeFilters, pageSize, pageIndex).then(
-      (data) => dispatch(setExchangeData(data.data))
+    await getDirectoryData(activeFilters, pageSize, pageIndex).then((data) =>
+      dispatch(setExchangeData(data.data))
     );
   };
 
@@ -69,16 +73,11 @@ const CardFilterDrziba = ({ dicts }: { dicts: DictsTypes }) => {
       shadow="none"
       className="border bg-white min-w-[300px] h-full lg:h-[calc(100vh-100px)] sticky top-20 p-2 grid grid-rows-[max-content_auto_max-content]"
     >
-      <div className="flex items-start justify-between mt-3">
+      <div className="flex items-start flex-wrap justify-between mt-3">
         <div className="w-max">
           <h2 className="text-lg font-semibold flex items-center px-3">
             {" "}
-            <Icon
-              icon="mage:filter"
-              width="24"
-              height="24"
-              className="mr-1"
-            />{" "}
+            <Icon icon="mage:filter" width="20" />
             {dicts?.CardFilter.filter}
           </h2>
         </div>
@@ -94,9 +93,11 @@ const CardFilterDrziba = ({ dicts }: { dicts: DictsTypes }) => {
             {dicts?.button.clearAll}
           </Button>
         ) : null}
+        <SearchInputMobile />
+        <Divider className="my-0 mt-2 hidden lg:block" />
       </div>
       <div className="flex flex-col gap-3 overflow-auto mb-4 p-3">
-        <Divider className="my-0" />
+        <Divider className="my-0 lg:hidden" />
         <CategorySelect dicts={dicts} />
         <Divider className="my-0" />
         <div className="flex flex-col gap-3">
@@ -106,14 +107,15 @@ const CardFilterDrziba = ({ dicts }: { dicts: DictsTypes }) => {
         </div>
       </div>
       <Button
-        onClick={() => startFiltering(() => applyFilters())}
+        onPress={() =>{ startFiltering(() => applyFilters());onClose()}}
         aria-label="apply-filters"
         isDisabled={!condition || filterDataLoading}
         isLoading={filterDataLoading}
       >
-{dicts.button.Apply}      </Button>
+        {dicts.button.Apply}{" "}
+      </Button>
     </Card>
   );
 };
 
-export default CardFilterDrziba;
+export default CardFilterIranArabic;

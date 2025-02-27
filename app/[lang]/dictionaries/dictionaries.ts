@@ -21,4 +21,3 @@ export const getDictionary = async (locale: langsType) => {
   }
   return await dicLocale() as DictsTypes;
 };
-

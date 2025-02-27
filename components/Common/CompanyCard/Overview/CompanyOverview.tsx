@@ -17,7 +17,8 @@ export function CompanyOverview({
       shadow="none"
     >
       <div className=" grid md:grid-cols-[max-content_auto] place-items-center gap-8 mx-4">
-      {exchangeData.image ? (
+      {process.env.NEXT_PUBLIC_DIRECTORY === "exchange" && 
+      exchangeData?.image ? (
           <div className="relative h-40 flex justify-center items-center flex-col">
           <Image
             alt={exchangeData?.image ?? ""}
@@ -36,7 +37,7 @@ export function CompanyOverview({
               height="32"
             />
           </div>
-        )}
+)}
         <div>
           <div className="flex flex-col text-center items-center md:flex-row md:items-start md:text-start gap-2">
             <div>

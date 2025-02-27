@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import {
   Navbar,
   NavbarBrand,
@@ -25,6 +25,7 @@ const NavTopLogo = dynamic(
     loading: () => <p>Loading...</p>,
   }
 ) as typeof NavTopLogoExchange;
+
 const Logo = dynamic(
   () =>
     import(
@@ -34,6 +35,7 @@ const Logo = dynamic(
     loading: () => <p>Loading...</p>,
   }
 ) as typeof Logoex;
+
 export default function MainNavbar({
   dicts,
   lang,
@@ -58,66 +60,58 @@ export default function MainNavbar({
         {isMoblie ? <NavTopLogo dicts={dicts} /> : <Logo dicts={dicts} />}
       </NavbarBrand>
       <NavbarContent className="hidden lg:flex">
-        {/* <NavbarItem>
-          <Dropdown>
-            <DropdownTrigger>
-              <Button variant="light">All</Button>
-            </DropdownTrigger>
-            <DropdownMenu aria-label="Categories">
-              <DropdownItem key="stock">Stock Footage</DropdownItem>
-              <DropdownItem key="motion">Motion Graphics</DropdownItem>
-            </DropdownMenu>
-          </Dropdown>
-        </NavbarItem> */}
         <NavbarItem>
           <SearchInput dicts={dicts} />
         </NavbarItem>
       </NavbarContent>
-      <NavbarContent className="flex-1 gap-6 " justify="center">
-        <NavbarItem>
-          {isMoblie ? (
-            <div className="fixed top-[10px] end-16 h-max z-70">
-              <div className=" mx-auto px-3">
+      <NavbarContent className="flex-1" justify="end">
+        {process.env.NEXT_PUBLIC_DIRECTORY === "exchange" ? (
+          <NavbarItem>
+            {isMoblie ? (
+              <div className="fixed top-[10px] end-0 h-max z-70">
+                <div className=" mx-auto px-3">
+                  <div className="flex items-center">
+                    <Link
+                      href={`/p`}
+                      className={`bg-white flex flex-row p-[10px] items-center rounded-full border`}
+                      aria-label="language page"
+                    >
+                      <Icon icon="grommet-icons:blog" width={32} />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <Link
+                href={`${dicts.lang}/p`}
+                className="text-default-500 rounded-xl hover:text-secondary-600 hover:border-secondary-600 gap-x-2 items-center flex border-2 border-solid px-1 py-[2px] text-lg"
+              >
+                <Icon icon="fa-solid:blog" width={20} />{" "}
+                {dicts.menuSection.mainNav.blogPost}
+              </Link>
+            )}
+          </NavbarItem>
+        ) : null}
+        {process.env.NEXT_PUBLIC_DIRECTORY === "iranarabic" ? (
+            <div className="fixed top-[10px] end-1 z-70">
+              <div className=" mx-auto px-2">
                 <div className="flex items-center">
                   <Link
-                    href={`/p`}
-                    className={`bg-white flex flex-row p-[10px] items-center rounded-full border`}
-                    aria-label="language page"
+                    href={`/`}
+                    className={`bg-default-600 flex flex-col p-[10px_8px] items-center rounded-xl border-purple-700 border-2`}
+                    aria-label="button"
                   >
-                    <Icon icon="grommet-icons:blog" width={32} />
+                    <p className="text-white text-sm">
+                      تحميل مجاني لدليل السفر{" "}
+                    </p>
                   </Link>
                 </div>
               </div>
             </div>
-          ) : (
-            <Link
-              href={`${dicts.lang}/p`}
-              className="text-default-500 rounded-xl hover:text-secondary-600 hover:border-secondary-600 gap-x-2 items-center flex border-2 border-solid px-1 py-[2px] text-lg"
-            >
-              <Icon icon="fa-solid:blog" width={20} />{" "}
-              {dicts.menuSection.mainNav.blogPost}
-            </Link>
-          )}
-        </NavbarItem>
-      </NavbarContent>
-      <NavbarContent className="gap-4">
-        {!process.env.IS_NOT_MULTILANG ? (
-          <NavbarItem>
-            <LanguageButton dicts={dicts} lang={lang} />
-          </NavbarItem>
         ) : null}
-        {/* <NavbarItem>
-          <UserAvatar />
-        </NavbarItem>
-        <NavbarItem>
-          <Button
-            radius="full"
-            className="bg-gradient-to-tr from-purple-500 to-blue-500 text-white shadow-lg"
-          >
-            <Icon icon="hugeicons:credit-card" width="1.4rem" height="1.4rem" />{" "}
-            {dicts.contributors.contributors}
-          </Button>
-        </NavbarItem> */}
+        {process.env.IS_NOT_MULTILANG==="true" ? (
+          <LanguageButton dicts={dicts} lang={lang} />
+        ) : null}
       </NavbarContent>
     </Navbar>
   );

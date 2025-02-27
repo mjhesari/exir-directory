@@ -5,6 +5,7 @@ export interface RequestBody {
   industry?: string[];
   city?:string;
   country?:string
+  tags?:string
 }
 export async function POST(request :Request) {
   try {
@@ -12,7 +13,7 @@ export async function POST(request :Request) {
 
     let defaultSet: RequestBody = {};
     if (process?.env?.NEXT_PUBLIC_DIRECTORY === "iranarabic") {
-      defaultSet = {country:"Iran"};
+      defaultSet = {tags:"15dba21e-eedd-4eda-a4d5-f034f28dff29"};
     } else if (process?.env?.NEXT_PUBLIC_DIRECTORY === "dubai") {
       defaultSet = {city:"dubai"};
     } else if(process?.env?.NEXT_PUBLIC_DIRECTORY === "drziba"){
@@ -37,7 +38,7 @@ export async function POST(request :Request) {
         },
         body
       }
-      );
+    );
     if (!response.ok) {
       throw new Error(`Failed to fetch data: ${response.statusText}`);
     }

@@ -1,3 +1,4 @@
+"use client"
 import { LanguagesTypes } from "@/types/dataTypes";
 import { Divider } from "@nextui-org/react";
 import { useRouter } from "next/navigation"; // استفاده از useRouter از next/navigation

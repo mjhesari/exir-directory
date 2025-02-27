@@ -7,7 +7,7 @@ import { setSearchName } from "@/redux/features/filters/filter-slice";
 import { useEffect, useState } from "react";
 
 
-const SearchInput = ({ dicts }: { dicts?: DictsTypes }) => {
+const SearchInput = ({ dicts }: { dicts: DictsTypes }) => {
   const dispatch = useAppDispatch();
   const [inputValue, setInputValue] = useState("");
   const filters = useAppSelector((state) => state.filters);

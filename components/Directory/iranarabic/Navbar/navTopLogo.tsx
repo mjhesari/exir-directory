@@ -10,12 +10,12 @@ const NavTopLogoIranarabic = ({ dicts }: { dicts: DictsTypes }) => {
           href={`/${dicts.lang}`}
           className="flex items-center gap-3 text-black"
         >
-          <div className="lg:hidden bg-white flex flex-row p-1 justify-start w-44 gap-x-2 items-center rounded-full border">
+          <div className="lg:hidden bg-white flex flex-row p-1 justify-start  gap-x-2 items-center rounded-xl pe-2 border">
           <Image
               src={img1}
               alt="logo"
-              width={45}
-              className="rounded-full"
+              width={35}
+              className="rounded-lg"
             />
             <h1>{dicts?.DirectoryName?.iranarabic}</h1>
           </div>

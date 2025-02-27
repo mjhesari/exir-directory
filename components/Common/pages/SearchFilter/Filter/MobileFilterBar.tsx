@@ -29,7 +29,7 @@ const left=dicts.dir==="rtl"? "left":"right"
         {dicts?.CardFilter?.filter}
       </Button>
       <Drawer
-      
+      hideCloseButton
       placement={`${left}`}
         isOpen={isOpen}
         onOpenChange={onOpenChange}
@@ -37,7 +37,7 @@ const left=dicts.dir==="rtl"? "left":"right"
         classNames={{ backdrop: "lg:hidden", closeButton: "z-50 text-xl" }}
       >
         <DrawerContent>
-          <CardFilter dicts={dicts} />
+          <CardFilter dicts={dicts} onClose={() => onOpenChange()}  />
         </DrawerContent>
       </Drawer>
     </div>

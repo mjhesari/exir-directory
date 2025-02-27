@@ -14,7 +14,7 @@
     "@reduxjs/toolkit": "^2.3.0",
     "autoprefixer": "^10.4.20",
     "date-fns": "^4.1.0",
-    "framer-motion": "^11.11.17",
+    "framer-motion": "^12.4.2",
     "leaflet": "^1.9.4",
     "next": "^14.2.21",
     "react": "^18",
