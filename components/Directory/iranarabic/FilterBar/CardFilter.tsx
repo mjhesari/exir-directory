@@ -6,7 +6,7 @@ import {
   FilterState,
   resetFilters,
 } from "@/redux/features/filters/filter-slice";
-import { FC, useEffect, useTransition } from "react";
+import {  useEffect, useTransition } from "react";
 import { getDirectoryData } from "@/utils/api";
 import { setExchangeData } from "@/redux/features/data/data-slice";
 import { useAppDispatch, useAppSelector } from "@/redux/app/hooks";
@@ -25,7 +25,7 @@ const CategorySelect = dynamic(
     loading: () => <p>Loading...</p>,
   }
 ) as typeof CategoryExchange;
-const CardFilterIranArabic = ({ dicts,onClose }: { dicts: DictsTypes;  onClose: () => void; }) => {
+const CardFilterIranArabic = ({ dicts,onClose }: { dicts: DictsTypes;  onClose?: () => void; }) => {
   const dispatch = useAppDispatch();
   const [filterDataLoading, startFiltering] = useTransition();
   const filters = useAppSelector((state) => state.filters.dynamicFilters);

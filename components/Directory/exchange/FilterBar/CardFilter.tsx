@@ -28,7 +28,7 @@ const CategorySelect = dynamic(
     loading: () => <p>Loading...</p>,
   }
 ) as typeof CategoryExchange;
-const CardFilterExchange = ({ dicts,onClose }: { dicts: DictsTypes;  onClose: () => void; }) => {
+const CardFilterExchange = ({ dicts,onClose }: { dicts: DictsTypes;  onClose?: () => void; }) => {
   // const router = useRouter();
   const dispatch = useAppDispatch();
   const [filterDataLoading, startFiltering] = useTransition();
