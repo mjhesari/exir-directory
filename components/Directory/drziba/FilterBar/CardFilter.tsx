@@ -23,7 +23,7 @@ const CategorySelect = dynamic(
     loading: () => <p>Loading...</p>,
   }
 ) as typeof CategoryExchange;
-const CardFilterDrziba = ({ dicts }: { dicts: DictsTypes }) => {
+const CardFilterDrziba = ({ dicts,onClose }: { dicts: DictsTypes;  onClose?: () => void; }) => {
   const dispatch = useAppDispatch();
   const [filterDataLoading, startFiltering] = useTransition();
   const filters = useAppSelector((state) => state.filters.dynamicFilters);
@@ -106,7 +106,7 @@ const CardFilterDrziba = ({ dicts }: { dicts: DictsTypes }) => {
         </div>
       </div>
       <Button
-        onClick={() => startFiltering(() => applyFilters())}
+        onPress={() =>{ startFiltering(() => applyFilters());onClose()}}
         aria-label="apply-filters"
         isDisabled={!condition || filterDataLoading}
         isLoading={filterDataLoading}

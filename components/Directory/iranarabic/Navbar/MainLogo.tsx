@@ -3,7 +3,7 @@ import Link from "next/link";
 import img1 from "@/public/iranarabic.jpg";
 import { DictsTypes } from "@/app/[lang]/dictionaries/dictionaries";
 
-const Logodrziba = ({ dicts }: { dicts: DictsTypes }) => {
+const LogoIranArabic = ({ dicts }: { dicts: DictsTypes }) => {
     return (
         <Link href={`/${dicts?.lang}`} className="flex items-center gap-3 text-black">
             <Image
@@ -17,4 +17,4 @@ const Logodrziba = ({ dicts }: { dicts: DictsTypes }) => {
     );
 }
 
-export default Logodrziba;
+export default LogoIranArabic;

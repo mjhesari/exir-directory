@@ -4,6 +4,7 @@ import { Button } from "@nextui-org/react";
 import { DictsTypes } from "@/app/[lang]/dictionaries/dictionaries";
 import ContactItems from "./ContactItems";
 import { Business } from "@/types/dataTypes";
+import EmailItems from "./EmailItems";
 // import EmailItems from "./EmailItems";
 
 const CompanyContact = ({
@@ -31,9 +32,7 @@ const CompanyContact = ({
                 >
                   <ContactItems
                   dicts={dicts}
-                    type="phone"
                     content={phone?.value ?? ""}
-                    exchangeData={exchangeData}
                   />
                 </div>
               )
@@ -49,11 +48,9 @@ const CompanyContact = ({
                   data-aos-delay={index * 100}
                   data-aos-offset="100"
                 >
-                  <ContactItems
-                    type="mail"
+                  <EmailItems
                     dicts={dicts}
                     content={mail?.value ?? ""}
-                    exchangeData={exchangeData}
                   />
                 </div>
               )

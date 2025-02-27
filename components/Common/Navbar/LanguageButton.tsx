@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import { DictsTypes } from "@/app/[lang]/dictionaries/dictionaries";
 import { Icon } from "@iconify-icon/react";
 import {
@@ -37,7 +37,7 @@ const LanguageButton = ({
   return (
     <>
       {isMoblie ? (
-        <div className="fixed top-[10px] end-0 h-max z-70">
+        <div className="fixed top-[10px] end-16 h-max z-70">
           <div className=" mx-auto px-3">
             <div className="flex items-center">
               <Button

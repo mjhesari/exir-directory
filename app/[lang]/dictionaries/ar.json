@@ -8,7 +8,7 @@
       "exchange": "مركز الصرافة",
       "drziba": "دكتور زيبا",
       "dubai": "دبي هاب",
-      "iranarabic": "إيران عربي"
+      "iranarabic": "إيران بالعربية"
     },
     "desc": {
       "exchange": "القائمة الكاملة للصرافات حول العالم في مركز الصرافة",
@@ -21,7 +21,7 @@
     "exchange": "مركز الصرافة",
     "drziba": "دكتور زيبا",
     "dubai": "دبي هاب",
-    "iranarabic": "إيران عربي"
+    "iranarabic": "إيران بالعربية"
   },
   "langName": "العربية",
   "menuSection": {
@@ -126,7 +126,7 @@
       "exchanges": "الصرافات",
       "drziba": "دكتور زيبا",
       "dubai": "دبي هاب",
-      "iranarabic": "إيران عربي"
+      "iranarabic": "إيران بالعربية"
     },
     "sortBy": "الفرز حسب",
     "desc": {
