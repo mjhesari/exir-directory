@@ -44,6 +44,7 @@ export default async function Home({
   const dicts = await getDictionary(params?.lang);
   const publicId = params.identifiers[1];
   const exchangeData: Business = await getSinglePageData(publicId);
+  const targetId=exchangeData.id
   const localBusinessSchema = await generateLocalBusinessSchema(
     exchangeData,
     params.lang
@@ -76,7 +77,7 @@ export default async function Home({
         <section className="space-y-4 mx-5 lg:mx-0 lg:block hidden">
           <div className="h-screen !overflow-hidden lg:sticky lg:top-20 grid grid-rows-[max-content_auto] gap-4">
             <CompanyContact exchangeData={exchangeData} dicts={dicts} />
-            <Comment />
+            <Comment targetId={targetId} />
           </div>
           {/* <CompanyItemsCard exchangeData={exchangeData} dicts={dicts} /> */}
           {/* <CompanyProduct dicts={dicts} /> */}

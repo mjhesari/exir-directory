@@ -1,10 +1,11 @@
 "use client";
 import { Icon } from "@iconify/react";
-import { Button } from "@nextui-org/react";
+import { Button } from "@heroui/react";
 import { useRef } from "react";
 import { convertToPhoneNumber } from "@/utils/functions/functions";
 import Copier from "@/components/Common/mirrors/Copy-Button";
 import { DictsTypes } from "@/app/[lang]/dictionaries/dictionaries";
+import Link from "next/link"
 // import { DictsTypes } from "@/app/[lang]/dictionaries/dictionaries";
 export type ContactItemTypes = {
   content: string;
@@ -31,10 +32,14 @@ const ContactItems = ({
             <Button
               size="sm"
               isIconOnly
-              radius="full"
-              className="border-1 bg-transparent border-indigo-500 text-indigo-500"
+              radius="sm"
+              className="border-1 bg-transparent border-indigo-500 text-indigo-500 items-center justify-center"
             >
-              <Icon icon="solar:letter-linear" width="20" />
+              <Icon icon="mingcute:phone-line" className="rounded-full" width="20" />
+              <Link
+            href={`tel:${content}`}
+            className="absolute inset-0"
+          />
             </Button>
           </div>
         </div>

@@ -1,5 +1,5 @@
 import img5 from '@/public/Frame 234.png'
-import { Card } from '@nextui-org/react';
+import { Card } from "@heroui/react";
 import Image from 'next/image'
 
 const AdsCard = () => {

@@ -1,5 +1,5 @@
 import { Icon } from "@iconify/react";
-import { Card } from "@nextui-org/react";
+import { Card } from "@heroui/react";
 import { DictsTypes } from "@/app/[lang]/dictionaries/dictionaries";
 import { Business } from "@/types/dataTypes";
 import Link from "next/link";

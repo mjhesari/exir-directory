@@ -141,12 +141,8 @@ export async function fetchComments(targetId: string, pageIndex = 0, pageSize = 
     ...(parentId && { parentId }),
   });
 
-  const response = await fetch(`${process.env.BASE_URL_COMMENT}/comment?${params}`, {
-    headers: {
-      Authorization: `Bearer ${process.env.COMMENT_TOKEN}`,
-    },
-  });
-
+  const response = await fetch(`${process.env.BASE_URL_COMMENT}/comment?${params}`);
+  
   if (!response.ok) {
     throw new Error('Failed to fetch comments');
   }

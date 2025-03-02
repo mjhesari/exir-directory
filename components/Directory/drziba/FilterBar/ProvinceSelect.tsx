@@ -2,7 +2,7 @@ import { DictsTypes } from "@/app/[lang]/dictionaries/dictionaries";
 import { useAppDispatch, useAppSelector } from "@/redux/app/hooks";
 import { setSelectedProvinces } from "@/redux/features/filters/filter-slice";
 import { ProvinceType } from "@/types/dataTypes";
-import { Autocomplete, AutocompleteItem } from "@nextui-org/react";
+import { Autocomplete, AutocompleteItem } from "@heroui/react";
 import { useEffect, useState } from "react";
 
 const ProvinceSelect = ({ dicts }: { dicts: DictsTypes }) => {

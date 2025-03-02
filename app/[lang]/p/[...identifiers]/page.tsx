@@ -3,7 +3,7 @@ import { getDictionary, langsType } from "../../dictionaries/dictionaries";
 import SinglePost from "@/components/Common/pages/Post/SinglePost";
 import Comment from "@/components/Common/Comment/Comment";
 // import Comment from "@/components/Common/Comment/Comment";
-// import { Avatar, Button, Card, CardBody, CardFooter, CardHeader } from "@nextui-org/react";
+// import { Avatar, Button, Card, CardBody, CardFooter, CardHeader } from "@heroui/react";
 // import { Icon } from "@iconify-icon/react";
 // import Image from "next/image";
 

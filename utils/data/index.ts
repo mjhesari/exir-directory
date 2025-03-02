@@ -65,7 +65,7 @@ export const generateLocalBusinessSchema = async (
     //   areaServed Ask
       areaServed: data?.region ?? "areaServed",
       availableLanguage: lang || "en",
-      email: data?.mail?.map((mail) => mail?.value ?? ""),
+      // email: data?.mail?.map((mail) => mail?.value)?? "",
     },
     openingHoursSpecification :openingHoursSpecification ?? "",
   };

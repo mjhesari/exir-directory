@@ -1,6 +1,6 @@
 import { DictsTypes } from "@/app/[lang]/dictionaries/dictionaries";
 import { useAppDispatch, useAppSelector } from "@/redux/app/hooks";
-import { Switch } from "@nextui-org/react";
+import { Switch } from "@heroui/react";
 import { marketKey, toggleSelectedMarket } from "@/redux/features/filters/filter-slice";
 
 const MarketSwitch = ({dicts}:{dicts:DictsTypes}) => {

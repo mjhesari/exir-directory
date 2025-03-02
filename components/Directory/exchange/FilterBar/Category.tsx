@@ -1,5 +1,5 @@
 "use client";
-import { Checkbox, CheckboxGroup } from "@nextui-org/react";
+import { Checkbox, CheckboxGroup } from "@heroui/react";
 import { categoryExchange } from "@/utils/data/data";
 import { useAppDispatch, useAppSelector } from "@/redux/app/hooks";
 import { setSelectedCategories } from "@/redux/features/filters/filter-slice";

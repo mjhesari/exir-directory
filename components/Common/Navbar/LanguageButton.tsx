@@ -8,7 +8,7 @@ import {
   useDisclosure,
   Divider,
   Input,
-} from "@nextui-org/react";
+} from "@heroui/react";
 import LanguageCard from "../languages/LanguageCard";
 import { LanguagesTypes } from "@/types/dataTypes";
 import { useState, useEffect } from "react";

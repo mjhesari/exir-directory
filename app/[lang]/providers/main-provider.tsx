@@ -1,6 +1,6 @@
 "use client";
 // NextUi
-import { NextUIProvider } from "@nextui-org/react";
+import { HeroUIProvider } from "@heroui/react";
 // Redux toolkit
 import {  DataStructure, PostDataContainer } from "@/types/dataTypes";
 import { Provider } from "react-redux";
@@ -26,7 +26,7 @@ const MainProviders = ({
       <DataGetter exchangeData={exchange} lang={lang} post={post}/>
       </Suspense>
       <Toaster position="bottom-center" />
-      <NextUIProvider>{children}</NextUIProvider>
+      <HeroUIProvider>{children}</HeroUIProvider>
     </Provider>
   );
 };

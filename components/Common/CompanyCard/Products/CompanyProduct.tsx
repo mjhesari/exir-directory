@@ -1,5 +1,5 @@
 import { Icon } from "@iconify/react";
-import { Button, Card, CardBody } from "@nextui-org/react";
+import { Button, Card, CardBody } from "@heroui/react";
 import Image from "next/image";
 import img6 from "@/public/image.png";
 import { DictsTypes } from "@/app/[lang]/dictionaries/dictionaries";

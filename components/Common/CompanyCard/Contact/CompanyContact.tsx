@@ -1,6 +1,6 @@
 import { Icon } from "@iconify/react";
-import { Card } from "@nextui-org/card";
-import { Button } from "@nextui-org/react";
+import { Card } from "@heroui/card";
+import { Button } from "@heroui/react";
 import { DictsTypes } from "@/app/[lang]/dictionaries/dictionaries";
 import ContactItems from "./ContactItems";
 import { Business } from "@/types/dataTypes";

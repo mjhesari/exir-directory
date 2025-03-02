@@ -1,6 +1,6 @@
 "use client"
 import { Icon } from "@iconify/react";
-import { Input } from "@nextui-org/react";
+import { Input } from "@heroui/react";
 import { DictsTypes } from "@/app/[lang]/dictionaries/dictionaries";
 import { useAppDispatch, useAppSelector } from "@/redux/app/hooks";
 import { setSearchName } from "@/redux/features/filters/filter-slice";

@@ -1,6 +1,6 @@
 "use client"
 
-import { Button } from "@nextui-org/react"
+import { Button } from "@heroui/react"
 import { Icon } from "@iconify/react"
 import { useRef, useState,useEffect } from "react"
 import { CategoryButton } from "@/components/Common/mirrors/category-button"

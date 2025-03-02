@@ -1,7 +1,7 @@
 import { DictsTypes } from "@/app/[lang]/dictionaries/dictionaries"
 import { Post } from "@/types/dataTypes"
 import { Icon } from "@iconify/react/dist/iconify.js"
-import { Button } from "@nextui-org/react"
+import { Button } from "@heroui/react"
 import Image from "next/image"
 // import Link from "next/link"
 const post:BlogPost = {
