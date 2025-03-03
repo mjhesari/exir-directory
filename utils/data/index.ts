@@ -60,12 +60,12 @@ export const generateLocalBusinessSchema = async (
     },
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: data?.phone?.map((phone) => phone?.value ?? "") ?? "",
+      // telephone: data?.phone?.map((phone) => phone?.value ?? "") ?? "",
       contactType: "Customer Service" ,
     //   areaServed Ask
       areaServed: data?.region ?? "areaServed",
       availableLanguage: lang || "en",
-      email: data?.mail?.map((mail) => mail?.value ?? ""),
+      // email: data?.mail?.map((mail) => mail?.value)?? "",
     },
     openingHoursSpecification :openingHoursSpecification ?? "",
   };

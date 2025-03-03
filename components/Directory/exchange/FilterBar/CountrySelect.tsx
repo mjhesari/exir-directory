@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Autocomplete, AutocompleteItem} from "@nextui-org/react";
+import { Autocomplete, AutocompleteItem} from "@heroui/react";
 // import Types
 import { DictsTypes } from "@/app/[lang]/dictionaries/dictionaries";
 import { useAppDispatch, useAppSelector } from "@/redux/app/hooks";
@@ -54,7 +54,6 @@ const CountrySelect = ({ dicts }: { dicts: DictsTypes }) => {
             <AutocompleteItem
             className="font-light"
               key={countryName?.tr?.en}
-              value={countryName?.tr?.en}
               textValue={countryName?.tr?.[dicts.lang]}
             >
               {countryName?.tr?.[dicts.lang]}

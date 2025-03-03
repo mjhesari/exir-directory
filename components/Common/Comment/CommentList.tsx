@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react';
 import { fetchCommentsAsync } from '@/redux/features/comment/comment-slice';
-import { Button, Spinner } from '@nextui-org/react';
+import { Button, Spinner } from "@heroui/react";
 import { CommentCard } from './CommentCard';
 import { Comment } from '@/types/dataTypes';
 import { useAppDispatch, useAppSelector } from '@/redux/app/hooks';

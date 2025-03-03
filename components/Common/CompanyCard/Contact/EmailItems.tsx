@@ -1,9 +1,11 @@
 "use client";
 import { Icon } from "@iconify/react";
-import { Button } from "@nextui-org/react";
+import { Button } from "@heroui/react";
 import { useRef } from "react";
 import Copier from "@/components/Common/mirrors/Copy-Button";
 import { DictsTypes } from "@/app/[lang]/dictionaries/dictionaries";
+import Link from "next/link"
+
 // import { DictsTypes } from "@/app/[lang]/dictionaries/dictionaries";
 export type ContactItemTypes = {
   content: string;
@@ -30,10 +32,14 @@ const EmailItems = ({
             <Button
               size="sm"
               isIconOnly
-              radius="full"
+              radius="sm"
               className="border-1 bg-transparent border-indigo-500 text-indigo-500"
             >
               <Icon icon="solar:letter-linear" width="20" />
+              <Link
+            href={`mailto:${content}`}
+            className="absolute inset-0"
+          />
             </Button>
           </div>
         </div>

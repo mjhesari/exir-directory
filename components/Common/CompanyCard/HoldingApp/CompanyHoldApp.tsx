@@ -1,5 +1,5 @@
 import { Icon } from "@iconify-icon/react";
-import { Button, Card, CardBody, CardHeader } from "@nextui-org/react";
+import { Button, Card, CardBody, CardHeader } from "@heroui/react";
 import { DictsTypes } from "@/app/[lang]/dictionaries/dictionaries";
 import { Business } from "@/types/dataTypes";
 

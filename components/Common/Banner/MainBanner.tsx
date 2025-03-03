@@ -1,4 +1,4 @@
-// import { Image } from "@nextui-org/react";
+// import { Image } from "@heroui/react";
 import Image from "next/image";
 
 //* Import assets

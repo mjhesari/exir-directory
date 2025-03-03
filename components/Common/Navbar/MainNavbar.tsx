@@ -1,10 +1,11 @@
-"use client"
+"use client";
 import {
   Navbar,
   NavbarBrand,
   NavbarContent,
   NavbarItem,
-} from "@nextui-org/react";
+  Skeleton,
+} from "@heroui/react";
 import dynamic from "next/dynamic";
 import SearchInput from "./SearchInput";
 import { DictsTypes } from "@/app/[lang]/dictionaries/dictionaries";
@@ -22,7 +23,11 @@ const NavTopLogo = dynamic(
       `@/components/Directory/${process.env.NEXT_PUBLIC_DIRECTORY}/Navbar/navTopLogo`
     ),
   {
-    loading: () => <p>Loading...</p>,
+    loading: () => (
+      <Skeleton className="rounded-lg">
+        <div className="h-12 rounded-lg bg-default-300" />
+      </Skeleton>
+    ),
   }
 ) as typeof NavTopLogoExchange;
 
@@ -32,7 +37,11 @@ const Logo = dynamic(
       `@/components/Directory/${process.env.NEXT_PUBLIC_DIRECTORY}/Navbar/MainLogo`
     ),
   {
-    loading: () => <p>Loading...</p>,
+    loading: () => (
+      <Skeleton className="rounded-lg">
+        <div className="rounded-lg bg-default-300" />
+      </Skeleton>
+    ),
   }
 ) as typeof Logoex;
 
@@ -93,23 +102,21 @@ export default function MainNavbar({
           </NavbarItem>
         ) : null}
         {process.env.NEXT_PUBLIC_DIRECTORY === "iranarabic" ? (
-            <div className="fixed top-[10px] end-1 z-70">
-              <div className=" mx-auto px-2">
-                <div className="flex items-center">
-                  <Link
-                    href={`/`}
-                    className={`bg-default-600 flex flex-col p-[10px_8px] items-center rounded-xl border-purple-700 border-2`}
-                    aria-label="button"
-                  >
-                    <p className="text-white text-sm">
-                      تحميل مجاني لدليل السفر{" "}
-                    </p>
-                  </Link>
-                </div>
+          <div className="fixed top-[10px] end-1 z-70">
+            <div className=" mx-auto px-2">
+              <div className="flex items-center">
+                <Link
+                  href={`/`}
+                  className={` flex flex-col p-[12px_7px] items-center rounded-xl bg-black `}
+                  aria-label="button"
+                >
+                  <p className="text-white text-sm">تحميل مجاني لدليل السفر </p>
+                </Link>
               </div>
             </div>
+          </div>
         ) : null}
-        {process.env.IS_NOT_MULTILANG==="true" ? (
+        {process.env.IS_NOT_MULTILANG === "true" ? (
           <LanguageButton dicts={dicts} lang={lang} />
         ) : null}
       </NavbarContent>

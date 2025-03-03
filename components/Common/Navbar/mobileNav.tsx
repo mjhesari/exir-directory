@@ -1,9 +1,9 @@
 "use client";
 import { Icon } from "@iconify/react";
-import { Button } from "@nextui-org/react";
+import { Button } from "@heroui/react";
 import Link from "next/link";
 import { useState } from "react";
-import { Divider } from "@nextui-org/divider";
+import { Divider } from "@heroui/divider";
 import { DictsTypes } from "@/app/[lang]/dictionaries/dictionaries";
 const MobileNav = ({ dicts }: { dicts: DictsTypes }) => {
   const [isOpen, setIsOpen] = useState(false);

@@ -4,7 +4,7 @@
 import { useState } from 'react';
 
 //* Import components
-import { Button } from '@nextui-org/react';
+import { Button } from "@heroui/react";
 import toast from 'react-hot-toast';
 import { Icon } from '@iconify-icon/react';
 
@@ -29,9 +29,9 @@ const Copier = ({ value }: { value: string }) => {
   return (
     <Button
       isIconOnly
-      onClick={copyValue}
+      onPress={copyValue}
       size='sm'
-      radius='full'
+      radius='sm'
       className='bg-transparent border-indigo-500 border'    >
       <Icon icon="solar:copy-linear" className='transition-all text-indigo-500' width={isCopied ? 0 : 20}  height={20}/>
       <Icon icon="line-md:circle-twotone-to-confirm-circle-transition"

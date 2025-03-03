@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Button } from '@nextui-org/react';
+import { Button } from "@heroui/react";
 import { Icon } from '@iconify/react';
 import { fetchReactions, createOrUpdateReaction } from '@/utils/api/index';
 import { ReactionType, Reaction } from '@/types/dataTypes';

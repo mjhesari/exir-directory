@@ -1,7 +1,7 @@
 "use client";
 import { DictsTypes } from "@/app/[lang]/dictionaries/dictionaries";
 import { Icon } from "@iconify-icon/react";
-import { Button, Card, Divider } from "@nextui-org/react";
+import { Button, Card, Divider } from "@heroui/react";
 import CountrySelect from "@/components/Directory/exchange/FilterBar/CountrySelect";
 import FiatSelect from "@/components/Directory/exchange/FilterBar/FiatSelect";
 import PaymentSelect from "@/components/Directory/exchange/FilterBar/PaymentSelect";

@@ -7,7 +7,7 @@ import {
   CardHeader,
   Divider,
   User,
-} from "@nextui-org/react";
+} from "@heroui/react";
 import RateButtons from "../../mirrors/Rate/rate-buttons";
 import { useState } from "react";
 

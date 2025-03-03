@@ -1,10 +1,8 @@
 import { CommentForm } from "./CommentForm";
 import { CommentList } from "./CommentList";
-import { Card, CardBody, CardHeader } from "@nextui-org/react";
+import { Card, CardBody, CardHeader } from "@heroui/react";
 
-export default function Comment() {
-  const targetId = "df6e1c49-bbd4-43ca-abb3-946af7362fa1";
-
+export default function Comment({targetId}:{targetId:string}) {
   return (
     <Card
       shadow="none"

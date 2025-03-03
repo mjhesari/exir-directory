@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Button, Textarea } from '@nextui-org/react';
+import { Button, Textarea } from "@heroui/react";
 import { Icon } from '@iconify/react';
 import { createCommentAsync } from '@/redux/features/comment/comment-slice';
 import { toast } from 'react-hot-toast';
@@ -54,7 +54,7 @@ export function CommentForm({ targetId, parentId, onSuccess }: CommentFormProps)
                 isIconOnly
                 variant="light"
                 size="sm"
-                onClick={() => setRating(star)}
+                onPress={() => setRating(star)}
                 type="button"
                 className="min-w-8 w-8 h-8"
               >

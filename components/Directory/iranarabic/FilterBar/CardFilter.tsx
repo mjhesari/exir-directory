@@ -1,7 +1,7 @@
 "use client";
 import { DictsTypes } from "@/app/[lang]/dictionaries/dictionaries";
 import { Icon } from "@iconify-icon/react";
-import { Button, Card, Divider } from "@nextui-org/react";
+import { Button, Card, Divider } from "@heroui/react";
 import {
   FilterState,
   resetFilters,
@@ -25,7 +25,7 @@ const CategorySelect = dynamic(
     loading: () => <p>Loading...</p>,
   }
 ) as typeof CategoryExchange;
-const CardFilterIranArabic = ({ dicts,onClose }: { dicts: DictsTypes;  onClose?: () => void; }) => {
+const CardFilterIranArabic = ({ dicts,onClose }: { dicts: DictsTypes;  onClose?: () => void }) => {
   const dispatch = useAppDispatch();
   const [filterDataLoading, startFiltering] = useTransition();
   const filters = useAppSelector((state) => state.filters.dynamicFilters);
@@ -83,7 +83,7 @@ const CardFilterIranArabic = ({ dicts,onClose }: { dicts: DictsTypes;  onClose?:
         </div>
         {condition || filterDataLoading ? (
           <Button
-            onClick={handleClearAll}
+          onPress={handleClearAll}
             color="secondary"
             variant="light"
             size="sm"
@@ -107,8 +107,10 @@ const CardFilterIranArabic = ({ dicts,onClose }: { dicts: DictsTypes;  onClose?:
         </div>
       </div>
       <Button
-        onPress={() =>{ startFiltering(() => applyFilters());onClose()}}
+        onPress={() =>{ startFiltering(() => applyFilters()) ; onClose()}}
         aria-label="apply-filters"
+        variant="shadow"
+        className="bg-black text-white"
         isDisabled={!condition || filterDataLoading}
         isLoading={filterDataLoading}
       >

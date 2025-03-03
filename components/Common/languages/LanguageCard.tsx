@@ -1,6 +1,6 @@
 "use client"
 import { LanguagesTypes } from "@/types/dataTypes";
-import { Divider } from "@nextui-org/react";
+import { Divider } from "@heroui/react";
 import { useRouter } from "next/navigation"; // استفاده از useRouter از next/navigation
 import { usePathname, useSearchParams } from "next/navigation"; // برای دریافت مسیر فعلی و پارامترها
 

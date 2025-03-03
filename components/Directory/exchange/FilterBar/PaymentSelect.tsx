@@ -1,4 +1,4 @@
-import { Chip, Select, SelectItem } from "@nextui-org/react";
+import { Chip, Select, SelectItem } from "@heroui/react";
 // import data static
 import { paymentMethods } from "@/utils/data/data";
 import { paymentKey, setSelectedPayments } from "@/redux/features/filters/filter-slice";
@@ -37,7 +37,7 @@ const PaymentSelect = ({ dicts }: { dicts: DictsTypes }) => {
           onSelectionChange={(keys) => handlePaymentChange(keys as Set<string>)}
         >
           {paymentMethods.map((payment) => (
-            <SelectItem key={payment.key} value={payment.key}>
+            <SelectItem key={payment.key}>
               {payment.label}
             </SelectItem>
           ))}

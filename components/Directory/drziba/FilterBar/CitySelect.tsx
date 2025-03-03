@@ -2,7 +2,7 @@ import { DictsTypes } from "@/app/[lang]/dictionaries/dictionaries";
 import { useAppDispatch, useAppSelector } from "@/redux/app/hooks";
 import { setSelectedCities } from "@/redux/features/filters/filter-slice";
 import { CityType } from "@/types/dataTypes";
-import { Autocomplete, AutocompleteItem } from "@nextui-org/react";
+import { Autocomplete, AutocompleteItem } from "@heroui/react";
 import { useEffect, useState } from "react";
 
 const CitySelect = ({ dicts }: { dicts: DictsTypes }) => {
@@ -61,7 +61,6 @@ const CitySelect = ({ dicts }: { dicts: DictsTypes }) => {
             <AutocompleteItem
               className="font-light"
               key={cityName?.tr?.fa}
-              value={cityName?.tr?.fa}
               textValue={cityName?.tr?.[dicts.lang]}
             >
               {cityName?.tr?.[dicts.lang]}

@@ -1,10 +1,9 @@
-import { Icon } from "@iconify/react";
-import { Card } from "@nextui-org/card";
-import { Button } from "@nextui-org/react";
+import { Card } from "@heroui/card";
 import { DictsTypes } from "@/app/[lang]/dictionaries/dictionaries";
 import ContactItems from "./ContactItems";
 import { Business } from "@/types/dataTypes";
 import EmailItems from "./EmailItems";
+import ChatButton from "./ChatButton";
 // import EmailItems from "./EmailItems";
 
 const CompanyContact = ({
@@ -14,7 +13,9 @@ const CompanyContact = ({
   exchangeData: Business;
   dicts: DictsTypes;
 }) => {
-  const { mail, phone } = exchangeData;
+  const { mail, phone,links } = exchangeData;
+  const chatPlatforms= links?.length && links?.filter((link) =>
+    link?.type?.includes("-chat"))
   return (
     <Card className="flex h-max border" shadow="none">
       <h3 className="font-semibold text-lg px-4 pt-5 pb-2">
@@ -56,15 +57,16 @@ const CompanyContact = ({
               )
             )
           : null}
-        {/* <EmailItems exchangeData={exchangeData} dicts={dicts} /> */}
-        <div className="flex justify-center place-content-center items-center pb-2">
-          <Button
-            className="w-full bg-green-500/20 text-green-500 hover:bg-green-300 rounded-xl"
-            startContent={<Icon icon="ic:twotone-whatsapp" width='20' />}
-            size="lg"
-          >
-            Whatsapp Chat
-          </Button>
+          {/* Chat Buttons */}
+        <div className="flex flex-col gap-3 justify-center place-content-center items-center pb-2">
+          {chatPlatforms.length ? chatPlatforms.map((link)=>(
+            <ChatButton
+            key={link.url}
+            dicts={dicts}
+            url={link.url}
+            type={link.type}
+            />
+          )):null}
         </div>
       </div>
     </Card>

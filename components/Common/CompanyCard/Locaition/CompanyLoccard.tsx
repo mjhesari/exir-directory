@@ -1,10 +1,11 @@
-"use client";
-import { Button } from "@nextui-org/button";
-import { Card, CardBody } from "@nextui-org/card";
+"use client"
+import { Button } from "@heroui/button";
+import { Card, CardBody } from "@heroui/card";
 import { Icon } from "@iconify/react";
 import StaticMap from "./static-map.jsx";
 import { DictsTypes } from "@/app/[lang]/dictionaries/dictionaries";
 import { Business } from "@/types/dataTypes";
+import Link from "next/link"
 
 export function CompanyLocCard({
   exchangeData,
@@ -32,16 +33,21 @@ export function CompanyLocCard({
                   {exchangeData.address}
                 </span>
               </div>
-              <div className="items-start bg-transparent mt-2 px-0" dir="ltr">
+              <div className="items-start mt-2 w-full" dir="ltr">
                 <Button
                   aria-label="navigate"
                   size="md"
-                  className="text-indigo-500 bg-transparent flex flex-row"
+                  variant="shadow"
+                  className="text-indigo-500  flex w-full flex-row"
                   endContent={
                     <Icon icon="ep:arrow-right" width="20" height="20" />
                   }
                 >
                   {dicts?.button.navigate}
+                  <Link
+                  href={`https://www.google.com/maps/search/?api=1&query=${String(exchangeData?.geo)}`}
+                  className='absolute inset-0' 
+                />
                 </Button>
               </div>
             </div>

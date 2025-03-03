@@ -1,6 +1,6 @@
 import { DictsTypes } from "@/app/[lang]/dictionaries/dictionaries";
 import { Business } from "@/types/dataTypes";
-import { Card } from "@nextui-org/react";
+import { Card } from "@heroui/react";
 import Image from "next/image";
 
 const CompanyHero = ({

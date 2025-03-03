@@ -4,7 +4,7 @@ import Fancybox from "./fancy-box";
 import Link from "next/link";
 import { Business } from "@/types/dataTypes";
 import Image from "next/image";
-import { Card } from "@nextui-org/react";
+import { Card } from "@heroui/react";
 
 const CompanyGallery = ({ exchangeData }: { exchangeData: Business }) => {
   const images = [

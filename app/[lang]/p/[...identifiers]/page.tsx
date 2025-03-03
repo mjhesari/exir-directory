@@ -3,7 +3,7 @@ import { getDictionary, langsType } from "../../dictionaries/dictionaries";
 import SinglePost from "@/components/Common/pages/Post/SinglePost";
 import Comment from "@/components/Common/Comment/Comment";
 // import Comment from "@/components/Common/Comment/Comment";
-// import { Avatar, Button, Card, CardBody, CardFooter, CardHeader } from "@nextui-org/react";
+// import { Avatar, Button, Card, CardBody, CardFooter, CardHeader } from "@heroui/react";
 // import { Icon } from "@iconify-icon/react";
 // import Image from "next/image";
 
@@ -38,9 +38,8 @@ const Page = async ({
 
   return (
     <div className="mx-auto pt-4 grid grid-cols-1 lg:grid-cols-[auto_400px] max-w-[1200px] gap-2 pb-4">
-<SinglePost singlePost={singlepost} dicts={dicts}/>
-
-<Comment/>
+      <SinglePost singlePost={singlepost} dicts={dicts} />
+      <Comment targetId="" />
     </div>
   );
 };

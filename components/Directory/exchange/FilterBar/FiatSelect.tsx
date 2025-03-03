@@ -1,4 +1,4 @@
-import { Chip, Select, SelectItem } from "@nextui-org/react";
+import { Chip, Select, SelectItem } from "@heroui/react";
 // import Data
 import { fiatDespoit } from "@/utils/data/data";
 // import Types
@@ -40,7 +40,7 @@ const FiatSelect = ({ dicts }: { dicts: DictsTypes }) => {
           content="none"
         >
           {fiatDespoit.map((fiat) => (
-            <SelectItem key={fiat.key} value={fiat.key}>
+            <SelectItem key={fiat.key}>
               {fiat.label}
             </SelectItem>
           ))}

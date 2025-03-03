@@ -1,4 +1,4 @@
-import { Card } from "@nextui-org/react";
+import { Card } from "@heroui/react";
 // import ScrollingBanner from "../CompanyPartners/scrolling-banner";
 // import {Logo1, Logo10, Logo2, Logo3, Logo4, Logo5, Logo6, Logo7, Logo8, Logo9} from "../CompanyPartners/logos";
 // const logos = [

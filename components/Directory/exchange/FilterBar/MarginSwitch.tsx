@@ -1,4 +1,4 @@
-import { Switch } from "@nextui-org/react";
+import { Switch } from "@heroui/react";
 import { useAppDispatch, useAppSelector } from "@/redux/app/hooks";
 import { marginKey, toggleSelectedMargin } from "@/redux/features/filters/filter-slice";
 import { DictsTypes } from "@/app/[lang]/dictionaries/dictionaries";

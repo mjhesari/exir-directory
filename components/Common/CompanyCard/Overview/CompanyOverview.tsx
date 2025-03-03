@@ -1,4 +1,4 @@
-import { Card } from "@nextui-org/card";
+import { Card } from "@heroui/card";
 import { Business } from "@/types/dataTypes";
 import { DictsTypes } from "@/app/[lang]/dictionaries/dictionaries";
 import Image from "next/image";
@@ -16,18 +16,20 @@ export function CompanyOverview({
       className="flex lg:items-start justify-center border p-4 py-8"
       shadow="none"
     >
-      <div className=" grid md:grid-cols-[max-content_auto] place-items-center gap-8 mx-4">
-      {process.env.NEXT_PUBLIC_DIRECTORY === "exchange" && 
-      exchangeData?.image ? (
+      <div className="grid place-items-center gap-8 mx-4">
+        {process.env.NEXT_PUBLIC_DIRECTORY === "iranarabic" ? (
+          ""
+        ) : process.env.NEXT_PUBLIC_DIRECTORY === "exchange" &&
+          exchangeData?.image ? (
           <div className="relative h-40 flex justify-center items-center flex-col">
-          <Image
-            alt={exchangeData?.image ?? ""}
-            className="rounded-full object-cover aspect-square"
-            src={exchangeData?.image ?? ""}
-            width={140}
-            height={140}
+            <Image
+              alt={exchangeData?.image ?? ""}
+              className="rounded-full object-cover aspect-square"
+              src={exchangeData?.image ?? ""}
+              width={140}
+              height={140}
             />
-            </div>
+          </div>
         ) : (
           <div className="object-cover aspect-square rounded-full h-36 bg-default-300 flex justify-center items-center flex-col">
             <Icon
@@ -37,7 +39,8 @@ export function CompanyOverview({
               height="32"
             />
           </div>
-)}
+        )}
+
         <div>
           <div className="flex flex-col text-center items-center md:flex-row md:items-start md:text-start gap-2">
             <div>

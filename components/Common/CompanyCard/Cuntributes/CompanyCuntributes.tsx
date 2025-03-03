@@ -7,7 +7,7 @@ import {
   CardBody,
   CardFooter,
   CardHeader,
-} from "@nextui-org/react";
+} from "@heroui/react";
 import { DictsTypes } from "@/app/[lang]/dictionaries/dictionaries";
 
 const CompanyCuntributes = ({ dicts }: { dicts?: DictsTypes }) => {
