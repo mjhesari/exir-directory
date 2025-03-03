@@ -2,7 +2,7 @@
 export const locales = [
     "en",
     "fa",
-    // "ar",
+    "ar",
     // "ru",
     // "tr",
     // "bn",
