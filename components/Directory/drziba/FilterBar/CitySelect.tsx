@@ -61,7 +61,6 @@ const CitySelect = ({ dicts }: { dicts: DictsTypes }) => {
             <AutocompleteItem
               className="font-light"
               key={cityName?.tr?.fa}
-              value={cityName?.tr?.fa}
               textValue={cityName?.tr?.[dicts.lang]}
             >
               {cityName?.tr?.[dicts.lang]}

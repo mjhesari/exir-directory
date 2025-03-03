@@ -38,9 +38,8 @@ const Page = async ({
 
   return (
     <div className="mx-auto pt-4 grid grid-cols-1 lg:grid-cols-[auto_400px] max-w-[1200px] gap-2 pb-4">
-<SinglePost singlePost={singlepost} dicts={dicts}/>
-
-<Comment/>
+      <SinglePost singlePost={singlepost} dicts={dicts} />
+      <Comment targetId="" />
     </div>
   );
 };

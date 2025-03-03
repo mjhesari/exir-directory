@@ -54,7 +54,6 @@ const CountrySelect = ({ dicts }: { dicts: DictsTypes }) => {
             <AutocompleteItem
             className="font-light"
               key={countryName?.tr?.en}
-              value={countryName?.tr?.en}
               textValue={countryName?.tr?.[dicts.lang]}
             >
               {countryName?.tr?.[dicts.lang]}

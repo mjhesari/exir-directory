@@ -3,7 +3,6 @@ import { CommentList } from "./CommentList";
 import { Card, CardBody, CardHeader } from "@heroui/react";
 
 export default function Comment({targetId}:{targetId:string}) {
-
   return (
     <Card
       shadow="none"

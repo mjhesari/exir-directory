@@ -52,7 +52,6 @@ const ProvinceSelect = ({ dicts }: { dicts: DictsTypes }) => {
             <AutocompleteItem
               className="font-light"
               key={provinceName?.id}
-              value={provinceName?.id}
               textValue={provinceName?.tr?.[dicts.lang]}
             >
               {provinceName?.tr?.[dicts.lang]}
