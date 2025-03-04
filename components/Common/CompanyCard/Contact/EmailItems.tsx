@@ -28,7 +28,7 @@ const EmailItems = ({
             {content}
           </p>
           <div className="flex gap-x-1" ref={contentRef} title={content}>
-            <Copier value={content} />
+            <Copier value={content} dicts={dicts} />
             <Button
               size="sm"
               isIconOnly
