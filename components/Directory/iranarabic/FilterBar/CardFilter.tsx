@@ -6,7 +6,7 @@ import {
   FilterState,
   resetFilters,
 } from "@/redux/features/filters/filter-slice";
-import {  useEffect, useTransition } from "react";
+import { useEffect, useTransition } from "react";
 import { getDirectoryData } from "@/utils/api";
 import { setExchangeData } from "@/redux/features/data/data-slice";
 import { useAppDispatch, useAppSelector } from "@/redux/app/hooks";
@@ -15,6 +15,7 @@ import CitySelect from "@/components/Directory/drziba/FilterBar/CitySelect";
 import CategoryExchange from "@/components/Directory/exchange/FilterBar/Category";
 import dynamic from "next/dynamic";
 import SearchInputMobile from "@/components/Common/Navbar/SearchInputMobile";
+import ServiceSelect from "./ServiceSelect";
 
 const CategorySelect = dynamic(
   () =>
@@ -25,7 +26,13 @@ const CategorySelect = dynamic(
     loading: () => <p>Loading...</p>,
   }
 ) as typeof CategoryExchange;
-const CardFilterIranArabic = ({ dicts,onClose }: { dicts: DictsTypes;  onClose?: () => void }) => {
+const CardFilterIranArabic = ({
+  dicts,
+  onClose,
+}: {
+  dicts: DictsTypes;
+  onClose?: () => void;
+}) => {
   const dispatch = useAppDispatch();
   const [filterDataLoading, startFiltering] = useTransition();
   const filters = useAppSelector((state) => state.filters.dynamicFilters);
@@ -83,7 +90,7 @@ const CardFilterIranArabic = ({ dicts,onClose }: { dicts: DictsTypes;  onClose?:
         </div>
         {condition || filterDataLoading ? (
           <Button
-          onPress={handleClearAll}
+            onPress={handleClearAll}
             color="secondary"
             variant="light"
             size="sm"
@@ -104,10 +111,15 @@ const CardFilterIranArabic = ({ dicts,onClose }: { dicts: DictsTypes;  onClose?:
           <ProvinceSelect dicts={dicts} />
           <Divider className="my-0" />
           <CitySelect dicts={dicts} />
+          <Divider className="my-0" />
+          <ServiceSelect />
         </div>
       </div>
       <Button
-        onPress={() =>{ startFiltering(() => applyFilters()) ; onClose()}}
+        onPress={() => {
+          startFiltering(() => applyFilters());
+          onClose();
+        }}
         aria-label="apply-filters"
         variant="shadow"
         className="bg-black text-white"

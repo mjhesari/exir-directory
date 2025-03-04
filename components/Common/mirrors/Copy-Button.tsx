@@ -7,10 +7,11 @@ import { useState } from 'react';
 import { Button } from "@heroui/react";
 import toast from 'react-hot-toast';
 import { Icon } from '@iconify-icon/react';
+import { DictsTypes } from '@/app/[lang]/dictionaries/dictionaries';
 
 //* Import services
 
-const Copier = ({ value }: { value: string }) => {
+const Copier = ({ value,dicts }: { value: string } &{dicts:DictsTypes}) => {
   /* -------------------------------- Hooks -------------------------------- */
   const [isCopied, setIsCopied] = useState(false);
 
@@ -19,7 +20,7 @@ const Copier = ({ value }: { value: string }) => {
   const copyValue = () => {
     window.navigator.clipboard?.writeText(value).catch(() => null);
     setIsCopied(true);
-    toast.success('کپی شد');
+    toast.success(`${dicts?.button?.copy}`);
 
     setTimeout(() => {
       setIsCopied(false);

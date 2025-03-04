@@ -106,7 +106,7 @@ export default function MainNavbar({
             <div className=" mx-auto px-2">
               <div className="flex items-center">
                 <Link
-                  href={`/`}
+                  href={`/travel-guide`}
                   className={` flex flex-col p-[12px_7px] items-center rounded-xl bg-black `}
                   aria-label="button"
                 >
