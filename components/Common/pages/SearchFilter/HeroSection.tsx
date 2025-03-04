@@ -70,7 +70,7 @@ const HeroSection = () => {
 
   return (
     <section
-      className="relative h-[50vh] flex items-center justify-center overflow-hidden"
+      className="relative aspect-video max-h-[500px] w-full flex items-center justify-center overflow-hidden"
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
     >
@@ -91,7 +91,7 @@ const HeroSection = () => {
                 : heroTypes.slider.content[currentSlide].image.land
             }
             alt={`Slide ${currentSlide + 1}`}
-            className="w-full h-full object-center relative overflow-hidden "
+            className="w-full h-full object-center  relative overflow-hidden object-cover"
             fill
           />
         </motion.div>
