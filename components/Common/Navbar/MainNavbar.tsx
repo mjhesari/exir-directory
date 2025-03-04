@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import {
   Navbar,
   NavbarBrand,
@@ -116,7 +116,7 @@ export default function MainNavbar({
             </div>
           </div>
         ) : null}
-        {process.env.IS_NOT_MULTILANG === "true" ? (
+        {!process.env.NEXT_PUBLIC_IS_NOT_MULTILANG ? (
           <LanguageButton dicts={dicts} lang={lang} />
         ) : null}
       </NavbarContent>

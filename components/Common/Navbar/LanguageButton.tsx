@@ -44,7 +44,7 @@ const LanguageButton = ({
                 onPress={onOpen}
                 variant="bordered"
                 size="sm"
-                className={`bg-white flex flex-row p-[26px] items-center rounded-full border`}
+                className={`bg-white flex flex-row p-[26px] items-center lg:hidden rounded-full border`}
                 aria-label="language page"
                 isIconOnly
                 startContent={<Icon icon="mdi:translate" width={32} />}
@@ -63,7 +63,6 @@ const LanguageButton = ({
           aria-label="language page"
           startContent={<Icon icon="mdi:translate" width={20} />}
         >
-          
            Languages
         </Button>
       )}
