@@ -9,14 +9,10 @@ import { getDirectoryData } from "@/utils/api";
 import Link from "next/link";
 import { Business } from "@/types/dataTypes";
 import {
-  // FilterState,
-  // initializeFilters,
   setPageIndex,
 } from "@/redux/features/filters/filter-slice";
 import dynamic from "next/dynamic";
 import ResultTitleExchange from "@/components/Directory/exchange/ResultBar/ResultTitle";
-// import { useRouter } from "next/navigation";
-// import { parseFiltersFromPath } from "@/utils/functions/route-filter";
 
 const ResultHeader = dynamic(
   () =>
@@ -42,12 +38,6 @@ const CardResult = ({
   const [loading, setLoading] = useState(false);
   const filters = useAppSelector((state) => state.filters.dynamicFilters);
   const { pageIndex, pageSize } = useAppSelector((state) => state.filters);
-
-  // useEffect(() => {
-  //   if (initialFilters) {
-  //     dispatch(initializeFilters(initialFilters));
-  //   }
-  // }, [initialFilters, dispatch]);
 
   useEffect(() => {
     const getData = async () => {

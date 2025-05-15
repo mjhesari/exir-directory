@@ -7,7 +7,7 @@ import { Roboto } from "next/font/google";
 import MainProviders from "./providers/main-provider";
 import { langsType, getDictionary } from "./dictionaries/dictionaries";
 // import MobileNav from "@/components/Common/Navbar/mobileNav";
-import { getAllLanguage, getAllPost, getDirectoryData } from "@/utils/api";
+import { getAllLanguage, getDirectoryData } from "@/utils/api";
 import {locales} from '@/app/[lang]/dictionaries/languages'
 import dynamic from "next/dynamic";
 import FooterExchnage from "@/components/Directory/exchange/Footer/MainFooter";
@@ -45,51 +45,6 @@ export async function generateMetadata({
     title: dicts.metaData.title?.[process.env.NEXT_PUBLIC_DIRECTORY as keyof typeof dicts.metaData.title],
     description:dicts.metaData.desc?.[process.env.NEXT_PUBLIC_DIRECTORY as keyof typeof dicts.metaData.desc],
     icons: `/favicon/${process.env.NEXT_PUBLIC_DIRECTORY}.png`,
-    // keywords:
-    //   siteData?.tags?.map((e) =>
-    //     typeof e === "string" ? e : e?.[lang] ?? ""
-    //   ) ?? [],
-
-    // robots: "index, follow",
-    // generator: "Pazh",
-    // creator: "Pazh",
-    // publisher: "Pazh",
-    // // manifest: `/${domain?.split(".").join("-")}.json`,
-    // verification: {
-    //   google: siteConfig?.googleVerification ?? "",
-    //   yahoo: siteConfig?.yahooVerification ?? "",
-    //   yandex: siteConfig?.yandexVerification ?? "",
-    //   me: siteConfig?.bingVerification ?? "",
-    // },
-    // appleWebApp: {
-    //   capable: true,
-    //   title: `${siteConfig?.title?.[lang] ?? "Local business"}`,
-    //   startupImage: siteConfig?.image ?? "",
-    //   statusBarStyle: "default",
-    // },
-    // openGraph: {
-    //   title: siteConfig?.title?.[lang] ?? "",
-    //   description:
-    //     siteConfig?.description?.[lang] ??
-    //     "Website maker for every businesses in the iran",
-    //   images: siteConfig?.image ?? "",
-    // },
-    // twitter: {
-    //   title: `${siteConfig?.title?.[lang] ?? "Local business"}`,
-    //   description:
-    //     siteConfig?.description?.[lang] ??
-    //     "Website maker for every businesses in the iran",
-    //   images: siteConfig?.image ?? "",
-    // },
-    // metadataBase: new URL(`https://${domain}`),
-    // alternates: {
-    //   canonical: "/",
-    //   languages: {
-    //     en: `https://${domain}/en`,
-    //     fa: `https://${domain}/fa`,
-    //     ar: `https://${domain}/ar`,
-    //   },
-    // },
   };
 }
 
@@ -105,12 +60,11 @@ export default async function RootLayout({
   const dicts = await getDictionary(params?.lang);
   const {data}=await getDirectoryData()
   const lang = await getAllLanguage()
-  const post=await getAllPost()
   const font = dicts.dir === "rtl" ? yekanBakh.className : roboto.className;
   return (
     <html lang={dicts.lang} dir={dicts.dir}>
       <body className={`${font}`}>
-        <MainProviders exchange={data} lang={lang} post={post}>
+        <MainProviders exchange={data} lang={lang}>
           <MainNavbar dicts={dicts} lang={lang}/>
           {children}
           {/* <MobileNav dicts={dicts}/> */}

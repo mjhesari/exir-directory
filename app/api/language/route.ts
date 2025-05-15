@@ -12,7 +12,7 @@ export async function GET() {
     const data = await countries.json();
     return Response.json(data);
   } catch (error) {
-    console.error("Error fetching ExchangeData:", error);
+    console.error("Error fetching language:", error);
     return Response.json({ data: {}, error }, { status: 500 });
   }
 }

@@ -101,24 +101,7 @@ export default function MainNavbar({
             )}
           </NavbarItem>
         ) : null}
-        {process.env.NEXT_PUBLIC_DIRECTORY === "iranarabic" ? (
-          <div className="fixed top-[10px] end-1 z-70">
-            <div className=" mx-auto px-2">
-              <div className="flex items-center">
-                <Link
-                  href={`/`}
-                  className={` flex flex-col p-[12px_7px] items-center rounded-xl bg-black `}
-                  aria-label="button"
-                >
-                  <p className="text-white text-sm">تحميل مجاني لدليل السفر </p>
-                </Link>
-              </div>
-            </div>
-          </div>
-        ) : null}
-        {process.env.IS_NOT_MULTILANG === "true" ? (
           <LanguageButton dicts={dicts} lang={lang} />
-        ) : null}
       </NavbarContent>
     </Navbar>
   );
