@@ -8,9 +8,8 @@ import { DataGetterProps } from "@/types/dataTypes";
 //* Redux actions
 import { setExchangeData } from "@/redux/features/data/data-slice";
 import { setLanguage } from "@/redux/features/languages/language-slice";
-import { setPostData } from "@/redux/features/post/post-slice";
 
-const DataGetter = ({ exchangeData, lang, post }: DataGetterProps) => {
+const DataGetter = ({ exchangeData, lang }: DataGetterProps) => {
   // Hooks
   const dispatch = useAppDispatch();
   useEffect(() => {
@@ -23,11 +22,7 @@ const DataGetter = ({ exchangeData, lang, post }: DataGetterProps) => {
       dispatch(setLanguage(lang));
     }
   }, [lang, dispatch]);
-  useEffect(() => {
-    if (post) {
-      dispatch(setPostData(post));
-    }
-  }, [dispatch, post]);
+
 
   // Conditional rendering
   if (!exchangeData) {

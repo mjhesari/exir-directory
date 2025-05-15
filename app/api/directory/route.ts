@@ -12,15 +12,11 @@ export async function POST(request :Request) {
     const {pageIndex,pageSize,filters} = await request.json();
 
     let defaultSet: RequestBody = {};
-    if (process?.env?.NEXT_PUBLIC_DIRECTORY === "iranarabic") {
-      defaultSet = {tags:"15dba21e-eedd-4eda-a4d5-f034f28dff29"};
-    } else if (process?.env?.NEXT_PUBLIC_DIRECTORY === "dubai") {
-      defaultSet = {city:"dubai"};
-    } else if(process?.env?.NEXT_PUBLIC_DIRECTORY === "drziba"){
-      defaultSet = {
-        industry: ["c259aa45-0a0f-49ac-be33-eade1392e136"],country:"Iran"
-      };
-    }else if(process?.env?.NEXT_PUBLIC_DIRECTORY === "exchange"){
+
+     if (process?.env?.NEXT_PUBLIC_DIRECTORY === "dubai") {
+      defaultSet = {city:"1133"};
+    } 
+    else if(process?.env?.NEXT_PUBLIC_DIRECTORY === "exchange"){
       defaultSet = {
         industry: ["0615cf73-9438-4801-9b8d-cc5cdce2da6b"]
       };

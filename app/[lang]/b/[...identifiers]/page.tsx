@@ -1,10 +1,4 @@
-// import MainBanner from "@/components/Banner/MainBanner";
-// import CompanyItemsCard from "@/components/CompanyCard/FeaturesExchange/CompanyItemsCard";
-// import AdsCard from "@/components/CompanyCard/Ads/AdsCard";
-// import CompanyProduct from "@/components/CompanyCard/Products/CompanyProduct";
-// import CompanyCuntributes from "@/components/CompanyCard/Cuntributes/CompanyCuntributes";
-// import CompanyPartners from "@/components/CompanyCard/Partners/CompanyPartners";
-// import CompanyComments from "@/components/Common/CompanyCard/Comments/CompanyComments";
+
 import { CompanyDetails } from "@/components/Common/CompanyCard/DetailsExchange/CompanyDetails";
 import { CompanyOverview } from "@/components/Common/CompanyCard/Overview/CompanyOverview";
 import { getDictionary, langsType } from "../../dictionaries/dictionaries";
@@ -15,7 +9,6 @@ import CompanySocialMedia from "@/components/Common/CompanyCard/SocialMedia/Comp
 // import CompanyHoldApp from "@/components/Common/CompanyCard/HoldingApp/CompanyHoldApp";
 import { Business } from "@/types/dataTypes";
 import { generateLocalBusinessSchema } from "@/utils/data";
-import Comment from "@/components/Common/Comment/Comment";
 import CompanyHero from "@/components/Common/CompanyCard/hero/CompanyHero";
 
 const getSinglePageData = async (id: string) => {
@@ -44,7 +37,6 @@ export default async function Home({
   const dicts = await getDictionary(params?.lang);
   const publicId = params.identifiers[1];
   const exchangeData: Business = await getSinglePageData(publicId);
-  const targetId=exchangeData.id
   const localBusinessSchema = await generateLocalBusinessSchema(
     exchangeData,
     params.lang
@@ -77,7 +69,6 @@ export default async function Home({
         <section className="space-y-4 mx-5 lg:mx-0 lg:block hidden">
           <div className="h-screen !overflow-hidden lg:sticky lg:top-20 grid grid-rows-[max-content_auto] gap-4">
             <CompanyContact exchangeData={exchangeData} dicts={dicts} />
-            <Comment targetId={targetId} />
           </div>
           {/* <CompanyItemsCard exchangeData={exchangeData} dicts={dicts} /> */}
           {/* <CompanyProduct dicts={dicts} /> */}

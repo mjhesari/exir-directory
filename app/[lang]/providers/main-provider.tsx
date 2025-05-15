@@ -2,7 +2,7 @@
 // NextUi
 import { HeroUIProvider } from "@heroui/react";
 // Redux toolkit
-import {  DataStructure, PostDataContainer } from "@/types/dataTypes";
+import {  DataStructure } from "@/types/dataTypes";
 import { Provider } from "react-redux";
 import { store } from "@/redux/app/store";
 import DataGetter from "../dataGetter";
@@ -13,17 +13,15 @@ const MainProviders = ({
   lang,
   children,
   exchange,
-  post,
 }: {
   children: React.ReactNode;
   exchange: DataStructure;
   lang:Response | null;
-  post:PostDataContainer
 }) => {
   return (
     <Provider store={store}>
       <Suspense fallback={<div>Loading...</div>}>
-      <DataGetter exchangeData={exchange} lang={lang} post={post}/>
+      <DataGetter exchangeData={exchange} lang={lang}/>
       </Suspense>
       <Toaster position="bottom-center" />
       <HeroUIProvider>{children}</HeroUIProvider>
