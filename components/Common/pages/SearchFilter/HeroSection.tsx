@@ -1,28 +1,34 @@
-"use client"
+"use client";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
-
+import imgexirland from "@/public/hero/exir-land.jpg";
+import imgexirmo from "@/public/hero/exir-mobile.jpg";
+import imgekakhland from "@/public/hero/kakh-land.jpg";
+import imgkakhmo from "@/public/hero/kakh-mobile.jpg";
+import imgramezanland from "@/public/hero/ramezan-land.jpg";
+import imgramezanmo from "@/public/hero/ramezan-mobile.jpg";
+import useMediaQuery from "@/hooks/use-media-query";
 const heroTypes = {
   slider: {
-    type: 'slider',
+    type: "slider",
     content: [
       {
-        image: "https://dkstatics-public.digikala.com/digikala-adservice-banners/b6d72568ff581fc6e0db4d9f8d747ea953c0a0ff_1739374822.jpg?x-oss-process=image/quality,q_95/format,webp",
+        image: { land: imgexirland, mobile: imgexirmo },
         title: "Discover Amazing Experiences",
-        description: "Explore curated collections across various categories"
+        description: "Explore curated collections across various categories",
       },
       {
-        image: "https://dkstatics-public.digikala.com/digikala-adservice-banners/15763da6eef938ec760cac5a9e9910a7eeae99b7_1739798841.gif?x-oss-process=image?x-oss-process=image/format,webp",
+        image: { land: imgekakhland, mobile: imgkakhmo },
         title: "Connect with Professionals",
-        description: "Build meaningful relationships in your industry"
+        description: "Build meaningful relationships in your industry",
       },
       {
-        image: "https://dkstatics-public.digikala.com/digikala-adservice-banners/b6d72568ff581fc6e0db4d9f8d747ea953c0a0ff_1739374822.jpg?x-oss-process=image/quality,q_95/format,webp",
+        image: { land: imgramezanland, mobile: imgramezanmo },
         title: "Grow Your Network",
-        description: "Expand your horizons with our community"
-      }
-    ]
+        description: "Expand your horizons with our community",
+      },
+    ],
   },
 };
 
@@ -30,7 +36,7 @@ const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
   const [touchStartX, setTouchStartX] = useState(0);
-
+  const isMoblie = useMediaQuery("(max-width: 1024px)");
   useEffect(() => {
     if (!isAutoPlaying) return;
 
@@ -47,26 +53,27 @@ const HeroSection = () => {
 
   const handleTouchEnd = (e: React.TouchEvent) => {
     const touchEndX = e.changedTouches[0].clientX;
-    const swipeThreshold = 50; // حداقل میزان حرکت برای تشخیص سوایپ
+    const swipeThreshold = 50;
 
     if (touchStartX - touchEndX > swipeThreshold) {
-      // سوایپ به چپ (اسلاید بعدی)
       setIsAutoPlaying(false);
       setCurrentSlide((prev) => (prev + 1) % heroTypes.slider.content.length);
     } else if (touchEndX - touchStartX > swipeThreshold) {
-      // سوایپ به راست (اسلاید قبلی)
       setIsAutoPlaying(false);
-      setCurrentSlide((prev) => (prev - 1 + heroTypes.slider.content.length) % heroTypes.slider.content.length);
+      setCurrentSlide(
+        (prev) =>
+          (prev - 1 + heroTypes.slider.content.length) %
+          heroTypes.slider.content.length
+      );
     }
   };
 
   return (
     <section
-      className="relative h-[50vh] flex items-center justify-center overflow-hidden"
+      className="relative aspect-video max-h-[500px] w-full flex items-center justify-center overflow-hidden"
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
     >
-      <div className="absolute inset-0 z-10" />
 
       <AnimatePresence initial={false}>
         <motion.div
@@ -78,15 +85,18 @@ const HeroSection = () => {
           className="absolute inset-0"
         >
           <Image
-            src={heroTypes.slider.content[currentSlide].image}
+            src={
+              isMoblie
+                ? heroTypes.slider.content[currentSlide].image.mobile
+                : heroTypes.slider.content[currentSlide].image.land
+            }
             alt={`Slide ${currentSlide + 1}`}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-center  relative overflow-hidden object-cover"
             fill
           />
         </motion.div>
       </AnimatePresence>
 
-      {/* ناوبری */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
         <div className="flex items-center gap-x-3">
           {heroTypes.slider.content.map((_, index) => (
@@ -105,7 +115,8 @@ const HeroSection = () => {
                     opacity: currentSlide === index ? 1 : 0.3,
                   }}
                   transition={{ duration: 0.5 }}
-                  className="h-full bg-white rounded-full"
+                  className="w-full h-full bg-white rounded-full"
+
                 />
               </div>
             </button>

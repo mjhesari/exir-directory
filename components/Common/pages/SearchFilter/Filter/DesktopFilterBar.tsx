@@ -13,7 +13,7 @@ const CardFilter = dynamic(
 const DesktopFilterBar = ({ dicts }: { dicts: DictsTypes }) => {
     return (
         <div className="hidden lg:block">
-            <CardFilter dicts={dicts} />
+            <CardFilter dicts={dicts}  />
         </div>
     );
 }

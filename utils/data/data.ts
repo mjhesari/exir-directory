@@ -64,7 +64,7 @@ export const fiatDespoit = [
   { key: "UYU", label: "UYU" },
   { key: "VND", label: "VND" },
   { key: "XCD", label: "XCD" },
-  { key: "ZAR", label: "ZAR" }
+  { key: "ZAR", label: "ZAR" },
 ];
 export const paymentMethods = [
   { key: "None", label: "None" },
@@ -116,34 +116,60 @@ export const paymentMethods = [
   { key: "Non-custodial", label: "Non-custodial" },
 ];
 export const categoryExchange = [
-  {id:"88317030-715b-4483-9663-591960a7009a", value:"Crypto Exchanges"},
-  {id:"5c44d450-3805-4098-9f67-e9cd7fdb472a",value:"Decentralized Exchanges"},
-  {id: "47754e79-f71d-47e2-8eeb-0f7445bce298",value:"Derivatives Exchanges"},
-  {id: "4db0671e-2aac-4db4-b62e-ab5a01f9e8ff",value:"Stock Exchanges"},
-  {id: "3816e29f-87d5-467b-877f-f56a444bc636",value:"Commodity Exchanges"},
-  {id: "8d4cd091-809c-4fde-bf2f-90946e6fb9a3",value:"Forex Exchanges"},
-  {id: "f2b6e7cc-f71b-437d-ab39-a1417a0109c8",value:"Centralized Exchanges"},
-  {id: "2bce978c-e02b-4b15-b72f-a117c9429572",value:"Physical Exchanges"},
-  {id: "47687538-f243-413b-aed2-406112663996",value:"Electronic Exchanges"},
-  {id: "451f9221-d8b6-4bda-8e4d-2e8dfd401c8d",value:"International Exchanges"},
-  {id: "45a8c7c7-885b-4071-b279-650b5e0ceff6",value:"Open Exchanges"},
-  {id: "7f1b68e0-ab37-4c56-af48-6b162d464227",value:"Membership-Based Exchanges"},
-  {id: "9b43bfda-b614-4311-9782-89c3a1026c77",value:"Domestic Exchanges"}
+  { id: "88317030-715b-4483-9663-591960a7009a", value: "Crypto Exchanges" },
+  {
+    id: "5c44d450-3805-4098-9f67-e9cd7fdb472a",
+    value: "Decentralized Exchanges",
+  },
+  {
+    id: "47754e79-f71d-47e2-8eeb-0f7445bce298",
+    value: "Derivatives Exchanges",
+  },
+  { id: "4db0671e-2aac-4db4-b62e-ab5a01f9e8ff", value: "Stock Exchanges" },
+  { id: "3816e29f-87d5-467b-877f-f56a444bc636", value: "Commodity Exchanges" },
+  { id: "8d4cd091-809c-4fde-bf2f-90946e6fb9a3", value: "Forex Exchanges" },
+  {
+    id: "f2b6e7cc-f71b-437d-ab39-a1417a0109c8",
+    value: "Centralized Exchanges",
+  },
+  { id: "2bce978c-e02b-4b15-b72f-a117c9429572", value: "Physical Exchanges" },
+  { id: "47687538-f243-413b-aed2-406112663996", value: "Electronic Exchanges" },
+  {
+    id: "451f9221-d8b6-4bda-8e4d-2e8dfd401c8d",
+    value: "International Exchanges",
+  },
+  { id: "45a8c7c7-885b-4071-b279-650b5e0ceff6", value: "Open Exchanges" },
+  {
+    id: "7f1b68e0-ab37-4c56-af48-6b162d464227",
+    value: "Membership-Based Exchanges",
+  },
+  { id: "9b43bfda-b614-4311-9782-89c3a1026c77", value: "Domestic Exchanges" },
 ];
-export const categoryZiba=[
-  {id:"9b1c5f1d-1686-49ed-8bb4-3b1e935aa8a3",value:"پزشک"},
-  {id:"1a705b19-8fdb-4361-a958-29e03f88750f",value:"سالن های زیبایی"},
-  {id:"7d6d7b83-ea18-4063-983a-fe052681d3ab",value:"کلینیک های زیبایی"},
-  {id:"ca107dc3-b734-4f82-84b0-310652925767",value:"آرایشگاه مردانه"},
-  {id:"2de9f69c-a16c-4807-860d-4f72b962489e",value:"آرایشگاه زنانه"},
-  {id:"f5d65bfc-1a5c-4658-a8e5-1495c194e8d7",value:"بیوتی تراپیست"},
-]
-export const categoryDubai=[
-  {id:"c69b7f69-ac2d-4280-90e3-c77299cb814f",value:"Restaurant"},
-  {id:"4c6b00e2-4fa1-4a32-a4f0-3acc68a9f453",value:"Real Estate"},
-  {id:"94604a41-8741-45d6-83db-b7112e914b80",value:"Store"},
-  {id:"952c1f9e-ecb6-4990-a8ac-6c4dc74b1d45",value:"Hotel"},
-]
+export const categoryZiba = [
+  { id: "9b1c5f1d-1686-49ed-8bb4-3b1e935aa8a3", value: "پزشک" },
+  { id: "1a705b19-8fdb-4361-a958-29e03f88750f", value: "سالن های زیبایی" },
+  { id: "7d6d7b83-ea18-4063-983a-fe052681d3ab", value: "کلینیک های زیبایی" },
+  { id: "ca107dc3-b734-4f82-84b0-310652925767", value: "آرایشگاه مردانه" },
+  { id: "2de9f69c-a16c-4807-860d-4f72b962489e", value: "آرایشگاه زنانه" },
+  { id: "f5d65bfc-1a5c-4658-a8e5-1495c194e8d7", value: "بیوتی تراپیست" },
+];
+export const categoryDubai = [
+  { id: "c69b7f69-ac2d-4280-90e3-c77299cb814f", value: "Restaurant" },
+  { id: "4c6b00e2-4fa1-4a32-a4f0-3acc68a9f453", value: "Real Estate" },
+  { id: "94604a41-8741-45d6-83db-b7112e914b80", value: "Store" },
+  { id: "952c1f9e-ecb6-4990-a8ac-6c4dc74b1d45", value: "Hotel" },
+];
+export const categoryIranArabic = [
+  { id: "9b1c5f1d-1686-49ed-8bb4-3b1e935aa8a3", value: "طبيب" },
+  { id: "1a705b19-8fdb-4361-a958-29e03f88750f", value: "صالونات التجميل" },
+  { id: "7d6d7b83-ea18-4063-983a-fe052681d3ab", value: "عيادات التجميل" },
+  { id: "ca107dc3-b734-4f82-84b0-310652925767", value: "صالونات رجالية" },
+  { id: "2de9f69c-a16c-4807-860d-4f72b962489e", value: "صالونات نسائية" },
+  {
+    id: "f5d65bfc-1a5c-4658-a8e5-1495c194e8d7",
+    value: "أخصائي العلاج التجميلي",
+  },
+];
 export const iconMap: Record<string, string> = {
   website: "mdi:web",
   x: "fa6-brands:x-twitter",
@@ -154,14 +180,53 @@ export const iconMap: Record<string, string> = {
   linkedin: "ri:linkedin-fill",
   youtube: "ph:youtube-logo-duotone",
   tiktok: "mingcute:tiktok-line",
-  discord:"ri:discord-fill",
-  Medium:"ant-design:medium-outlined",
+  discord: "ri:discord-fill",
+  Medium: "ant-design:medium-outlined",
+  snapchat: "mdi:snapchat",
+  pinterest: "jam:pinterest",
+  reddit: "jam:reddit",
+  "whatsapp-chat": "ri:whatsapp-line",
+  "telegram-chat": "la:telegram",
+  clubhouse: "simple-icons:clubhouse",
+  tumblr: "uim:tumblr",
+  eitaa: "Eitaa",
+  "eitaa-chat": "Eitaa Chat",
+  bale: "Bale",
+  "bale-chat": "Bale Chat",
+  aparat: "simple-icons:aparat",
+  "rubika-chat": "Rubika Chat",
+  rubika: "Rubika",
+  namasha: "Namasha",
+  threads: "mage:threads",
+  "signal-chat": "arcticons:signal",
 };
-export const categoryIranArabic=[
-  {id:"9b1c5f1d-1686-49ed-8bb4-3b1e935aa8a3",value:"طبيب"},
-  {id:"1a705b19-8fdb-4361-a958-29e03f88750f",value:"صالونات التجميل"},
-  {id:"7d6d7b83-ea18-4063-983a-fe052681d3ab",value:"عيادات التجميل"},
-  {id:"ca107dc3-b734-4f82-84b0-310652925767",value:"صالونات رجالية"},
-  {id:"2de9f69c-a16c-4807-860d-4f72b962489e",value:"صالونات نسائية"},
-  {id:"f5d65bfc-1a5c-4658-a8e5-1495c194e8d7",value:"أخصائي العلاج التجميلي"},
-]  
+export const colorByType = {
+  "telegram-chat": "bg-sky-500/20 text-sky-500 hover:bg-sky-300",
+  "whatsapp-chat": "bg-green-500/20 text-green-500 hover:bg-green-300",
+  "rubika-chat": "primary",
+  "signal-chat": "bg-green-500/20 text-green-500 hover:bg-green-300",
+  "eitaa-chat": "bg-orange-500/20 text-orange-500 hover:bg-orange-300",
+  "bale-chat": "bg-blue-600/20 text-blue-500 hover:bg-blue-300",
+  website: "bg-slate-900/50 text-slate-100 hover:bg-slate-300",
+  x: "bg-blue-600/20 text-blue-500 hover:bg-blue-300",
+  telegram: "bg-sky-700/80 text-sky-500 hover:bg-sky-300",
+  "github.com": "bg-blue-600/20 text-blue-500 hover:bg-blue-300",
+  instagram: "bg-indigo-700/80 text-indigo-500 hover:bg-indigo-300",
+  facebook: "bg-blue-700/80 text-blue-500 hover:bg-blue-300",
+  linkedin: "bg-blue-600/20 text-blue-500 hover:bg-blue-300",
+  youtube: "bg-red-700/80 text-red-500 hover:bg-red-300",
+  tiktok: "bg-blue-600/20 text-blue-500 hover:bg-blue-300",
+  discord: "bg-blue-600/20 text-blue-500 hover:bg-blue-300",
+  Medium: "bg-blue-600/20 text-blue-500 hover:bg-blue-300",
+  snapchat: "bg-blue-600/20 text-blue-500 hover:bg-blue-300",
+  pinterest: "bg-blue-600/20 text-blue-500 hover:bg-blue-300",
+  reddit: "bg-blue-600/20 text-blue-500 hover:bg-blue-300",
+  clubhouse: "bg-blue-600/20 text-blue-500 hover:bg-blue-300",
+  tumblr: "bg-blue-600/20 text-blue-500 hover:bg-blue-300",
+  eitaa: "bg-orange-500/80 text-orange-500 hover:bg-orange-300",
+  bale: "bg-blue-600/20 text-blue-500 hover:bg-blue-300",
+  aparat: "bg-rose-800/70 text-rose-500 hover:bg-rose-300",
+  rubika: "bg-amber-500/80 text-amber-100 hover:bg-amber-300",
+  namasha: "bg-lime-600/80 text-lime-100 hover:bg-lime-300",
+  threads: "bg-default-700/80 text-default-500 hover:bg-default-300",
+};

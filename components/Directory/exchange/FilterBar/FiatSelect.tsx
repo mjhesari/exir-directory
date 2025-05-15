@@ -40,7 +40,7 @@ const FiatSelect = ({ dicts }: { dicts: DictsTypes }) => {
           content="none"
         >
           {fiatDespoit.map((fiat) => (
-            <SelectItem key={fiat.key} value={fiat.key}>
+            <SelectItem key={fiat.key}>
               {fiat.label}
             </SelectItem>
           ))}

@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import { Button } from "@heroui/button";
 import { Card, CardBody } from "@heroui/card";
 import { Icon } from "@iconify/react";
@@ -45,8 +45,9 @@ export function CompanyLocCard({
                 >
                   {dicts?.button.navigate}
                   <Link
-                  href={`geo:${String(exchangeData?.geo)}`}
-                  className='absolute inset-0' />
+                  href={`https://www.google.com/maps/search/?api=1&query=${String(exchangeData?.geo)}`}
+                  className='absolute inset-0' 
+                />
                 </Button>
               </div>
             </div>
